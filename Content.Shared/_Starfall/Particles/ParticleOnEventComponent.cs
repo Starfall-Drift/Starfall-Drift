@@ -45,6 +45,10 @@ public sealed partial class ParticleOnEventComponent : Component
     [DataField]
     public bool OnLanded;
 
+    /// <summary>Spawn particles when this item is primed/activated (timed explosives, etc).</summary>
+    [DataField]
+    public bool OnPrimed;
+
     /// <summary>Spawn particles when this gun fires (muzzle flash, etc).</summary>
     [DataField]
     public bool OnGunShot;

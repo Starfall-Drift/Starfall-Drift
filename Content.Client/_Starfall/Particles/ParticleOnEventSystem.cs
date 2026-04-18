@@ -3,6 +3,7 @@ using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Projectiles;
 using Content.Shared.Throwing;
+using Content.Shared.Trigger;
 using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Weapons.Ranged.Events;
 using Robust.Shared.Prototypes;
@@ -28,6 +29,7 @@ public sealed class ParticleOnEventSystem : EntitySystem
         SubscribeLocalEvent<ParticleOnEventComponent, AttackedEvent>(OnMeleeHit);
         SubscribeLocalEvent<ParticleOnEventComponent, ThrownEvent>(OnThrown);
         SubscribeLocalEvent<ParticleOnEventComponent, LandEvent>(OnLanded);
+        SubscribeLocalEvent<ParticleOnEventComponent, ActiveTimerTriggerEvent>(OnPrimed);
         SubscribeLocalEvent<ParticleOnEventComponent, AmmoShotEvent>(OnGunShot);
         SubscribeLocalEvent<ParticleOnEventComponent, ProjectileHitEvent>(OnProjectileHit);
     }
@@ -78,6 +80,13 @@ public sealed class ParticleOnEventSystem : EntitySystem
     private void OnLanded(Entity<ParticleOnEventComponent> ent, ref LandEvent args)
     {
         if (!ent.Comp.OnLanded)
+            return;
+        SpawnParticles(ent);
+    }
+
+    private void OnPrimed(Entity<ParticleOnEventComponent> ent, ref ActiveTimerTriggerEvent args)
+    {
+        if (!ent.Comp.OnPrimed)
             return;
         SpawnParticles(ent);
     }
