@@ -38,6 +38,10 @@ public sealed partial class ParticleOnEventComponent : Component
     public bool OnMeleeHit;
 
     /// <summary>Spawn particles when this entity is thrown.</summary>
+    /// <remarks>
+    /// This is an exception to the infinite-duration rule, system will automatically stop the emitter when the entity lands.
+    /// This allows for things like a smoke trail on thrown grenades without needing to set a duration on the particle effect.
+    /// </remarks>
     [DataField]
     public bool OnThrown;
 
