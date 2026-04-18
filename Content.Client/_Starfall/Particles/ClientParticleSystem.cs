@@ -274,6 +274,13 @@ public sealed class ClientParticleSystem : EntitySystem
         {
             var emitter = _emitters[i];
 
+            // Check if attached entity was deleted even when off-screen.
+            if (emitter.AttachedEntity is { } attachedEnt && Deleted(attachedEnt))
+            {
+                emitter.Exhausted = true;
+                emitter.AttachedEntity = null;
+            }
+
             var inView = emitter.MapCoords.MapId == currentMapId
                 && viewBounds.Contains(emitter.MapCoords.Position);
 
