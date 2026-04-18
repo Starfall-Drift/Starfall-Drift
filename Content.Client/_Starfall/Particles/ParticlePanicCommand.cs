@@ -18,7 +18,7 @@ public sealed class ParticlePanicCommand : IConsoleCommand
     {
         var particles = IoCManager.Resolve<IEntitySystemManager>().GetEntitySystem<ClientParticleSystem>();
         var count = particles.KillAll();
-        shell.WriteLine($"Cleared {count} emitter(s).");
+        shell.WriteLine($"Cleared {count} emitter(s)/particle(s).");
     }
 }
 
