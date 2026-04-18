@@ -91,6 +91,14 @@ public sealed partial class ParticleEffectPrototype : IPrototype
     /// <summary>Draw order. Higher values render on top.</summary>
     [DataField] public int RenderLayer { get; private set; }
 
+    /// <summary>
+    /// When true, this particle effect always renders at full quality regardless of user settings.
+    /// Use this ONLY for gameplay-critical particles.
+    /// Purely cosmetic effects (sparks, smoke, fire) should leave this false.
+    /// ᓚᘏᗢ <( <b>If I see you set this to true on a purely cosmetic effect, I will find you and I will hurt you.</b>
+    /// </summary>
+    [DataField] public bool IgnoreQualitySettings { get; private set; }
+
     // =^..^= Size =^..^=
 
     /// <summary>Base particle size in world units.</summary>

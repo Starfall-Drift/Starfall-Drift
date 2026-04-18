@@ -109,10 +109,11 @@ public sealed class ClientParticleSystem : EntitySystem
     /// <summary>Spawns a particle effect at a given map coordinate.</summary>
     public ActiveEmitter? SpawnEffect(ProtoId<ParticleEffectPrototype> effectId, MapCoordinates coords, EntityUid? attachedEntity = null, Color? colorOverride = null)
     {
-        if (_quality == 0)
+        if (!_protoManager.TryIndex(effectId, out var proto))
             return null;
 
-        if (!_protoManager.TryIndex(effectId, out var proto))
+        // Skip quality check if this is a gameplay-critical particle
+        if (_quality == 0 && !proto.IgnoreQualitySettings)
             return null;
 
         var emitter = CreateEmitter(proto, coords, attachedEntity);
@@ -493,7 +494,8 @@ public sealed class ClientParticleSystem : EntitySystem
                 if (emitter.Age < burst.Time)
                     continue;
 
-                var qualityMult = QualityMultipliers[Math.Clamp(_quality, 0, QualityMultipliers.Length - 1)];
+                // Bypass quality settings for gameplay-critical particles
+                var qualityMult = proto.IgnoreQualitySettings ? 1f : QualityMultipliers[Math.Clamp(_quality, 0, QualityMultipliers.Length - 1)];
                 var toEmit = (int)Math.Ceiling(burst.Count * qualityMult * emitter.Intensity);
                 for (int j = 0; j < toEmit && remainingBudget > 0; j++)
                 {
@@ -507,7 +509,8 @@ public sealed class ClientParticleSystem : EntitySystem
         // =^..^= Continuous emission =^..^=
         if (!emitter.Exhausted && !proto.Burst)
         {
-            var qualityMult = QualityMultipliers[Math.Clamp(_quality, 0, QualityMultipliers.Length - 1)];
+            // Bypass quality settings for gameplay-critical particles
+            var qualityMult = proto.IgnoreQualitySettings ? 1f : QualityMultipliers[Math.Clamp(_quality, 0, QualityMultipliers.Length - 1)];
             var scaledMax = (int)Math.Ceiling(Math.Min(maxCount, HardMaxParticles) * qualityMult * emitter.Intensity);
             var canEmit = Math.Min(scaledMax - liveCount, remainingBudget);
             if (canEmit > 0)
@@ -542,7 +545,8 @@ public sealed class ClientParticleSystem : EntitySystem
     private void BurstEmit(ActiveEmitter emitter)
     {
         var eyeAngle = (float)_eye.CurrentEye.Rotation;
-        var qualityMult = QualityMultipliers[Math.Clamp(_quality, 0, QualityMultipliers.Length - 1)];
+        // Bypass quality settings for gameplay-critical particles
+        var qualityMult = emitter.Proto.IgnoreQualitySettings ? 1f : QualityMultipliers[Math.Clamp(_quality, 0, QualityMultipliers.Length - 1)];
         var count = (int)Math.Ceiling(Math.Min(emitter.Proto.MaxCount, HardMaxParticles) * qualityMult);
         for (int i = 0; i < count; i++)
             EmitParticle(emitter, eyeAngle);
