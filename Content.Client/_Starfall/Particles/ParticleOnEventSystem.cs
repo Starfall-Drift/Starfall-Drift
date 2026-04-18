@@ -19,6 +19,9 @@ public sealed class ParticleOnEventSystem : EntitySystem
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
 
+    // Track emitters spawned by OnThrown so we can stop them when the entity lands
+    private readonly Dictionary<EntityUid, ActiveEmitter> _thrownEmitters = new();
+
     public override void Initialize()
     {
         base.Initialize();
@@ -32,6 +35,14 @@ public sealed class ParticleOnEventSystem : EntitySystem
         SubscribeLocalEvent<ParticleOnEventComponent, ActiveTimerTriggerEvent>(OnPrimed);
         SubscribeLocalEvent<ParticleOnEventComponent, AmmoShotEvent>(OnGunShot);
         SubscribeLocalEvent<ParticleOnEventComponent, ProjectileHitEvent>(OnProjectileHit);
+        SubscribeLocalEvent<ParticleOnEventComponent, ComponentShutdown>(OnShutdown);
+    }
+
+    private void OnShutdown(Entity<ParticleOnEventComponent> ent, ref ComponentShutdown args)
+    {
+        // Clean up any tracked thrown emitter when the component is removed
+        if (_thrownEmitters.Remove(ent.Owner, out var thrownEmitter))
+            ClientParticleSystem.StopEffect(thrownEmitter);
     }
 
     private void OnUseInHand(Entity<ParticleOnEventComponent> ent, ref UseInHandEvent args)
@@ -74,14 +85,21 @@ public sealed class ParticleOnEventSystem : EntitySystem
     {
         if (!ent.Comp.OnThrown)
             return;
-        SpawnParticles(ent);
+
+        var emitter = SpawnParticlesAtReturningEmitter(ent.Comp, ent.Owner);
+        if (emitter != null)
+            _thrownEmitters[ent.Owner] = emitter;
     }
 
     private void OnLanded(Entity<ParticleOnEventComponent> ent, ref LandEvent args)
     {
-        if (!ent.Comp.OnLanded)
-            return;
-        SpawnParticles(ent);
+        // Stop the throw trail emitter when landing
+        if (_thrownEmitters.Remove(ent.Owner, out var thrownEmitter))
+            ClientParticleSystem.StopEffect(thrownEmitter);
+
+        // Spawn landing impact particles if configured
+        if (ent.Comp.OnLanded)
+            SpawnParticles(ent);
     }
 
     private void OnPrimed(Entity<ParticleOnEventComponent> ent, ref ActiveTimerTriggerEvent args)
@@ -123,14 +141,14 @@ public sealed class ParticleOnEventSystem : EntitySystem
         SpawnParticlesAt(ent.Comp, ent.Owner);
     }
 
-    private void SpawnParticlesAt(ParticleOnEventComponent comp, EntityUid target, bool allowInfiniteDuration = false)
+    private ActiveEmitter? SpawnParticlesAtReturningEmitter(ParticleOnEventComponent comp, EntityUid target, bool allowInfiniteDuration = false)
     {
         // Failsafe: refuse to spawn infinite-duration effects (duration == 0) on event triggers,
         // EXCEPT for projectile trails which auto-cleanup when the projectile is destroyed.
         if (!_proto.TryIndex(comp.Effect, out var proto))
         {
             Log.Error($"ParticleOnEvent references unknown effect '{comp.Effect}'");
-            return;
+            return null;
         }
 
         if (!allowInfiniteDuration && proto.Duration == TimeSpan.Zero)
@@ -138,11 +156,16 @@ public sealed class ParticleOnEventSystem : EntitySystem
             Log.Warning($"ParticleOnEvent tried to spawn infinite-duration effect '{comp.Effect}'. " +
                         "Infinite effects cannot be used with ParticleOnEvent, they never stop emitting and will destroy performance. " +
                         "Set a duration on the particle or use a different particle.");
-            return;
+            return null;
         }
 
         var coords = _transform.GetMapCoordinates(target);
-        _particles.SpawnEffect(comp.Effect, coords, target, comp.ColorOverride);
+        return _particles.SpawnEffect(comp.Effect, coords, target, comp.ColorOverride);
+    }
+
+    private void SpawnParticlesAt(ParticleOnEventComponent comp, EntityUid target, bool allowInfiniteDuration = false)
+    {
+        SpawnParticlesAtReturningEmitter(comp, target, allowInfiniteDuration);
     }
 }
 
