@@ -1,0 +1,102 @@
+- type: entity
+  id: FunkyMobVoidwalker
+  parent:
+  - Incorporeal
+  - BaseMob
+  name: voidwalker
+  description: A glass-like entity, you've heard tales of it... but never thought it was real.
+  components:
+  - type: Input
+    context: "ghost"
+  - type: Spectral
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 6
+    baseSprintSpeed: 6
+  - type: Sprite
+    sprite: _Starfall/Mobs/Voidwalker.rsi
+    layers:
+    - state: alive
+      shader: unshaded
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          GlassBreak
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassBreak
+  - type: StatusEffects
+    allowed:
+    - Stun
+    - Corporeal
+  - type: Hands
+    showInHands: true
+    disableExplosionRecursion: true
+  - type: Damageable
+    damageContainer: ManifestedSpirit
+    damageModifierSet: Voidwalker
+  - type: NoSlip
+  - type: Eye
+    drawFov: false
+    visMask:
+      - Normal
+      - Ghost
+  - type: ContentEye
+    maxZoom: 1.2, 1.2
+  - type: GhostRole
+    makeSentient: true
+    name: ghost-role-information-voidwalker-name
+    description: ghost-role-information-voidwalker-description
+    rules: ghost-role-information-antagonist-rules
+    mindRoles:
+    - MindRoleGhostRoleSoloAntagonist
+    raffle:
+      settings: default
+  - type: GhostTakeoverAvailable
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: Visibility
+    layer: 1 #ghost vis layer
+  - type: RandomMetadata
+    nameSegments:
+    - NamesVoidwalker
+  - type: Grammar
+    attributes:
+      proper: true # Makes the voidwalker's name count as a proper noun
+  - type: Muted # They shouldnt be able to talk
+  - type: Speech # but if they do talk somehow they should sound like a ghost
+    speechVerb: Ghost
+  - type: Puller
+  - type: Reactive
+    groups:
+      Acidic: [Touch]
+  - type: IntrinsicRadioReceiver
+  - type: ActiveRadio
+    listenChannels:
+      - Common
+      - CentCom
+      - Command
+      - Engineering
+      - Medical
+      - Science
+      - Security
+      - Service
+      - Supply
+      - Syndicate
+      - Handheld
+      - Binary
+      - Freelance
+      - Emergency
+  - type: CombatMode
+    canToggle: true
+  - type: MeleeWeapon
+    altDisarm: false
+    autoAttack: true
+    soundHit:
+      path: /Audio/_Starfall/Voidwalker/voidattack1.ogg
+    damage:
+      types:
+        Asphyxiation: 15

@@ -1,0 +1,2 @@
+ghost-role-information-voidwalker-name = Voidwalker
+ghost-role-information-voidwalker-description = A creature from the void between the stars. You were attracted to the radio signals broadcasted from this station.

@@ -1,0 +1,106 @@
+<!--
+SPDX-FileCopyrightText: 2026 TrixxedHeart
+SPDX-FileCopyrightText: 2026 CoolioDudio
+
+SPDX-License-Identifier: MIT
+-->
+
+<Document>
+# Voidwalker
+
+<Box>
+[color=#962EFF][italic]"Something vast and cold moves through the void... and it has noticed you."[/italic][/color]
+</Box>
+  <Box>
+    <GuideEntityEmbed Entity="FunkyMobVoidwalker" Caption="The Voidwalker."/>
+  </Box>
+
+You are a silent predator from the cold dark. An entity that stalks the station from beyond its walls. Unlike crude brutes and scheming conspirators, you are something far more primal: a force of nature, ancient and malevolent, that snatches the unwary and enlightens them.
+
+Your philosophy is one of [bold]patience and predation[/bold]. You do not rush. You do not rampage. You are the growing shadow, a creeping dread that unsettles the crew as crew members disappear one by one. Your existence creates tension, forces cooperation, and turns the station's exterior into an active hunting ground.
+
+## Your Nature
+
+You are fundamentally different from the station's inhabitants. You are incorporeal by nature, capable of passing through non-electrified barriers with ease-destabilizing them in the process. You cannot speak with words, but you can project thoughts directly into minds. To the crew, you are an unseen terror.
+
+In [bold]space[/bold], you are supreme. You are immune to the vacuum, move faster, heal naturally, and can slip between dimensions using [color=#1a1a2e]Void Ichor[/color] pools or by entering void space itself. Inside the station, however, gravity slows you significantly.
+
+## Your Abilities
+
+### Draining Slash
+Your primary attack inflicts asphyxiation damage, slowly suffocating your victims. This is particularly effective in vacuum where there is already no air to breathe.
+
+### Abduction
+When a victim is in critical condition and in space near you, you can abduct them. They are pulled into the void and transformed into a [color=#1a1a2e]Voided[/color] entity. Their consciousness remains, but their form is irrevocably changed. They are relocated safely inside the station, but they will never be themselves again.
+
+### Unsettle
+Lock eyes with a target and focus your will upon them. As you maintain line of sight, dread builds. When the ritual completes, the victim is stunned as you become briefly visible—a glimpse of the horror that hunts them.
+
+### Void Dive
+While in space or standing on [color=#1a1a2e]Void Ichor[/color], you become incorporeal and untargetable. You exist in a space between realities, invisible and invulnerable. You can only exit by re-entering normal space or through another Void Ichor pool.
+
+### Cosmic Dash
+Instantly dash to any visible location within space. This ability allows you to close distances, flank prey, or execute a swift retreat. It regenerates slowly, but one charge is often enough for a crucial escape.
+
+### Mental Projection
+You cannot speak aloud, but you can project short thoughts directly into minds. This allows for psychological warfare, cryptic warnings, or coordination with voided victims.
+
+### Signal Reception
+You innately hear all radio broadcasts across the station.
+
+## Your Strengths and Weaknesses
+
+### Strengths
+- **Domain Advantage:** In space, you are supreme. Your wounds heal naturally, you move faster, and the darkness is your ally.
+- **Incorporeal Passage:** Windows and non-electrified grilles are no obstacle. As you pass through, they destabilize temporarily.
+- **Energy Resistance:** You resist energy-based attacks like lasers.
+- **Camouflage:** In space, you are naturally difficult to spot.
+
+### Weaknesses
+- **Kinetic Vulnerability:** You are weak to blunt and piercing damage. Ballistic weapons are far more effective than energy attacks.
+- **Electrified Barriers:** Electrified grilles and windows are impassable. You cannot touch them without harm.
+- **Gravity Weakness:** Inside the station, gravity slows you significantly. Avoid prolonged fights in gravity.
+- **Radio Jammers:** An active radio jammer pacifies you entirely. If deployed nearby, you become calm, docile, and unable to act.
+
+## Void Ichor
+
+Void Ichor is the physical manifestation of your connection to the void—your essence made tangible. When voided crew members vomit this substance, it accumulates in puddles. These puddles serve multiple purposes:
+
+- **Void Dive Conduit:** You can enter void space through any puddle, regardless of location.
+- **Dimension Bridge:** You can warp between puddles while in void space for rapid repositioning.
+- **Environmental Hazard:** These puddles are dangerous to normal crew members and will attract attention.
+
+Void Ichor evaporates when you use it to enter void space, but persists otherwise. It marks your presence.
+
+## The Voided: Your Harvest
+
+When you successfully abduct a critical victim, they are transformed into a [color=#1a1a2e]Voided[/color] creature. They appear as silhouettes of stars, their forms distorted and alien. This transformation is [bold]permanent and incurable[/bold].
+
+The voided retain consciousness and intellect, but everything else is irrevocably altered:
+
+- **Pacifist:** They cannot attack or harm others. They are passive by nature.
+- **Fragile:** Their bodies are brittle as glass. They take increased damage.
+- **Easy to Move:** Others can drag them around effortlessly.
+- **Void Ichor Blood:** Their blood is replaced with Void Ichor. They bleed more easily and periodically vomit the substance, briefly stunning themselves.
+- **Voidspeak:** They can only whisper, and their speech is fractured and slow—words drawn out, interrupted by long pauses.
+- **Space Immunity:** They become immune to spacing and no longer must breathe. However they must not risk stepping into space lest they be lost forever.
+
+## Tips
+
+- **Never engage in realspace alone:** Flee immediately to space. You are weakened in gravity and can be surrounded. In vacuum, you have the advantage.
+- **Avoid coordinated groups:** A squad of armed crew is death. Never confront more than one prepared opponent if possible.
+- **Use Void Dive to escape:** If surrounded, activate Void Dive and retreat through Void Ichor or into the void. You are virtually untargetable.
+- **Hunt the isolated:** Never engage in groups. Wait for someone to separate, to be caught alone at a window. Patience is your greatest weapon.
+
+## Objectives
+
+You have no formal objectives. You are not here to "complete" anything. Your existence is its own purpose:
+
+- **Survive** the round and the crew's attempts to stop you.
+- **Abduct** isolated victims, snatching them into the void and transforming them.
+
+You are not a boss to be defeated. You are a predator that will hunt, vanish, and return. The crew can electrify grilles, repair windows, and deploy jammers—these inconvenience you and limit your hunting grounds. But as long as there are crew in space, windows to peer through, and void to retreat into, you remain a threat.
+
+Hunt well. The void is patient, and so are you.
+
+</Document>

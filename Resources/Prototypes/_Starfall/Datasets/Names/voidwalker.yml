@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: NamesVoidwalker
+  values:
+    prefix: names-voidwalker-data-set-
+    count: 4

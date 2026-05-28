@@ -1,0 +1,20 @@
+- type: reagent
+  id: VoidIchor
+  name: Void Ichor
+  desc: A strange, starry fluid that bridges normal space and void space.
+  flavor: voidichor
+  color: "#2c2cdb"
+  physicalDesc: starry
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Slash: 0.25
+            Asphyxiation: 1
+      - !type:PopupMessage
+        type: Local
+        visualType: SmallCaution
+        messages: [ "Your insides feel as though they're crystalizing" ]
+        probability: 0.5
