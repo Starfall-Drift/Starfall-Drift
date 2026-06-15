@@ -1,0 +1,37 @@
+# SPDX-FileCopyrightText: 2026 TrixxedHeart
+# SPDX-FileCopyrightText: 2026 Thlrd
+# SPDX-License-Identifier: MIT
+
+# Snout Markings
+
+- type: marking
+  id: NoseDroopy
+  bodyPart: Snout
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/snout.rsi
+    state: nose_droopy
+
+- type: marking
+  id: NoseMakeup
+  bodyPart: Snout
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/snout.rsi
+    state: nose_makeup
+
+- type: marking
+  id: NoseSchnozz
+  bodyPart: Snout
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/snout.rsi
+    state: nose_schnozz
+
+- type: marking
+  id: NoseSunken
+  bodyPart: Snout
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/snout.rsi
+    state: nose_sunken

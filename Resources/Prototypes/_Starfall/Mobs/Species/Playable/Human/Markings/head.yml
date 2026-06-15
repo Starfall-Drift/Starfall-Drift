@@ -1,0 +1,189 @@
+# SPDX-FileCopyrightText: 2026 TrixxedHeart
+# SPDX-FileCopyrightText: 2026 Thlrd
+# SPDX-License-Identifier: MIT
+
+# Head Markings
+
+- type: marking
+  id: Blush
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: blush
+
+- type: marking
+  id: EyeMakeup
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: eye_makeup
+
+- type: marking
+  id: EyeScarLeft
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: eye_scar_left
+
+- type: marking
+  id: EyeScarRight
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: eye_scar_right
+
+- type: marking
+  id: EyebrowsPrimary
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: eyebrows_primary
+
+- type: marking
+  id: EyebrowsSecondary
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: eyebrows_secondary
+
+- type: marking
+  id: Eyeliner
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: eyeliner
+
+- type: marking
+  id: EyesHeterochromiaPrimary
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: eyes_heterochromia_primary
+
+- type: marking
+  id: EyesHeterochromiaSecondary
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: eyes_heterochromia_secondary
+
+- type: marking
+  id: Freckles
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: freckles
+
+- type: marking
+  id: Lipstick
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: lipstick
+
+- type: marking
+  id: NoseLarge
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: nose_large
+
+- type: marking
+  id: ProstheticEyeLeftPrimary
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: prosthetic_eye_left_primary
+
+- type: marking
+  id: ProstheticEyeLeftSecondary
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: prosthetic_eye_left_secondary
+
+- type: marking
+  id: ProstheticEyeRightPrimary
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: prosthetic_eye_right_primary
+
+- type: marking
+  id: ProstheticEyeRightSecondary
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: prosthetic_eye_right_secondary
+
+- type: marking
+  id: SprawlingTattooLeft
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: sprawling_tattoo_left
+
+- type: marking
+  id: SprawlingTattooRight
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: sprawling_tattoo_right
+
+- type: marking
+  id: TwistedScarLeft
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: twisted_scar_left
+
+- type: marking
+  id: TwistedScarRight
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: twisted_scar_right
+
+- type: marking
+  id: VitiligoEyeLeft
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: vitiligo_eye_left
+
+- type: marking
+  id: VitiligoEyeRight
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: vitiligo_eye_right
+
+- type: marking
+  id: VitiligoJawline
+  bodyPart: Head
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
+    state: vitiligo_jawline

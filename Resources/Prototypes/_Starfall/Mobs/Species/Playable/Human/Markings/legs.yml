@@ -1,0 +1,203 @@
+# SPDX-FileCopyrightText: 2026 TrixxedHeart
+# SPDX-FileCopyrightText: 2026 Thlrd
+# SPDX-License-Identifier: MIT
+
+# LLeg Markings
+
+- type: marking
+  id: CampbelleTattooLegLeft
+  bodyPart: LLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: campbelle_tattoo_leg_left
+
+- type: marking
+  id: DollJointTattooLegLeft
+  bodyPart: LLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: doll_joint_tattoo_leg_left
+
+- type: marking
+  id: ProstheticLegLeft
+  bodyPart: LLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: prosthetic_leg_left
+
+- type: marking
+  id: ProstheticLowerLegLeft
+  bodyPart: LLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: prosthetic_lower_leg_left
+
+- type: marking
+  id: ProstheticUpperLegLeft
+  bodyPart: LLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: prosthetic_upper_leg_left
+
+- type: marking
+  id: SilverburgTattooLegLeft
+  bodyPart: LLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: silverburg_tattoo_leg_left
+
+- type: marking
+  id: SleeveTattooLegLeft
+  bodyPart: LLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: sleeve_tattoo_leg_left
+
+- type: marking
+  id: TwistingScarLegLeft
+  bodyPart: LLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: twisting_scar_leg_left
+
+- type: marking
+  id: Vitiligo LegLeft
+  bodyPart: LLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: vitiligo _leg_left
+
+# RLeg Markings
+
+- type: marking
+  id: CampbelleTattooLegRight
+  bodyPart: RLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: campbelle_tattoo_leg_right
+
+- type: marking
+  id: DollJointTattooLegRight
+  bodyPart: RLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: doll_joint_tattoo_leg_right
+
+- type: marking
+  id: ProstheticLegRight
+  bodyPart: RLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: prosthetic_leg_right
+
+- type: marking
+  id: ProstheticLowerLegRight
+  bodyPart: RLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: prosthetic_lower_leg_right
+
+- type: marking
+  id: ProstheticUpperLegRight
+  bodyPart: RLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: prosthetic_upper_leg_right
+
+- type: marking
+  id: SilverburgTattooLegRight
+  bodyPart: RLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: silverburg_tattoo_leg_right
+
+- type: marking
+  id: SleeveTattooLegRight
+  bodyPart: RLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: sleeve_tattoo_leg_right
+
+- type: marking
+  id: TwistingScarLegRight
+  bodyPart: RLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: twisting_scar_leg_right
+
+- type: marking
+  id: Vitiligo LegRight
+  bodyPart: RLeg
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: vitiligo _leg_right
+
+# LFoot Markings
+
+- type: marking
+  id: DollJointTattooFootLeft
+  bodyPart: LFoot
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: doll_joint_tattoo_foot_left
+
+- type: marking
+  id: ProstheticFootLeft
+  bodyPart: LFoot
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: prosthetic_foot_left
+
+- type: marking
+  id: TwistingScarFootLeft
+  bodyPart: LFoot
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: twisting_scar_foot_left
+
+# RFoot Markings
+
+- type: marking
+  id: DollJointTattooFootRight
+  bodyPart: RFoot
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: doll_joint_tattoo_foot_right
+
+- type: marking
+  id: ProstheticFootRight
+  bodyPart: RFoot
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: prosthetic_foot_right
+
+- type: marking
+  id: TwistingScarFootRight
+  bodyPart: RFoot
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
+    state: twisting_scar_foot_right

@@ -1,0 +1,53 @@
+# SPDX-FileCopyrightText: 2026 TrixxedHeart
+# SPDX-FileCopyrightText: 2026 Thlrd
+# SPDX-License-Identifier: MIT
+
+# HeadTop Markings
+
+- type: marking
+  id: EarsElf
+  bodyPart: HeadTop
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head_top.rsi
+    state: ears_elf
+
+- type: marking
+  id: EarsLarge
+  bodyPart: HeadTop
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head_top.rsi
+    state: ears_large
+
+- type: marking
+  id: EarsLong
+  bodyPart: HeadTop
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head_top.rsi
+    state: ears_long
+
+- type: marking
+  id: EarsPointy
+  bodyPart: HeadTop
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head_top.rsi
+    state: ears_pointy
+
+- type: marking
+  id: EarsRound
+  bodyPart: HeadTop
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head_top.rsi
+    state: ears_round
+
+- type: marking
+  id: EarsTall
+  bodyPart: HeadTop
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head_top.rsi
+    state: ears_tall

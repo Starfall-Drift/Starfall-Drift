@@ -1,0 +1,157 @@
+# SPDX-FileCopyrightText: 2026 TrixxedHeart
+# SPDX-FileCopyrightText: 2026 Thlrd
+# SPDX-License-Identifier: MIT
+
+# Chest Markings
+
+- type: marking
+  id: BackStabbed
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: back_stabbed
+
+- type: marking
+  id: BackTattoo
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: back_tattoo
+
+- type: marking
+  id: BackTattooNightling
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: back_tattoo_nightling
+
+- type: marking
+  id: ChestAbs
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: chest_abs
+
+- type: marking
+  id: ChestScar
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: chest_scar
+
+- type: marking
+  id: ChestScarLong
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: chest_scar_long
+
+- type: marking
+  id: ChestScarThin
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: chest_scar_thin
+
+- type: marking
+  id: ChestSlashLeft
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: chest_slash_left
+
+- type: marking
+  id: ChestSlashRight
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: chest_slash_right
+
+- type: marking
+  id: ChestTattoo
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: chest_tattoo
+
+- type: marking
+  id: PecTattooLeft
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: pec_tattoo_left
+
+- type: marking
+  id: PecTattooRight
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: pec_tattoo_right
+
+- type: marking
+  id: TorsoCutHere
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: torso_cut_here
+
+- type: marking
+  id: TorsoIncision
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: torso_incision
+
+- type: marking
+  id: TorsoStarScar
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: torso_star_scar
+
+- type: marking
+  id: TwistingScarLeft
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: twisting_scar_left
+
+- type: marking
+  id: TwistingScarRight
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: twisting_scar_right
+
+- type: marking
+  id: VitiligoSpots
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: vitiligo_spots
+
+- type: marking
+  id: ChestHair
+  bodyPart: Chest
+  groupWhitelist: [Human]
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
+    state: chest_hair
