@@ -1,0 +1,250 @@
+# SPDX-FileCopyrightText: 2026 TrixxedHeart
+# SPDX-FileCopyrightText: 2026 Thlrd
+# SPDX-License-Identifier: MIT
+
+# FacialHair Markings
+
+- type: marking
+  id: AdmiralMustache
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: admiral_mustache
+
+- type: marking
+  id: AnchorBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: anchor_beard
+
+- type: marking
+  id: ChinlessBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: chinless_beard
+
+- type: marking
+  id: ChinstrapBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: chinstrap_beard
+
+- type: marking
+  id: DwarfBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: dwarf_beard
+
+- type: marking
+  id: FiveoclockShadowBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: fiveoclock_shadow_beard
+
+- type: marking
+  id: FiveoclockShadowMustache
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: fiveoclock_shadow_mustache
+
+- type: marking
+  id: FluffyMustache
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: fluffy_mustache
+
+- type: marking
+  id: ForkBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: fork_beard
+
+- type: marking
+  id: FullBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: full_beard
+
+- type: marking
+  id: FullGoateeMustache
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: full_goatee_mustache
+
+- type: marking
+  id: GoateeBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: goatee_beard
+
+- type: marking
+  id: HandlebarMustache
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: handlebar_mustache
+
+- type: marking
+  id: HorseshoeMustache
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: horseshoe_mustache
+
+- type: marking
+  id: HungarianMustache
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: hungarian_mustache
+
+- type: marking
+  id: KellyBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: kelly_beard
+
+- type: marking
+  id: LincolnBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: lincoln_beard
+
+- type: marking
+  id: LongBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: long_beard
+
+- type: marking
+  id: LongGoateeBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: long_goatee_beard
+
+- type: marking
+  id: LongWiseBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: long_wise_beard
+
+- type: marking
+  id: ManchuMustache
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: manchu_mustache
+
+- type: marking
+  id: MartialArtsBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: martial_arts_beard
+
+- type: marking
+  id: MoonshinerBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: moonshiner_beard
+
+- type: marking
+  id: MuttonchopsBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: muttonchops_beard
+
+- type: marking
+  id: NeckBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: neck_beard
+
+- type: marking
+  id: PencilMustache
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: pencil_mustache
+
+- type: marking
+  id: PointedBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: pointed_beard
+
+- type: marking
+  id: RockstarBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: rockstar_beard
+
+- type: marking
+  id: ScragglyBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: scraggly_beard
+
+- type: marking
+  id: SideburnsBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: sideburns_beard
+
+- type: marking
+  id: SplitMustache
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: split_mustache
+
+- type: marking
+  id: UnkemptBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: unkempt_beard
+
+- type: marking
+  id: VeryLongBeard
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: very_long_beard
+
+- type: marking
+  id: WalrusMustache
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: walrus_mustache
+
+- type: marking
+  id: WatsonMustache
+  bodyPart: FacialHair
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/hair/facial_hair.rsi
+    state: watson_mustache
