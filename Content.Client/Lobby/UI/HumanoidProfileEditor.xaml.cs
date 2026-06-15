@@ -157,6 +157,8 @@ namespace Content.Client.Lobby.UI
 
         private ColorSelectorSliders _rgbSkinColorSelector;
 
+        private List<ProtoId<SkinColorationPrototype>> _skinColorTypes = new(); // _Starfall
+
         private bool _isDirty;
 
         private static readonly ProtoId<GuideEntryPrototype> DefaultSpeciesGuidebook = "Species";
@@ -291,6 +293,14 @@ namespace Content.Client.Lobby.UI
             };
 
             #region Skin
+
+            // _Starfall: skin coloration type selector
+            SkinTypeButton.OnItemSelected += args =>
+            {
+                SkinTypeButton.SelectId(args.Id);
+                SetSkinColorationType(_skinColorTypes[args.Id]);
+            };
+            // _Starfall end
 
             Skin.OnValueChanged += _ =>
             {
@@ -708,6 +718,7 @@ namespace Content.Client.Lobby.UI
             UpdateFlavorTextEdit();
             UpdateSexControls();
             UpdateGenderControls();
+            RefreshSkinColorTypeSelector(); // _Starfall
             UpdateSkinColor();
             UpdateSpawnPriorityControls();
             UpdateAgeEdit();
@@ -1033,8 +1044,8 @@ namespace Content.Client.Lobby.UI
         {
             if (Profile is null) return;
 
-            var skin = _prototypeManager.Index<SpeciesPrototype>(Profile.Species).SkinColoration;
-            var strategy = _prototypeManager.Index(skin).Strategy;
+            var skinType = GetCurrentSkinColorationType();
+            var strategy = _prototypeManager.Index(skinType).Strategy;
 
             switch (strategy.InputType)
             {
@@ -1072,6 +1083,84 @@ namespace Content.Client.Lobby.UI
 
             ReloadProfilePreview();
         }
+
+        /// <summary>
+        /// _Starfall: Returns the currently active skin coloration type for the profile, falling back to the species default.
+        /// </summary>
+        private ProtoId<SkinColorationPrototype> GetCurrentSkinColorationType() // _Starfall
+        {
+            if (Profile == null)
+                return default;
+
+            if (Profile.Appearance.SkinColorationType.HasValue)
+                return Profile.Appearance.SkinColorationType.Value;
+
+            return _prototypeManager.Index<SpeciesPrototype>(Profile.Species).SkinColoration;
+        }
+
+        /// <summary>
+        /// _Starfall: Refreshes the skin coloration type selector to match the current species' available types.
+        /// Shows or hides the selector depending on whether multiple types are available.
+        /// </summary>
+        private void RefreshSkinColorTypeSelector()
+        {
+            if (Profile == null)
+                return;
+
+            var speciesProto = _prototypeManager.Index<SpeciesPrototype>(Profile.Species);
+            var colorations = speciesProto.GetSkinColorations();
+
+            _skinColorTypes.Clear();
+            SkinTypeButton.Clear();
+
+            for (var i = 0; i < colorations.Count; i++)
+            {
+                var colorationId = colorations[i];
+                var coloration = _prototypeManager.Index(colorationId);
+                var name = coloration.Name.HasValue
+                    ? Loc.GetString(coloration.Name.Value)
+                    : colorationId.Id;
+                SkinTypeButton.AddItem(name, i);
+                _skinColorTypes.Add(colorationId);
+            }
+
+            SkinTypeContainer.Visible = colorations.Count > 1;
+
+            // Sync the button to the currently selected type.
+            var currentType = GetCurrentSkinColorationType();
+            var idx = _skinColorTypes.IndexOf(currentType);
+            SkinTypeButton.SelectId(idx >= 0 ? idx : 0);
+        }
+
+        /// <summary>
+        /// _Starfall: Switches the active skin coloration type and resets the skin color to the new type's default.
+        /// </summary>
+        private void SetSkinColorationType(ProtoId<SkinColorationPrototype> type) // _Starfall
+        {
+            if (Profile == null) return;
+
+            var speciesProto = _prototypeManager.Index<SpeciesPrototype>(Profile.Species);
+            var strategy = _prototypeManager.Index(type).Strategy;
+
+            // Reset to the default color for the new type.
+            var defaultColor = strategy.InputType switch
+            {
+                SkinColorationStrategyInput.Unary => strategy.FromUnary(speciesProto.DefaultHumanSkinTone),
+                SkinColorationStrategyInput.Color => strategy.ClosestSkinColor(speciesProto.DefaultSkinTone),
+                _ => strategy.ClosestSkinColor(speciesProto.DefaultSkinTone),
+            };
+
+            Profile = Profile.WithCharacterAppearance(
+                Profile.Appearance
+                    .WithSkinColorationType(type)
+                    .WithSkinColor(defaultColor));
+
+            _markingsModel.SetOrganSkinColor(defaultColor);
+            UpdateSkinColor();
+            ReloadProfilePreview();
+            SetDirty();
+        }
+        // _Starfall end
 
         protected override void Dispose(bool disposing)
         {
@@ -1126,6 +1215,22 @@ namespace Content.Client.Lobby.UI
         private void SetSpecies(string newSpecies)
         {
             Profile = Profile?.WithSpecies(newSpecies);
+
+            // _Starfall: reset skin coloration type if it is not valid for the new species
+            if (Profile != null)
+            {
+                var speciesProto = _prototypeManager.Index<SpeciesPrototype>(newSpecies);
+                var colorations = speciesProto.GetSkinColorations();
+                var currentType = Profile.Appearance.SkinColorationType;
+                if (currentType.HasValue && !colorations.Any(c => c == currentType.Value))
+                {
+                    Profile = Profile.WithCharacterAppearance(
+                        Profile.Appearance.WithSkinColorationType(null));
+                }
+            }
+            // _Starfall end
+
+            RefreshSkinColorTypeSelector(); // _Starfall
             OnSkinColorOnValueChanged(); // Species may have special color prefs, make sure to update it.
             _markingsModel.OrganData = _markingManager.GetMarkingData(newSpecies);
             _markingsModel.ValidateMarkings();
@@ -1237,8 +1342,8 @@ namespace Content.Client.Lobby.UI
             if (Profile == null)
                 return;
 
-            var skin = _prototypeManager.Index<SpeciesPrototype>(Profile.Species).SkinColoration;
-            var strategy = _prototypeManager.Index(skin).Strategy;
+            var skinType = GetCurrentSkinColorationType();
+            var strategy = _prototypeManager.Index(skinType).Strategy;
 
             switch (strategy.InputType)
             {

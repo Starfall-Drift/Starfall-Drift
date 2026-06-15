@@ -73,7 +73,9 @@ public sealed class MarkingsViewModel
         {
             _organProfileData[organ] = data with { SkinColor = skinColor };
         }
-        OrganProfileDataChanged?.Invoke();
+        // _Starfall Note: Calling OrganProfileDataChanged here causes it to be called every tick when the color picker is being changed causing immense lag.
+        // We don't even need this as far as I'm aware.
+        // OrganProfileDataChanged?.Invoke();
     }
 
     public void SetOrganEyeColor(Color eyeColor)
@@ -82,7 +84,8 @@ public sealed class MarkingsViewModel
         {
             _organProfileData[organ] = data with { EyeColor = eyeColor };
         }
-        OrganProfileDataChanged?.Invoke();
+        // _Starfall Note: Same as SetOrganSkinColor.
+        // OrganProfileDataChanged?.Invoke();
     }
 
     public event Action? OrganProfileDataChanged;

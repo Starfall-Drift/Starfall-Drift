@@ -12,3 +12,5 @@
   prototype: MobHuman
   dollPrototype: AppearanceHuman
   skinColoration: HumanToned
+  additionalSkinColorations: # _Starfall: Humans can be rainbow colored I DON'T GIVE A FUCK!!!
+    - Hues

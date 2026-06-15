@@ -18,6 +18,12 @@ public sealed partial class SkinColorationPrototype : IPrototype
     public string ID { get; private set; } = default!;
 
     /// <summary>
+    // _Starfall: (OPTIONAL) Display name used when multiple skin types are selectable in the character editor
+    /// </summary>
+    [DataField]
+    public LocId? Name;
+
+    /// <summary>
     /// The skin coloration strategy specified by this prototype
     /// </summary>
     [DataField(required: true)]
