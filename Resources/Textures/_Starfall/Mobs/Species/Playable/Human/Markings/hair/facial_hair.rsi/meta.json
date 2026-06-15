@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Thlrd on Discord",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "admiral_mustache",
+      "directions": 4
+    },
+    {
+      "name": "anchor_beard",
+      "directions": 4
+    },
+    {
+      "name": "chinless_beard",
+      "directions": 4
+    },
+    {
+      "name": "chinstrap_beard",
+      "directions": 4
+    },
+    {
+      "name": "dwarf_beard",
+      "directions": 4
+    },
+    {
+      "name": "fiveoclock_shadow_beard",
+      "directions": 4
+    },
+    {
+      "name": "fiveoclock_shadow_mustache",
+      "directions": 4
+    },
+    {
+      "name": "fluffy_mustache",
+      "directions": 4
+    },
+    {
+      "name": "fork_beard",
+      "directions": 4
+    },
+    {
+      "name": "full_beard",
+      "directions": 4
+    },
+    {
+      "name": "full_goatee_mustache",
+      "directions": 4
+    },
+    {
+      "name": "goatee_beard",
+      "directions": 4
+    },
+    {
+      "name": "handlebar_mustache",
+      "directions": 4
+    },
+    {
+      "name": "horseshoe_mustache",
+      "directions": 4
+    },
+    {
+      "name": "hungarian_mustache",
+      "directions": 4
+    },
+    {
+      "name": "kelly_beard",
+      "directions": 4
+    },
+    {
+      "name": "lincoln_beard",
+      "directions": 4
+    },
+    {
+      "name": "long_beard",
+      "directions": 4
+    },
+    {
+      "name": "long_goatee_beard",
+      "directions": 4
+    },
+    {
+      "name": "long_wise_beard",
+      "directions": 4
+    },
+    {
+      "name": "manchu_mustache",
+      "directions": 4
+    },
+    {
+      "name": "martial_arts_beard",
+      "directions": 4
+    },
+    {
+      "name": "moonshiner_beard",
+      "directions": 4
+    },
+    {
+      "name": "muttonchops_beard",
+      "directions": 4
+    },
+    {
+      "name": "neck_beard",
+      "directions": 4
+    },
+    {
+      "name": "pencil_mustache",
+      "directions": 4
+    },
+    {
+      "name": "pointed_beard",
+      "directions": 4
+    },
+    {
+      "name": "rockstar_beard",
+      "directions": 4
+    },
+    {
+      "name": "scraggly_beard",
+      "directions": 4
+    },
+    {
+      "name": "sideburns_beard",
+      "directions": 4
+    },
+    {
+      "name": "split_mustache",
+      "directions": 4
+    },
+    {
+      "name": "unkempt_beard",
+      "directions": 4
+    },
+    {
+      "name": "very_long_beard",
+      "directions": 4
+    },
+    {
+      "name": "walrus_mustache",
+      "directions": 4
+    },
+    {
+      "name": "watson_mustache",
+      "directions": 4
+    }
+  ]
+}
