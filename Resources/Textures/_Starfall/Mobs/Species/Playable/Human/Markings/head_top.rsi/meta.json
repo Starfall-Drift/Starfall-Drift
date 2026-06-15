@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Thlrd on Discord",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "ears_elf",
+      "directions": 4
+    },
+    {
+      "name": "ears_large",
+      "directions": 4
+    },
+    {
+      "name": "ears_long",
+      "directions": 4
+    },
+    {
+      "name": "ears_pointy",
+      "directions": 4
+    },
+    {
+      "name": "ears_round",
+      "directions": 4
+    },
+    {
+      "name": "ears_tall",
+      "directions": 4
+    }
+  ]
+}

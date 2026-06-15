@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Thlrd on Discord",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "campbelle_tattoo_arm_left",
+      "directions": 4
+    },
+    {
+      "name": "campbelle_tattoo_arm_right",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_arm_left",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_arm_right",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_hand_left",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_hand_right",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_lower_arm_left",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_lower_arm_right",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_upper_arm_left",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_upper_arm_right",
+      "directions": 4
+    },
+    {
+      "name": "sholder_tattoo_arm_left",
+      "directions": 4
+    },
+    {
+      "name": "sholder_tattoo_arm_right",
+      "directions": 4
+    },
+    {
+      "name": "sleeve_tattoo_arm_left",
+      "directions": 4
+    },
+    {
+      "name": "sleeve_tattoo_arm_right",
+      "directions": 4
+    },
+    {
+      "name": "tattoo_doll_arm_left",
+      "directions": 4
+    },
+    {
+      "name": "tattoo_doll_arm_right",
+      "directions": 4
+    },
+    {
+      "name": "tattoo_doll_hand_left",
+      "directions": 4
+    },
+    {
+      "name": "tattoo_doll_hand_right",
+      "directions": 4
+    },
+    {
+      "name": "tattoo_hand_left",
+      "directions": 4
+    },
+    {
+      "name": "tattoo_hand_right",
+      "directions": 4
+    },
+    {
+      "name": "twisting_scar_arm_left",
+      "directions": 4
+    },
+    {
+      "name": "twisting_scar_arm_right",
+      "directions": 4
+    },
+    {
+      "name": "twisting_scar_hand_left",
+      "directions": 4
+    },
+    {
+      "name": "twisting_scar_hand_right",
+      "directions": 4
+    },
+    {
+      "name": "vitiligo_arm_left",
+      "directions": 4
+    },
+    {
+      "name": "vitiligo_arm_right",
+      "directions": 4
+    },
+    {
+      "name": "vitiligo_hand_left",
+      "directions": 4
+    },
+    {
+      "name": "vitiligo_hand_right",
+      "directions": 4
+    }
+  ]
+}

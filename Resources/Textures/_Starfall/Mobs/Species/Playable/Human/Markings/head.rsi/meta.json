@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Thlrd on Discord",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "blush",
+      "directions": 4
+    },
+    {
+      "name": "eye_makeup",
+      "directions": 4
+    },
+    {
+      "name": "eye_scar_left",
+      "directions": 4
+    },
+    {
+      "name": "eye_scar_right",
+      "directions": 4
+    },
+    {
+      "name": "eyebrows_primary",
+      "directions": 4
+    },
+    {
+      "name": "eyebrows_secondary",
+      "directions": 4
+    },
+    {
+      "name": "eyeliner",
+      "directions": 4
+    },
+    {
+      "name": "eyes_heterochromia_primary",
+      "directions": 4
+    },
+    {
+      "name": "eyes_heterochromia_secondary",
+      "directions": 4
+    },
+    {
+      "name": "freckles",
+      "directions": 4
+    },
+    {
+      "name": "lipstick",
+      "directions": 4
+    },
+    {
+      "name": "nose_large",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_eye_left_primary",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_eye_left_secondary",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_eye_right_primary",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_eye_right_secondary",
+      "directions": 4
+    },
+    {
+      "name": "sprawling_tattoo_left",
+      "directions": 4
+    },
+    {
+      "name": "sprawling_tattoo_right",
+      "directions": 4
+    },
+    {
+      "name": "twisted_scar_left",
+      "directions": 4
+    },
+    {
+      "name": "twisted_scar_right",
+      "directions": 4
+    },
+    {
+      "name": "vitiligo_eye_left",
+      "directions": 4
+    },
+    {
+      "name": "vitiligo_eye_right",
+      "directions": 4
+    },
+    {
+      "name": "vitiligo_jawline",
+      "directions": 4
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Thlrd on Discord",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "nose_droopy",
+      "directions": 4
+    },
+    {
+      "name": "nose_makeup",
+      "directions": 4
+    },
+    {
+      "name": "nose_schnozz",
+      "directions": 4
+    },
+    {
+      "name": "nose_sunken",
+      "directions": 4
+    }
+  ]
+}

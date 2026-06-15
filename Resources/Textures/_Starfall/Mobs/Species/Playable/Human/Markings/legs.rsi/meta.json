@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Thlrd on Discord",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "campbelle_tattoo_leg_left",
+      "directions": 4
+    },
+    {
+      "name": "campbelle_tattoo_leg_right",
+      "directions": 4
+    },
+    {
+      "name": "doll_joint_tattoo_foot_left",
+      "directions": 4
+    },
+    {
+      "name": "doll_joint_tattoo_foot_right",
+      "directions": 4
+    },
+    {
+      "name": "doll_joint_tattoo_leg_left",
+      "directions": 4
+    },
+    {
+      "name": "doll_joint_tattoo_leg_right",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_foot_left",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_foot_right",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_leg_left",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_leg_right",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_lower_leg_left",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_lower_leg_right",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_upper_leg_left",
+      "directions": 4
+    },
+    {
+      "name": "prosthetic_upper_leg_right",
+      "directions": 4
+    },
+    {
+      "name": "silverburg_tattoo_leg_left",
+      "directions": 4
+    },
+    {
+      "name": "silverburg_tattoo_leg_right",
+      "directions": 4
+    },
+    {
+      "name": "sleeve_tattoo_leg_left",
+      "directions": 4
+    },
+    {
+      "name": "sleeve_tattoo_leg_right",
+      "directions": 4
+    },
+    {
+      "name": "twisting_scar_foot_left",
+      "directions": 4
+    },
+    {
+      "name": "twisting_scar_foot_right",
+      "directions": 4
+    },
+    {
+      "name": "twisting_scar_leg_left",
+      "directions": 4
+    },
+    {
+      "name": "twisting_scar_leg_right",
+      "directions": 4
+    },
+    {
+      "name": "vitiligo _leg_left",
+      "directions": 4
+    },
+    {
+      "name": "vitiligo _leg_right",
+      "directions": 4
+    }
+  ]
+}
