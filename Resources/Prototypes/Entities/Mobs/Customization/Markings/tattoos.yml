@@ -1,214 +1,216 @@
-# SPDX-FileCopyrightText: 2022 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nairod <110078045+Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 csqrb <56765288+CaptainSqrBeard@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Huaqas <zacswebb@gmail.com>
-# SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Pgriha <133212269+Pgriha@users.noreply.github.com>
-# SPDX-License-Identifier: MIT
-
-- type: marking
-  id: TattooHiveChest
-  bodyPart: Chest
-  groupWhitelist: [Human]
-  coloring:
-    default:
-      type:
-        !type:TattooColoring
-      fallbackColor: "#666666"
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_hive_chest
-
-- type: marking
-  id: TattooNightlingChest
-  bodyPart: Chest
-  groupWhitelist: [Human]
-  coloring:
-    default:
-      type:
-        !type:TattooColoring
-      fallbackColor: "#666666"
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_nightling
-
-- type: marking
-  id: TattooSilverburghLeftLeg
-  bodyPart: LLeg
-  groupWhitelist: [Human]
-  coloring:
-    default:
-      type:
-        !type:TattooColoring
-      fallbackColor: "#666666"
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_silverburgh_l_leg
-
-- type: marking
-  id: TattooSilverburghRightLeg
-  bodyPart: RLeg
-  groupWhitelist: [Human]
-  coloring:
-    default:
-      type:
-        !type:TattooColoring
-      fallbackColor: "#666666"
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_silverburgh_r_leg
-
-- type: marking
-  id: TattooCampbellLeftArm
-  bodyPart: LArm
-  groupWhitelist: [Human]
-  coloring:
-    default:
-      type:
-        !type:TattooColoring
-      fallbackColor: "#666666"
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_campbell_l_arm
-
-- type: marking
-  id: TattooCampbellRightArm
-  bodyPart: RArm
-  groupWhitelist: [Human]
-  coloring:
-    default:
-      type:
-        !type:TattooColoring
-      fallbackColor: "#666666"
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_campbell_r_arm
-
-- type: marking
-  id: TattooCampbellLeftLeg
-  bodyPart: LLeg
-  groupWhitelist: [Human]
-  coloring:
-    default:
-      type:
-        !type:TattooColoring
-      fallbackColor: "#666666"
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_campbell_l_leg
-
-- type: marking
-  id: TattooCampbellRightLeg
-  bodyPart: RLeg
-  groupWhitelist: [Human]
-  coloring:
-    default:
-      type:
-        !type:TattooColoring
-      fallbackColor: "#666666"
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_campbell_r_leg
-
-- type: marking
-  id: TattooEyeRight
-  bodyPart: Eyes
-  groupWhitelist: [Human, Slime, Reptilian]
-  coloring:
-    default:
-      type:
-        !type:EyeColoring
-          negative: true
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_eye_r
-
-- type: marking
-  id: TattooEyeLeft
-  bodyPart: Eyes
-  groupWhitelist: [Human, Slime, Reptilian]
-  coloring:
-    default:
-      type:
-        !type:EyeColoring
-          negative: true
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_eye_l
-
-- type: marking
-  id: TattooEyeMothRight
-  bodyPart: Eyes
-  groupWhitelist: [Moth]
-  coloring:
-    default:
-      type:
-        !type:EyeColoring
-          negative: true
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_eye_moth_r
-
-- type: marking
-  id: TattooEyeMothLeft
-  bodyPart: Eyes
-  groupWhitelist: [Moth]
-  coloring:
-    default:
-      type:
-        !type:EyeColoring
-          negative: true
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_eye_moth_l
-
-- type: marking
-  id: TattooEyeVulpkaninRight
-  bodyPart: Eyes
-  groupWhitelist: [Vulpkanin]
-  coloring:
-    default:
-      type:
-        !type:EyeColoring
-          negative: true
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_eye_vulpkanin_r
-
-- type: marking
-  id: TattooEyeVulpkaninLeft
-  bodyPart: Eyes
-  groupWhitelist: [Vulpkanin]
-  coloring:
-    default:
-      type:
-        !type:EyeColoring
-          negative: true
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: tattoo_eye_vulpkanin_l
-
-- type: marking
-  id: TattooEyeshadowUpper
-  # there are a lot of deliberate limitations with this marking that should be pointed out. some of them may seem overly restrictive on the surface, but most of them are fully intentional.
-  # this marking is meant to be supplementary so they are transparent. if you give this 255 alpha it will probably be really distracting looking and make the face very difficult to read
-  # the reason these are also not recolorable is because allowing for the full RGB range makes these look not very good (especially considering they are stackable, and ESPECIALLY considering vox can stack 3 at once.)
-  # this is not a very big issue on humans, but is much more pronounced on vox & other nonhuman species, where the skin being more colorful can make for some truly dreadful meshing with the sprite thats definitely not desired.
-  # some of these limitations could possibly be removed with better control over how the marking can be customized - possibly removing stacking, allowing recoloring & clamping higher-end colors for the eyeshadow, etc.
-  bodyPart: Eyes
-  groupWhitelist: [Human, Slime, Reptilian]
-  forcedColoring: true
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: eyeshadow_upper
-
-- type: marking
-  id: TattooEyeshadowLower
-  bodyPart: Eyes
-  groupWhitelist: [Human, Slime, Reptilian]
-  forcedColoring: true
-  sprites:
-  - sprite: Mobs/Customization/tattoos.rsi
-    state: eyeshadow_lower
+## SPDX-FileCopyrightText: 2022 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+## SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
+## SPDX-FileCopyrightText: 2023 Nairod <110078045+Nairodian@users.noreply.github.com>
+## SPDX-FileCopyrightText: 2023 csqrb <56765288+CaptainSqrBeard@users.noreply.github.com>
+## SPDX-FileCopyrightText: 2025 Huaqas <zacswebb@gmail.com>
+## SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+## SPDX-FileCopyrightText: 2025 Flareguy <78941145+Flareguy@users.noreply.github.com>
+## SPDX-FileCopyrightText: 2025 Pgriha <133212269+Pgriha@users.noreply.github.com>
+## SPDX-License-Identifier: MIT
+#
+# _Starfall We don't use this file for Starfall, refer to _Starfall\Mobs\Species\Playable\Human\Markings
+#
+#- type: marking
+#  id: TattooHiveChest
+#  bodyPart: Chest
+#  groupWhitelist: [Human]
+#  coloring:
+#    default:
+#      type:
+#        !type:TattooColoring
+#      fallbackColor: "#666666"
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_hive_chest
+#
+#- type: marking
+#  id: TattooNightlingChest
+#  bodyPart: Chest
+#  groupWhitelist: [Human]
+#  coloring:
+#    default:
+#      type:
+#        !type:TattooColoring
+#      fallbackColor: "#666666"
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_nightling
+#
+#- type: marking
+#  id: TattooSilverburghLeftLeg
+#  bodyPart: LLeg
+#  groupWhitelist: [Human]
+#  coloring:
+#    default:
+#      type:
+#        !type:TattooColoring
+#      fallbackColor: "#666666"
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_silverburgh_l_leg
+#
+#- type: marking
+#  id: TattooSilverburghRightLeg
+#  bodyPart: RLeg
+#  groupWhitelist: [Human]
+#  coloring:
+#    default:
+#      type:
+#        !type:TattooColoring
+#      fallbackColor: "#666666"
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_silverburgh_r_leg
+#
+#- type: marking
+#  id: TattooCampbellLeftArm
+#  bodyPart: LArm
+#  groupWhitelist: [Human]
+#  coloring:
+#    default:
+#      type:
+#        !type:TattooColoring
+#      fallbackColor: "#666666"
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_campbell_l_arm
+#
+#- type: marking
+#  id: TattooCampbellRightArm
+#  bodyPart: RArm
+#  groupWhitelist: [Human]
+#  coloring:
+#    default:
+#      type:
+#        !type:TattooColoring
+#      fallbackColor: "#666666"
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_campbell_r_arm
+#
+#- type: marking
+#  id: TattooCampbellLeftLeg
+#  bodyPart: LLeg
+#  groupWhitelist: [Human]
+#  coloring:
+#    default:
+#      type:
+#        !type:TattooColoring
+#      fallbackColor: "#666666"
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_campbell_l_leg
+#
+#- type: marking
+#  id: TattooCampbellRightLeg
+#  bodyPart: RLeg
+#  groupWhitelist: [Human]
+#  coloring:
+#    default:
+#      type:
+#        !type:TattooColoring
+#      fallbackColor: "#666666"
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_campbell_r_leg
+#
+#- type: marking
+#  id: TattooEyeRight
+#  bodyPart: Eyes
+#  groupWhitelist: [Human, Slime, Reptilian]
+#  coloring:
+#    default:
+#      type:
+#        !type:EyeColoring
+#          negative: true
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_eye_r
+#
+#- type: marking
+#  id: TattooEyeLeft
+#  bodyPart: Eyes
+#  groupWhitelist: [Human, Slime, Reptilian]
+#  coloring:
+#    default:
+#      type:
+#        !type:EyeColoring
+#          negative: true
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_eye_l
+#
+#- type: marking
+#  id: TattooEyeMothRight
+#  bodyPart: Eyes
+#  groupWhitelist: [Moth]
+#  coloring:
+#    default:
+#      type:
+#        !type:EyeColoring
+#          negative: true
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_eye_moth_r
+#
+#- type: marking
+#  id: TattooEyeMothLeft
+#  bodyPart: Eyes
+#  groupWhitelist: [Moth]
+#  coloring:
+#    default:
+#      type:
+#        !type:EyeColoring
+#          negative: true
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_eye_moth_l
+#
+#- type: marking
+#  id: TattooEyeVulpkaninRight
+#  bodyPart: Eyes
+#  groupWhitelist: [Vulpkanin]
+#  coloring:
+#    default:
+#      type:
+#        !type:EyeColoring
+#          negative: true
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_eye_vulpkanin_r
+#
+#- type: marking
+#  id: TattooEyeVulpkaninLeft
+#  bodyPart: Eyes
+#  groupWhitelist: [Vulpkanin]
+#  coloring:
+#    default:
+#      type:
+#        !type:EyeColoring
+#          negative: true
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: tattoo_eye_vulpkanin_l
+#
+#- type: marking
+#  id: TattooEyeshadowUpper
+#  # there are a lot of deliberate limitations with this marking that should be pointed out. some of them may seem overly restrictive on the surface, but most of them are fully intentional.
+#  # this marking is meant to be supplementary so they are transparent. if you give this 255 alpha it will probably be really distracting looking and make the face very difficult to read
+#  # the reason these are also not recolorable is because allowing for the full RGB range makes these look not very good (especially considering they are stackable, and ESPECIALLY considering vox can stack 3 at once.)
+#  # this is not a very big issue on humans, but is much more pronounced on vox & other nonhuman species, where the skin being more colorful can make for some truly dreadful meshing with the sprite thats definitely not desired.
+#  # some of these limitations could possibly be removed with better control over how the marking can be customized - possibly removing stacking, allowing recoloring & clamping higher-end colors for the eyeshadow, etc.
+#  bodyPart: Eyes
+#  groupWhitelist: [Human, Slime, Reptilian]
+#  forcedColoring: true
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: eyeshadow_upper
+#
+#- type: marking
+#  id: TattooEyeshadowLower
+#  bodyPart: Eyes
+#  groupWhitelist: [Human, Slime, Reptilian]
+#  forcedColoring: true
+#  sprites:
+#  - sprite: Mobs/Customization/tattoos.rsi
+#    state: eyeshadow_lower

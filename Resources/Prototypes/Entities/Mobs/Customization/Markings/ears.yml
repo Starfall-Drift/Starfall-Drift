@@ -1,57 +1,59 @@
-# SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Farrellka <104170263+Farrellka-dev@users.noreply.github.com>
-# SPDX-License-Identifier: MIT
-
-- type: marking
-  id: HumanLongEars
-  bodyPart: HeadTop
-  forcedColoring: true
-  groupWhitelist: [Human]
-  sprites:
-  - sprite: Mobs/Customization/ears.rsi
-    state: long_ears_standard
-
-- type: marking
-  id: LongEarsWide
-  bodyPart: HeadTop
-  forcedColoring: true
-  groupWhitelist: [Human]
-  sprites:
-  - sprite: Mobs/Customization/ears.rsi
-    state: long_ears_wide
-
-- type: marking
-  id: LongEarsSmall
-  bodyPart: HeadTop
-  forcedColoring: true
-  groupWhitelist: [Human]
-  sprites:
-  - sprite: Mobs/Customization/ears.rsi
-    state: long_ears_small
-
-- type: marking
-  id: LongEarsUpwards
-  bodyPart: HeadTop
-  forcedColoring: true
-  groupWhitelist: [Human]
-  sprites:
-  - sprite: Mobs/Customization/ears.rsi
-    state: long_ears_upwards
-
-- type: marking
-  id: LongEarsTall
-  bodyPart: HeadTop
-  forcedColoring: true
-  groupWhitelist: [Human]
-  sprites:
-  - sprite: Mobs/Customization/ears.rsi
-    state: long_ears_tall
-
-- type: marking
-  id: LongEarsThin
-  bodyPart: HeadTop
-  forcedColoring: true
-  groupWhitelist: [Human]
-  sprites:
-  - sprite: Mobs/Customization/ears.rsi
-    state: long_ears_thin
+## SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
+## SPDX-FileCopyrightText: 2025 Farrellka <104170263+Farrellka-dev@users.noreply.github.com>
+## SPDX-License-Identifier: MIT
+#
+# _Starfall We don't use this file for Starfall, refer to _Starfall\Mobs\Species\Playable\Human\Markings
+#
+#- type: marking
+#  id: HumanLongEars
+#  bodyPart: HeadTop
+#  forcedColoring: true
+#  groupWhitelist: [Human]
+#  sprites:
+#  - sprite: Mobs/Customization/ears.rsi
+#    state: long_ears_standard
+#
+#- type: marking
+#  id: LongEarsWide
+#  bodyPart: HeadTop
+#  forcedColoring: true
+#  groupWhitelist: [Human]
+#  sprites:
+#  - sprite: Mobs/Customization/ears.rsi
+#    state: long_ears_wide
+#
+#- type: marking
+#  id: LongEarsSmall
+#  bodyPart: HeadTop
+#  forcedColoring: true
+#  groupWhitelist: [Human]
+#  sprites:
+#  - sprite: Mobs/Customization/ears.rsi
+#    state: long_ears_small
+#
+#- type: marking
+#  id: LongEarsUpwards
+#  bodyPart: HeadTop
+#  forcedColoring: true
+#  groupWhitelist: [Human]
+#  sprites:
+#  - sprite: Mobs/Customization/ears.rsi
+#    state: long_ears_upwards
+#
+#- type: marking
+#  id: LongEarsTall
+#  bodyPart: HeadTop
+#  forcedColoring: true
+#  groupWhitelist: [Human]
+#  sprites:
+#  - sprite: Mobs/Customization/ears.rsi
+#    state: long_ears_tall
+#
+#- type: marking
+#  id: LongEarsThin
+#  bodyPart: HeadTop
+#  forcedColoring: true
+#  groupWhitelist: [Human]
+#  sprites:
+#  - sprite: Mobs/Customization/ears.rsi
+#    state: long_ears_thin
