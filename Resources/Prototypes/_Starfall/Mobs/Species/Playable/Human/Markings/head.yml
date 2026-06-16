@@ -93,14 +93,6 @@
     state: lipstick
 
 - type: marking
-  id: NoseLarge
-  bodyPart: Head
-  groupWhitelist: [Human]
-  sprites:
-  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head.rsi
-    state: nose_large
-
-- type: marking
   id: ProstheticEyeLeftPrimary
   bodyPart: Head
   groupWhitelist: [Human]

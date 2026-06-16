@@ -8,14 +8,34 @@
   id: NoseDroopy
   bodyPart: Snout
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/snout.rsi
     state: nose_droopy
 
 - type: marking
+  id: NoseLarge
+  bodyPart: Head
+  groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/snout.rsi
+    state: nose_large
+
+- type: marking
   id: NoseMakeup
   bodyPart: Snout
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/snout.rsi
     state: nose_makeup
@@ -24,6 +44,10 @@
   id: NoseSchnozz
   bodyPart: Snout
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/snout.rsi
     state: nose_schnozz
@@ -32,6 +56,10 @@
   id: NoseSunken
   bodyPart: Snout
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/snout.rsi
     state: nose_sunken

@@ -8,6 +8,10 @@
   id: EarsElf
   bodyPart: HeadTop
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head_top.rsi
     state: ears_elf
@@ -16,6 +20,10 @@
   id: EarsLarge
   bodyPart: HeadTop
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head_top.rsi
     state: ears_large
@@ -24,6 +32,10 @@
   id: EarsLong
   bodyPart: HeadTop
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head_top.rsi
     state: ears_long
@@ -32,6 +44,10 @@
   id: EarsPointy
   bodyPart: HeadTop
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head_top.rsi
     state: ears_pointy
@@ -40,6 +56,10 @@
   id: EarsRound
   bodyPart: HeadTop
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head_top.rsi
     state: ears_round
@@ -48,6 +68,10 @@
   id: EarsTall
   bodyPart: HeadTop
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/head_top.rsi
     state: ears_tall

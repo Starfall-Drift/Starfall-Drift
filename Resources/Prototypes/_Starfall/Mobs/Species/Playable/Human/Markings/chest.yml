@@ -8,6 +8,11 @@
   id: BackStabbed
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: back_stabbed
@@ -16,6 +21,11 @@
   id: BackTattoo
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: back_tattoo
@@ -24,6 +34,11 @@
   id: BackTattooNightling
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: back_tattoo_nightling
@@ -31,7 +46,12 @@
 - type: marking
   id: ChestAbs
   bodyPart: Chest
+  forcedColoring: true
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: chest_abs
@@ -40,6 +60,11 @@
   id: ChestScar
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: chest_scar
@@ -48,6 +73,11 @@
   id: ChestScarLong
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: chest_scar_long
@@ -56,6 +86,11 @@
   id: ChestScarThin
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: chest_scar_thin
@@ -64,6 +99,11 @@
   id: ChestSlashLeft
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: chest_slash_left
@@ -72,6 +112,11 @@
   id: ChestSlashRight
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: chest_slash_right
@@ -80,6 +125,11 @@
   id: ChestTattoo
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: chest_tattoo
@@ -88,6 +138,11 @@
   id: PecTattooLeft
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: pec_tattoo_left
@@ -96,6 +151,11 @@
   id: PecTattooRight
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: pec_tattoo_right
@@ -104,6 +164,11 @@
   id: TorsoCutHere
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: torso_cut_here
@@ -112,6 +177,11 @@
   id: TorsoIncision
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: torso_incision
@@ -120,6 +190,11 @@
   id: TorsoStarScar
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: torso_star_scar
@@ -128,6 +203,11 @@
   id: TwistingScarLeft
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: twisting_scar_left
@@ -136,6 +216,11 @@
   id: TwistingScarRight
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: twisting_scar_right
@@ -144,6 +229,11 @@
   id: VitiligoSpots
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#d1aa8c"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: vitiligo_spots
@@ -152,6 +242,11 @@
   id: ChestHair
   bodyPart: Chest
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/chest.rsi
     state: chest_hair

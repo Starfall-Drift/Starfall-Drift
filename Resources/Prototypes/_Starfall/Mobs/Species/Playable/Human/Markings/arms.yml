@@ -8,6 +8,11 @@
   id: CampbelleTattooArmLeft
   bodyPart: LArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: campbelle_tattoo_arm_left
@@ -16,6 +21,11 @@
   id: ProstheticArmLeft
   bodyPart: LArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: prosthetic_arm_left
@@ -24,6 +34,11 @@
   id: ProstheticLowerArmLeft
   bodyPart: LArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: prosthetic_lower_arm_left
@@ -32,6 +47,11 @@
   id: ProstheticUpperArmLeft
   bodyPart: LArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: prosthetic_upper_arm_left
@@ -40,6 +60,11 @@
   id: SholderTattooArmLeft
   bodyPart: LArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: sholder_tattoo_arm_left
@@ -48,6 +73,11 @@
   id: SleeveTattooArmLeft
   bodyPart: LArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: sleeve_tattoo_arm_left
@@ -56,6 +86,11 @@
   id: TattooDollArmLeft
   bodyPart: LArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: tattoo_doll_arm_left
@@ -64,6 +99,11 @@
   id: TwistingScarArmLeft
   bodyPart: LArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: twisting_scar_arm_left
@@ -72,6 +112,11 @@
   id: VitiligoArmLeft
   bodyPart: LArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#d1aa8c"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: vitiligo_arm_left
@@ -82,6 +127,11 @@
   id: CampbelleTattooArmRight
   bodyPart: RArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: campbelle_tattoo_arm_right
@@ -90,6 +140,11 @@
   id: ProstheticArmRight
   bodyPart: RArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: prosthetic_arm_right
@@ -98,6 +153,11 @@
   id: ProstheticLowerArmRight
   bodyPart: RArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: prosthetic_lower_arm_right
@@ -106,6 +166,11 @@
   id: ProstheticUpperArmRight
   bodyPart: RArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: prosthetic_upper_arm_right
@@ -114,6 +179,11 @@
   id: SholderTattooArmRight
   bodyPart: RArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: sholder_tattoo_arm_right
@@ -122,6 +192,11 @@
   id: SleeveTattooArmRight
   bodyPart: RArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: sleeve_tattoo_arm_right
@@ -130,6 +205,11 @@
   id: TattooDollArmRight
   bodyPart: RArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: tattoo_doll_arm_right
@@ -138,6 +218,11 @@
   id: TwistingScarArmRight
   bodyPart: RArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: twisting_scar_arm_right
@@ -146,6 +231,11 @@
   id: VitiligoArmRight
   bodyPart: RArm
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#d1aa8c"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: vitiligo_arm_right
@@ -156,6 +246,11 @@
   id: ProstheticHandLeft
   bodyPart: LHand
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: prosthetic_hand_left
@@ -164,6 +259,11 @@
   id: TattooDollHandLeft
   bodyPart: LHand
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: tattoo_doll_hand_left
@@ -172,6 +272,11 @@
   id: TattooHandLeft
   bodyPart: LHand
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: tattoo_hand_left
@@ -180,6 +285,11 @@
   id: TwistingScarHandLeft
   bodyPart: LHand
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: twisting_scar_hand_left
@@ -188,6 +298,11 @@
   id: VitiligoHandLeft
   bodyPart: LHand
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#d1aa8c"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: vitiligo_hand_left
@@ -198,6 +313,11 @@
   id: ProstheticHandRight
   bodyPart: RHand
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: prosthetic_hand_right
@@ -206,6 +326,11 @@
   id: TattooDollHandRight
   bodyPart: RHand
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: tattoo_doll_hand_right
@@ -214,6 +339,11 @@
   id: TattooHandRight
   bodyPart: RHand
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: tattoo_hand_right
@@ -222,6 +352,11 @@
   id: TwistingScarHandRight
   bodyPart: RHand
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: twisting_scar_hand_right
@@ -230,6 +365,11 @@
   id: VitiligoHandRight
   bodyPart: RHand
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#d1aa8c"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/arms.rsi
     state: vitiligo_hand_right

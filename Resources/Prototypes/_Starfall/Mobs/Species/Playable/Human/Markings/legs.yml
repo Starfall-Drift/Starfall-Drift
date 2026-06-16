@@ -8,6 +8,11 @@
   id: CampbelleTattooLegLeft
   bodyPart: LLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: campbelle_tattoo_leg_left
@@ -16,6 +21,11 @@
   id: DollJointTattooLegLeft
   bodyPart: LLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: doll_joint_tattoo_leg_left
@@ -24,6 +34,11 @@
   id: ProstheticLegLeft
   bodyPart: LLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: prosthetic_leg_left
@@ -32,6 +47,11 @@
   id: ProstheticLowerLegLeft
   bodyPart: LLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: prosthetic_lower_leg_left
@@ -40,6 +60,11 @@
   id: ProstheticUpperLegLeft
   bodyPart: LLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: prosthetic_upper_leg_left
@@ -48,6 +73,11 @@
   id: SilverburgTattooLegLeft
   bodyPart: LLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: silverburg_tattoo_leg_left
@@ -56,6 +86,11 @@
   id: SleeveTattooLegLeft
   bodyPart: LLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: sleeve_tattoo_leg_left
@@ -64,17 +99,27 @@
   id: TwistingScarLegLeft
   bodyPart: LLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: twisting_scar_leg_left
 
 - type: marking
-  id: Vitiligo LegLeft
+  id: VitiligoLegLeft
   bodyPart: LLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#d1aa8c"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
-    state: vitiligo _leg_left
+    state: vitiligo_leg_left
 
 # RLeg Markings
 
@@ -82,6 +127,11 @@
   id: CampbelleTattooLegRight
   bodyPart: RLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: campbelle_tattoo_leg_right
@@ -90,6 +140,11 @@
   id: DollJointTattooLegRight
   bodyPart: RLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: doll_joint_tattoo_leg_right
@@ -98,6 +153,11 @@
   id: ProstheticLegRight
   bodyPart: RLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: prosthetic_leg_right
@@ -106,6 +166,11 @@
   id: ProstheticLowerLegRight
   bodyPart: RLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: prosthetic_lower_leg_right
@@ -114,6 +179,11 @@
   id: ProstheticUpperLegRight
   bodyPart: RLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: prosthetic_upper_leg_right
@@ -122,6 +192,11 @@
   id: SilverburgTattooLegRight
   bodyPart: RLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: silverburg_tattoo_leg_right
@@ -130,6 +205,11 @@
   id: SleeveTattooLegRight
   bodyPart: RLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: sleeve_tattoo_leg_right
@@ -138,17 +218,27 @@
   id: TwistingScarLegRight
   bodyPart: RLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: twisting_scar_leg_right
 
 - type: marking
-  id: Vitiligo LegRight
+  id: VitiligoLegRight
   bodyPart: RLeg
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#d1aa8c"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
-    state: vitiligo _leg_right
+    state: vitiligo_leg_right
 
 # LFoot Markings
 
@@ -156,6 +246,11 @@
   id: DollJointTattooFootLeft
   bodyPart: LFoot
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: doll_joint_tattoo_foot_left
@@ -164,6 +259,11 @@
   id: ProstheticFootLeft
   bodyPart: LFoot
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: prosthetic_foot_left
@@ -172,6 +272,11 @@
   id: TwistingScarFootLeft
   bodyPart: LFoot
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: twisting_scar_foot_left
@@ -182,6 +287,11 @@
   id: DollJointTattooFootRight
   bodyPart: RFoot
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: doll_joint_tattoo_foot_right
@@ -190,6 +300,11 @@
   id: ProstheticFootRight
   bodyPart: RFoot
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#262626"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: prosthetic_foot_right
@@ -198,6 +313,11 @@
   id: TwistingScarFootRight
   bodyPart: RFoot
   groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:TattooColoring
+      fallbackColor: "#7f3730"
   sprites:
   - sprite: _Starfall/Mobs/Species/Playable/Human/Markings/legs.rsi
     state: twisting_scar_foot_right
