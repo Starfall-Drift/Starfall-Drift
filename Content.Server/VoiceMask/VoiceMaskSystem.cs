@@ -182,6 +182,9 @@ public sealed partial class VoiceMaskSystem : EntitySystem
     #region UI
     private void OnEquip(EntityUid uid, VoiceMaskComponent component, ClothingGotEquippedEvent args)
     {
+        // _Starfall: Not all voice masks are voice changers
+        if (component.VoiceChanger == false)
+            return;
         if (_lock.IsLocked(uid))
             return;
 

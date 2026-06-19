@@ -280,6 +280,7 @@
   - type: SubdermalImplant
     implantAction: ActionChangeVoiceMaskImplant
   - type: VoiceMask
+    voiceChanger: true
     overrideIdentity: true
   - type: UserInterface
     interfaces:

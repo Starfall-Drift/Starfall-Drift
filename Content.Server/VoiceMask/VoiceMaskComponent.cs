@@ -62,5 +62,14 @@ public sealed partial class VoiceMaskComponent : Component
     /// </summary>
     [DataField]
     public bool AccentHide = true;
+
+    /// <summary>
+    ///     _Starfall
+    ///     Used for obscuring the wearers identity but does not function as a full voicemask. Does not have a UI and only changes the name of the wearer to the name specified in <see cref="VoiceMaskName"/>.
+    /// </summary> <remarks>
+    ///     This is for things like masks and helmets that cover the face but don't have a voice changer built in. If you want a full voice changer, set this to true.
+    /// </remarks>
+    [DataField]
+    public bool VoiceChanger = false;
 }
 
