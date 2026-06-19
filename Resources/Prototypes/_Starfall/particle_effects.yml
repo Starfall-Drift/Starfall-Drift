@@ -275,10 +275,10 @@
   lifetimeVariance: 0.2
   speed: 0.4
   speedVariance: 0.2
-  particleSize: 0.25
+  particleSize: 0.5
   sizeVariance: 0.4
-  emissionRate: 0
-  maxCount: 4
+  emissionRate: 5
+  maxCount: 2
   burst: true
   gravity: -0.1
   drag: 0.8
