@@ -54,7 +54,7 @@
   id: LockerSyndicateWallFilled
   suffix: Nukie, Filled
   parent: LockerWallSyndicate
-  description: It's a personal storage unit for operative gear.
+  description: It's a personal storage unit for marauder gear.
   components:
   - type: AccessReader
     access: [["NuclearOperative"]]

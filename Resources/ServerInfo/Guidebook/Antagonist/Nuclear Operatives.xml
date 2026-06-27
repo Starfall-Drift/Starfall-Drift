@@ -1,8 +1,8 @@
 <Document>
-  # Nuclear Operatives
+  # Gorlex Marauder
 
   <Box>
-    [color=#999999][italic]"OPERATIVES STANDBY. YOUR OBJECTIVES ARE SIMPLE.[/italic][/color]
+    [color=#999999][italic]"MARAUDERS STANDBY. YOUR OBJECTIVES ARE SIMPLE.[/italic][/color]
   </Box>
   <Box>
     [color=#999999][italic]DELIVER THE PAYLOAD AND GET OUT BEFORE THE PAYLOAD DETONATES. BEGIN MISSION."[/italic][/color]
@@ -11,11 +11,9 @@
     <GuideEntityEmbed Entity="PosterContrabandEnlistGorlex" Caption=""/>
   </Box>
 
-  You've just been chosen to be a nuclear operative for the [color=#ff0000]Syndicate[/color]. You have one goal, to blow up one of Nanotrasen's finest vessels with a nuclear fission explosive.
-
   ## Operatives
   Your team will be made up of several different roles, which are:
-  - [bold]Operatives[/bold], standard soldiers who can take up the grunt work.
+  - [bold]Operator[/bold], standard soldiers who can take up the grunt work.
   - The [bold]Corpsman[/bold] who works with reagents to make medicines or chemical weapons.
   - The [bold]Commander[/bold] who draws up the plan and leads the team.
 
@@ -29,7 +27,7 @@
 
   ## The Disk
 
-  Each operative starts with a [color=cyan]pinpointer[/color], which you should turn on and keep with you at all times. It will always point to the [color=cyan]nuclear authentication disk.[/color]
+  Each operative starts with a [color=cyan]pinpointer[/color], which you should turn on and keep with you at all times. It will always point to the [color=cyan]authentication disk.[/color]
   The disk belongs to the [color=yellow]Captain[/color], who will almost always have it on them. Follow the direction of the arrow on the pinpointer to the disk, and [italic]do whatever it takes to get it[/italic].
 
   <Box>
@@ -116,5 +114,5 @@
 
   [bold][color=green]Crew Major Victory![/color][/bold]
   - All operatives die.
-  - The crew blow up the nuclear operative outpost with the nuke.
+  - The crew blow up the Gorlex outpost with the nuke.
 </Document>

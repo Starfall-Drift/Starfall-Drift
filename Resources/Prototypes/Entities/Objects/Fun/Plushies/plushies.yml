@@ -245,7 +245,7 @@
   parent: BasePlushie
   id: PlushieNuke
   name: nukie plushie
-  description: A stuffed toy that resembles a syndicate nuclear operative. The tag claims operatives to be purely fictitious.
+  description: A stuffed toy that resembles a Gorilla-X "Nukie". The tag claims any resemblance to any existing organization is entirely coincidental.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/nukie.rsi
