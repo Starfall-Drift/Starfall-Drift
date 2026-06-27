@@ -405,8 +405,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineNukie
-  name: syndicate operative figure
-  description: A figurine depicting someone in a blood-red hardsuit, similar to what someone on a nuclear operative team might wear.
+  name: Gorilla-X Wrecker Figure
+  description: A figurine depicting someone in a blood-red hardsuit, similar to that of the Zero-Sum Symphony books. Any resemblance to any existing organization is entirely coincidental.
   components:
   - type: Sprite
     state: nukie
@@ -416,8 +416,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineNukieElite
-  name: elite syndicate operative figure
-  description: A figurine depicting someone in an elite blood-red hardsuit, similar to what someone on a nuclear operative team might wear.
+  name: Elite Gorilla-X Wrecker Figure
+  description: A figurine depicting someone in an elite blood-red hardsuit, similar to that of the Zero-Sum Symphony books. Any resemblance to any existing organization is entirely coincidental.
   components:
   - type: Sprite
     state: nukie_elite
@@ -427,8 +427,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineNukieCommander
-  name: syndicate operative commander figure
-  description: A figurine depicting someone in a beefed-up blood-red hardsuit, similar to what the commander of a nuclear operative team might wear.
+  name: Gorilla-X Wrecker Commander Figure
+  description: A figurine depicting someone in a beefed-up blood-red hardsuit, similar to that of the Zero-Sum Symphony books. Any resemblance to any existing organization is entirely coincidental.
   components:
   - type: Sprite
     state: nukie_commander

@@ -642,7 +642,7 @@
 
 - type: entity
   id: RandomHumanoidSpawnerNukeOp
-  name: Nuclear Operative
+  name: Gorlex Marauder
   components:
     - type: Sprite
       sprite: Mobs/Species/Human/parts.rsi
