@@ -1,0 +1,21 @@
+- type: entity
+  parent: [ ClothingShoesMilitaryBase, BaseCentcommContraband ]
+  id: ClothingShoesCCLoafers
+  name: Central Command Loafers
+  description: A pair of gold lined loafers, a bit gaudy and otherwise basic.
+  components:
+  - type: Sprite
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Internal_Affairs_Agent/loafers.rsi
+  - type: Clothing
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Internal_Affairs_Agent/loafers.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCentcommContraband]
+  id: ClothingUniformIAASuit
+  name: Compliance Agent Suit
+  description: Standard issue suit for Central Command's Compliance Agents. Lined with gold and golden buttons to make you feel more important than you actually are.
+  components:
+  - type: Sprite
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Internal_Affairs_Agent/suit.rsi
+  - type: Clothing
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Internal_Affairs_Agent/suit.rsi

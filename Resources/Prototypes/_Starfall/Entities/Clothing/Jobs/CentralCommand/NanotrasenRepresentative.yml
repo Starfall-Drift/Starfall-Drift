@@ -1,0 +1,77 @@
+- type: entity
+  parent: [ ClothingShoesMilitaryBase, BaseCentcommContraband ]
+  id: ClothingShoesNTRHighHeelBoots
+  name: Nanotrasen Representative's High Heel Boots
+  description: An EXPENSIVE pair of black suede platform ankle boots lined with gold. Arguably a deadly weapon.
+  components:
+  - type: MeleeWeapon
+    damage:
+      types:
+        Piercing: 6
+  - type: Sprite
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Nanotrasen_Representative/heels.rsi
+  - type: Clothing
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Nanotrasen_Representative/heels.rsi
+    clothingVisuals:
+      shoes:
+      - state: equipped-FEET
+        offset: "0, -0.03125"
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepHighHeels
+      params:
+        variation: 0.09
+
+- type: entity
+  parent: [ ClothingShoesMilitaryBase, BaseCentcommContraband ]
+  id: ClothingShoesNTRBoots
+  name: Nanotrasen Representative's Boots
+  description: An EXPENSIVE pair of black suede boots lined with gold.
+  components:
+  - type: Sprite
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Nanotrasen_Representative/boots.rsi
+  - type: Clothing
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Nanotrasen_Representative/boots.rsi
+    clothingVisuals:
+      shoes:
+      - state: equipped-FEET
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepSpurs
+      params:
+        variation: 0.09
+
+- type: entity
+  parent: [ClothingOuterStorageBase, BaseCentcommContraband]
+  id: ClothingOuterNTRCoat
+  name: Nanotrasen Representative's Fur-Collar Coat
+  description: A fur-collar wool coat, made of extremely high-quality materials, built to withstand the toughest weather; like when your office's heater isn't working. Not to be confused with the bootleg "Fur-Follar."
+  components:
+  - type: Sprite
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Nanotrasen_Representative/coat.rsi
+  - type: Clothing
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Nanotrasen_Representative/coat.rsi
+  - type: Item
+    size: Normal
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatNTRHat
+  name: Nanotrasen Representative's Cap
+  description: A hat befitting of a Nanotrasen Representative, adorned with a gold emblem of Nanotrasen's logo.
+  components:
+  - type: Sprite
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Nanotrasen_Representative/hat.rsi
+  - type: Clothing
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Nanotrasen_Representative/hat.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCentcommContraband]
+  id: ClothingUniformJumpsuitNTRTuxedo
+  name: Nanotrasen Representative's Tuxedo
+  description: TODO awwesome fucking tuxedo replace this text later, if youre seeing this go laugh @trixxedheart
+  components:
+  - type: Sprite
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Nanotrasen_Representative/tuxedo.rsi
+  - type: Clothing
+    sprite: _Starfall/Clothing/Jobs/CentralCommand/Nanotrasen_Representative/tuxedo.rsi
