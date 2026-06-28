@@ -2,6 +2,7 @@
 // SPDX-FileCopyrightText: 2025 Hannah Giovanna Dawson <karakkaraz@gmail.com>
 // SPDX-License-Identifier: MIT
 
+using Content.Shared._Funkystation.Fax;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Fax.Components;
@@ -28,6 +29,10 @@ public sealed class FaxecuteSystem : EntitySystem
 
         if (!TryComp<FaxecuteComponent>(uid, out var faxecute))
             return;
+
+        // _Funkystation: notify interested systems before damage is applied.
+        var firingEvent = new FaxecuteFiringEvent(sendEntity.Value);
+        RaiseLocalEvent(uid, ref firingEvent);
 
         var damageSpec = faxecute.Damage;
         _damageable.ChangeDamage(sendEntity.Value, damageSpec);
