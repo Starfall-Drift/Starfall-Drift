@@ -1,2 +1,2 @@
-﻿station-event-bureaucratic-error-announcement = A recent bureaucratic error in the Organic Resources Department may result in personnel shortages in some departments and redundant staffing in others.
-station-event-clerical-error-announcement = A minor clerical error in the Organic Resources Department has resulted in the permanent destruction of some of the station records.
+﻿station-event-bureaucratic-error-announcement = A personnel allocation error has been detected in the Sophont Resources database. Some departments may experience staffing shortages while others receive redundant assignments. We apologize for the inconvenience.
+station-event-clerical-error-announcement = A routine database maintenance operation has resulted in the permanent loss of certain station records. We apologize for the inconvenience.
