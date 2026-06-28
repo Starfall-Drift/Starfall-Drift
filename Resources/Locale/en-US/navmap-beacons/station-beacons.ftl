@@ -77,7 +77,7 @@ station-beacon-ai-upload = AI Upload
 station-beacon-ai-power = AI Power
 
 station-beacon-arrivals = Arrivals
-station-beacon-evac = Evac
+station-beacon-evac = Departures
 station-beacon-docking-arm = Docking Arm
 station-beacon-eva-storage = EVA Storage
 station-beacon-chapel = Chapel
