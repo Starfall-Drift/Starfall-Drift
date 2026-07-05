@@ -68,7 +68,7 @@
 # Nuclear Operative
 - type: entity
   categories: [ HideSpawnMenu ]
-  name: Nuclear Operative
+  name: Gorlex Marauder
   parent: MobHuman
   id: MobHumanNukeOp
   components:
@@ -79,7 +79,7 @@
   categories: [ HideSpawnMenu ]
   parent: MobHuman
   id: MobHumanLoneNuclearOperative
-  name: Lone Operative
+  name: Lone Marauder
   components:
   - type: RandomHumanoidAppearance
     randomizeName: false

@@ -16,6 +16,12 @@ public sealed partial class SkinColorationPrototype : IPrototype
     public string ID { get; private set; } = default!;
 
     /// <summary>
+    // _Starfall: (OPTIONAL) Display name used when multiple skin types are selectable in the character editor
+    /// </summary>
+    [DataField]
+    public LocId? Name;
+
+    /// <summary>
     /// The skin coloration strategy specified by this prototype
     /// </summary>
     [DataField(required: true)]
@@ -97,8 +103,11 @@ public interface ISkinColorationStrategy
 [Serializable, NetSerializable]
 public sealed partial class HumanTonedSkinColoration : ISkinColorationStrategy
 {
+    private const float LightH = 28f, LightS = 35f, LightV = 100f;
+    private const float DarkH  = 20f, DarkS  = 80f, DarkV  = 18f;
+
     [DataField]
-    public Color ValidHumanSkinTone = Color.FromHsv(new Vector4(0.07f, 0.2f, 1f, 1f));
+    public Color ValidHumanSkinTone = Color.FromHsv(new Vector4(LightH / 360f, LightS / 100f, LightV / 100f, 1f));
 
     public SkinColorationStrategyInput InputType => SkinColorationStrategyInput.Unary;
 
@@ -127,7 +136,6 @@ public sealed partial class HumanTonedSkinColoration : ISkinColorationStrategy
             reason = "Saturation or value are below expected number of 20.";
             return false;
         }
-
         return true;
     }
 
@@ -138,14 +146,9 @@ public sealed partial class HumanTonedSkinColoration : ISkinColorationStrategy
 
     public Color FromUnary(float color)
     {
-        // 0 - 100, 0 being gold/yellowish and 100 being dark
-        // HSV based
-        //
-        // 0 - 20 changes the hue
-        // 20 - 100 changes the value
-        // 0 is 45 - 20 - 100
-        // 20 is 25 - 20 - 100
-        // 100 is 25 - 100 - 20
+        // 0 = lightest (peach), 100 = darkest (deep brown)
+        // Linear interpolation across all three HSV channels.
+        var t = Math.Clamp(color, 0f, 100f) / 100f;
 
         var tone = Math.Clamp(color, 0f, 100f);
 
@@ -173,19 +176,10 @@ public sealed partial class HumanTonedSkinColoration : ISkinColorationStrategy
     public float ToUnary(Color color)
     {
         var hsv = Color.ToHsv(color);
-        // check for hue/value first, if hue is lower than this percentage
-        // and value is 1.0
-        // then it'll be hue
-        if (Math.Clamp(hsv.X, 25f / 360f, 1) > 25f / 360f
-            && hsv.Z == 1.0)
-        {
-            return Math.Abs(45 - (hsv.X * 360));
-        }
-        // otherwise it'll directly be the saturation
-        else
-        {
-            return hsv.Y * 100;
-        }
+        // Invert the value lerp — value channel spans the widest range
+        var val = hsv.Z * 100f;
+        var t = (val - LightV) / (DarkV - LightV);
+        return Math.Clamp(t * 100f, 0f, 100f);
     }
 }
 

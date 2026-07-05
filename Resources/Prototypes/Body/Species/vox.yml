@@ -168,7 +168,7 @@
   - type: Speech
     speechVerb: Vox
     speechSounds: Vox
-    allowedEmotes: ['Click', 'Chitter']
+    allowedEmotes: ['Click', 'Chitter', 'Thump'] # _Starfall: Add Thump
   - type: TypingIndicator
     proto: vox
   - type: CreamPied
@@ -180,6 +180,8 @@
       Male: UnisexVox
       Female: UnisexVox
       Unsexed: UnisexVox
+  - type: BodyEmotes
+    soundsId: ReptilianBodyEmotes
   - type: Butcherable
     spawned:
     - id: FoodMeatChicken

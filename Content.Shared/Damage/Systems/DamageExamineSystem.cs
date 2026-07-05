@@ -18,7 +18,8 @@ public sealed partial class DamageExamineSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<DamageExaminableComponent, GetVerbsEvent<ExamineVerb>>(OnGetExamineVerbs);
+        // _Starfall: Removed separate damage examine verb health info now shows in the default examine menu (see StarfallDamageExamineSystem).
+        // SubscribeLocalEvent<DamageExaminableComponent, GetVerbsEvent<ExamineVerb>>(OnGetExamineVerbs);
     }
 
     private void OnGetExamineVerbs(EntityUid uid, DamageExaminableComponent component, GetVerbsEvent<ExamineVerb> args)

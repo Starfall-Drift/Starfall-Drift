@@ -20,6 +20,12 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
     [DataField]
     public Color SkinColor { get; set; } = Color.FromHsv(new Vector4(0.07f, 0.2f, 1f, 1f));
 
+    /// <summary>
+    /// _Starfall: The selected skin coloration type for this appearance. When null, uses the species default SkinColoration.
+    /// </summary>
+    [DataField]
+    public ProtoId<SkinColorationPrototype>? SkinColorationType { get; set; }
+
     [DataField]
     public Dictionary<ProtoId<OrganCategoryPrototype>, Dictionary<HumanoidVisualLayers, List<Marking>>> Markings { get; set; } = new();
 
@@ -36,22 +42,28 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
     public HumanoidCharacterAppearance(HumanoidCharacterAppearance other) :
         this(other.EyeColor, other.SkinColor, new(other.Markings))
     {
-
+        SkinColorationType = other.SkinColorationType; // _Starfall
     }
 
     public HumanoidCharacterAppearance WithEyeColor(Color newColor)
     {
-        return new(newColor, SkinColor, Markings);
+        return new(newColor, SkinColor, Markings) { SkinColorationType = SkinColorationType }; // _Starfall
     }
 
     public HumanoidCharacterAppearance WithSkinColor(Color newColor)
     {
-        return new(EyeColor, newColor, Markings);
+        return new(EyeColor, newColor, Markings) { SkinColorationType = SkinColorationType }; // _Starfall
+    }
+
+    // _Starfall: sets the active skin coloration type, resetting to null means "use species default"
+    public HumanoidCharacterAppearance WithSkinColorationType(ProtoId<SkinColorationPrototype>? type)
+    {
+        return new(EyeColor, SkinColor, Markings) { SkinColorationType = type };
     }
 
     public HumanoidCharacterAppearance WithMarkings(Dictionary<ProtoId<OrganCategoryPrototype>, Dictionary<HumanoidVisualLayers, List<Marking>>> newMarkings)
     {
-        return new(EyeColor, SkinColor, newMarkings);
+        return new(EyeColor, SkinColor, newMarkings) { SkinColorationType = SkinColorationType };
     }
 
     public static HumanoidCharacterAppearance DefaultWithSpecies(ProtoId<SpeciesPrototype> species, Sex sex)
@@ -93,7 +105,12 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
         var newEyeColor = random.Pick(_realisticEyeColors);
 
         var protoMan = IoCManager.Resolve<IPrototypeManager>();
-        var skinType = protoMan.Index<SpeciesPrototype>(species).SkinColoration;
+        // _Starfall: pick from all available color types, not just the species default
+        var speciesProto = protoMan.Index<SpeciesPrototype>(species);
+        var colorations = speciesProto.GetSkinColorations();
+
+        // Pick a random skin coloration type from all available types for this species.
+        var skinType = colorations[random.Next(colorations.Count)];
         var strategy = protoMan.Index(skinType).Strategy;
 
         var newSkinColor = strategy.InputType switch
@@ -106,7 +123,7 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
         // Safety step. Most systems which called Random() also called this, and not doing so caused issues with markings.
         // In the future it could *maybe* be removed, but it's probably worth the extra CPU cycles to validate this info.
         return EnsureValid(
-            new HumanoidCharacterAppearance(newEyeColor, newSkinColor, new()),
+            new HumanoidCharacterAppearance(newEyeColor, newSkinColor, new()), SkinColorationType,
             species,
             sex);
     }
@@ -125,10 +142,20 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
 
         var skinColor = appearance.SkinColor;
         var validatedMarkings = appearance.Markings.ShallowClone();
+        ProtoId<SkinColorationPrototype>? validatedSkinColorationType = null; // _Starfall
 
         if (proto.TryIndex(species, out var speciesProto))
         {
-            var strategy = proto.Index(speciesProto.SkinColoration).Strategy;
+            var colorations = speciesProto.GetSkinColorations(); // _Starfall
+
+            // _Starfall: validate the selected skin coloration type, fall back to the species default if invalid
+            var activeSkinColoration = appearance.SkinColorationType.HasValue
+                                       && colorations.Any(c => c == appearance.SkinColorationType.Value)
+                ? appearance.SkinColorationType.Value
+                : speciesProto.SkinColoration;
+            validatedSkinColorationType = activeSkinColoration;
+
+            var strategy = proto.Index(activeSkinColoration).Strategy;
             var organs = markingManager.GetOrgans(species);
             skinColor = strategy.EnsureVerified(skinColor);
 
@@ -160,7 +187,10 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
         return new HumanoidCharacterAppearance(
             eyeColor,
             skinColor,
-            validatedMarkings);
+            validatedMarkings)
+        {
+            SkinColorationType = validatedSkinColorationType, // _Starfall
+        };
     }
 
     public bool Equals(HumanoidCharacterAppearance? other)
@@ -169,6 +199,7 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
         if (ReferenceEquals(this, other)) return true;
         return EyeColor.Equals(other.EyeColor) &&
                SkinColor.Equals(other.SkinColor) &&
+               SkinColorationType == other.SkinColorationType && // _Starfall
                MarkingManager.MarkingsAreEqual(Markings, other.Markings);
     }
 
@@ -179,7 +210,7 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
 
     public override int GetHashCode()
     {
-        return HashCode.Combine(EyeColor, SkinColor, Markings);
+        return HashCode.Combine(EyeColor, SkinColor, SkinColorationType, Markings); // _Starfall
     }
 
     public HumanoidCharacterAppearance Clone()

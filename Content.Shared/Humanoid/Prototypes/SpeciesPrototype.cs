@@ -66,6 +66,28 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField(required: true)]
     public ProtoId<SkinColorationPrototype> SkinColoration { get; private set; }
 
+    // _Starfall: allows species to offer multiple selectable skin coloration types in the character editor
+    /// <summary>
+    /// Additional skin coloration methods available for this species.
+    /// When non-empty, players can choose between SkinColoration and these options.
+    /// </summary>
+    [DataField]
+    public List<ProtoId<SkinColorationPrototype>> AdditionalSkinColorations { get; private set; } = new();
+
+    /// <summary>
+    /// Returns all available skin colorations for this species (primary first, then additional).
+    /// </summary>
+    public IReadOnlyList<ProtoId<SkinColorationPrototype>> GetSkinColorations()
+    {
+        if (AdditionalSkinColorations.Count == 0)
+            return new[] { SkinColoration };
+
+        var result = new List<ProtoId<SkinColorationPrototype>>(1 + AdditionalSkinColorations.Count) { SkinColoration };
+        result.AddRange(AdditionalSkinColorations);
+        return result;
+    }
+    // _Starfall end
+
     [DataField]
     public ProtoId<LocalizedDatasetPrototype> MaleFirstNames { get; private set; } = "NamesFirstMale";
 

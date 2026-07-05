@@ -37,8 +37,8 @@
 - type: entity
   parent: ReinforcementRadio
   id: ReinforcementRadioSyndicateNukeops # Reinforcement radio exclusive to nukeops uplink
-  name: nuclear operative radio
-  description: Call in a nuclear operative of questionable quality, instantly! Basic nukeop equipment provided.
+  name: Gorlex Marauder Radio
+  description: Call in a Gorlex Marauder of questionable quality, instantly! Basic marauder equipment provided.
   suffix: NukeOps
   components:
   - type: GhostRole
