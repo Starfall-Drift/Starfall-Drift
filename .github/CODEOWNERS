@@ -3,20 +3,23 @@
 # Sorting by path instead of by who added it one day :(
 # this isn't how codeowners rules work pls read the first comment instead of trying to force a sorting order
 
-# taydeo
-/Content.*/_Funkystation/ @taydeo
+# funky
+/Content.*/_Funkystation/ @trixxedheart
+
+# starfall
+/Content.*/_Starfall/ @trixxedheart
 
 # maps
-/Resources/Maps/ @willowzeta
+/Resources/Maps/ @trixxedheart
 
 # audio
-/Resources/Audio/ @vectorassembly
+/Resources/Audio/ @trixxedheart
 
 # textures
-/Resources/Textures/ @Teasq
+/Resources/Textures/ @Thlrds
 
 # rules
-/Resources/ServerInfo/ @salpphie @Huhm-1
+/Resources/ServerInfo/ @trixxedheart
 
 # github
-/.github/ @taydeo @Komonighub
+/.github/ @trixxedheart
