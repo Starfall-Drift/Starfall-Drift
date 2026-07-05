@@ -9,8 +9,6 @@
     removes:
     - type: LizardAccent
     - type: MothAccent
-    - type: ReplacementAccent
-      accent: scottish
     - type: GrayAccent # macro
 
 # 1 Cost
@@ -60,16 +58,6 @@
   components:
   - type: ReplacementAccent
     accent: liar
-
-- type: trait
-  id: ScottishAccent
-  name: trait-scottish-name
-  description: trait-scottish-desc
-  category: SpeechTraits
-  cost: 1
-  components:
-  - type: ReplacementAccent
-    accent: scottish
 
 # 2 Cost
 
