@@ -123,7 +123,7 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
         // Safety step. Most systems which called Random() also called this, and not doing so caused issues with markings.
         // In the future it could *maybe* be removed, but it's probably worth the extra CPU cycles to validate this info.
         return EnsureValid(
-            new HumanoidCharacterAppearance(newEyeColor, newSkinColor, new()), SkinColorationType,
+            new HumanoidCharacterAppearance(newEyeColor, newSkinColor, new()) { SkinColorationType = skinType }, // _Starfall
             species,
             sex);
     }

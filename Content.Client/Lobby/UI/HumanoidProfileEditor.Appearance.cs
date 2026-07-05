@@ -102,7 +102,7 @@ public sealed partial class HumanoidProfileEditor
         if (Profile == null)
             return;
 
-        var skin = _prototypeManager.Index<SpeciesPrototype>(Profile.Species).SkinColoration;
+        var skin = GetCurrentSkinColorationType(); // _Starfall: use active type
         var strategy = _prototypeManager.Index(skin).Strategy;
 
         switch (strategy.InputType)
@@ -180,6 +180,22 @@ public sealed partial class HumanoidProfileEditor
     private void SetSpecies(string newSpecies)
     {
         Profile = Profile?.WithSpecies(newSpecies);
+
+        // _Starfall: reset skin coloration type if it is not valid for the new species
+        if (Profile != null)
+        {
+            var speciesProto = _prototypeManager.Index<SpeciesPrototype>(newSpecies);
+            var colorations = speciesProto.GetSkinColorations();
+            var currentType = Profile.Appearance.SkinColorationType;
+            if (currentType.HasValue && !colorations.Any(c => c == currentType.Value))
+            {
+                Profile = Profile.WithCharacterAppearance(
+                    Profile.Appearance.WithSkinColorationType(null));
+            }
+        }
+        // _Starfall end
+
+        RefreshSkinColorTypeSelector(); // _Starfall
         OnSkinColorOnValueChanged(); // Species may have special color prefs, make sure to update it.
         _markingsModel.OrganData = _markingManager.GetMarkingData(newSpecies);
         _markingsModel.ValidateMarkings();
@@ -257,7 +273,7 @@ public sealed partial class HumanoidProfileEditor
     {
         if (Profile is null) return;
 
-        var skin = _prototypeManager.Index<SpeciesPrototype>(Profile.Species).SkinColoration;
+        var skin = GetCurrentSkinColorationType(); // _Starfall: use active type, not just species default
         var strategy = _prototypeManager.Index(skin).Strategy;
 
         switch (strategy.InputType)
