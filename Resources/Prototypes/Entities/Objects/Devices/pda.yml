@@ -33,7 +33,7 @@
         components:
         - PAI
     penSlot:
-#      startingItem: Pen # funky # you get to ask for a pen from the HoP/cargo! hope this leads to shenanigans
+      startingItem: Pen
       priority: -1
       whitelist:
         tags:
@@ -466,12 +466,6 @@
   components:
   - type: Pda
     id: QuartermasterIDCard
-    penSlot:
-      startingItem: LuxuryPen #funky change, only important people have pens roundstart
-      priority: -1
-      whitelist:
-        tags:
-        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -562,7 +556,7 @@
   - type: Pda
     id: LibrarianIDCard
     penSlot:
-      startingItem: LuxuryPen #funky change, only important people have pens roundstart #well these aren't command people but it makes sense that they have pens
+      startingItem: LuxuryPen
       priority: -1
       whitelist:
         tags:
@@ -597,7 +591,7 @@
   - type: Pda
     id: LawyerIDCard
     penSlot:
-      startingItem: LuxuryPen #funky change, only important people have pens roundstart #well these aren't command people but it makes sense that they have pens
+      startingItem: LuxuryPen
       priority: -1
       whitelist:
         tags:
@@ -698,12 +692,6 @@
   components:
   - type: Pda
     id: CEIDCard
-    penSlot:
-      startingItem: LuxuryPen #funky change, only important people have pens roundstart
-      priority: -1
-      whitelist:
-        tags:
-        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -742,12 +730,6 @@
   components:
   - type: Pda
     id: CMOIDCard
-    penSlot:
-      startingItem: LuxuryPen #funky change, only important people have pens roundstart
-      priority: -1
-      whitelist:
-        tags:
-        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -839,12 +821,6 @@
   components:
   - type: Pda
     id: RDIDCard
-    penSlot:
-      startingItem: LuxuryPen #funky change, only important people have pens roundstart
-      priority: -1
-      whitelist:
-        tags:
-        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -884,12 +860,6 @@
   components:
   - type: Pda
     id: HoSIDCard
-    penSlot:
-      startingItem: LuxuryPen #funky change, only important people have pens roundstart
-      priority: -1
-      whitelist:
-        tags:
-        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -955,7 +925,7 @@
   - type: Pda
     id: CentcomIDCard
     penSlot:
-      startingItem: PenCentcom #admeme, doubt this is gonna get misused + this is literally the most important person on station if this person exists so like... yeah.
+      startingItem: PenCentcom
       priority: -1
       whitelist:
         tags:
@@ -1302,7 +1272,7 @@
   - type: Pda
     id: ReporterIDCard
     penSlot:
-      startingItem: LuxuryPen #funky change, only important people have pens roundstart #well these aren't command people but it makes sense that they have pens
+      startingItem: LuxuryPen
       priority: -1
       whitelist:
         tags:

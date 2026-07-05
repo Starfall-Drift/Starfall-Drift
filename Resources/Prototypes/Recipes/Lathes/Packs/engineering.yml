@@ -20,7 +20,6 @@
   - HandheldStationMap
   - ClothingHeadHatWelding
   - ClothingHeadHatCone
-  - Pen
 
 - type: latheRecipePack
   id: AtmosStatic
