@@ -4,9 +4,9 @@ using Content.Shared.Damage.Components;
 
 namespace Content.Server._Starfall.Systems;
 
-public sealed class SprintStaminaSystem : EntitySystem
+public sealed partial class SprintStaminaSystem : EntitySystem
 {
-    [Dependency] private readonly SharedStaminaSystem _stamina = default!;
+    [Dependency] private SharedStaminaSystem _stamina = default!;
 
     public override void Update(float frameTime)
     {
