@@ -227,6 +227,6 @@
   - type: FireVisuals
     alternateState: Standing
   - type: StunVisuals
-  - type: ESPainFlash # Funky, ES port
+  # - type: ESPainFlash # Funky, ES port # _Starfall: TODO: Flashing risk, reduce intensity/turn this into a vignette
   - type: FootprintOwner # Funky change
   - type: DuoEmote # Funky change
