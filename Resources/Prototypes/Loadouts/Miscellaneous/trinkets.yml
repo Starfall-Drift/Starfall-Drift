@@ -306,20 +306,14 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Command
-      time: 18000 # 5hr
+      time: 7200 # Starfall 2 hours.
   storage:
     back:
     - OffsetCaneNT
   groupBy: "canes"
 
 - type: loadout
-  id: Cane
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobLibrarian
-      time: 3600 # 1hr same as Jamjar.
+  id: Cane # Starfall Removed role time entirely.
   storage:
     back:
     - Cane

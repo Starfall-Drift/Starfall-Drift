@@ -5,7 +5,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobBartender
-      time: 52h # 1 hour per week for 1 year
+      time: 4h # Starfall Fuck allat 52 hour bullshit
 
 # Head
 - type: loadout

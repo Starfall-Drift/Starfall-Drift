@@ -3,14 +3,9 @@
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
-      !type:RoleTimeRequirement
-      role: JobWarden
-      time: 6h
-  - !type:JobRequirementLoadoutEffect
-    requirement:
       !type:DepartmentTimeRequirement
       department: Security
-      time: 60h
+      time: 4h # Starfall
 
 # Head
 - type: loadout

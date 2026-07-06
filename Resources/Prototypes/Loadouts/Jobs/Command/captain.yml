@@ -5,7 +5,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobCaptain
-      time: 20h
+      time: 10h # Starfall Cut to 10
 
 # Jumpsuit
 - type: loadout

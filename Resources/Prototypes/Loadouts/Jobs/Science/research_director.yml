@@ -5,7 +5,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobResearchDirector
-      time: 20h
+      time: 10h # Starfall
 
 # Head
 - type: loadout
