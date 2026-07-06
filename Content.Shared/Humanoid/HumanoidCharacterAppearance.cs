@@ -142,18 +142,18 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
 
         var skinColor = appearance.SkinColor;
         var validatedMarkings = appearance.Markings.ShallowClone();
-        ProtoId<SkinColorationPrototype>? validatedSkinColorationType = null; // _Starfall
+
+        // _Starfall: Validate the skin coloration type. If it's not valid for this species, reset it to null (use species default).
+        ProtoId<SkinColorationPrototype>? validatedSkinColorationType = appearance.SkinColorationType;
 
         if (proto.TryIndex(species, out var speciesProto))
         {
             var colorations = speciesProto.GetSkinColorations(); // _Starfall
 
-            // _Starfall: validate the selected skin coloration type, fall back to the species default if invalid
-            var activeSkinColoration = appearance.SkinColorationType.HasValue
-                                       && colorations.Any(c => c == appearance.SkinColorationType.Value)
-                ? appearance.SkinColorationType.Value
-                : speciesProto.SkinColoration;
-            validatedSkinColorationType = activeSkinColoration;
+            if (validatedSkinColorationType.HasValue && !colorations.Any(c => c == validatedSkinColorationType.Value))
+                validatedSkinColorationType = null;
+
+            var activeSkinColoration = validatedSkinColorationType ?? speciesProto.SkinColoration;
 
             var strategy = proto.Index(activeSkinColoration).Strategy;
             var organs = markingManager.GetOrgans(species);
