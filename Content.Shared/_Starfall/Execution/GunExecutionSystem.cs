@@ -136,13 +136,11 @@ public sealed partial class GunExecutionSystem : EntitySystem
         if (!TryComp<DamageableComponent>(victim, out var damageable))
             return;
 
-        // Capture the recoil direction (away from victim) before consuming ammo.
+        // Capture direction for muzzle flash and recoil
         var targetPos = Transform(victim).WorldPosition - Transform(attacker).WorldPosition;
 
-        var direction = targetPos != Vector2.Zero ? targetPos.Normalized() : Vector2.Zero;
-
-        var shootDir = direction;
-        var recoilDir = -direction;
+        var shootDir = targetPos != Vector2.Zero ? targetPos.Normalized() : Vector2.Zero;
+        var recoilDir = -shootDir;
 
         // Consume one round.
         var takeAmmo = new TakeAmmoEvent(
