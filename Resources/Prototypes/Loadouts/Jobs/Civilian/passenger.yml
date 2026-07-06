@@ -5,7 +5,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobPassenger
-      time: 10h # silly reward for people who play passenger a lot
+      time: 4h # Starfall
 
 # Head of Greytide (for grey mantle)
 - type: loadoutEffectGroup
@@ -15,7 +15,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobPassenger
-      time: 20h # fun mantle for the most experienced greytiders
+      time: 10h # Starfall Cut to 10
 
 # Face
 - type: loadout

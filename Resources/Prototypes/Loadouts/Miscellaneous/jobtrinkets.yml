@@ -12,9 +12,7 @@
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
-      !type:RoleTimeRequirement
       role: JobClown
-      time: 4h
   storage:
     back:
     - SprayFlowerPin
@@ -26,7 +24,7 @@
       requirement:
         !type:DepartmentTimeRequirement
         department: Security
-        time: 100h
+        time: 10h # Starfall Cut to 10.
   storage:
     back:
     - Dinkystar

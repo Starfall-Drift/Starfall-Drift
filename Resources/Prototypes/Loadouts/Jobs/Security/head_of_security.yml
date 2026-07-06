@@ -5,7 +5,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobHeadOfSecurity
-      time: 20h
+      time: 10h # Starfall
 
 # Jumpsuit
 - type: loadout

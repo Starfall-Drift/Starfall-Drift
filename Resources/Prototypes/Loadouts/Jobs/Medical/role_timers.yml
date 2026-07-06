@@ -4,21 +4,11 @@
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
-      !type:RoleTimeRequirement
-      role: JobChemist
-      time: 6h
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobMedicalDoctor
-      time: 6h
-  - !type:JobRequirementLoadoutEffect
-    requirement:
       !type:DepartmentTimeRequirement
       department: Medical
-      time: 60h
+      time: 4h # Starfall
 
-# Mid-level timer for players who have a solid amount of experience
+# Mid-level timer for players who have a solid amount of experience // Starfall The fuck you mean mid-level dude its 20 hours
 - type: loadoutEffectGroup
   id: MedicalJourneymanTimer
   effects:
@@ -26,7 +16,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobMedicalDoctor
-      time: 20h
+      time: 2h # Starfall
 
 # Mid-level timer for CMO
 - type: loadoutEffectGroup
@@ -36,4 +26,4 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobChiefMedicalOfficer
-      time: 20h
+      time: 10h # Starfall

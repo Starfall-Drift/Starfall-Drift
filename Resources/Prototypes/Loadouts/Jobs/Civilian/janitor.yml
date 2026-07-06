@@ -5,7 +5,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobJanitor
-      time: 52h # 1 hour per week for 1 year
+      time: 4h # Starfall Fuck allat 52 hour shit
 
 # Head
 - type: loadout
