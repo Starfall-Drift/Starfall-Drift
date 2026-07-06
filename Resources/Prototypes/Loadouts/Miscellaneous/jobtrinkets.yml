@@ -10,9 +10,6 @@
 - type: loadout
   id: FlowerWaterClown
   effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      role: JobClown
   storage:
     back:
     - SprayFlowerPin
