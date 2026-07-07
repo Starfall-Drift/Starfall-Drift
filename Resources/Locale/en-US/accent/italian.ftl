@@ -69,14 +69,15 @@ accent-italian-words-replace-20 = my-a
 accent-italian-words-21 = nuke
 accent-italian-words-replace-21 = spiciest-a meatball
 
-accent-italian-words-22 = op
-accent-italian-words-replace-22 = greek
+# _Starfall: What the fuck
+# accent-italian-words-22 = op
+# accent-italian-words-replace-22 = greek
 
-accent-italian-words-23 = operative
-accent-italian-words-replace-23 = greek
+# accent-italian-words-23 = operative
+# accent-italian-words-replace-23 = greek
 
-accent-italian-words-24 = operatives
-accent-italian-words-replace-24 = greeks
+# accent-italian-words-24 = operatives
+# accent-italian-words-replace-24 = greeks
 
 accent-italian-words-25 = sec
 accent-italian-words-replace-25 = polizia

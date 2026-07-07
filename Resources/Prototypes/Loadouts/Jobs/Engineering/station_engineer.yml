@@ -1,27 +1,11 @@
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Pancake <Pangogie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-License-Identifier: MIT
-
 - type: loadoutEffectGroup
   id: SeniorEngineering
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
-      !type:RoleTimeRequirement
-      role: JobAtmosphericTechnician
-      time: 6h
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobStationEngineer
-      time: 6h
-  - !type:JobRequirementLoadoutEffect
-    requirement:
       !type:DepartmentTimeRequirement
       department: Engineering
-      time: 60h
+      time: 4h # Starfall Genuinely who the fuck thought 60h was fine
 
 # Head
 - type: startingGear

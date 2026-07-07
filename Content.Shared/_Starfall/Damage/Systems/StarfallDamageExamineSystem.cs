@@ -5,7 +5,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared._Starfall.Damage.Systems;
 // <summary>_Starfall: Show damage examine info directly in the default examine menu instead of a separate verb window.</summary>
-public sealed class StarfallDamageExamineSystem : EntitySystem
+public sealed partial class StarfallDamageExamineSystem : EntitySystem
 {
     public override void Initialize()
     {

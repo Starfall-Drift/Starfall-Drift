@@ -1,6 +1,3 @@
-# SPDX-FileCopyrightText: 2024 Aexxie <codyfox.077@gmail.com>
-# SPDX-License-Identifier: MIT
-
 - type: palette
   id: Advanced
   name: Advanced
@@ -10,47 +7,67 @@
     #dark: "#000000"
     #black: "#000000"
     
-    commandlight: "#4B709C"
-    commandmedium: "#334E6D"
-    commanddark: "#203144"
-    commandblack: "#16212E"
+    commandlight: "#434c96"
+    commandmedium: "#3a3384"
+    commanddark: "#2e2068"
+    commandblack: "#26124d"
+        
+    centcommlight: "#2f9142"
+    centcommmedium: "#1a7334"
+    centcommdark: "#0a4822"
+    centcommblack: "#052d1c"
+            
+    guildedlight: "#4B709C"
+    guildedmedium: "#334E6D"
+    guildeddark: "#203144"
+    guildedblack: "#16212E"
     
-    securitylight: "#FF5C5C"
-    securitymedium: "#DE3A3A"
-    securitydark: "#9C2020"
-    securityblack: "#571212"
+    securitylight: "#d45534"
+    securitymedium: "#ac2626"
+    securitydark: "#711617"
+    securityblack: "#550b14"
     
-    medicallight: "#96DAFF"
-    medicalmedium: "#52B4E9"
-    medicaldark: "#37789B"
-    medicalblack: "#1A394A"
+    medicallight: "#59a984"
+    medicalmedium: "#3e8c71"
+    medicaldark: "#286c62"
+    medicalblack: "#1e5155"
     
-    engineeringlight: "#FFA647"
-    engineeringmedium: "#FF9821"
-    engineeringdark: "#AE6716"
-    engineeringblack: "#663C0D"
+    engineeringlight: "#f4a644"
+    engineeringmedium: "#d5733e"
+    engineeringdark: "#b94a2d"
+    engineeringblack: "#a62720"
     
-    sciencelight: "#FBB2FF"
-    sciencemedium: "#F98AFF"
+    sciencelight: "#a756b4"
+    sciencemedium: "#96409f"
     sciencedark: "#BE6BC3"
-    scienceblack: "#724276"
+    scienceblack: "#661a4c"
     
-    cargolight: "#D69949"
-    cargomedium: "#BC863F"
-    cargodark: "#765428"
-    cargoblack: "#4A3519"
-    
-    salvagelight: "#CA7EF2"
-    salvagemedium: "#9A54BF"
-    salvagedark: "#774194"
-    salvageblack: "#4C2A5E"
+    cargolight: "#aa7353"
+    cargomedium: "#91563f"
+    cargodark: "#802c74"
+    cargoblack: "#5e2c23"
+
+    salvagelight: "#aa7353"
+    salvagemedium: "#91563f"
+    salvagedark: "#802c74"
+    salvageblack: "#5e2c23"
     
     servicelight: "#C6FF91"
-    servicemedium: "#9FED58"
-    servicedark: "#639137"
-    serviceblack: "#446326"
+    servicemedium: "#6c9b38"
+    servicedark: "#396c1e"
+    serviceblack: "#165b14"
     
-    neutrallight: "#E6E6E6"
-    neutralmedium: "#B3B3B3"
-    neutraldark: "#999999"
-    neutralblack: "#808080"
+    neutrallight: "#9ab953"
+    neutralmedium: "#47494c"
+    neutraldark: "#38393c"
+    neutralblack: "#26272a"
+
+    darklight: "#2a2a2a"
+    darkmedium: "#B3B3B3"
+    darkdark: "#999999"
+    darkblack: "#808080"
+
+    lightlight: "#dbe6f0"
+    lightmedium: "#c8d7e4"
+    lightdark: "#a5aec3"
+    lightblack: "#7e829e"

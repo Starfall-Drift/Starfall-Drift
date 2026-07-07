@@ -1,26 +1,3 @@
-// SPDX-FileCopyrightText: 2019-2020 DamianX <DamianX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020-2021, 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020-2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Moses <StrawberryMoses@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022, 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022-2023 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023, 2025 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 csqrb <56765288+CaptainSqrBeard@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 B_Kirill <153602297+B-Kirill@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
-// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 beck <163376292+widgetbeck@users.noreply.github.com>
-// SPDX-License-Identifier: MIT
-
 using System.Linq;
 using System.Numerics;
 using Content.Shared.Body;
@@ -143,7 +120,12 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
             _ => strategy.ClosestSkinColor(new Color(random.NextFloat(1), random.NextFloat(1), random.NextFloat(1), 1)),
         };
 
-        return new HumanoidCharacterAppearance(newEyeColor, newSkinColor, new()) { SkinColorationType = skinType }; // _Starfall
+        // Safety step. Most systems which called Random() also called this, and not doing so caused issues with markings.
+        // In the future it could *maybe* be removed, but it's probably worth the extra CPU cycles to validate this info.
+        return EnsureValid(
+            new HumanoidCharacterAppearance(newEyeColor, newSkinColor, new()) { SkinColorationType = skinType }, // _Starfall
+            species,
+            sex);
     }
 
     public static Color ClampColor(Color color)
@@ -160,18 +142,18 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
 
         var skinColor = appearance.SkinColor;
         var validatedMarkings = appearance.Markings.ShallowClone();
-        ProtoId<SkinColorationPrototype>? validatedSkinColorationType = null; // _Starfall
+
+        // _Starfall: Validate the skin coloration type. If it's not valid for this species, reset it to null (use species default).
+        ProtoId<SkinColorationPrototype>? validatedSkinColorationType = appearance.SkinColorationType;
 
         if (proto.TryIndex(species, out var speciesProto))
         {
             var colorations = speciesProto.GetSkinColorations(); // _Starfall
 
-            // _Starfall: validate the selected skin coloration type, fall back to the species default if invalid
-            var activeSkinColoration = appearance.SkinColorationType.HasValue
-                                       && colorations.Any(c => c == appearance.SkinColorationType.Value)
-                ? appearance.SkinColorationType.Value
-                : speciesProto.SkinColoration;
-            validatedSkinColorationType = activeSkinColoration;
+            if (validatedSkinColorationType.HasValue && !colorations.Any(c => c == validatedSkinColorationType.Value))
+                validatedSkinColorationType = null;
+
+            var activeSkinColoration = validatedSkinColorationType ?? speciesProto.SkinColoration;
 
             var strategy = proto.Index(activeSkinColoration).Strategy;
             var organs = markingManager.GetOrgans(species);

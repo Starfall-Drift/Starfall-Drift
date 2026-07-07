@@ -4,9 +4,9 @@ using Content.Shared.HealthExaminable;
 
 namespace Content.Shared._Starfall.Health.Systems;
 // <summary>_Starfall: Show damage examine info directly in the default examine menu instead of a separate verb window.</summary>
-public sealed class StarfallHealthExamineSystem : EntitySystem
+public sealed partial class StarfallHealthExamineSystem : EntitySystem
 {
-    [Dependency] private readonly HealthExaminableSystem _healthExaminable = default!;
+    [Dependency] private HealthExaminableSystem _healthExaminable = default!;
 
     public override void Initialize()
     {

@@ -1,8 +1,8 @@
 <Document>
-  # Nuclear Operatives
+  # Gorlex Marauder
 
   <Box>
-    [color=#999999][italic]"OPERATIVES STANDBY. YOUR OBJECTIVES ARE SIMPLE.[/italic][/color]
+    [color=#999999][italic]"MARAUDERS STANDBY. YOUR OBJECTIVES ARE SIMPLE.[/italic][/color]
   </Box>
   <Box>
     [color=#999999][italic]DELIVER THE PAYLOAD AND GET OUT BEFORE THE PAYLOAD DETONATES. BEGIN MISSION."[/italic][/color]
@@ -11,11 +11,9 @@
     <GuideEntityEmbed Entity="PosterContrabandEnlistGorlex" Caption=""/>
   </Box>
 
-  You've just been chosen to be a nuclear operative for the [color=#ff0000]Syndicate[/color]. You have one goal, to blow up one of Nanotrasen's finest vessels with a nuclear fission explosive.
-
   ## Operatives
   Your team will be made up of several different roles, which are:
-  - [bold]Operatives[/bold], standard soldiers who can take up the grunt work.
+  - [bold]Operator[/bold], standard soldiers who can take up the grunt work.
   - The [bold]Corpsman[/bold] who works with reagents to make medicines or chemical weapons.
   - The [bold]Commander[/bold] who draws up the plan and leads the team.
 
@@ -29,7 +27,7 @@
 
   ## The Disk
 
-  Each operative starts with a [color=cyan]pinpointer[/color], which you should turn on and keep with you at all times. It will always point to the [color=cyan]nuclear authentication disk.[/color]
+  Each operative starts with a [color=cyan]pinpointer[/color], which you should turn on and keep with you at all times. It will always point to the [color=cyan]authentication disk.[/color]
   The disk belongs to the [color=yellow]Captain[/color], who will almost always have it on them. Follow the direction of the arrow on the pinpointer to the disk, and [italic]do whatever it takes to get it[/italic].
 
   <Box>
@@ -71,25 +69,31 @@
   ## Getting to the Station
   You've got the plan, you've got the gear. Now, execute.
 
-  Grab a [bold]jetpack[/bold] from your armory and go with your other operatives to your [color=cyan]shuttle[/color].
-  Among other things you may need, you'll find an [bold]IFF Computer[/bold] on the shuttle. It allows you to hide from other ships and mass scanners when [italic]Show IFF[/italic] and [italic]Show Vessel[/italic] are toggled off.
+  Go with your other operatives to your [color=cyan]shuttle[/color].
+  Onboard, you'll find a folder with the [color=cyan]nuclear authentication code[/color].
+  Memorize the code, then [bold]check to see if the nuke ID matches the nuke on your shuttle.[/bold] If it doesn't, you'll be arming the station's nuke instead.
 
-  When everyone is ready, FTL to the station and fly to it with a jetpack. Don't forget the code, your pinpointers and the nuke if you're taking it.
+  The shuttle is equipped with an [color=cyan]IFF Computer[/color]. It allows you to hide from other ships and mass scanners when [italic]Show IFF[/italic] is toggled off.
+
+  When everyone is ready, FTL to the station and fly to it using the [color=cyan]jetpacks[/color] on the shuttle. Don't forget the code, your pinpointers, and the nuke if you're taking it.
 
   <Box>
-    <GuideEntityEmbed Entity="JetpackBlack"/>
+    <GuideEntityEmbed Entity="BoxFolderNuclearCodes"/>
     <GuideEntityEmbed Entity="ComputerIFFSyndicate"/>
+    <GuideEntityEmbed Entity="JetpackBlack"/>
   </Box>
 
   ## The Nuke & Arming Procedure
-  You have a paper with the [color=cyan]nuclear authentication codes[/color] on your shuttle. [bold]Check to see if the nuke ID matches the one on your shuttle.[/bold] If it doesn't, you'll be arming the station's nuke instead.
+  You've made it this far.  Finish the job.
 
   - Obtain the [bold]nuclear authentication disk[/bold] and insert it into the nuke.
   - Type in the [bold]nuclear authentication code[/bold] and press "[bold]E[/bold]" on the keypad to Enter.
-  - [bold]To begin the self-destruct sequence, press [color=#EB2D3A]ARM[/color][/bold]. After 300 seconds, the nuke will explode.
-  - [bold]Defend the nuke[/bold], even if it's at the cost of your lives! The mission requirements do not include your return.
-  - It takes 30 seconds for someone to [bold]disarm[/bold] the nuke. Re-arming it is possible, but the chance of mission success drops if you let it happen.
-  - Should the nuke be re-armed, the timer will start from where it left off.
+  - [bold]Anchor[/bold] the nuke on solid floor inside the station.
+  - [bold]To begin the detonation sequence, press [color=#EB2D3A]ARM[/color][/bold]. After 300 seconds, the nuke will explode.
+  - [bold]Defend the nuke from NT employees and cyborgs[/bold], even if it's at the cost of your lives! The mission requirements [italic]do not include your return[/italic].
+
+  It takes 30 seconds to [bold]disarm[/bold] the nuke. Re-arming it is possible, but the chance of mission success drops if you allow the countdown to be interrupted.
+  Should the nuke be re-armed, the timer will continue from where it left off.
 
   <Box>
     <GuideEntityEmbed Entity="NuclearBomb" Caption="The Nuclear Fission Explosive"/>
@@ -116,5 +120,5 @@
 
   [bold][color=green]Crew Major Victory![/color][/bold]
   - All operatives die.
-  - The crew blow up the nuclear operative outpost with the nuke.
+  - The crew blow up the Gorlex outpost with the nuke.
 </Document>

@@ -1,0 +1,77 @@
+- type: entity
+  name: representative's portable fax
+  parent: BaseItem
+  id: HandheldFax
+  description: A rather lofty fax machine. Used by Very Important People to send Very Important Papers... Takes up most of your bag, just like your sense of self-importance.
+  components:
+  - type: Item
+    sprite: _Funkystation/Objects/Tools/handheld_fax_machine.rsi
+    size: Huge
+  - type: Sprite
+    sprite: _Funkystation/Objects/Tools/handheld_fax_machine.rsi
+    state: icon
+    drawdepth: SmallObjects
+    layers:
+      - state: icon
+        map: [ "enum.FaxMachineVisuals.VisualState" ]
+      - state: scanner
+        shader: unshaded
+  - type: ActivatableUI
+    key: enum.FaxUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.FaxUiKey.Key:
+        type: FaxBoundUi
+  - type: StationAiWhitelist
+  - type: Faxecute
+    damage:
+      types:
+        Blunt: 300
+  - type: Appearance
+  - type: ApcPowerReceiver # FaxSystem requires this to receive paper
+    needsPower: false
+    powerLoad: 250
+  - type: FaxMachine
+    name: "Representative's Portable Fax"
+    receiveNukeCodes: true # yeah sure
+    paperSlot:
+      insertSound: /Audio/Machines/scanning.ogg
+      ejectSound: /Audio/Machines/tray_eject.ogg
+      whitelist:
+        components:
+          - FaxableObject
+      blacklist:
+        components:
+          - CargoSlip
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.FaxMachineVisuals.VisualState:
+          True: { state: idle }
+          False: { state: icon }
+      enum.FaxMachineVisuals.VisualState:
+        enum.FaxMachineVisuals.VisualState:
+          Printing: { state: printing }
+          Normal: {state: idle}
+  - type: ItemSlots
+  - type: ContainerContainer
+    containers:
+      Paper: !type:ContainerSlot
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: Fax
+    transmitFrequencyId: Fax
+  - type: RequireProjectileTarget # idk what this is its just in fax_machine.yml so
+  - type: MultiHandedItem
+  - type: MeleeWeapon # 1. its funny as hell 2. this is worse than grabbing an air tank from the nearest emergency locker
+    wideAnimationRotation: 180
+    attackRate: 0.8
+    soundHit:
+      collection: MetalBreak
+    damage:
+      types:
+        Blunt: 10
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 10

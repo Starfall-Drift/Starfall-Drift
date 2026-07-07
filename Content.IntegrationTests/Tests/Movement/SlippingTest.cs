@@ -1,8 +1,3 @@
-// SPDX-FileCopyrightText: 2023-2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-License-Identifier: MIT
-
 using Content.IntegrationTests.Tests.Helpers;
 using Content.Shared.Movement.Components;
 using Content.Shared.Slippery;
@@ -28,14 +23,14 @@ public sealed class SlippingTest : MovementTest
         Assert.That(Delta(), Is.GreaterThan(0.5f));
 
         // Walking over the banana slowly does not trigger a slip.
-        await SetKey(EngineKeyFunctions.Walk, BoundKeyState.Down);
+        await SetKey(EngineKeyFunctions.Walk, BoundKeyState.Up);
         await AssertFiresEvent<SlipEvent>(async () => await Move(DirectionFlag.East, 1f), count: 0);
 
         Assert.That(Delta(), Is.LessThan(0.5f));
         AssertComp<KnockedDownComponent>(false, Player);
 
         // Moving at normal speeds does trigger a slip.
-        await SetKey(EngineKeyFunctions.Walk, BoundKeyState.Up);
+        await SetKey(EngineKeyFunctions.Walk, BoundKeyState.Down);
         await AssertFiresEvent<SlipEvent>(async () => await Move(DirectionFlag.West, 1f));
 
         // And the person that slipped was the player

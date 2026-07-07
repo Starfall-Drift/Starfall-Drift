@@ -12,12 +12,12 @@ namespace Content.Client._Starfall.Particles;
 /// <summary>
 /// Spawns dust particle puffs under entities' feet when they run.
 /// </summary>
-public sealed class FootstepDustSystem : EntitySystem
+public sealed partial class FootstepDustSystem : EntitySystem
 {
-    [Dependency] private readonly ParticleSystem _particles = default!;
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IEyeManager _eye = default!;
+    [Dependency] private ParticleSystem _particles = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IEyeManager _eye = default!;
 
     private static readonly ProtoId<ParticleEffectPrototype> DustEffect = "SfFootstepDust";
 
