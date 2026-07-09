@@ -1,8 +1,6 @@
 using System.Linq;
-using System.Numerics;
-using Content.Shared.Camera;
+using Content.Shared._Starfall.Weapons;
 using Content.Shared.Chat;
-using Content.Shared.CombatMode;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Prototypes;
@@ -19,34 +17,32 @@ using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.Audio.Systems;
-using Robust.Shared.GameObjects;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Timing;
 
 namespace Content.Shared._Starfall.Execution;
 
 /// <summary>
-/// Handles executions for guns. Guns that should not be able to execute should have <see cref="GunExecutionBlacklistComponent"/>.
+/// Handles the gun execution verb system.
 /// </summary>
+/// <remarks>
+/// Guns that should not be able to execute should have <see cref="GunExecutionBlacklistComponent"/>.
+/// </remarks>
 public sealed partial class GunExecutionSystem : EntitySystem
 {
     [Dependency] private SharedExecutionSystem _execution = default!;
     [Dependency] private SharedDoAfterSystem _doAfter = default!;
+    [Dependency] private GunExecutionProjectileSystem _projectiles = default!;
+    [Dependency] private SfGunEffectsSystem _gunEffects = default!;
+    [Dependency] private SharedSuicideSystem _suicide = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
     [Dependency] private SharedAudioSystem _audio = default!;
-    [Dependency] private SharedSuicideSystem _suicide = default!;
-    [Dependency] private SharedCombatModeSystem _combat = default!;
-    [Dependency] private SharedCameraRecoilSystem _recoil = default!;
     [Dependency] private SharedAppearanceSystem _appearance = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
     [Dependency] private IPrototypeManager _proto = default!;
     [Dependency] private IComponentFactory _compFactory = default!;
-    [Dependency] private IGameTiming _timing = default!;
     [Dependency] private INetManager _net = default!;
-
-    private static readonly ProtoId<DamageTypePrototype> FallbackDamageType = "Piercing";
-    private static readonly TimeSpan DefaultExecutionTime = TimeSpan.FromSeconds(4);
 
     public override void Initialize()
     {
@@ -58,26 +54,27 @@ public sealed partial class GunExecutionSystem : EntitySystem
 
     private void OnGetVerbs(Entity<GunComponent> ent, ref GetVerbsEvent<UtilityVerb> args)
     {
+        // Do we have hands?
         if (args.Hands == null || args.Using == null || !args.CanAccess || !args.CanInteract)
             return;
 
+        // Is this gun blacklisted from executions?
         if (HasComp<GunExecutionBlacklistComponent>(ent))
             return;
 
+        // Who is the attacker and who is the victim?
         var attacker = args.User;
         var victim = args.Target;
         var weapon = ent.Owner;
 
+        // Can the victim be executed by the attacker?
         if (!_execution.CanBeExecuted(victim, attacker))
             return;
 
-        if (ent.Comp.NextFire > _timing.CurTime)
-            return;
+        // Grab execution time from the gun's execution component if it has one, otherwise use the default execution time.
+        var executionTime = TryComp<GunExecutionComponent>(ent, out var cfg) ? cfg.ExecutionTime : GunExecutionComponent.DefaultExecutionTime;
 
-        var executionTime = TryComp<GunExecutionComponent>(ent, out var cfg)
-            ? cfg.ExecutionTime
-            : DefaultExecutionTime;
-
+        // Add the execution verb to the list of verbs.
         args.Verbs.Add(new UtilityVerb
         {
             Act = () => TryBeginExecution(weapon, victim, attacker, executionTime),
@@ -89,9 +86,11 @@ public sealed partial class GunExecutionSystem : EntitySystem
 
     private void TryBeginExecution(EntityUid weapon, EntityUid victim, EntityUid attacker, TimeSpan executionTime)
     {
+        // Check if the victim can be executed by the attacker again, since the state may have changed since the verb was added.
         if (!_execution.CanBeExecuted(victim, attacker))
             return;
 
+        // Are we executing ourselves or someone else?
         if (attacker == victim)
         {
             ShowInternal("gun-execution-suicide-initial-self", attacker, victim, weapon);
@@ -103,6 +102,7 @@ public sealed partial class GunExecutionSystem : EntitySystem
             ShowExternal("gun-execution-initial-others", attacker, victim, weapon);
         }
 
+        // Begin doAfter
         _doAfter.TryStartDoAfter(new DoAfterArgs(
             EntityManager,
             attacker,
@@ -118,13 +118,18 @@ public sealed partial class GunExecutionSystem : EntitySystem
         });
     }
 
+    /// <summary>
+    /// Completes a gun execution after the execution doafter finishes.
+    /// </summary>
+    /// <remarks>
+    /// Consumes a round, plays audiovisual effects, and applies lethal damage to the target if the weapon has a damage type.
+    /// </remarks>
     private void OnDoAfter(Entity<GunComponent> ent, ref GunExecutionDoAfterEvent args)
     {
         if (args.Handled || args.Cancelled || args.Used == null || args.Target == null)
+        {
             return;
-
-        if (HasComp<GunExecutionBlacklistComponent>(ent))
-            return;
+        }
 
         var attacker = args.User;
         var victim = args.Target.Value;
@@ -136,18 +141,7 @@ public sealed partial class GunExecutionSystem : EntitySystem
         if (!TryComp<DamageableComponent>(victim, out var damageable))
             return;
 
-        // Capture direction for muzzle flash and recoil
-        var targetPos = Transform(victim).WorldPosition - Transform(attacker).WorldPosition;
-
-        var shootDir = targetPos != Vector2.Zero ? targetPos.Normalized() : Vector2.Zero;
-        var recoilDir = -shootDir;
-
-        // Consume one round.
-        var takeAmmo = new TakeAmmoEvent(
-            1,
-            new List<(EntityUid? Entity, IShootable Shootable)>(),
-            Transform(attacker).Coordinates,
-            attacker);
+        var takeAmmo = new TakeAmmoEvent(1, new List<(EntityUid? Entity, IShootable Shootable)>(), Transform(attacker).Coordinates, attacker);
 
         RaiseLocalEvent(weapon, takeAmmo);
 
@@ -156,71 +150,31 @@ public sealed partial class GunExecutionSystem : EntitySystem
             _audio.PlayPredicted(ent.Comp.SoundEmpty, weapon, attacker);
             ShowInternal("gun-execution-empty-self", attacker, victim, weapon);
             ShowExternal("gun-execution-empty-others", attacker, victim, weapon);
+
             return;
         }
 
-        var (ammoEnt, shootable) = takeAmmo.Ammo[0];
-        string? damageType = null;
+        var damageType = GetExecutionDamageType(takeAmmo.Ammo[0]);
 
-        switch (shootable)
+        var (ammoEntity, shootable) = takeAmmo.Ammo[0];
+
+        var direction = _transform.GetWorldPosition(victim) - _transform.GetWorldPosition(attacker);
+
+        // Play muzzle flash, recoil, and gunshot sound. This does not launch a projectile.
+        _gunEffects.PlayGunEffects(ent, shootable, attacker, direction);
+
+        var projectile = _projectiles.MaterializeProjectile(ammoEntity, shootable, victim);
+
+        if (projectile != null)
         {
-            case CartridgeAmmoComponent cartridge:
-            {
-                if (_proto.TryIndex<EntityPrototype>(cartridge.Prototype, out var proto)
-                    && proto.TryGetComponent<ProjectileComponent>(out var projComp, _compFactory))
-                {
-                    damageType = DominantDamageType(projComp.Damage);
-                }
-
-                // Mark casing spent
-                cartridge.Spent = true;
-                _appearance.SetData(ammoEnt!.Value, AmmoVisuals.Spent, true);
-                Dirty(ammoEnt.Value, cartridge);
-                break;
-            }
-            case HitscanAmmoComponent:
-                damageType = "Heat"; // most hitscan are energy weapons sooooooooooo
-                CleanupSpawnedAmmo(ammoEnt);
-                break;
-            case AmmoComponent:
-            {
-                if (ammoEnt != null && TryComp<ProjectileComponent>(ammoEnt.Value, out var projComp))
-                    damageType = DominantDamageType(projComp.Damage);
-
-                CleanupSpawnedAmmo(ammoEnt);
-                break;
-            }
+            _projectiles.ResolveProjectile(projectile.Value, victim, attacker);
         }
 
-        // Muzzle flash
-        if (shootable is AmmoComponent ammoForFlash && ammoForFlash.MuzzleFlash is { } muzzleProto)
-        {
-            var attemptEv = new GunMuzzleFlashAttemptEvent();
-            RaiseLocalEvent(weapon, ref attemptEv);
+        ConsumeExecutionAmmo(ammoEntity, shootable);
 
-            if (!attemptEv.Cancelled)
-            {
-                var flashEv = new MuzzleFlashEvent(GetNetEntity(weapon), muzzleProto, shootDir.ToAngle());
-
-                RaiseLocalEvent(flashEv);
-
-                if (_net.IsServer)
-                {
-                    var filter = Filter.Pvs(weapon, entityManager: EntityManager)
-                        .RemovePlayerByAttachedEntity(attacker);
-                    RaiseNetworkEvent(flashEv, filter);
-                }
-            }
-        }
-
-        var prevCombat = _combat.IsInCombatMode(attacker);
-        _combat.SetInCombatMode(attacker, true);
-
-        // Recoil
-        if (_net.IsClient && recoilDir != Vector2.Zero && _timing.IsFirstTimePredicted)
-            _recoil.KickCamera(attacker, recoilDir * 0.5f * ent.Comp.CameraRecoilScalarModified);
-
-        _audio.PlayPredicted(ent.Comp.SoundGunshotModified ?? ent.Comp.SoundGunshot, weapon, attacker);
+        // Notify systems that react to a gun being fired.
+        var shotEvent = new GunShotEvent(attacker, takeAmmo.Ammo);
+        RaiseLocalEvent(weapon, ref shotEvent);
 
         if (attacker == victim)
         {
@@ -233,26 +187,108 @@ public sealed partial class GunExecutionSystem : EntitySystem
             ShowExternal("gun-execution-complete-others", attacker, victim, weapon);
         }
 
-        _suicide.ApplyLethalDamage(
-            (victim, damageable),
-            damageType != null ? new ProtoId<DamageTypePrototype>(damageType) : FallbackDamageType);
+        // Projectile payloads resolve normally, while execution damage guarantees that the victim is killed.
+        if (damageType != null)
+        {
+            _suicide.ApplyLethalDamage((victim, damageable), new ProtoId<DamageTypePrototype>(damageType));
+        }
 
-        _combat.SetInCombatMode(attacker, prevCombat);
         args.Handled = true;
     }
 
-    /// <summary>
-    /// Deletes an ammo entity that only exists so we could consume it.
-    /// </summary>
-    private void CleanupSpawnedAmmo(EntityUid? ammoEnt)
+    private void ConsumeExecutionAmmo(EntityUid? ammoEntity, IShootable shootable)
     {
-        if (ammoEnt == null)
+        switch (shootable)
+        {
+            case CartridgeAmmoComponent cartridge:
+            {
+                if (cartridge.DeleteOnSpawn)
+                {
+                    CleanupAmmoEntity(ammoEntity);
+                    return;
+                }
+
+                if (ammoEntity == null)
+                    return;
+
+                cartridge.Spent = true;
+
+                _appearance.SetData(ammoEntity.Value, AmmoVisuals.Spent, true);
+
+                Dirty(ammoEntity.Value, cartridge);
+                break;
+            }
+
+            case HitscanAmmoComponent:
+                CleanupAmmoEntity(ammoEntity);
+                break;
+
+            case AmmoComponent:
+                // On the server, GunExecutionProjectileSystem owns this entity
+                // and deletes it after resolving its payload.
+                if (!_net.IsServer)
+                    CleanupAmmoEntity(ammoEntity);
+
+                break;
+        }
+    }
+
+    private void CleanupAmmoEntity(EntityUid? ammoEntity)
+    {
+        if (ammoEntity == null)
             return;
 
-        if (IsClientSide(ammoEnt.Value))
-            Del(ammoEnt.Value);
+        if (IsClientSide(ammoEntity.Value))
+            Del(ammoEntity.Value);
         else if (_net.IsServer)
-            Del(ammoEnt.Value);
+            Del(ammoEntity.Value);
+    }
+
+    private string? GetExecutionDamageType(
+        (EntityUid? Entity, IShootable Shootable) ammo)
+    {
+        var (ammoEntity, shootable) = ammo;
+
+        switch (shootable)
+        {
+            case CartridgeAmmoComponent cartridge:
+            {
+                if (!_proto.TryIndex<EntityPrototype>(cartridge.Prototype, out var projectilePrototype))
+                {
+                    return null;
+                }
+
+                if (!projectilePrototype.TryGetComponent<ProjectileComponent>(out var projectile, _compFactory))
+                {
+                    return null;
+                }
+
+                return DominantDamageType(projectile.Damage);
+            }
+
+            case AmmoComponent:
+            {
+                if (ammoEntity == null || !TryComp<ProjectileComponent>(ammoEntity.Value, out var projectile))
+                {
+                    return null;
+                }
+
+                return DominantDamageType(projectile.Damage);
+            }
+
+            case HitscanAmmoComponent:
+            {
+                if (ammoEntity == null || !TryComp<HitscanBasicDamageComponent>(ammoEntity.Value, out var hitscanDamage))
+                {
+                    return null;
+                }
+
+                return DominantDamageType(hitscanDamage.Damage);
+            }
+
+            default:
+                return null;
+        }
     }
 
     /// <summary>
@@ -260,11 +296,19 @@ public sealed partial class GunExecutionSystem : EntitySystem
     /// </summary>
     private static string? DominantDamageType(DamageSpecifier damage)
     {
-        return damage.DamageDict
-            .Where(kv => !string.Equals(kv.Key, "Structural", StringComparison.OrdinalIgnoreCase))
-            .OrderByDescending(kv => kv.Value)
-            .Select(kv => kv.Key)
-            .FirstOrDefault();
+        foreach (var (damageType, amount) in damage.DamageDict
+                     .OrderByDescending(entry => entry.Value))
+        {
+            if (amount <= 0)
+                continue;
+
+            if (string.Equals(damageType, "Structural", StringComparison.OrdinalIgnoreCase))
+            {
+                continue;
+            }
+            return damageType;
+        }
+        return null;
     }
 
     private void ShowInternal(LocId key, EntityUid attacker, EntityUid victim, EntityUid weapon)

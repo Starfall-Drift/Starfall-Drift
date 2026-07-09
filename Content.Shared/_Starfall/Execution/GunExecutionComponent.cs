@@ -9,16 +9,23 @@ namespace Content.Shared._Starfall.Execution;
 public sealed partial class GunExecutionComponent : Component
 {
     /// <summary>
-    /// Default: 4 seconds.
+    /// The default duration of an execution.
+    /// </summary>
+    public static readonly TimeSpan DefaultExecutionTime = TimeSpan.FromSeconds(4);
+
+    /// <summary>
     /// How long the execution doafter lasts.
     /// </summary>
+    /// <remarks>
+    /// Defaults to <see cref="DefaultExecutionTime"/>.
+    /// </remarks>
     [DataField, AutoNetworkedField]
-    public TimeSpan ExecutionTime = TimeSpan.FromSeconds(4);
+    public TimeSpan ExecutionTime = DefaultExecutionTime;
 }
 
 /// <summary>
-/// Add to a gun to prevent it from being used for executions.
-/// By default all guns support execution.
+/// Prevents a gun from being used to perform executions.
+/// Guns without this component may be used for executions.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
 public sealed partial class GunExecutionBlacklistComponent : Component
