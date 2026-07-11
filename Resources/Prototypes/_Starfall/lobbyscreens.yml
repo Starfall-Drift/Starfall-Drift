@@ -1,5 +1,5 @@
 - type: lobbyBackground
   id: SomethingAboutWebp
   background: /Textures/_Starfall/LobbyScreens/somethingaboutwebp.webp
-  title: Something About WebP
-  artist: TrixxedHeart
+  title: lobby-state-background-webp-title
+  artist: lobby-state-background-webp-artist
