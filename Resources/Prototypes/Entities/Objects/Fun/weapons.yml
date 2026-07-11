@@ -5,7 +5,7 @@
   - type: PacifismAllowedGun # They don't hurt!
   - type: Gun
     clumsyProof: true # Clown proficiency
-  - type: GunExecution # If a clown attempts to execute themselves with it they WILL die
+  - type: GunExecution # _Starfall: If a clown attempts to execute themselves with it they WILL die
     selfExecutionDamageType: Piercing
     selfExecutionUserWhitelist:
       components:
