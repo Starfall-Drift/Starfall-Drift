@@ -17,6 +17,17 @@ public abstract partial class SharedExplosionEffectSystem : EntitySystem
 
     private void OnExplosionEffectTriggered(Entity<ExplosionEffectComponent> ent, ref ExplosiveTriggeredEvent args)
     {
+        // _Funky start
+        // Prevents intergration tests from exploding
+        if (TerminatingOrDeleted(ent) ||
+            !TryComp(ent, out TransformComponent? transform) ||
+            transform.MapUid is not { } mapUid ||
+            TerminatingOrDeleted(mapUid))
+        {
+            return;
+        }
+        // _Funky end
+
         foreach (var effect in ent.Comp.VisualEffects)
         {
             SpawnNextToOrDrop(effect, ent);
