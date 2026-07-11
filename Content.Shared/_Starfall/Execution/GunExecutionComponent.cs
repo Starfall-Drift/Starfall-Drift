@@ -1,4 +1,7 @@
 using Robust.Shared.GameStates;
+using Content.Shared.Damage.Prototypes;
+using Content.Shared.Whitelist;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Starfall.Execution;
 
@@ -21,6 +24,18 @@ public sealed partial class GunExecutionComponent : Component
     /// </remarks>
     [DataField, AutoNetworkedField]
     public TimeSpan ExecutionTime = DefaultExecutionTime;
+
+    /// <summary>
+    /// Damage type used when self-executing with ammunition that has no positive damage type.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public ProtoId<DamageTypePrototype>? SelfExecutionDamageType;
+
+    /// <summary>
+    /// Optional restrictions on who can use the configured self-execution damage.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public EntityWhitelist? SelfExecutionUserWhitelist;
 }
 
 /// <summary>

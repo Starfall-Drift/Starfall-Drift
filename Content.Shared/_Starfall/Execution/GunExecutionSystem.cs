@@ -16,6 +16,7 @@ using Content.Shared.Weapons.Ranged;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Weapons.Ranged.Systems;
+using Content.Shared.Whitelist;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -43,6 +44,7 @@ public sealed partial class GunExecutionSystem : EntitySystem
     [Dependency] private IPrototypeManager _proto = default!;
     [Dependency] private IComponentFactory _compFactory = default!;
     [Dependency] private INetManager _net = default!;
+    [Dependency] private EntityWhitelistSystem _whitelist = default!;
 
     public override void Initialize()
     {
@@ -156,6 +158,18 @@ public sealed partial class GunExecutionSystem : EntitySystem
 
         var damageType = GetExecutionDamageType(takeAmmo.Ammo[0]);
 
+        if (damageType == null &&
+            attacker == victim &&
+            TryComp<GunExecutionComponent>(weapon, out var executionConfig) &&
+            executionConfig.SelfExecutionDamageType is { } selfDamageType &&
+            (executionConfig.SelfExecutionUserWhitelist == null ||
+             _whitelist.IsWhitelistPass(
+                 executionConfig.SelfExecutionUserWhitelist,
+                 attacker)))
+        {
+            damageType = selfDamageType;
+        }
+
         var (ammoEntity, shootable) = takeAmmo.Ammo[0];
 
         var direction = _transform.GetWorldPosition(victim) - _transform.GetWorldPosition(attacker);
@@ -166,9 +180,7 @@ public sealed partial class GunExecutionSystem : EntitySystem
         var projectile = _projectiles.MaterializeProjectile(ammoEntity, shootable, victim);
 
         if (projectile != null)
-        {
             _projectiles.ResolveProjectile(projectile.Value, victim, attacker);
-        }
 
         ConsumeExecutionAmmo(ammoEntity, shootable);
 
