@@ -17,27 +17,36 @@ public sealed partial class HumanoidProfileEditor
     {
         if (_allowFlavorText)
         {
+            FlavorTextSection.Visible = true;
+
             if (_flavorText != null)
                 return;
 
             _flavorText = new FlavorText.FlavorText();
-            TabContainer.AddChild(_flavorText);
-            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-flavortext-tab"));
-            _flavorTextEdit = _flavorText.CFlavorTextInput;
+            // _Starfall: Add the flavor text control to the container instead of making a new tab
+            // TabContainer.AddChild(_flavorText);
+            // TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-flavortext-tab"));
+            // _flavorTextEdit = _flavorText.CFlavorTextInput;
+            FlavorTextContainer.AddChild(_flavorText);
 
+            _flavorTextEdit = _flavorText.CFlavorTextInput;
             _flavorText.OnFlavorTextChanged += OnFlavorTextChange;
+
+            UpdateFlavorTextEdit();
         }
         else
         {
+            FlavorTextSection.Visible = false;
+
             if (_flavorText == null)
                 return;
 
-            TabContainer.RemoveChild(_flavorText);
             _flavorText.OnFlavorTextChanged -= OnFlavorTextChange;
+            FlavorTextContainer.RemoveChild(_flavorText);
+
             _flavorText.Dispose();
-            _flavorTextEdit?.Dispose();
-            _flavorTextEdit = null;
             _flavorText = null;
+            _flavorTextEdit = null;
         }
     }
 

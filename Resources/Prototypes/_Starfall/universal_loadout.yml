@@ -1,0 +1,6 @@
+- type: roleLoadout
+  id: StarfallUniversal
+  points: 5
+  groups:
+  - Trinkets
+  - Glasses

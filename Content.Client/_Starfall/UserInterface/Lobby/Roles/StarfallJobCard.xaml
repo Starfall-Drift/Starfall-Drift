@@ -1,0 +1,66 @@
+<roles:StarfallJobCard
+    xmlns="https://spacestation14.io"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:roles="clr-namespace:Content.Client._Starfall.UserInterface.Lobby.Roles"
+    xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+    HorizontalExpand="True"
+    MinWidth="280"
+    StyleClasses="StarfallJobCard">
+
+    <BoxContainer Orientation="Vertical"
+                  HorizontalExpand="True"
+                  VerticalExpand="True"
+                  SeparationOverride="7">
+
+        <!-- Icon/Title/Toggle -->
+        <BoxContainer Orientation="Horizontal"
+                      HorizontalExpand="True"
+                      SeparationOverride="8">
+
+            <PanelContainer StyleClasses="StarfallAntagIcon"
+                            MinSize="32 32"
+                            VerticalAlignment="Center">
+
+                <TextureRect Name="JobIcon"
+                             MinSize="32 32"
+                             Stretch="KeepAspectCentered" />
+            </PanelContainer>
+
+            <ContainerButton Name="GuidebookButton"
+                             StyleClasses="StarfallAntagTitleButton"
+                             HorizontalExpand="True"
+                             VerticalAlignment="Center">
+
+                <!-- TODO: If you add alt job titles don't add them here, do it in loadouts -->
+                <Label Name="JobName"
+                       StyleClasses="StarfallAntagName"
+                       HorizontalExpand="True"
+                       ClipText="True"
+                       MouseFilter="Ignore" />
+            </ContainerButton>
+
+            <controls:SwitchButton Name="PreferenceToggle"
+                                   OffStateText=""
+                                   OnStateText=""
+                                   VerticalAlignment="Center" />
+
+            <Button Name="LoadoutButton"
+                    Text="Loadout"
+                    VerticalAlignment="Center" />
+        </BoxContainer>
+
+        <!-- Description -->
+        <PanelContainer Name="DescriptionPanel"
+                        StyleClasses="StarfallJobDescriptionPanel"
+                        HorizontalExpand="True"
+                        VerticalExpand="True"
+                        MinHeight="72">
+            <RichTextLabel Name="JobDescription"
+                           HorizontalExpand="True"
+                           VerticalExpand="True"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           MaxWidth="500" />
+        </PanelContainer>
+    </BoxContainer>
+</roles:StarfallJobCard>

@@ -92,19 +92,54 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
     {
         _prototypeManager.Resolve(job, out var prototype);
         RoleLoadout? loadout = null;
+        const string universalLoadoutId = "StarfallUniversal"; // _Starfall: Universal loadout ID for all characters, regardless of job.
+        RoleLoadout? universalLoadout = null; // _Starfall
+        RoleLoadoutPrototype? universalLoadoutPrototype = null; // _Starfall
 
         // Need to get the loadout up-front to handle names if we use an entity spawn override.
         var jobLoadout = LoadoutSystem.GetJobPrototype(prototype?.ID);
 
         if (_prototypeManager.TryIndex(jobLoadout, out RoleLoadoutPrototype? roleProto))
         {
-            profile?.Loadouts.TryGetValue(jobLoadout, out loadout);
+            // _Starfall: Load the character-wide job loadout.
+            if (profile?.Loadouts.TryGetValue(jobLoadout, out var savedJobLoadout) == true)
+            {
+                loadout = savedJobLoadout.Clone();
+            }
 
             // Set to default if not present
             if (loadout == null)
             {
                 loadout = new RoleLoadout(jobLoadout);
                 loadout.SetDefault(profile, _actors.GetSession(entity), _prototypeManager);
+            }
+        }
+
+        // _Starfall: Load the character-wide Universal loadout.
+        if (profile != null &&
+            _prototypeManager.TryIndex<RoleLoadoutPrototype>(
+                universalLoadoutId,
+                out universalLoadoutPrototype))
+        {
+            if (profile.Loadouts.TryGetValue(
+                    universalLoadoutId,
+                    out var savedUniversalLoadout))
+            {
+                universalLoadout =
+                    savedUniversalLoadout.Clone();
+            }
+
+            // Create the default Universal loadout when the character
+            // does not have any saved Universal selections yet.
+            if (universalLoadout == null)
+            {
+                universalLoadout =
+                    new RoleLoadout(universalLoadoutId);
+
+                universalLoadout.SetDefault(
+                    profile,
+                    _actors.GetSession(entity),
+                    _prototypeManager);
             }
         }
 
@@ -145,15 +180,77 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
             }
         }
 
-        if (loadout != null)
+        // _Starfall: Validate the job-specific loadout.
+        if (profile != null && loadout != null)
         {
-            EquipRoleLoadout(entity.Value, loadout, roleProto!);
+            loadout.EnsureValid(
+                profile,
+                _actors.GetSession(entity)!,
+                IoCManager.Instance!);
         }
 
+        // _Starfall: Validate the Universal loadout.
+        if (profile != null && universalLoadout != null)
+        {
+            universalLoadout.EnsureValid(
+                profile,
+                _actors.GetSession(entity)!,
+                IoCManager.Instance!);
+        }
+
+        // Equip the base job outfit first.
+        // This creates the backpack before Universal storage items
+        // such as Trinkets are inserted.
         if (prototype?.StartingGear != null)
         {
-            var startingGear = _prototypeManager.Index<StartingGearPrototype>(prototype.StartingGear);
-            EquipStartingGear(entity.Value, startingGear, raiseEvent: false);
+            var startingGear =
+                _prototypeManager.Index<StartingGearPrototype>(
+                    prototype.StartingGear);
+
+            EquipStartingGear(
+                entity.Value,
+                startingGear,
+                raiseEvent: false);
+        }
+
+        // Apply job-specific equipment first.
+        //
+        // This ensures the player's final selected backpack exists
+        // before Universal storage items are inserted.
+        if (loadout != null)
+        {
+            EquipRoleLoadout(
+                entity.Value,
+                loadout,
+                roleProto!);
+        }
+
+        // Apply Universal selections after job equipment.
+        //
+        // Matching non-empty job categories have already overridden
+        // and removed their corresponding Universal categories.
+        if (universalLoadout != null &&
+            universalLoadoutPrototype != null)
+        {
+            var effectiveUniversal =
+                universalLoadout.Clone();
+
+            if (loadout != null)
+            {
+                foreach (var group in loadout.SelectedLoadouts)
+                {
+                    if (group.Value.Count == 0)
+                        continue;
+
+                    effectiveUniversal.SelectedLoadouts.Remove(
+                        group.Key);
+                }
+            }
+
+            EquipRoleLoadout(
+                entity.Value,
+                effectiveUniversal,
+                universalLoadoutPrototype);
         }
 
         var gearEquippedEv = new StartingGearEquippedEvent(entity.Value);

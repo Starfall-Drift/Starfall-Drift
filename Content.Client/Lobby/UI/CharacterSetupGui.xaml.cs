@@ -37,15 +37,15 @@ namespace Content.Client.Lobby.UI
             RobustXamlLoader.Load(this);
             IoCManager.InjectDependencies(this);
 
-            var panelTex = _resourceCache.GetTexture("/Textures/Interface/Nano/button.svg.96dpi.png");
-            var back = new StyleBoxTexture
-            {
-                Texture = panelTex,
-                Modulate = new Color(37, 37, 42)
-            };
-            back.SetPatchMargin(StyleBox.Margin.All, 10);
+            // var panelTex = _resourceCache.GetTexture("/Textures/Interface/Nano/button.svg.96dpi.png");
+            // var back = new StyleBoxTexture
+            // {
+            //     Texture = panelTex,
+            //     Modulate = new Color(37, 37, 42)
+            // };
+            // back.SetPatchMargin(StyleBox.Margin.All, 10);
 
-            BackgroundPanel.PanelOverride = back;
+            // BackgroundPanel.PanelOverride = back;
 
             _createNewCharacterButton = new Button
             {
@@ -60,11 +60,11 @@ namespace Content.Client.Lobby.UI
             };
 
             CharEditor.AddChild(profileEditor);
-            RulesButton.OnPressed += _ => new RulesAndInfoWindow().Open();
-
-            StatsButton.OnPressed += _ => new PlaytimeStatsWindow().OpenCentered();
-
-            _cfg.OnValueChanged(CCVars.SeeOwnNotes, p => AdminRemarksButton.Visible = p, true);
+            // RulesButton.OnPressed += _ => new RulesAndInfoWindow().Open();
+            //
+            // StatsButton.OnPressed += _ => new PlaytimeStatsWindow().OpenCentered();
+            //
+            // _cfg.OnValueChanged(CCVars.SeeOwnNotes, p => AdminRemarksButton.Visible = p, true);
         }
 
         /// <summary>

@@ -150,6 +150,7 @@ public sealed partial class HumanoidProfileEditor
     public void RefreshSpecies()
     {
         SpeciesButton.Clear();
+        AppearanceSpeciesButton.Clear(); // _Starfall: also clear the appearance species button
         _species.Clear();
 
         _species.AddRange(_prototypeManager.EnumeratePrototypes<SpeciesPrototype>().Where(o => o.RoundStart));
@@ -160,10 +161,12 @@ public sealed partial class HumanoidProfileEditor
         {
             var name = Loc.GetString(_species[i].Name);
             SpeciesButton.AddItem(name, i);
+            AppearanceSpeciesButton.AddItem(name, i); // _Starfall: add the appearance species button as well
 
             if (Profile?.Species.Equals(_species[i].ID) == true)
             {
                 SpeciesButton.SelectId(i);
+                AppearanceSpeciesButton.SelectId(i); // _Starfall: appearance button toooooooooooooooooo
             }
         }
 
