@@ -284,8 +284,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieArachind
-  name: arachnid plushie
-  description: An adorable stuffed toy that resembles an arachnid. It feels silky..
+  name: aranei plushie
+  description: An adorable stuffed toy that resembles an aranei. It feels silky..
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/arachnid.rsi
@@ -1132,8 +1132,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieMoth
-  name: moth plushie
-  description: Cute and fluffy moth plushie. Enjoy, bz!
+  name: lumnari plushie
+  description: Cute and fluffy lumnari plushie. Enjoy, bz!
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/moth.rsi
