@@ -8,6 +8,9 @@
 - type: antag
   id: Wizard
   name: roles-antag-wizard-name
+  icon:
+    sprite: _Starfall/Interface/Lobby/AntagCards.rsi
+    state: wizard
   antagonist: true
   # setPreference: true # Disabled as roundstart gamemode until reworked
   objective: roles-antag-wizard-objective # TODO: maybe give random objs and stationary ones from AntagObjectives and AntagRandomObjectives

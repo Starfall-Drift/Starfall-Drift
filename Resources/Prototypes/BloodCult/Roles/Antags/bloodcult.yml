@@ -1,6 +1,9 @@
 - type: antag
   id: BloodCultist
   name: roles-antag-cult-name
+  icon:
+    sprite: _Starfall/Interface/Lobby/AntagCards.rsi
+    state: bloodcult
   antagonist: true
   setPreference: true
   objective: roles-antag-cult-objective

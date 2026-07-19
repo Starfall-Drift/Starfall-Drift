@@ -1,6 +1,9 @@
 - type: antag
   id: Nukeops
   name: roles-antag-nuclear-operative-name
+  icon:
+    sprite: _Starfall/Interface/Lobby/AntagCards.rsi
+    state: nuclearoperative
   antagonist: true
   setPreference: true
   objective: roles-antag-nuclear-operative-objective
@@ -12,6 +15,9 @@
 - type: antag
   id: NukeopsMedic
   name: roles-antag-nuclear-operative-agent-name
+  icon:
+    sprite: _Starfall/Interface/Lobby/AntagCards.rsi
+    state: nuclearoperativeagent
   antagonist: true
   setPreference: true
   objective: roles-antag-nuclear-operative-agent-objective
@@ -26,6 +32,9 @@
 - type: antag
   id: NukeopsCommander
   name: roles-antag-nuclear-operative-commander-name
+  icon:
+    sprite: _Starfall/Interface/Lobby/AntagCards.rsi
+    state: nuclearoperativecommander
   antagonist: true
   setPreference: true
   objective: roles-antag-nuclear-operative-commander-objective
