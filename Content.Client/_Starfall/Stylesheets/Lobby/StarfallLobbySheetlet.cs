@@ -1,4 +1,3 @@
-using Content.Client.Resources;
 using Content.Client.Stylesheets;
 using Content.Client.Stylesheets.Fonts;
 using Robust.Client.Graphics;
@@ -20,14 +19,11 @@ public sealed class StarfallLobbySheetlet : Sheetlet<PalettedStylesheet>
         PalettedStylesheet sheet,
         object config)
     {
-        var root = new StyleBoxTexture
+        var root = new StyleBoxFlat
         {
-            Texture = sheet.ResCache.GetTexture("/Textures/_Starfall/Interface/panel.svg.png"),
-
-            PatchMarginLeft = 7,
-            PatchMarginTop = 7,
-            PatchMarginRight = 7,
-            PatchMarginBottom = 7,
+            BackgroundColor = Color.FromHex("#14191ddd"),
+            BorderColor = Color.FromHex("#39424a"),
+            BorderThickness = new Thickness(1),
 
             ContentMarginLeftOverride = 0,
             ContentMarginTopOverride = 0,
