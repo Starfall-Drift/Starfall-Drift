@@ -1,0 +1,46 @@
+<loadouts:StarfallLoadoutItemCard
+    xmlns="https://spacestation14.io"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:loadouts="clr-namespace:Content.Client._Starfall.UserInterface.Lobby.Loadouts"
+    ToggleMode="True"
+    HorizontalExpand="True"
+    MinWidth="96"
+    MinHeight="96"
+    StyleClasses="StarfallLoadoutItemCard">
+
+    <PanelContainer StyleClasses="StarfallLoadoutCard"
+                    HorizontalExpand="True"
+                    VerticalExpand="True"
+                    MouseFilter="Ignore">
+
+        <BoxContainer Orientation="Vertical"
+                      HorizontalExpand="True"
+                      VerticalExpand="True"
+                      Margin="5"
+                      SeparationOverride="3"
+                      MouseFilter="Ignore">
+
+            <Label Name="CostLabel"
+                   Text="0"
+                   HorizontalAlignment="Left"
+                   StyleClasses="StarfallProfileTitle"
+                   MouseFilter="Ignore" />
+
+            <SpriteView Name="ItemSprite"
+                        SetSize="67 67"
+                        Scale="12 12"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        VerticalExpand="True"
+                        MouseFilter="Ignore" />
+
+            <Label Name="ItemNameLabel"
+                   Text="Item"
+                   SetWidth="135"
+                   HorizontalAlignment="Center"
+                   Align="Center"
+                   ClipText="True"
+                   MouseFilter="Ignore" />
+        </BoxContainer>
+    </PanelContainer>
+</loadouts:StarfallLoadoutItemCard>

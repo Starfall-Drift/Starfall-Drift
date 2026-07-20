@@ -1,0 +1,38 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "nuclearoperative (commander+agent) by rosysaturniidae on Discord, wizard by drricky on Discord edited by TrixxedHeart, heretic by TheSecondLord (Github), cosmiccult by cooliodudio (Discord) edited by AftrLite (Github), sleeperagent by not_macaw (Discord), syndicateagent by cooliodudio (Discord), bloodcult by cooliodudio (Discord)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+	    {
+            "name": "bloodcult"
+        },
+		{
+            "name": "cosmiccult"
+        },
+		{
+            "name": "heretic"
+        },
+        {
+            "name": "nuclearoperative"
+        },
+		{
+			"name": "nuclearoperativeagent"
+		},
+        {
+            "name": "nuclearoperativecommander"
+        },
+		{
+            "name": "sleeperagent"
+        },
+		{
+            "name": "syndicateagent"
+        },
+		{
+            "name": "wizard"
+        }
+    ]
+}

@@ -1,3 +1,5 @@
+// Replaced by Starfall's StarfallRolesEditor.
+#if false
 using System.Linq;
 using System.Numerics;
 using Content.Client.Lobby.UI.Loadouts;
@@ -358,3 +360,4 @@ public sealed partial class HumanoidProfileEditor
         }
     }
 }
+#endif

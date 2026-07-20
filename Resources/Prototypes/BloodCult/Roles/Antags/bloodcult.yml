@@ -1,8 +1,11 @@
 - type: antag
   id: BloodCultist
   name: roles-antag-cult-name
+  icon:
+    sprite: _Starfall/Interface/Lobby/AntagCards.rsi
+    state: bloodcult
   antagonist: true
-  setPreference: true
+  setPreference: false
   objective: roles-antag-cult-objective
   # guides: [ BloodCult ] # TODO: Add BloodCult guide entry
   requirements:

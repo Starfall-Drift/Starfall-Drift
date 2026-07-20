@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Client._Starfall.Stylesheets;
 using Content.Client.Stylesheets.Fonts;
 using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface;
@@ -49,6 +50,9 @@ public partial class SystemStylesheet : CommonStylesheet
             // Finally, load all the other sheetlets.
             GetAllSheetletRules<PalettedStylesheet, CommonSheetletAttribute>(man),
             GetAllSheetletRules<SystemStylesheet, CommonSheetletAttribute>(man),
+
+            // _Starfall: Load Starfall rules last so they can override upstream rules.
+            GetSheetletRules<PalettedStylesheet>(typeof(StarfallThemeSheetlet), man),
         };
 
         Stylesheet = new Stylesheet(rules.SelectMany(x => x).ToArray());

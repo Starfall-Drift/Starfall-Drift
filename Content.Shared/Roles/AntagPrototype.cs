@@ -1,6 +1,7 @@
 using Content.Shared.Guidebook;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
+using Robust.Shared.Utility;
 
 namespace Content.Shared.Roles;
 
@@ -56,4 +57,10 @@ public sealed partial class AntagPrototype : IPrototype
     /// </summary>
     [DataField]
     public List<ProtoId<GuideEntryPrototype>>? Guides;
+
+    /// <summary>
+    /// _Starfall: Artwork displayed on the antagonist preference card.
+    /// </summary>
+    [DataField]
+    public SpriteSpecifier? Icon;
 }

@@ -1,0 +1,170 @@
+<loadouts:StarfallLoadoutEditor
+    xmlns="https://spacestation14.io"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:loadouts="clr-namespace:Content.Client._Starfall.UserInterface.Lobby.Loadouts"
+    xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+    HorizontalExpand="True"
+    VerticalExpand="True">
+
+    <BoxContainer Orientation="Vertical"
+                  HorizontalExpand="True"
+                  VerticalExpand="True"
+                  Margin="12"
+                  SeparationOverride="8">
+
+        <PanelContainer StyleClasses="StarfallProfileHeader"
+                        HorizontalExpand="True">
+
+            <BoxContainer Orientation="Horizontal"
+                          HorizontalExpand="True"
+                          SeparationOverride="8">
+
+                <Label Text="Editing:"
+                       StyleClasses="StarfallProfileTitle"
+                       VerticalAlignment="Center" />
+
+                <OptionButton Name="ScopeSelector"
+                              MinWidth="300" />
+
+                <Control HorizontalExpand="True" />
+
+                <controls:ConfirmButton
+                    Name="ResetCategoryButton"
+                    Text="Reset category"
+                    ConfirmationText="Confirm reset"
+                    Disabled="True" />
+
+                <controls:ConfirmButton
+                    Name="ResetLoadoutButton"
+                    Text="Reset loadout"
+                    ConfirmationText="Confirm reset"
+                    StyleClasses="negative" />
+            </BoxContainer>
+        </PanelContainer>
+        <!-- Search  -->
+        <PanelContainer StyleClasses="StarfallProfileCard"
+                        HorizontalExpand="True">
+
+            <BoxContainer Orientation="Horizontal"
+                          HorizontalExpand="True"
+                          SeparationOverride="8">
+
+                <LineEdit Name="SearchEdit"
+                          PlaceHolder="Search loadout items..."
+                          HorizontalExpand="True" />
+
+                <Button Name="ClearSearchButton"
+                        Text="Clear"
+                        Disabled="True" />
+
+                <Label Text="Selected only"
+                       VerticalAlignment="Center" />
+
+                <controls:SwitchButton Name="SelectedOnly"
+                                       OffStateText=""
+                                       OnStateText=""
+                                       VerticalAlignment="Center" />
+            </BoxContainer>
+        </PanelContainer>
+
+        <!-- Catalog -->
+        <BoxContainer Orientation="Horizontal"
+                      HorizontalExpand="True"
+                      VerticalExpand="True"
+                      SeparationOverride="10">
+
+            <!-- Categories -->
+            <PanelContainer StyleClasses="StarfallProfileCard"
+                            MinWidth="230"
+                            VerticalExpand="True">
+
+                <BoxContainer Orientation="Vertical"
+                              HorizontalExpand="True"
+                              VerticalExpand="True"
+                              SeparationOverride="6">
+
+                    <PanelContainer StyleClasses="StarfallProfileHeader">
+                        <Label Text="Categories"
+                               StyleClasses="StarfallProfileTitle" />
+                    </PanelContainer>
+
+                    <ScrollContainer VerticalExpand="True"
+                                     HorizontalExpand="True"
+                                     HScrollEnabled="False">
+
+                        <BoxContainer Name="CategoryList"
+                                      Orientation="Vertical"
+                                      HorizontalExpand="True"
+                                      SeparationOverride="4" />
+                    </ScrollContainer>
+                </BoxContainer>
+            </PanelContainer>
+
+            <!-- Item grid -->
+            <PanelContainer StyleClasses="StarfallProfileCard"
+                            HorizontalExpand="True"
+                            VerticalExpand="True">
+
+                <BoxContainer Orientation="Vertical"
+                              HorizontalExpand="True"
+                              VerticalExpand="True"
+                              SeparationOverride="6">
+
+                    <!-- Category information and point budget -->
+                    <PanelContainer StyleClasses="StarfallProfileHeader">
+                        <BoxContainer Orientation="Vertical"
+                                      HorizontalExpand="True"
+                                      SeparationOverride="4">
+
+                            <BoxContainer Orientation="Horizontal"
+                                          HorizontalExpand="True"
+                                          SeparationOverride="8">
+
+                                <Label Name="CategoryTitle"
+                                       Text="All Items"
+                                       StyleClasses="StarfallProfileTitle"
+                                       VerticalAlignment="Center" />
+
+                                <Control HorizontalExpand="True" />
+
+                                <Label Name="CategoryRequirementLabel"
+                                       Text=""
+                                       Modulate="#9eabb5"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Right"
+                                       Visible="False" />
+
+                                <Label Name="PointLabel"
+                                       Text=""
+                                       Modulate="#9eabb5"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Right"
+                                       Visible="False" />
+                            </BoxContainer>
+
+                            <ProgressBar Name="PointBar"
+                                         MinValue="0"
+                                         MaxValue="30"
+                                         Value="0"
+                                         HorizontalExpand="True"
+                                         MinHeight="6"
+                                         Visible="False" />
+                        </BoxContainer>
+                    </PanelContainer>
+
+                    <!-- Item cards -->
+                    <ScrollContainer HorizontalExpand="True"
+                                     VerticalExpand="True"
+                                     HScrollEnabled="False">
+
+                        <GridContainer Name="ItemGrid"
+                                       Columns="5"
+                                       HorizontalExpand="True"
+                                       HSeparationOverride="8"
+                                       VSeparationOverride="8" />
+                    </ScrollContainer>
+                </BoxContainer>
+            </PanelContainer>
+        </BoxContainer>
+    </BoxContainer>
+</loadouts:StarfallLoadoutEditor>
