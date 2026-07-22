@@ -24,7 +24,7 @@ Describe how you tested the pull request, and how someone reviewing this PR can 
 - [ ] If I am porting something, I have done my best to respect the appropriate licenses associated with the presented changes.
 <!-- You should understand that not following the above may get your PR closed at maintainer’s discretion -->
 
-<!-- Our repository uses REUSE headers to easily determine who contributed to what, and to also easily segregate files that have different licenses. If you wish to have your PR submitted under a different license, please list it here. Acceptable entries are: MIT, AGPL-3.0-or-later. -->
+<!-- If you wish to have your PR submitted under a different license, please list it here. Acceptable entries are: MIT. -->
 ## License
 MIT
 
