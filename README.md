@@ -32,7 +32,7 @@ Build the server using `dotnet build`.
 
 ## License
 
-This repository uses REUSE Specification headers to determine the appropriate license for each file. Supported licenses are can be found in the LICENSES/ directory. All contributions to this repository are assumed to be MIT unless otherwise specified by the author, which will be reflected in the REUSE Specification headers.
+Supported licenses are can be found in the LICENSES/ directory. All contributions to this repository are assumed to be MIT unless otherwise specified by the author, which will be reflected in the REUSE Specification headers.
 
 Most media assets are licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) unless stated otherwise. Assets have their license and the copyright in the metadata file. [Example](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
