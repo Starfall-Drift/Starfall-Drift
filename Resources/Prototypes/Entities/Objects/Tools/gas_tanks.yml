@@ -84,6 +84,10 @@
     sprite: Objects/Tanks/oxygen.rsi
   - type: Clothing
     sprite: Objects/Tanks/oxygen.rsi
+  - type: Tag
+    tags:
+    - GasTank
+    - OxygenTank # funky change
 
 - type: entity
   parent: GasTankRoundBase
@@ -97,6 +101,10 @@
     sprite: Objects/Tanks/red.rsi
   - type: Clothing
     sprite: Objects/Tanks/red.rsi
+  - type: Tag
+    tags:
+    - GasTank
+    - NitrogenTank # funky change
 
 - type: entity
   parent: GasTankRoundBase
@@ -130,9 +138,6 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
-  - type: Tag # Starfall - Added Tag for Survival Box Redux
-    tags:
-    - EmergencyOxygenTank
 
 - type: entity
   parent: EmergencyOxygenTank
@@ -149,9 +154,6 @@
       sprite: Objects/Tanks/emergency_red.rsi
   - type: Clothing
     sprite: Objects/Tanks/emergency_red.rsi
-  - type: Tag # Starfall - Added Tag for Survival Box Redux
-    tags:
-    - EmergencyNitrogenTank
 
 - type: entity
   parent: EmergencyOxygenTank
@@ -172,9 +174,6 @@
       temperature: 293.15
   - type: Clothing
     sprite: Objects/Tanks/emergency_extended.rsi
-  - type: Tag # Starfall - Added Tag for Survival Box Redux
-    tags:
-    - ExtendedEmergencyOxygenTank
 
 - type: entity
   parent: ExtendedEmergencyOxygenTank
@@ -191,9 +190,9 @@
       sprite: Objects/Tanks/emergency_extended_red.rsi
   - type: Clothing
     sprite: Objects/Tanks/emergency_extended_red.rsi
-  - type: Tag # Starfall - Added Tag for Survival Box Redux
+  - type: Tag
     tags:
-    - ExtendedEmergencyNitrogenTank
+    - ExtendedEmergencyNitrogenTank # funky change
 
 - type: entity
   parent: ExtendedEmergencyOxygenTank
@@ -235,9 +234,6 @@
       sprite: Objects/Tanks/emergency_double_red.rsi
   - type: Clothing
     sprite: Objects/Tanks/emergency_double_red.rsi
-  - type: Tag # Starfall - Added Tag for Survival Box Redux
-    tags:
-    - ExtendedEmergencyNitrogenTank
 
 - type: entity
   parent: EmergencyOxygenTank
@@ -254,9 +250,6 @@
       sprite: Objects/Tanks/emergency_clown.rsi
   - type: Clothing
     sprite: Objects/Tanks/emergency_clown.rsi
-  - type: Tag
-    tags:
-    - FunnyEmergencyOxygenTank
 
 - type: entity
   parent: GasTankRoundBase
@@ -266,6 +259,10 @@
   components:
   - type: GasTank
     releasePressure: 101.3
+  - type: Tag
+    tags:
+    - GasTank
+    - AirTank # funky change
 
 - type: entity
   parent: GasTankRoundBase
@@ -281,6 +278,10 @@
     releasePressure: 30.4
   - type: Clothing
     sprite: Objects/Tanks/anesthetic.rsi
+  - type: Tag
+    tags:
+    - GasTank
+    - NitrousOxideTank # funky change
 
 - type: entity
   # it's a square so no rolling dough
@@ -300,3 +301,7 @@
     slots:
     - Belt
     - suitStorage
+  - type: Tag
+    tags:
+    - GasTank
+    - PlasmaTank # funky change
