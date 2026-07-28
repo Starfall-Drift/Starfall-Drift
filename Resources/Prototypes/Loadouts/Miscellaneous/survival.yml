@@ -38,7 +38,7 @@
     proto: OxygenBreather
   storage:
     back:
-    - BoxSurvival
+    - BoxSurvivalSlots # Starfall - Survival Box Redux
 
 - type: loadout
   id: EmergencyNitrogen
@@ -47,7 +47,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxSurvivalNitrogen
+    - BoxSurvivalSlotsNitrogen # Starfall - Survival Box Redux
 
 # Clown
 - type: loadout
@@ -57,7 +57,7 @@
     proto: OxygenBreather
   storage:
     back:
-    - BoxHug
+    - BoxHugSlots # Starfall - Survival Box Redux
 
 - type: loadout
   id: EmergencyNitrogenClown
@@ -66,7 +66,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxHugNitrogen
+    - BoxHugSlotsNitrogen # Starfall - Survival Box Redux
 
 # Mime
 - type: loadoutEffectGroup
@@ -99,7 +99,7 @@
     proto: OxygenBreatherMime
   storage:
     back:
-    - BoxMime
+    - BoxMimeSlots # Starfall - Survival Box Redux
 
 - type: loadout
   id: EmergencyNitrogenMime
@@ -108,7 +108,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxMimeNitrogen
+    - BoxMimeSlotsNitrogen # Starfall - Survival Box Redux
 
 - type: loadout
   id: EmergencySpeciesMothMime
@@ -117,7 +117,7 @@
     proto: OxygenBreatherMimeMoth
   storage:
     back:
-    - BoxMimeMoth
+    - BoxMimeSlotsMoth # Starfall - Survival Box Redux
 
 # Engineering / Extended
 - type: loadout
@@ -127,7 +127,7 @@
     proto: OxygenBreather
   storage:
     back:
-    - BoxSurvivalEngineering
+    - BoxSurvivalSlotsExtended # Starfall - Survival Box Redux
 
 - type: loadout
   id: EmergencyNitrogenExtended
@@ -136,7 +136,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxSurvivalEngineeringNitrogen
+    - BoxSurvivalSlotsExtendedNitrogen # Starfall - Survival Box Redux
 
 # Medical
 - type: loadout
@@ -146,7 +146,7 @@
     proto: OxygenBreather
   storage:
     back:
-    - BoxSurvivalMedical
+    - BoxSurvivalSlotsMedical # Starfall - Survival Box Redux
 
 - type: loadout
   id: EmergencyNitrogenMedical
@@ -155,7 +155,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxSurvivalMedicalNitrogen
+    - BoxSurvivalSlotsMedicalNitrogen # Starfall - Survival Box Redux
 
 # Security
 - type: loadout
@@ -165,7 +165,7 @@
     proto: OxygenBreather
   storage:
     back:
-    - BoxSurvivalSecurity
+    - BoxSurvivalSlotsSecurity # Starfall - Survival Box Redux
 
 - type: loadout
   id: EmergencyNitrogenSecurity
@@ -174,7 +174,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxSurvivalSecurityNitrogen
+    - BoxSurvivalSlotsSecurityNitrogen # Starfall - Survival Box Redux
 
 # Syndicate
 - type: loadout
@@ -184,7 +184,7 @@
     proto: OxygenBreather
   storage:
     back:
-    - BoxSurvivalSyndicate
+    - BoxSurvivalSlotsSyndicate # Starfall - Survival Box Redux
 
 - type: loadout
   id: EmergencyNitrogenSyndicate
@@ -193,7 +193,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxSurvivalSyndicateNitrogen
+    - BoxSurvivalSlotsSyndicateNitrogen # Starfall - Survival Box Redux
 
 # Military / Double Extended
 - type: loadout
@@ -205,7 +205,7 @@
     pocket1: DoubleEmergencyOxygenTankFilled
   storage:
     back:
-    - BoxSurvivalMilitaryDouble
+    - BoxSurvivalSlotsMilitaryDouble # Starfall - Survival Box Redux
 
 - type: loadout
   id: EmergencyNitrogenMilitaryDouble
@@ -216,7 +216,7 @@
     pocket1: DoubleEmergencyNitrogenTankFilled
   storage:
     back:
-    - BoxSurvivalMilitaryDoubleNitrogen
+    - BoxSurvivalSlotsMilitaryDoubleNitrogen # Starfall - Survival Box Redux
 
 # Pre-equipped species gear
 

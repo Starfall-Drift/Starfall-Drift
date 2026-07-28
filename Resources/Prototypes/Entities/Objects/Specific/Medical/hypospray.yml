@@ -254,6 +254,9 @@
         Quantity: 15
       - ReagentId: TranexamicAcid
         Quantity: 5
+  - type: Tag
+    tags:
+    - EmergencyMedipen
 
 - type: entity
   parent: ChemicalMedipen
@@ -536,6 +539,9 @@
         Quantity: 10
       - ReagentId: Barozine
         Quantity: 10
+  - type: Tag
+    tags:
+    - SpaceMedipen
 
 - type: entity
   abstract: true

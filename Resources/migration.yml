@@ -853,3 +853,29 @@ WeaponTaser: null
 
 # TODO: When the RG-2 and its safe are ported over, uncomment the line below and add a timestamp.
 #GunSafeDisabler: GunSafePistolRg2
+
+# 2026-07-27 Starfall - Survival Box Redux
+BoxSurvival: BoxSurvivalSlots
+BoxSurvivalNitrogen: BoxSurvivalSlotsNitrogen
+BoxSurvivalEngineering: BoxSurvivalSlotsExtended
+BoxSurvivalEngineeringNitrogen: BoxSurvivalSlotsExtendedNitrogen
+BoxSurvivalSecurity: BoxSurvivalSlotsSecurity
+BoxSurvivalSecurityNitrogen: BoxSurvivalSlotsSecurityNitrogen
+BoxSurvivalMedical: BoxSurvivalSlotsMedical
+BoxSurvivalMedicalNitrogen: BoxSurvivalSlotsMedicalNitrogen
+BoxHug: BoxHugSlots
+BoxHugNitrogen: BoxHugSlotsNitrogen
+BoxMime: BoxMimeSlots
+BoxMimeNitrogen: BoxMimeSlotsNitrogen
+BoxMimeMoth: BoxMimeSlotsMoth
+BoxSurvivalSyndicate: BoxSurvivalSlotsSyndicate
+BoxSurvivalSyndicateNitrogen: BoxSurvivalSlotsSyndicateNitrogen
+BoxSurvivalMilitaryDouble: BoxSurvivalSlotsMilitaryDouble
+BoxSurvivalMilitaryDoubleNitrogen: BoxSurvivalSlotsMilitaryDoubleNitrogen
+BoxSurvivalAquatic: BoxSurvivalSlotsAquatic
+BoxSurvivalEngineeringAquatic: BoxSurvivalSlotsAquaticExtended
+BoxHugAquatic: BoxHugSlotsAquatic
+BoxMimeAquatic: BoxMimeSlotsAquatic
+BoxSurvivalMedicalAquatic: BoxSurvivalSlotsAquaticMedical
+BoxSurvivalSecurityAquatic: BoxSurvivalSlotsAquaticSecurity
+BoxSurvivalSyndicateAquatic: BoxSurvivalSlotsAquaticSyndicate

@@ -62,6 +62,7 @@
   - type: Tag
     tags:
     - Trash
+    - Flare # Starfall - Added Tag for Survival Box Redux
 
 - type: entity
   parent: GlowstickBase
