@@ -39,6 +39,11 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - SecurityBreathMask # Starfall - Added Tag for Survival Box Redux
 
 - type: entity
   parent: [ClothingMaskGas, BaseSyndicateContraband]
@@ -59,6 +64,11 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - SyndicateBreathMask # Starfall - Added Tag for Survival Box Redux
 
 - type: entity
   parent: ClothingMaskGas
@@ -137,6 +147,7 @@
     tags:
     - PetWearable
     - WhitelistChameleon
+    - BreathMask # Starfall - Added Tag for Survival Box Redux
   - type: PhysicalComposition
     materialComposition:
       Steel: 50
@@ -180,6 +191,7 @@
     tags:
     - PetWearable
     - WhitelistChameleon
+    - BreathMask # Starfall - Added Tag for Survival Box Redux
   - type: PhysicalComposition
     materialComposition:
       Steel: 50
