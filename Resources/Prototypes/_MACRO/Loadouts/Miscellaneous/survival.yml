@@ -60,7 +60,7 @@
     proto: Aquatic
   storage:
     back:
-    - BoxSurvivalAquatic
+    - BoxSurvivalSlotsAquatic # Starfall - Survival Box Redux
 
 # Clown
 - type: loadout
@@ -70,7 +70,7 @@
     proto: Aquatic
   storage:
     back:
-    - BoxHugAquatic
+    - BoxHugSlotsAquatic # Starfall - Survival Box Redux
 
 # Mime
 - type: loadout
@@ -80,7 +80,7 @@
     proto: Aquatic
   storage:
     back:
-    - BoxMimeAquatic
+    - BoxMimeSlotsAquatic # Starfall - Survival Box Redux
 
 # Engineering / Extended
 - type: loadout
@@ -90,7 +90,7 @@
     proto: Aquatic
   storage:
     back:
-    - BoxSurvivalEngineeringAquatic
+    - BoxSurvivalSlotsExtendedAquatic # Starfall - Survival Box Redux
 
 # Medical
 - type: loadout
@@ -100,7 +100,7 @@
     proto: Aquatic
   storage:
     back:
-    - BoxSurvivalMedicalAquatic
+    - BoxSurvivalSlotsMedicalAquatic # Starfall - Survival Box Redux
 
 # Security
 - type: loadout
@@ -110,7 +110,7 @@
     proto: Aquatic
   storage:
     back:
-    - BoxSurvivalSecurityAquatic
+    - BoxSurvivalSlotsSecurityAquatic # Starfall - Survival Box Redux
 
 # Syndicate
 - type: loadout
@@ -120,4 +120,4 @@
     proto: Aquatic
   storage:
     back:
-    - BoxSurvivalSyndicateAquatic
+    - BoxSurvivalSlotsSyndicateAquatic # Starfall - Survival Box Redux

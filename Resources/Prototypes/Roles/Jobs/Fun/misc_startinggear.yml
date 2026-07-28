@@ -12,7 +12,7 @@
     ears: ClothingHeadsetGrey
   storage:
     back:
-    - BoxSurvival
+    - BoxSurvivalSlots # Starfall - Survival Box Redux
 
 # Syndicate Operative Outfit - Civilian
 - type: startingGear
@@ -39,7 +39,7 @@
     id: SyndiPDA
   storage:
     back:
-    - BoxSurvival
+    - BoxSurvivalSlots # Starfall - Survival Box Redux
 
 # Syndicate Footsoldier Gear
 - type: startingGear
@@ -55,7 +55,7 @@
     shoes: ClothingShoesBootsCombatFilled
   storage:
     back:
-    - BoxSurvivalSyndicate
+    - BoxSurvivalSlotsSyndicate # Starfall - Survival Box Redux
 
 - type: startingGear
   id: SyndicateFootsoldierTeamLeaderGear
@@ -83,7 +83,7 @@
     gloves: ClothingHandsGlovesCombat
   storage:
     back:
-    - BoxSurvivalSecurity
+    - BoxSurvivalSlotsSecurity # Starfall - Survival Box Redux
     - Flash
     - MagazinePistol
 
