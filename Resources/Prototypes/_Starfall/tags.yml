@@ -28,4 +28,7 @@
 - type: Tag
   id: SpaceMedipen
 
+- type: Tag
+  id: PillEmergency
+
 
