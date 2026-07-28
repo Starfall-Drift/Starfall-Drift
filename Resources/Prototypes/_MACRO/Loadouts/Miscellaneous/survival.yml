@@ -90,7 +90,7 @@
     proto: Aquatic
   storage:
     back:
-    - BoxSurvivalSlotsExtendedAquatic # Starfall - Survival Box Redux
+    - BoxSurvivalSlotsAquaticExtended # Starfall - Survival Box Redux
 
 # Medical
 - type: loadout
@@ -100,7 +100,7 @@
     proto: Aquatic
   storage:
     back:
-    - BoxSurvivalSlotsMedicalAquatic # Starfall - Survival Box Redux
+    - BoxSurvivalSlotsAquaticMedical # Starfall - Survival Box Redux
 
 # Security
 - type: loadout
@@ -110,7 +110,7 @@
     proto: Aquatic
   storage:
     back:
-    - BoxSurvivalSlotsSecurityAquatic # Starfall - Survival Box Redux
+    - BoxSurvivalSlotsAquaticSecurity # Starfall - Survival Box Redux
 
 # Syndicate
 - type: loadout
@@ -120,4 +120,4 @@
     proto: Aquatic
   storage:
     back:
-    - BoxSurvivalSlotsSyndicateAquatic # Starfall - Survival Box Redux
+    - BoxSurvivalSlotsAquaticSyndicate # Starfall - Survival Box Redux
