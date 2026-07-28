@@ -13,6 +13,9 @@
     closeable: true
     closeSound:
       collection: flaskCloseSounds
+  - type: Tag # Starfall - Added for Survival Box Redux // I being able to put whole fucking alcohol bottles but not flasks in is stupid
+    tags:
+    - DrinkBottle
 
 # Flasks
 
