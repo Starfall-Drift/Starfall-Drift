@@ -1,7 +1,7 @@
 version = 1
-SPDX-PackageName = "Funky Station"
-SPDX-PackageSupplier = "taydeo <tay@funkystation.org>"
-SPDX-PackageDownloadLocation = "https://funkystation.org"
+SPDX-PackageName = "Starfall Drift"
+SPDX-PackageSupplier = "TrixxedHeart <trixxedheart@gmail.com>"
+SPDX-PackageDownloadLocation = "https://github.com/Starfall-Drift/Starfall-Drift"
 
 [[annotations]]
 path = ["Resources/Audio/**", "Resources/Textures/**"]
