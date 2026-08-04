@@ -4,6 +4,19 @@ SPDX-PackageSupplier = "TrixxedHeart <trixxedheart@gmail.com>"
 SPDX-PackageDownloadLocation = "https://github.com/Starfall-Drift/Starfall-Drift"
 
 [[annotations]]
+path = [
+    "Content.Client/_Starfall/**",
+    "Content.Server/_Starfall/**",
+    "Content.Shared/_Starfall/**",
+    "Resources/Prototypes/_Starfall/**",
+    "Resources/Textures/_Starfall/**",
+    "Resources/Audio/_Starfall/**",
+]
+precedence = "closest"
+SPDX-FileCopyrightText = "None"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
 path = ["Resources/Audio/**", "Resources/Textures/**"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "None"
