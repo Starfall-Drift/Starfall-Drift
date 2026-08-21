@@ -2,7 +2,7 @@
   id: ChronicMigraines
   name: trait-chronic-migraines-name
   description: trait-chronic-migraines-desc
-  category: Quirks
+  category: Disabilities
   cost: 0
   traitGear: PillCanisterChepagepant
   components:
