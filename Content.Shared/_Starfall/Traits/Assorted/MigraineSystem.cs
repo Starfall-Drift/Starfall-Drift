@@ -130,5 +130,5 @@ public sealed partial class MigraineSystem : EntitySystem
 	//
     //    Spawn(SparkEffect, Transform(target).Coordinates);
     //    _audio.PlayPvs(damaged.Sound, target, damaged.Sound.Params.WithVariation(0.05f));
-    }
+    // }
 }
