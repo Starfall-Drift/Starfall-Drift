@@ -483,4 +483,11 @@ public enum LogType
     /// Events related to players connecting/disconnecting.
     /// </summary>
     Connection = 104,
+
+    #region Aurora
+    /// <summary>
+    /// Player changed a canvas design.
+    /// </summary>
+    CanvasDesign = 14106,
+    #endregion
 }

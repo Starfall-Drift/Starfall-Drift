@@ -1,0 +1,67 @@
+- type: entity
+  id: ASBaseDigitalSign
+  name: digital sign
+  description: A programmable pixel display. Its maintenance panel can be opened to access the image display.
+  abstract: true
+  components:
+  - type: Transform
+    noRot: true
+  - type: Sprite
+    sprite: _AS/Structures/Decoration/digital_sign.rsi
+    snapCardinals: false
+  - type: InteractionOutline
+  - type: CanvasDesign
+    width: 26
+    height: 19
+    offsetX: 3
+    offsetY: 6
+    backgroundColor: '#000000'
+    defaultDrawingColor: '#FFFFFF'
+    editorTitle: Digital Sign Maintenance
+    shader: unshaded
+    addEditorVerb: false
+    requireOpenPanel: true
+    requirePowerToDisplay: true
+  - type: ASEditableMetadata
+  - type: Appearance
+  - type: ApcPowerReceiver
+    powerLoad: 10
+  - type: ExtensionCableReceiver
+  - type: WiresPanel
+  - type: ActivatableUIRequiresPanel
+  - type: ActivatableUI
+    key: enum.CanvasDesignUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.CanvasDesignUiKey.Key:
+        type: CanvasDesignBoundUserInterface
+  - type: StationAiWhitelist
+
+- type: entity
+  parent: [BaseWallmountMachine, ASBaseDigitalSign]
+  id: ASDigitalSign
+  name: digital sign
+  description: A wall-mounted programmable pixel display. Its maintenance panel can be opened to access the image display.
+  components:
+  - type: Sprite
+    sprite: _AS/Structures/Decoration/digital_sign.rsi
+    layers:
+    - state: base_wall
+    - map: ["canvas-design"]
+  - type: Construction
+    graph: ASDigitalSign
+    node: sign
+
+- type: entity
+  parent: [BaseMachine, ASBaseDigitalSign]
+  id: ASDigitalSignFloor
+  description: A freestanding programmable pixel display. Its maintenance panel can be opened to access the image display.
+  components:
+  - type: Sprite
+    sprite: _AS/Structures/Decoration/digital_sign.rsi
+    layers:
+    - state: base_floor
+    - map: ["canvas-design"]
+  - type: Construction
+    graph: ASDigitalSignFloor
+    node: sign

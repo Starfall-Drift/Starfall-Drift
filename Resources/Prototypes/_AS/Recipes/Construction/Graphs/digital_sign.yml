@@ -1,0 +1,71 @@
+- type: constructionGraph
+  id: ASDigitalSign
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: sign
+      completed:
+      - !type:SnapToGrid
+      steps:
+      - material: Steel
+        amount: 5
+      - material: Glass
+        amount: 2
+      - material: Cable
+        amount: 5
+        doAfter: 2
+  - node: sign
+    entity: ASDigitalSign
+    edges:
+    - to: start
+      steps:
+      - tool: Prying
+        doAfter: 2
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 5
+      - !type:SpawnPrototype
+        prototype: SheetGlass1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: CableApcStack1
+        amount: 5
+      - !type:DeleteEntity
+
+- type: constructionGraph
+  id: ASDigitalSignFloor
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: sign
+      completed:
+      - !type:SnapToGrid
+      steps:
+      - material: Steel
+        amount: 5
+      - material: Glass
+        amount: 2
+      - material: Cable
+        amount: 5
+        doAfter: 2
+  - node: sign
+    entity: ASDigitalSignFloor
+    edges:
+    - to: start
+      steps:
+      - tool: Prying
+        doAfter: 2
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 5
+      - !type:SpawnPrototype
+        prototype: SheetGlass1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: CableApcStack1
+        amount: 5
+      - !type:DeleteEntity
