@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "license": "CC-BY-3.0",
+  "copyright": "Created by TrixxedHeart (github) for Aurora's Song",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "base_wall"
+    },
+    {
+      "name": "base_floor"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+- type: construction
+  id: ASDigitalSign
+  graph: ASDigitalSign
+  startNode: start
+  targetNode: sign
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: true
+  conditions:
+  - !type:WallmountCondition
+
+- type: construction
+  id: ASDigitalSignFloor
+  graph: ASDigitalSignFloor
+  startNode: start
+  targetNode: sign
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
