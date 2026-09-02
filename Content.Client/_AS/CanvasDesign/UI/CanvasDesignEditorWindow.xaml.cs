@@ -216,57 +216,14 @@ public sealed partial class CanvasDesignEditorWindow : FancyWindow
 
     private async Task ExportDesign()
     {
-        var pixels = Canvas.GetPixels();
-        var name = EscapeYaml(NameEdit.Text);
-        var description = EscapeYaml(Rope.Collapse(DescriptionEdit.TextRope));
-        var exportedBy = EscapeYaml(_players.LocalSession?.Name ?? "Unknown");
-        var text = new StringBuilder()
-            .AppendLine($"exportedBy: \"{exportedBy}\"")
-            .AppendLine($"name: \"{name}\"")
-            .AppendLine($"description: \"{description}\"")
-            .AppendLine($"width: {_width}")
-            .AppendLine($"height: {_height}")
-            .AppendLine("pixels:");
-
-        var byColor = new SortedDictionary<uint, List<int>>();
-        for (var index = 0; index < pixels.Length; index++)
-        {
-            if (pixels[index] == _background)
-                continue;
-
-            var color = pixels[index] & 0xFFFFFF;
-            if (!byColor.TryGetValue(color, out var locations))
-                byColor[color] = locations = new List<int>();
-            locations.Add(index);
-        }
-
-        foreach (var (color, locations) in byColor)
-        {
-            text.AppendLine($"  \"{color:X6}\":");
-            foreach (var index in locations)
-            {
-                text.AppendLine($"    - [{index % _width}, {index / _width}]");
-            }
-        }
-
-        // TODO: you cant fucking append .yml to the file name so if you want to export
-        // a file called "test" it will just be called "test" and not "test.yml" because the file dialog doesn't
-        // let you append extensions to the file name. This is a problem with the file dialog system
-        // and requires an engine change, I fucking hate it here.
-        // throwing rocks
-        var file = await _fileDialogs.SaveFile(new FileDialogFilters(new FileDialogFilters.Group("yml")));
-        if (file == null)
-            return;
-
-        try
-        {
-            await using var writer = new StreamWriter(file.Value.fileStream, Encoding.UTF8);
-            await writer.WriteAsync(text.ToString());
-        }
-        catch (Exception)
-        {
-            // This space intentionally left blank.
-        }
+        await CanvasDesignExport.Save(_fileDialogs,
+            _players.LocalSession?.Name ?? "Unknown",
+            NameEdit.Text,
+            Rope.Collapse(DescriptionEdit.TextRope),
+            _width,
+            _height,
+            _background,
+            Canvas.GetPixels());
     }
 
     /// <summary>
@@ -363,12 +320,6 @@ public sealed partial class CanvasDesignEditorWindow : FancyWindow
     {
         _importLog.Error(Loc.GetString(message, args));
     }
-
-    // Escapes special characters in a string for safe inclusion in a YAML file. Replaces backslashes, double quotes, carriage returns, and newlines with their escaped equivalents.
-    private static string EscapeYaml(string value) => value.Replace("\\", "\\\\")
-        .Replace("\"", "\\\"")
-        .Replace("\r", "\\r")
-        .Replace("\n", "\\n");
 
     private static bool TryReadInt(string line, string prefix, out int value)
     {
