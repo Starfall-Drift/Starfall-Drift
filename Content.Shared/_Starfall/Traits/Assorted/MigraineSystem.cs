@@ -1,4 +1,4 @@
-using Content.Shared._EE.Silicon.EmitBuzzWhileDamaged;
+// using Content.Shared._EE.Silicon.EmitBuzzWhileDamaged;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Jittering;
@@ -20,10 +20,11 @@ namespace Content.Shared._Starfall.Traits.Assorted;
 /// </summary>
 public sealed partial class MigraineSystem : EntitySystem
 {
-    // IPCs get a special effect! yay, this doesn't have any other gameplay effect besides the sparking.
-    private static readonly ProtoId<SpeciesPrototype> IpcSpecies = "IPC";
-    private static readonly EntProtoId SparkEffect = "EffectSparks";
-    private static readonly TimeSpan IpcSparkInterval = TimeSpan.FromSeconds(4);
+	// We don't have IPCs (yet)
+    // // IPCs get a special effect! yay, this doesn't have any other gameplay effect besides the sparking.
+    // private static readonly ProtoId<SpeciesPrototype> IpcSpecies = "IPC";
+    // private static readonly EntProtoId SparkEffect = "EffectSparks";
+    // private static readonly TimeSpan IpcSparkInterval = TimeSpan.FromSeconds(4);
 
     private static readonly SoundSpecifier MigraineSound = new SoundPathSpecifier("/Audio/_Starfall/Effects/migraine.ogg");
 
@@ -75,8 +76,8 @@ public sealed partial class MigraineSystem : EntitySystem
 
         if (_net.IsServer && isIpc)
         {
-            PlayIpcSparks(args.Target);
-            entity.Comp.NextIpcSparkTime = _timing.CurTime + IpcSparkInterval;
+        //    PlayIpcSparks(args.Target);
+        //    entity.Comp.NextIpcSparkTime = _timing.CurTime + IpcSparkInterval;
         }
 
         if (!_net.IsServer)
@@ -118,15 +119,16 @@ public sealed partial class MigraineSystem : EntitySystem
     // Check if the target entity is an IPC
     private bool IsIpc(EntityUid target)
     {
-        return TryComp<HumanoidProfileComponent>(target, out var profile) && profile.Species == IpcSpecies;
+		return false;
+        // return TryComp<HumanoidProfileComponent>(target, out var profile) && profile.Species == IpcSpecies;
     }
 
-    private void PlayIpcSparks(EntityUid target)
-    {
-        if (!TryComp<EmitBuzzWhileDamagedComponent>(target, out var damaged))
-            return;
-
-        Spawn(SparkEffect, Transform(target).Coordinates);
-        _audio.PlayPvs(damaged.Sound, target, damaged.Sound.Params.WithVariation(0.05f));
+    // private void PlayIpcSparks(EntityUid target)
+    // {
+    //    if (!TryComp<EmitBuzzWhileDamagedComponent>(target, out var damaged))
+    //        return;
+	//
+    //    Spawn(SparkEffect, Transform(target).Coordinates);
+    //    _audio.PlayPvs(damaged.Sound, target, damaged.Sound.Params.WithVariation(0.05f));
     }
 }
