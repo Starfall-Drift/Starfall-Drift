@@ -213,14 +213,17 @@ public sealed class CanvasDesignUiState(
 /// Immutable state sent from the server to the client when a canvas preview is requested. Contains the current canvas data and configuration.
 /// </summary>
 [Serializable, NetSerializable]
-public sealed class CanvasDesignPreviewEuiState(
+public sealed class CanvasDesignPreviewData(
     int previewId,
     int width,
     int height,
     uint background,
     uint[] pixels,
     string name,
-    string description) : EuiStateBase
+    string description,
+    string savedBy,
+    long savedAt,
+    int serverOffsetMinutes)
 {
     public int PreviewId { get; } = previewId;
     public int Width { get; } = width;
@@ -229,4 +232,36 @@ public sealed class CanvasDesignPreviewEuiState(
     public uint[] Pixels { get; } = pixels;
     public string Name { get; } = name;
     public string Description { get; } = description;
+    public string SavedBy { get; } = savedBy;
+    public long SavedAt { get; } = savedAt;
+    public int ServerOffsetMinutes { get; } = serverOffsetMinutes;
+}
+
+/// <summary>
+/// Supplies the retained revision list and initially selected revision to the history viewer.
+/// </summary>
+[Serializable, NetSerializable]
+public sealed class CanvasDesignHistoryEuiState(
+    CanvasDesignHistoryEntry[] entries,
+    CanvasDesignPreviewData? selected,
+    bool showTargets) : EuiStateBase
+{
+    public CanvasDesignHistoryEntry[] Entries { get; } = entries;
+    public CanvasDesignPreviewData? Selected { get; } = selected;
+    public bool ShowTargets { get; } = showTargets;
+}
+
+[Serializable, NetSerializable]
+public sealed record CanvasDesignHistoryEntry(int PreviewId, string SavedBy, int EntityId, string EntityName);
+
+[Serializable, NetSerializable]
+public sealed class CanvasDesignHistorySelectMessage(int previewId) : EuiMessageBase
+{
+    public int PreviewId { get; } = previewId;
+}
+
+[Serializable, NetSerializable]
+public sealed class CanvasDesignHistoryPreviewMessage(CanvasDesignPreviewData preview) : EuiMessageBase
+{
+    public CanvasDesignPreviewData Preview { get; } = preview;
 }

@@ -1,6 +1,9 @@
 using Content.Server.Administration.Logs;
+using Content.Server.Administration;
+using Content.Server.EUI;
 using Content.Server.Popups;
 using Content.Shared._AS.CanvasDesign;
+using Content.Shared.Administration;
 using Content.Server._AS.EditableMetadata;
 using Content.Shared._AS.EditableMetadata;
 using Content.Shared.Database;
@@ -13,6 +16,8 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using System.Linq;
+using Content.Server.Administration.Managers;
+using Robust.Shared.Player;
 
 namespace Content.Server._AS.CanvasDesign;
 
@@ -25,7 +30,10 @@ public sealed partial class CanvasDesignSystem : EntitySystem
 {
     /// <summary>Maximum number of admin-preview snapshots retained for the current process.</summary>
     private const int MaxStoredPreviews = 10_000; // Roughly 10 MB of memory for 100x100 canvases.
+    private const int MaxHistoryPerCanvas = 100;
     [Dependency] private IAdminLogManager _adminLog = null!;
+    [Dependency] private IAdminManager _adminManager = null!;
+    [Dependency] private EuiManager _eui = null!;
     [Dependency] private IGameTiming _timing = null!;
     [Dependency] private ASEditableMetadataSystem _editableMetadata = null!;
     [Dependency] private UserInterfaceSystem _ui = null!;
@@ -35,6 +43,7 @@ public sealed partial class CanvasDesignSystem : EntitySystem
     private readonly Dictionary<EntityUid, (int Width, int Height)> _knownDimensions = new();
     private readonly Dictionary<int, CanvasDesignPreview> _previews = new();
     private readonly Queue<int> _previewOrder = new();
+    private readonly Dictionary<EntityUid, Queue<int>> _history = new();
     private int _nextPreviewId = 1;
 
     public override void Initialize()
@@ -43,8 +52,26 @@ public sealed partial class CanvasDesignSystem : EntitySystem
         SubscribeLocalEvent<CanvasDesignComponent, CanvasDesignSaveMessage>(OnSave);
         SubscribeLocalEvent<CanvasDesignComponent, EntityTerminatingEvent>(OnTerminating);
         SubscribeLocalEvent<CanvasDesignComponent, GetVerbsEvent<InteractionVerb>>(OnGetVerbs);
+        SubscribeLocalEvent<CanvasDesignComponent, GetVerbsEvent<Verb>>(OnGetAdminVerbs);
         SubscribeLocalEvent<CanvasDesignComponent, ActivatableUIOpenAttemptEvent>(OnOpenAttempt);
         SubscribeLocalEvent<CanvasDesignComponent, BoundUIOpenedEvent>(OnUiOpened);
+    }
+
+    private void OnGetAdminVerbs(Entity<CanvasDesignComponent> ent, ref GetVerbsEvent<Verb> args)
+    {
+        if (!TryComp<ActorComponent>(args.User, out var actor) ||
+            !_adminManager.HasAdminFlag(actor.PlayerSession, AdminFlags.Logs))
+        {
+            return;
+        }
+
+        args.Verbs.Add(new Verb
+        {
+            Text = Loc.GetString("canvas-design-verb-history"),
+            Category = VerbCategory.Admin,
+            Impact = LogImpact.Low,
+            Act = () => _eui.OpenEui(new CanvasDesignHistoryEui(ent.Owner, this), actor.PlayerSession)
+        });
     }
 
     private void OnMapInit(Entity<CanvasDesignComponent> ent, ref MapInitEvent args)
@@ -286,7 +313,10 @@ public sealed partial class CanvasDesignSystem : EntitySystem
         Dirty(ent);
         UpdateUi(ent);
 
-        var previewId = StorePreview(ent.Comp, effectiveName, effectiveDescription);
+        var savedBy = TryComp<ActorComponent>(args.Actor, out var actor)
+            ? actor.PlayerSession.Name
+            : ToPrettyString(args.Actor);
+        var previewId = StorePreview(ent.Owner, ent.Comp, effectiveName, effectiveDescription, savedBy, ent.Owner.Id, effectiveName);
         var loggedName = FormattedMessage.EscapeText(effectiveName);
         var loggedDescription = FormattedMessage.EscapeText(effectiveDescription.Replace('\r', ' ').Replace('\n', ' '));
         var metadataLog = editable != null
@@ -361,7 +391,7 @@ public sealed partial class CanvasDesignSystem : EntitySystem
             prototype?.Description ?? metadata.EntityDescription));
     }
 
-    private int StorePreview(CanvasDesignComponent canvas, string name, string description)
+    private int StorePreview(EntityUid canvasUid, CanvasDesignComponent canvas, string name, string description, string savedBy, int entityId, string entityName)
     {
         var id = _nextPreviewId++;
         if (_nextPreviewId <= 0)
@@ -371,11 +401,27 @@ public sealed partial class CanvasDesignSystem : EntitySystem
             canvas.PackedBackground,
             (uint[]) canvas.Pixels.Clone(),
             name,
-            description);
+            description,
+            savedBy,
+            entityId,
+            entityName,
+            DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
+            (int) DateTimeOffset.Now.Offset.TotalMinutes);
         _previewOrder.Enqueue(id);
-        // IDs are process-local and snapshots are evicted oldest-first to cap memory use.
+        if (!_history.TryGetValue(canvasUid, out var history))
+        {
+            _history[canvasUid] = history = new Queue<int>();
+        }
+        history.Enqueue(id);
+        while (history.Count > MaxHistoryPerCanvas)
+        {
+            history.Dequeue();
+        }
+        // snapshots are killed in order of oldest to newest
         while (_previewOrder.Count > MaxStoredPreviews)
+        {
             _previews.Remove(_previewOrder.Dequeue());
+        }
         return id;
     }
 
@@ -385,10 +431,48 @@ public sealed partial class CanvasDesignSystem : EntitySystem
         return _previews.TryGetValue(id, out preview!);
     }
 
+    public CanvasDesignHistoryEntry[] GetHistory(EntityUid uid)
+    {
+        if (!_history.TryGetValue(uid, out var history))
+        {
+            return [];
+        }
+
+        return history
+            .Reverse()
+            .Where(_previews.ContainsKey)
+            .Select(id => ToHistoryEntry(id, _previews[id]))
+            .ToArray();
+    }
+
+    public CanvasDesignHistoryEntry[] GetAllHistory()
+    {
+        return _previewOrder
+            .Reverse()
+            .Where(_previews.ContainsKey)
+            .Select(id => ToHistoryEntry(id, _previews[id]))
+            .ToArray();
+    }
+
+    public bool IsPreviewInHistory(EntityUid? uid, int previewId)
+    {
+        if (!_previews.ContainsKey(previewId))
+            return false;
+
+        return uid == null ||
+               _history.TryGetValue(uid.Value, out var history) && history.Contains(previewId);
+    }
+
+    private static CanvasDesignHistoryEntry ToHistoryEntry(int id, CanvasDesignPreview preview)
+    {
+        return new CanvasDesignHistoryEntry(id, preview.SavedBy, preview.EntityId, preview.EntityName);
+    }
+
     private void OnTerminating(Entity<CanvasDesignComponent> ent, ref EntityTerminatingEvent args)
     {
         _nextSaveAllowed.Remove(ent.Owner);
         _knownDimensions.Remove(ent.Owner);
+        _history.Remove(ent.Owner);
     }
 }
 
@@ -399,4 +483,9 @@ public sealed record CanvasDesignPreview(
     uint Background,
     uint[] Pixels,
     string Name,
-    string Description);
+    string Description,
+    string SavedBy,
+    int EntityId,
+    string EntityName,
+    long SavedAt,
+    int ServerOffsetMinutes);

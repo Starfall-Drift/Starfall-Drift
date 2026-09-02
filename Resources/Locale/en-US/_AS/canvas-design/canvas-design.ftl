@@ -23,11 +23,18 @@ canvas-design-close-save = Save
 canvas-design-close-save-draft = Save draft
 canvas-design-close-nosave = Don't save
 canvas-design-close-cancel = Cancel
-# admin preview
-canvas-design-preview-title = Canvas Preview
-canvas-design-preview-title-id = Canvas Preview #{$id}
+# admin history
+canvas-design-preview-saved-by = Saved by: {$player}
+canvas-design-preview-changed-at = Changed: {$utc} UTC | {$server} server time
+canvas-design-history-title = Canvas History
+canvas-design-history-revisions = Saved revisions
+canvas-design-history-search = Search by code, entity ID, player, or name
+canvas-design-history-entry = #{$id} | {$player}
+canvas-design-history-entry-global = #{$id} | {$entity} | {$player} | {$name}
+canvas-design-history-empty = No saved history
 # other
 canvas-design-verb-edit = Edit canvas
+canvas-design-verb-history = View Canvas History
 canvas-design-save-cooldown = This canvas can be saved again in {$seconds} seconds.
 canvas-design-editor-busy = Someone else is already editing this canvas.
 canvas-design-editor-locked = This canvas can no longer be edited.

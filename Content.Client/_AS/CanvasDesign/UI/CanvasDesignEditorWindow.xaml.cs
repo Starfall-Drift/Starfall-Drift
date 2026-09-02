@@ -320,7 +320,7 @@ public sealed partial class CanvasDesignEditorWindow : FancyWindow
     {
         _importLog.Error(Loc.GetString(message, args));
     }
-    
+
     private static bool TryReadInt(string line, string prefix, out int value)
     {
         value = 0;
