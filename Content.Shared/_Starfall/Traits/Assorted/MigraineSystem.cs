@@ -57,8 +57,8 @@ public sealed partial class MigraineSystem : EntitySystem
             if (status.AppliedTo is not { } target || _timing.CurTime < migraine.NextIpcSparkTime || !IsIpc(target))
                 continue;
 
-            PlayIpcSparks(target);
-            migraine.NextIpcSparkTime = _timing.CurTime + IpcSparkInterval;
+            // PlayIpcSparks(target);
+            // migraine.NextIpcSparkTime = _timing.CurTime + IpcSparkInterval;
         }
     }
 
