@@ -113,7 +113,7 @@ public sealed partial class SharedOfferingSystem : EntitySystem
         }
 
         // Notify the recipient that they accepted the offer. We do this first time predicted to avoid duplicate popups.
-        if (_timing.IsFirstTimePredicted)
+        if (_timing is { IsFirstTimePredicted: true, InPrediction: true })
             _popup.PopupEntity(Loc.GetString("offering-system-accepted-self", ("item", item)), recipient, recipient);
 
         return true;
@@ -121,7 +121,7 @@ public sealed partial class SharedOfferingSystem : EntitySystem
 
     private void PopupFailure(EntityUid recipient)
     {
-        if (_timing.IsFirstTimePredicted && recipient.IsValid() && !TerminatingOrDeleted(recipient))
+        if (_timing is { IsFirstTimePredicted: true, InPrediction: true } && recipient.IsValid() && !TerminatingOrDeleted(recipient))
             _popup.PopupEntity(Loc.GetString("offering-system-cannot-accept"), recipient, recipient);
     }
 
