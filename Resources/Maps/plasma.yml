@@ -131591,7 +131591,7 @@ entities:
       pos: -14.584713,16.470493
       parent: 2
     - type: MeleeWeapon
-      attackRate: 2
+      attackRate: 10 #Starfall - Revert attack speed change
       autoAttack: True
     - type: Item
       size: Huge

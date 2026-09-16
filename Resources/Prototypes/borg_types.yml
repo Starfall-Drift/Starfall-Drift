@@ -159,6 +159,7 @@
 
   defaultModules:
   - BorgModulePrying
+  - BorgModuleTool
   - BorgModuleChemical
   - BorgModuleTopicals
   - BorgModuleRescue
@@ -209,6 +210,7 @@
 
   defaultModules:
   - BorgModulePrying
+  - BorgModuleTool
   - BorgModuleMusique
   - BorgModuleService
   - BorgModuleClowning

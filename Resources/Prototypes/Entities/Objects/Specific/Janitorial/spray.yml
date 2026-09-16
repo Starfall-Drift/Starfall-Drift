@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: [ DrinkBaseMaterialPlastic, SolutionSmall, DrinkBase ]
+  parent: [ DrinkBaseMaterialPlastic, SolutionNormal, DrinkBase ] #Starfall Change - SolutionSmall -> SolutionNormal
   id: SprayBottleBase
   components:
   - type: Edible
@@ -49,7 +49,7 @@
     inHandsMaxFillLevels: 4
 
 - type: entity
-  parent: [SolutionNormal, SprayBottle]
+  parent: [SolutionLarge, SprayBottle] #Starfall Change - SolutionNormal -> SolutionLarge
   id: MegaSprayBottle
   name: mega spray bottle
   suffix: Empty
@@ -63,7 +63,7 @@
       map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Item
-    size: Normal
+    size: Small #Starfall change - It's a bigger spray bottle, we don't need to make it realistic that since it holds double the chems it needs to be doubled in size
   - type: SolutionContainerVisuals
     maxFillLevels: 7
     fillBaseName: cleaner_large-fill-
@@ -88,7 +88,7 @@
     solution:
       reagents:
       - ReagentId: Water
-        Quantity: 60
+        Quantity: 100 #Starfall Change - I hate standardization
 
 - type: entity
   parent: SprayBottle
@@ -100,7 +100,7 @@
     solution:
       reagents:
       - ReagentId: SpaceCleaner
-        Quantity: 60
+        Quantity: 100 #Starfall Change - I hate standardization
   - type: Label
     currentLabel: space cleaner
   - type: Tag
@@ -117,7 +117,7 @@
     solution:
       reagents:
       - ReagentId: SpaceCleaner
-        Quantity: 120
+        Quantity: 200
   - type: Label
     currentLabel: space cleaner
 
@@ -132,7 +132,7 @@
     solution:
       reagents:
       - ReagentId: SpaceCleaner
-        Quantity: 120
+        Quantity: 100 #Starfall Change - I hate standardization
 
 - type: entity
   parent: [SolutionLarge, MegaSprayBottle]
@@ -145,7 +145,7 @@
     solution:
       reagents:
       - ReagentId: SpaceCleaner
-        Quantity: 240
+        Quantity: 200 #Starfall Change - I hate standardization
   - type: SolutionTransfer
     canSend: false # No giving away infinite space cleaner!
   - type: SolutionRegeneration
