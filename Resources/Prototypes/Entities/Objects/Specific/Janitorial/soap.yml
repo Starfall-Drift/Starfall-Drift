@@ -83,7 +83,7 @@
     solution:
       reagents:
       - ReagentId: SoapReagent
-        Quantity: 60
+        Quantity: 50 #Starfall Change - I hate standardization
 
 - type: entity
   parent: Soap
@@ -102,9 +102,9 @@
     solution:
       reagents:
       - ReagentId: SoapReagent
-        Quantity: 55
+        Quantity: 90 #Starfall Change - I hate standardization - Made it hold 100 total, with 90 plas-phoron
       - ReagentId: Plasma
-        Quantity: 5
+        Quantity: 10 #Starfall Change - I hate standardization - Made it hold 100 total, with 90 plas-phoron
   - type: Residue
     residueColor: residue-grey
 

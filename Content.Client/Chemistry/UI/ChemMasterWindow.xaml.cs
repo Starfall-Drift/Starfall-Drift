@@ -111,17 +111,17 @@ namespace Content.Client.Chemistry.UI
             if (!addReagentButtons)
                 return new List<ReagentButton>(); // Return an empty list if reagentTransferButton creation is disabled.
 
-            var buttonConfigs = new (string text, ChemMasterReagentAmount amount, string styleClass)[]
+            var buttonConfigs = new (string text, ChemMasterReagentAmount amount, string styleClass)[] //Starfall change, revert 30u chem standardization
             {
                 ("1", ChemMasterReagentAmount.U1, StyleClass.ButtonOpenBoth),
                 ("5", ChemMasterReagentAmount.U5, StyleClass.ButtonOpenBoth),
                 ("10", ChemMasterReagentAmount.U10, StyleClass.ButtonOpenBoth),
                 ("15", ChemMasterReagentAmount.U15, StyleClass.ButtonOpenBoth),
                 ("20", ChemMasterReagentAmount.U20, StyleClass.ButtonOpenBoth),
+                ("25", ChemMasterReagentAmount.U25, StyleClass.ButtonOpenBoth),
                 ("30", ChemMasterReagentAmount.U30, StyleClass.ButtonOpenBoth),
-                ("40", ChemMasterReagentAmount.U40, StyleClass.ButtonOpenBoth),
-                ("60", ChemMasterReagentAmount.U60, StyleClass.ButtonOpenBoth),
-                ("120", ChemMasterReagentAmount.U120, StyleClass.ButtonOpenBoth),
+                ("50", ChemMasterReagentAmount.U50, StyleClass.ButtonOpenBoth),
+                ("100", ChemMasterReagentAmount.U100, StyleClass.ButtonOpenBoth),
                 (Loc.GetString("chem-master-window-buffer-all-amount"), ChemMasterReagentAmount.All, StyleClass.ButtonOpenLeft),
             };
 

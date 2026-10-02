@@ -9,6 +9,9 @@
     closeable: true
     closeSound:
       collection: bottleCloseSounds
+  - type: Solution
+    solution:
+      maxVol: 50
 
 - type: entity
   abstract: true
@@ -44,7 +47,10 @@
   - type: Item
     size: Large
     shape:
-    - 0,0,1,3
+    - 0,0,1,1 #Starfall change, make it a 2x2
+  - type: Solution
+    solution:
+      maxVol: 300 #Starfall - 240 -> 300
   - type: Tag
     tags:
     - DrinkBottle # Need this to fit in the soda dispenser, probably needs a better name
@@ -61,6 +67,7 @@
     - DrinkBottle # Need this to fit in the soda dispenser, probably needs a better name
 
 # Small carton
+# Starfall Comment - The smaller ones come out of the booze o mat. The bigger ones are usually preloaded into drink dispensers
 
 - type: entity
   parent: [DrinkBaseMaterialPlastic, DrinkCartonBase]
@@ -80,7 +87,7 @@
     solution:
       reagents:
       - ReagentId: JuiceLime
-        Quantity: 60
+        Quantity: 50 #Starfall - 60 -> 50
   - type: Tag
     tags: [ ]
 
@@ -102,7 +109,7 @@
     solution:
       reagents:
       - ReagentId: JuiceOrange
-        Quantity: 60
+        Quantity: 50 #Starfall - 60 -> 50
   - type: Tag
     tags: [ ]
 
@@ -124,7 +131,7 @@
     solution:
       reagents:
       - ReagentId: JuiceTomato
-        Quantity: 60
+        Quantity: 50 #Starfall - 60 -> 50
   - type: Tag
     tags: []
 
@@ -138,7 +145,7 @@
     solution:
       reagents:
       - ReagentId: CoconutWater
-        Quantity: 60
+        Quantity: 50 #Starfall - 60 -> 50
   - type: Sprite
     sprite: Objects/Consumable/Drinks/coconutwater.rsi
 
@@ -158,9 +165,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 50
       reagents:
       - ReagentId: Cream
-        Quantity: 60
+        Quantity: 50 #Starfall - 60 -> 50
   - type: Tag
     tags: [ ]
 
@@ -174,7 +182,7 @@
     solution:
       reagents:
       - ReagentId: JuiceLemon
-        Quantity: 60
+        Quantity: 50 #Starfall - 60 -> 50
   - type: Sprite
     sprite: Objects/Consumable/Drinks/lemonjuice.rsi
 
@@ -188,7 +196,7 @@
     solution:
       reagents:
       - ReagentId: JuicePineapple
-        Quantity: 60
+        Quantity: 50 #Starfall - 60 -> 50
   - type: Sprite
     sprite: Objects/Consumable/Drinks/pineapplejuice.rsi
 
@@ -212,7 +220,7 @@
     solution:
       reagents:
       - ReagentId: Milk
-        Quantity: 120
+        Quantity: 100 #Starfall - 120 -> 100
   - type: Tag
     tags: [ ]
 
@@ -234,7 +242,7 @@
     solution:
       reagents:
       - ReagentId: MilkSoy
-        Quantity: 120
+        Quantity: 100 #Starfall - 120 -> 100
   - type: Tag
     tags: [ ]
 
@@ -257,7 +265,7 @@
     solution:
       reagents:
       - ReagentId: MilkOat
-        Quantity: 120
+        Quantity: 100 #Starfall - 120 -> 100
   - type: Tag
     tags: [ ]
 
@@ -273,7 +281,7 @@
     solution:
       reagents:
       - ReagentId: JuiceLime
-        Quantity: 240
+        Quantity: 300 #Starfall - 240 -> 300
   - type: Label
     currentLabel: reagent-name-juice-lime
   - type: Sprite
@@ -289,7 +297,7 @@
     solution:
       reagents:
       - ReagentId: JuiceOrange
-        Quantity: 240
+        Quantity: 300 #Starfall - 240 -> 300
   - type: Label
     currentLabel: reagent-name-juice-orange
   - type: Sprite
@@ -305,7 +313,7 @@
     solution:
       reagents:
       - ReagentId: Cream
-        Quantity: 240
+        Quantity: 300 #Starfall - 240 -> 300
   - type: Label
     currentLabel: reagent-name-cream
   - type: Sprite

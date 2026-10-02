@@ -47,8 +47,7 @@
   - 5
   - 10
   - 15
-  - 30
-  - 60
+  - 50 #Starfall change, 30 and 60 replaced with 50
 
 - type: injectorMode
   parent: [ BaseSyringeMode, BaseInjectMode ]

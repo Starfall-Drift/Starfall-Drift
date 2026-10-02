@@ -107,7 +107,7 @@
     solution:
       reagents:
       - ReagentId: Flour
-        Quantity: 120 # About a pound of flour
+        Quantity: 100 # About a pound of flour - Starfall change, 120 -> 100
 
 - type: entity
   parent: [ReagentPacketSmall, ItemHeftyBase]
@@ -121,7 +121,7 @@
     solution:
       reagents:
       - ReagentId: Flour
-        Quantity: 60
+        Quantity: 50 - #Starfall - 60 -> 50
 
 - type: entity
   parent: [ReagentPacket, ItemHeftyBase]
@@ -144,7 +144,7 @@
     solution:
       reagents:
       - ReagentId: Cornmeal
-        Quantity: 120
+        Quantity: 100 - #Starfall - 120 -> 100
 
 - type: entity
   parent: [ReagentPacketSmall, ItemHeftyBase]
@@ -158,7 +158,7 @@
     solution:
       reagents:
       - ReagentId: Cornmeal
-        Quantity: 60
+        Quantity: 50 - #Starfall - 60 -> 50
 
 - type: entity
   parent: [ReagentPacket, ItemHeftyBase]
@@ -181,7 +181,7 @@
     solution:
       reagents:
       - ReagentId: Rice
-        Quantity: 120
+        Quantity: 100 - #Starfall - 120 -> 100
 
 - type: entity
   parent: [ReagentPacketSmall, ItemHeftyBase]
@@ -195,7 +195,7 @@
     solution:
       reagents:
       - ReagentId: Rice
-        Quantity: 60
+        Quantity: 50 - #Starfall - 60 -> 50
 
 - type: entity
   parent: [ReagentPacket, ItemHeftyBase]
@@ -218,7 +218,7 @@
     solution:
       reagents:
       - ReagentId: Sugar
-        Quantity: 120
+        Quantity: 100
 
 - type: entity
   parent: [ReagentPacketSmall, ItemHeftyBase]
@@ -232,7 +232,7 @@
     solution:
       reagents:
       - ReagentId: Sugar
-        Quantity: 60
+        Quantity: 50 - #Starfall - 60 -> 50
 
 # Misc
 
@@ -328,7 +328,7 @@
     solution:
       reagents:
       - ReagentId: Nutriment
-        Quantity: 60
+        Quantity: 50 - #Starfall - 60 -> 50
 
 - type: entity
   abstract: true
@@ -747,7 +747,7 @@
     solution:
       reagents:
       - ReagentId: Nutriment
-        Quantity: 60
+        Quantity: 50 - #Starfall - 60 -> 50
 
 - type: entity
   parent: [SolutionTiny, FoodBakingBase]
