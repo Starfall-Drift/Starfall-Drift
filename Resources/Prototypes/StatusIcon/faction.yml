@@ -7,7 +7,7 @@
     - Zombie
     - InitialInfected
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: &faction-icon-rsi /Textures/Interface/Misc/job_icons.rsi
     state: Zombie
 
 - type: factionIcon
@@ -19,7 +19,7 @@
     - InitialInfected
     - Zombie
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: *faction-icon-rsi
     state: InitialInfected
 
 - type: factionIcon
@@ -31,7 +31,7 @@
       - ShowAntagIcons
       - Revolutionary
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: *faction-icon-rsi
     state: Revolutionary
 
 - type: factionIcon
@@ -43,27 +43,13 @@
       - ShowAntagIcons
       - Revolutionary
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: *faction-icon-rsi
     state: HeadRevolutionary
-
-- type: factionIcon
-  id: BloodCultFaction
-  isShaded: true
-  priority: 11
-  visibleToGhosts: true
-  showTo:
-    requireAll: true
-    components:
-      - ShowAntagIcons
-      - BloodCultist
-  icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
-    state: Cultist
 
 - type: factionIcon
   id: SyndicateFaction
   priority: 0
   locationPreference: Left
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: *faction-icon-rsi
     state: Syndicate
