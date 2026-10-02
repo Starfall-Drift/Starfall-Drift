@@ -1,7 +1,8 @@
 using Content.Shared._Starfall.Particles;
+using Content.Shared._Starfall.Particles.Visuals;
 using Robust.Shared.Prototypes;
 
-namespace Content.Client._Starfall.Particles;
+namespace Content.Client._Starfall.Particles.Visuals;
 
 /// <summary>
 /// Receives <see cref="GibMistParticleEvent"/> from the server and spawns
@@ -9,7 +10,7 @@ namespace Content.Client._Starfall.Particles;
 /// </summary>
 public sealed partial class GibMistParticleSystem : EntitySystem
 {
-    [Dependency] private ParticleSystem _particles = default!;
+    [Dependency] private ParticleSystem _particles = null!;
 
     private static readonly ProtoId<ParticleEffectPrototype> MistEffect = "SfGibMist";
 

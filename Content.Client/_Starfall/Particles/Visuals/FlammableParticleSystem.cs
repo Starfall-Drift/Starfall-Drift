@@ -4,16 +4,16 @@ using Content.Shared.Atmos.Components;
 using Robust.Client.GameObjects;
 using Robust.Shared.Prototypes;
 
-namespace Content.Client._Starfall.Particles;
+namespace Content.Client._Starfall.Particles.Visuals;
 
 /// <summary>
 /// Particles when entities are on fire.
 /// </summary>
 public sealed partial class FlammableParticleSystem : EntitySystem
 {
-    [Dependency] private ParticleSystem _particles = default!;
-    [Dependency] private AppearanceSystem _appearance = default!;
-    [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private ParticleSystem _particles = null!;
+    [Dependency] private AppearanceSystem _appearance = null!;
+    [Dependency] private SharedTransformSystem _transform = null!;
 
     private static readonly ProtoId<ParticleEffectPrototype> FireEffect  = "SfFireContinuous";
     private static readonly ProtoId<ParticleEffectPrototype> SmokeEffect = "SfFireSmoke";
@@ -57,8 +57,10 @@ public sealed partial class FlammableParticleSystem : EntitySystem
             state.SmokeEmitter = _particles.SpawnEffect(SmokeEffect, coords, ent.Owner);
             state.FireEmitter  = _particles.SpawnEffect(FireEffect,  coords, ent.Owner);
 
-            if (state.SmokeEmitter != null) state.SmokeEmitter.Intensity = 1f;
-            if (state.FireEmitter != null)  state.FireEmitter.Intensity  = 1f;
+            if (state.SmokeEmitter != null)
+                state.SmokeEmitter.Intensity = 1f;
+            if (state.FireEmitter != null)
+                state.FireEmitter.Intensity  = 1f;
 
             state.OnFire = true;
         }
@@ -70,7 +72,7 @@ public sealed partial class FlammableParticleSystem : EntitySystem
         }
 
         // Update intensity on live emitters
-        if (state.OnFire && state.FireEmitter != null)
+        if (state is { OnFire: true, FireEmitter: not null })
         {
             var intensity = Math.Clamp(stacks / MaxStacks * 2f, 1f, 2f);
             if (state.FireEmitter != null)
