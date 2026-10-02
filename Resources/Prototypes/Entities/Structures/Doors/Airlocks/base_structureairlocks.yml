@@ -144,6 +144,7 @@
     damageModifierSet: StrongMetallic
   - type: Injurable
     damageContainer: StructuralInorganic
+  - type: SparksOnDamage # _Starfall
   - type: RCDDeconstructable
     cost: 60 # Funkystation
     delay: 8
