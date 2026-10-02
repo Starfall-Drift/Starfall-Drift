@@ -26,6 +26,7 @@
     damageModifierSet: StructuralMetallic
   - type: Injurable
     damageContainer: StructuralInorganic
+  - type: SparksOnDamage # _Starfall
   - type: Destructible
     thresholds:
     - trigger:
