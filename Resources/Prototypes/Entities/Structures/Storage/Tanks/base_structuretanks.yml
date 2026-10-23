@@ -62,7 +62,7 @@
 # For highcap tanks
 - type: entity
   abstract: true
-  parent: [SolutionTank, Solution3840, StorageTank]
+  parent: [SolutionTank, Solution5000, StorageTank]
   id: StorageTankBig
   components:
   - type: Fixtures

@@ -14,6 +14,9 @@
     metamorphicDefaultSprite:
       sprite: Objects/Consumable/Drinks/glass_clear.rsi
       state: icon
+  - type: Solution #Starfall - 60 -> 30
+    solution:
+      maxVol: 30
 
 - type: entity
   parent: DrinkGlass

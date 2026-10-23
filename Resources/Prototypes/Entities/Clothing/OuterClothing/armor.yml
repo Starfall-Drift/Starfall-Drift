@@ -169,7 +169,7 @@
 - type: entity
   parent: [ClothingOuterArmorBase, ClothingOuterStorageBase, BaseSyndicateContraband]
   id: ClothingOuterVestWebElite
-  name: elite web vest
+  name: aramid web vest  #Starfall - Renamed to Aramid
   description: A synthetic armor vest. This one has added webbing and heat resistant fibers.
   components:
   - type: Sprite

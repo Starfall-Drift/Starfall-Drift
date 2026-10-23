@@ -35,15 +35,18 @@
 # Empty
 
 - type: entity
-  parent: [DrinkVisualsOpenable, SolutionLarge, DrinkBottlePlasticBaseFull]
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull] #Starfall - Remove Parent: SolutionLarge
   id: CustomDrinkJug
   name: beverage jug
   description: A jug for storing custom made drinks.
   components:
   - type: Item
-    size: Large
+    size: Normal
     shape:
-    - 0,0,1,3
+    - 0,0,1,1
+  - type: Solution
+    solution:
+      maxVol: 150 #Starfall - 150u capacity for custom jugs from the booze-o-mat
 
 # Small Plastic Bottles
 
@@ -55,9 +58,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 30 #Starfall - 60 -> 30
       reagents:
       - ReagentId: Water
-        Quantity: 60
+        Quantity: 30
   - type: Sprite
     sprite: Objects/Consumable/Drinks/waterbottle.rsi
   - type: Label
@@ -75,7 +79,7 @@
     solution:
       reagents:
       - ReagentId: Cola
-        Quantity: 120
+        Quantity: 100 #Starfall - 120 -> 100
   - type: Label
     currentLabel: reagent-name-cola
   - type: Sprite
@@ -91,7 +95,7 @@
     solution:
       reagents:
       - ReagentId: SpaceMountainWind
-        Quantity: 120
+        Quantity: 100 #Starfall - 120 -> 100
   - type: Label
     currentLabel: reagent-name-space-mountain-wind
   - type: Sprite
@@ -107,7 +111,7 @@
     solution:
       reagents:
       - ReagentId: SpaceUp
-        Quantity: 120
+        Quantity: 100 #Starfall - 120 -> 100
   - type: Label
     currentLabel: reagent-name-space-up
   - type: Sprite
@@ -121,9 +125,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 150 #Starfall Change - 150 capacity
       reagents:
       - ReagentId: SodaWater
-        Quantity: 120
+        Quantity: 150 #Starfall Change - 150u Capacity
   - type: Sprite
     sprite: Objects/Consumable/Drinks/sodawater-bottle.rsi
   - type: Label
@@ -137,9 +142,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 150 #Starfall Change - 150u Capacity
       reagents:
       - ReagentId: TonicWater
-        Quantity: 120
+        Quantity: 150 #Starfall Change - 150u Capacity
   - type: Sprite
     sprite: Objects/Consumable/Drinks/tonic-bottle.rsi
   - type: Label
@@ -156,9 +162,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 300
       reagents:
       - ReagentId: Sugar
-        Quantity: 240
+        Quantity: 300
   - type: Label
     currentLabel: reagent-name-sugar
   # TODO new sprite
@@ -171,9 +178,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 300
       reagents:
       - ReagentId: LemonLime
-        Quantity: 240
+        Quantity: 300
   - type: Label
     currentLabel: reagent-name-lemon-lime
   # TODO new sprite
@@ -186,9 +194,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 150  #Starfall Change, 150 capacity, 150 quantity, 2x2
       reagents:
       - ReagentId: Mead
-        Quantity: 240
+        Quantity: 150  #Starfall Change, 150 capacity, 150 quantity, 2x2
   - type: Label
     currentLabel: reagent-name-mead
   # TODO new sprite
@@ -201,9 +210,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 300
       reagents:
       - ReagentId: Ice
-        Quantity: 240
+        Quantity: 300
   - type: Label
     currentLabel: reagent-name-ice
   # TODO new sprite
@@ -216,9 +226,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 300
       reagents:
       - ReagentId: CoconutWater
-        Quantity: 240
+        Quantity: 300
   - type: Label
     currentLabel: reagent-name-coconut-water
   # TODO new sprite
@@ -231,9 +242,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 300
       reagents:
       - ReagentId: Coffee
-        Quantity: 240
+        Quantity: 300
   - type: Label
     currentLabel: reagent-name-coffee
   # TODO new sprite
@@ -246,9 +258,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 300 #Starfall Change - 240 -> 300
       reagents:
       - ReagentId: Tea
-        Quantity: 240
+        Quantity: 300 #Starfall Change - 240 -> 300
   - type: Label
     currentLabel: reagent-name-tea
   # TODO new sprite
@@ -261,9 +274,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 300 #Starfall Change - 240 -> 300
       reagents:
       - ReagentId: GreenTea
-        Quantity: 240
+        Quantity: 300 #Starfall Change - 240 -> 300
   - type: Label
     currentLabel: reagent-name-green-tea
   # TODO new sprite
@@ -276,9 +290,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 300 #Starfall Change - 240 -> 300
       reagents:
       - ReagentId: IcedTea
-        Quantity: 240
+        Quantity: 300 #Starfall Change - 240 -> 300
   - type: Label
     currentLabel: reagent-name-iced-tea
   # TODO new sprite
@@ -291,9 +306,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 300 #Starfall Change - 240 -> 300
       reagents:
       - ReagentId: DrGibb
-        Quantity: 240
+        Quantity: 300 #Starfall Change - 240 -> 300
   - type: Label
     currentLabel: reagent-name-dr-gibb
   # TODO new sprite
@@ -306,9 +322,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 300 #Starfall Change - 240 -> 300
       reagents:
       - ReagentId: RootBeer
-        Quantity: 240
+        Quantity: 300 #Starfall Change - 240 -> 300
   - type: Label
     currentLabel: reagent-name-root-beer
   # TODO new sprite
@@ -321,9 +338,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 300 #Starfall Change - 240 -> 300
       reagents:
       - ReagentId: JuiceWatermelon
-        Quantity: 240
+        Quantity: 300 #Starfall Change - 240 -> 300
   - type: Label
     currentLabel: reagent-name-juice-watermelon
   # TODO new sprite
@@ -336,9 +354,10 @@
   components:
   - type: Solution
     solution:
+      maxVol: 100 #Starfall - 240 -> 100
       reagents:
       - ReagentId: EnergyDrink
-        Quantity: 240
+        Quantity: 100 #Starfall - 240 -> 100
   - type: Label
     currentLabel: reagent-name-energy-drink
   # TODO new sprite

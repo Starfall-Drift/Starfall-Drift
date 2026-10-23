@@ -361,7 +361,7 @@ uplink-clothing-chameleon-thieving-gloves-desc = Discreetly steal from pockets a
 uplink-clothing-outer-vest-web-name = Web Vest
 uplink-clothing-outer-vest-web-desc = A synthetic armor vest. This one has added webbing and ballistic plates.
 
-uplink-clothing-outer-vest-web-elite-name = Elite Web Vest
+uplink-clothing-outer-vest-web-elite-name = Aramid Web Vest
 uplink-clothing-outer-vest-web-elite-desc = A synthetic armor vest. This one has added webbing and heat resistant fibers.
 
 uplink-clothing-shoes-boots-mag-syndie-name = Blood-red Magboots

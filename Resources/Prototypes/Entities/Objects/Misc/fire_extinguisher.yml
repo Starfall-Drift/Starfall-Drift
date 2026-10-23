@@ -83,7 +83,7 @@
     solution:
       reagents:
       - ReagentId: Water
-        Quantity: 120
+        Quantity: 100 #Starfall Change - I hate standardization
 
 - type: entity
   parent: [SolutionFireExtinguisherLarge, FireExtinguisher]
@@ -100,7 +100,7 @@
     solution:
       reagents:
       - ReagentId: Water
-        Quantity: 240
+        Quantity: 200 #Starfall Change - I hate standardization
 
 - type: entity
   name: extinguisher spray
@@ -155,7 +155,7 @@
     solution:
       reagents:
       - ReagentId: Water
-        Quantity: 60
+        Quantity: 30 #Starfall Change - I hate standardization
 
 # used for a engi xenoborg module
 - type: entity

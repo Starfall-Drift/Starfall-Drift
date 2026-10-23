@@ -254,7 +254,7 @@
   components:
   - type: Solution
     solution:
-      maxVol: 120
+      maxVol: 100 #Starfall Change - I hate standardization
 
 - type: entity
   abstract: true
@@ -275,7 +275,7 @@
   components:
   - type: Solution
     solution:
-      maxVol: 60
+      maxVol: 50 #Starfall Change - I hate standardization
 
 ## Large
 
@@ -286,7 +286,7 @@
   components:
   - type: Solution
     solution:
-      maxVol: 240
+      maxVol: 200 #Starfall Change - I hate standardization
 
 - type: entity
   parent: Solution
@@ -295,7 +295,7 @@
   components:
   - type: Solution
     solution:
-      maxVol: 120
+      maxVol: 100 #Starfall Change - I hate standardization
 
 ## Huge
 
@@ -306,7 +306,7 @@
   components:
   - type: Solution
     solution:
-      maxVol: 480
+      maxVol: 500 #Starfall Change - I hate standardization
 
 - type: entity
   parent: [SolutionDrink, SolutionHuge]
@@ -322,7 +322,7 @@
   components:
   - type: Solution
     solution:
-      maxVol: 960
+      maxVol: 1500 #Starfall Change - I hate standardization
 
 - type: entity
   parent: Solution
@@ -331,7 +331,7 @@
   components:
   - type: Solution
     solution:
-      maxVol: 480
+      maxVol: 500 #Starfall Change - I hate standardization
 
 ## Below sizes are for solutions attached to entities bigger than Ginormous, aka not items or maybe two handed?
 
@@ -345,12 +345,12 @@
 
 - type: entity
   parent: Solution
-  id: Solution3840 # I can't think of a better name, fight me
+  id: Solution5000 # Starfall Change, 3840 to 5000. Make Migration for Solution3840 -> Solution5000
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
     solution:
-      maxVol: 3840
+      maxVol: 5000
 
 - type: entity
   abstract: true

@@ -17,9 +17,9 @@
   - type: EmitSoundOnTrigger
     sound: *BasePlushieSound
   - type: UseDelay
-    delay: 3.0
+    delay: 1.0 # Starfall change - 3.0 to 1.0
   - type: MeleeWeapon
-    attackRate: 0.333
+    #attackRate: 0.333  Starfall change, remove this
     wideAnimationRotation: 180
     soundHit: *BasePlushieSound
     damage:

@@ -43,11 +43,15 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
-        children:
+        children: #Starfall change, Revert mixed jugs and undo chem container standardization
         - id: JugBicaridine
-        - id: JugPunctTranex
-        - id: JugPyraDerma
-        - id: JugDexPlusSaline
+        - id: JugPuncturase
+        - id: JugDermaline
+        - id: JugDylovene
+        - id: JugHyronalin
+        - id: JugSaline
+        - id: JugDexalinPlus
+        - id: JugTranexamicAcid
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle

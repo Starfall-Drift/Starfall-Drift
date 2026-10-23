@@ -1741,7 +1741,7 @@
       tags:
       - NukeOpsUplink
 
-- type: listing
+- type: listing #Starfall - Bring this back to the traitor uplink.
   id: UplinkHardsuitSyndieElite
   name: uplink-hardsuit-syndieelite-name
   description: uplink-hardsuit-syndieelite-desc
@@ -1751,13 +1751,13 @@
     Telecrystal: 12
   categories:
   - UplinkWearables
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
+  #conditions:
+  #- !type:StoreWhitelistCondition
+  #  whitelist:
+  #    tags:
+  #    - NukeOpsUplink
 
-- type: listing
+- type: listing #Starfall - Bring this back to the traitor uplink.
   id: UplinkClothingOuterHardsuitJuggernaut
   name: uplink-clothing-outer-hardsuit-juggernaut-name
   description: uplink-clothing-outer-hardsuit-juggernaut-desc
@@ -1767,11 +1767,11 @@
     Telecrystal: 12
   categories:
   - UplinkWearables
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
+  #conditions:
+  #- !type:StoreWhitelistCondition
+  #  whitelist:
+  #    tags:
+  #    - NukeOpsUplink
 
 - type: listing
   id: UplinkClothingEyesHudSyndicate
