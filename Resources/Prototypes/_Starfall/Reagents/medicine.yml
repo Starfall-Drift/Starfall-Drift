@@ -1,3 +1,502 @@
+#Brutes
+- type: reagent
+  id: Libital
+  name: reagent-name-libital
+  desc: reagent-desc-libital
+  group: Medicine
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: medicine
+  color: "#e8d199"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -1.2 #2 per type per unit. No evenheal
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: Libital
+          min: 20
+        damage:
+          Heat: 1 #5 per unit.
+      - !type:Jitter
+        conditions:
+        - !type:ReagentCondition
+          reagent: Libital
+          min: 20
+
+- type: reagent
+  id: Probital
+  name: reagent-name-probital
+  desc: reagent-desc-probital
+  group: Medicine
+  physicalDesc: reagent-physical-desc-syrupy
+  flavor: medicine
+  color: "#e8e699"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: Probital
+          max: 20 #Only heals when below 20u.
+        damage:
+          groups:
+            Brute: -1.8 #3 per type per unit. No evenheal
+      - !type:Vomit
+        conditions:
+        - !type:ReagentCondition
+          reagent: Probital
+          min: 20
+        probability: 0.02
+      - !type:MovementSpeedModifier
+        walkSpeedModifier: 0.7
+        sprintSpeedModifier: 0.7
+      - !type:MovementSpeedModifier
+        conditions:
+        - !type:ReagentCondition
+          reagent: Probital
+          min: 20
+        walkSpeedModifier: 0.35
+        sprintSpeedModifier: 0.35
+
+- type: reagent
+  id: SalicylicAcid
+  name: reagent-name-salicylicacid
+  desc: reagent-desc-salicylicacid
+  group: Medicine
+  physicalDesc: reagent-physical-desc-mucus-like
+  flavor: medicine
+  color: "#f9e0e9"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:EvenHealthChange
+        conditions:
+        - !type:DamageGroupCondition
+          group: Brute
+          max: 30
+        damage:
+          Brute: -0.45 #0.15 per type
+      - !type:EvenHealthChange
+        conditions:
+        - !type:DamageGroupCondition
+          group: Brute
+          min: 30
+        damage:
+          Brute: -2.25 #0.75 per type
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: SalicylicAcid
+          min: 15.5
+        damage:
+          groups:
+            Burn: 2 #0.5 to heat, shock, cold, and caustic
+      - !type:EvenHealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: SalicylicAcid
+          min: 15.5
+        damage:
+          Brute: -2.25 #heals an extra time during OD
+      - !type:Jitter
+        conditions:
+        - !type:ReagentCondition
+          reagent: SalicylicAcid
+          min: 15.5
+
+#Burns
+- type: reagent
+  id: Aiuri
+  name: reagent-name-aiuri
+  desc: reagent-desc-aiuri
+  group: Medicine
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: medicine
+  color: "#a69ff4"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -0.4 #2 per type per unit. No evenheal
+            Cold: -0.4
+            Shock: -0.4
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: Aiuri
+          min: 20
+        damage:
+          types:
+            Blunt: 1 #5 per unit.
+      - !type:Jitter
+        conditions:
+        - !type:ReagentCondition
+          reagent: Aiuri
+          min: 20
+
+- type: reagent
+  id: Lenturi
+  name: reagent-name-lenturi
+  desc: reagent-desc-lenturi
+  group: Medicine
+  physicalDesc: reagent-physical-desc-tropical
+  flavor: medicine
+  color: "#634aef"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -0.6 #3 per type per unit. No evenheal
+            Cold: -0.6
+            Shock: -0.6
+      - !type:Satiate
+        satiationType: Thirst
+        factor: -1
+      - !type:Jitter
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lenturi
+          min: 20 #Overdose
+      - !type:Satiate
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lenturi
+          min: 20
+        satiationType: Thirst
+        factor: -3 #Basically do the non-OD effect three extra times when ODing.
+
+- type: reagent
+  id: Oxandrolone #This one is a doozy
+  name: reagent-name-oxandrolone
+  desc: reagent-desc-oxandrolone
+  group: Medicine
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: medicine
+  color: "#e6e600"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange #We use normal healthchange cause I don't want this healing caustic which evenheal will do
+        conditions:
+        - !type:DamageGroupCondition
+          max: 30
+          group: Burn
+        damage:
+          types:
+            Heat: -0.2
+            Cold: -0.2
+            Shock: -0.2
+      - !type:HealthChange #We use normal healthchange cause I don't want this healing caustic which evenheal will do
+        conditions:
+        - !type:DamageGroupCondition
+          min: 30
+          group: Burn
+        damage:
+          types:
+            Heat: -0.8
+            Cold: -0.8
+            Shock: -0.8
+      - !type:HealthChange #We use normal healthchange cause I don't want this healing caustic which evenheal will do
+        conditions:
+        - !type:ReagentCondition
+          min: 15.5
+          reagent: Oxandrolone
+        damage:
+          types: #OD heals additonal separate from the other instance of healing but hurts.
+            Heat: -0.8
+            Cold: -0.8
+            Shock: -0.8
+            Blunt: 2
+            Piercing: 0.5
+      - !type:Jitter
+        conditions:
+        - !type:ReagentCondition
+          min: 15.5
+          reagent: Oxandrolone
+
+#Airloss
+- type: reagent
+  id: Salbutamol
+  name: reagent-name-salbutamol
+  desc: reagent-desc-salbutamol
+  group: Medicine
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: medicine
+  color: "#99ffff"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:EvenHealthChange
+        conditions:
+        - !type:DamageGroupCondition
+          min: 30
+          group: Airloss
+        damage:
+          Airloss: -6
+      - !type:EvenHealthChange
+        conditions:
+        - !type:DamageGroupCondition
+          max: 30
+          group: Airloss
+        damage:
+          Airloss: -1
+      - !type:EvenHealthChange
+        conditions:
+        - !type:ReagentCondition
+          min: 15.5
+          reagent: Salbutamol
+        damage:
+          Airloss: -6
+          Genetic: 0.2
+
+- type: reagent
+  id: Convermol
+  name: reagent-name-convermol
+  desc: reagent-desc-convermol
+  group: Medicine
+  physicalDesc: reagent-physical-desc-abrasive
+  flavor: medicine
+  color: "#e80d7e"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 1.0 #Fast
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Asphyxiation: -10 #This is asphyx. This doesn't heal bloodloss damage specifically.
+            Blunt: 4 #Make this lung damage when newmed happens in like 10 years from now
+      - !type:Jitter
+
+#Toxins
+- type: reagent
+  id: Multiver
+  name: reagent-name-multiver
+  desc: reagent-desc-multiver
+  group: Medicine
+  physicalDesc: reagent-physical-desc-grainy
+  flavor: medicine
+  color: "#36274f"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: -1 #5 per u, 25 per 5u
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          min: 20
+          reagent: Multiver
+        damage:
+          types:
+            Caustic: 2 #10 per u, 50 per 5u
+      - !type:Jitter
+        conditions:
+        - !type:ReagentCondition
+          min: 20
+          reagent: Multiver
+  plantMetabolism: #identical to dylovene in terms of plant care
+  - !type:PlantAdjustToxins
+    amount: -10
+  - !type:PlantAdjustHealth
+    amount: 1
+
+- type: reagent
+  id: PenteticAcid
+  name: reagent-name-penteticacid
+  desc:  reagent-desc-penteticacid
+  group: Medicine
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: medicine
+  color: "#3a0c28"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.4
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: -3 #7.5 per u, 37.5 per 5u
+      - !type:CleanBloodstream
+        excluded: PenteticAcid #Prevents it from purging itself.
+        cleanseRate: 3
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          min: 15.5
+          reagent: PenteticAcid
+        damage:
+          types:
+            Caustic: 3
+      - !type:Jitter
+        conditions:
+        - !type:ReagentCondition
+          min: 15.5
+          reagent: PenteticAcid
+      - !type:Emote
+        emote: Scream
+        probability: 0.3
+      - !type:Vomit
+        conditions:
+        - !type:ReagentCondition
+          min: 15.5
+          reagent: PenteticAcid
+        probability: 0.3
+
+#Other Healing chems
+- type: reagent
+  id: Granibitulari
+  name: reagent-name-granibitulari
+  desc: reagent-desc-granibitulari
+  group: Medicine
+  physicalDesc: reagent-physical-desc-gloopy
+  flavor: medicine
+  color: "#c7e4e8"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.05 #sloooooooooooooow
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -0.3
+          types:
+            Poison: -0.1
+            Heat: -0.1
+            Shock: -0.1
+            Cold: -0.1
+
+- type: reagent
+  id: Hypothium
+  name: reagent-name-hypothium
+  group: Exotic
+  desc: reagent-desc-hypothium
+  physicalDesc: reagent-physical-desc-tart
+  flavor: medicine
+  color: "#c8317a"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:EvenHealthChange
+        damage: #Due to how complicated getting this is (need botany, atmos, and chem on their A game) this should be like 2-3 times better than omni
+          Brute: -4.5
+          Burn: -4.5
+          Toxin: -4.5
+          Airloss: -6
+      - !type:ModifyBleed
+        amount: -0.5
+
+#Pyrogenics
+- type: reagent
+  id: Pyroxadone
+  name: reagent-name-pyroxadone
+  desc: reagent-desc-pyroxadone
+  group: Medicine
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: spicy
+  color: "#f8c8ba"
+  metabolisms:
+    Bloodstream:
+      effects:
+        - !type:HealthChange
+          conditions:
+          - !type:TemperatureCondition
+            min: 337.3
+          damage:
+            groups: #Identical to cryox*
+              Airloss: -6
+              Brute: -4
+              Burn: -6
+              Toxin: -4
+            types: #*Heat healing is separate to counteract heat damage from temp. Ideally we could just make cryopods not deal heat when inside
+              Heat: -3
+
+- type: reagent
+  id: Arthyrnkole
+  name: reagent-name-ardthyrnkole
+  desc: reagent-desc-ardthyrnkole
+  group: Medicine
+  physicalDesc: reagent-physical-desc-blazing
+  flavor: sour
+  color: "#893479"
+  worksOnTheDead: true
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:TemperatureCondition
+          min: 337.3
+        damage:
+          types:
+            Cold: -5
+            Heat: -3 #Purely to counteract pod damage
+            Shock: -3
+            Caustic: -1
+
+- type: reagent
+  id: Natusixadone
+  name: reagent-name-natusixadone
+  desc: reagent-desc-natusixadone
+  group: Medicine
+  physicalDesc: reagent-physical-desc-bubbling
+  flavor: sour
+  color: "#acbb27"
+  worksOnTheDead: true
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:TemperatureCondition
+          min: 337.3
+        damage:
+          types:
+            Cellular: -4
+            Heat: -3 #Purely to counteract pod damage
+
+- type: reagent
+  id: Sievertadone
+  name: reagent-name-sievertadone
+  desc: reagent-desc-sievertadone
+  group: Medicine
+  physicalDesc: reagent-physical-desc-vaporous
+  flavor: medicine
+  color: "#904800"
+  worksOnTheDead: true
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:TemperatureCondition
+          min: 337.3
+        damage:
+          types:
+            Radiation: -4
+            Heat: -3 #Purely to counteract pod damage
+
+#"RP" Chems (idk what else to call these.)
 - type: reagent
   id: Chepagepant
   name: reagent-name-chepagepant
