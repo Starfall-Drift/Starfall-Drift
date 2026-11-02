@@ -269,7 +269,14 @@
           reagent: Salbutamol
         damage:
           Airloss: -6
-          Genetic: 0.2
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          min: 15.5
+          reagent: Salbutamol
+        damage:
+          types:
+            Cellular: 0.2
 
 - type: reagent
   id: Convermol
