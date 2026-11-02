@@ -93,7 +93,7 @@
         conditions:
         - !type:DamageGroupCondition
           min: 30
-          damageGroup: 30
+          damageGroup: Brute
         damage:
           Brute: -2.25 #0.75 per type
       - !type:HealthChange
@@ -171,20 +171,18 @@
             Heat: -0.6 #3 per type per unit. No evenheal
             Cold: -0.6
             Shock: -0.6
-      - !type:Satiate
-        satiationType: Thirst
+      - !type:SatiateThirst
         factor: -1
       - !type:Jitter
         conditions:
         - !type:ReagentCondition
           reagent: Lenturi
           min: 20 #Overdose
-      - !type:Satiate
+      - !type:SatiateThirst
         conditions:
         - !type:ReagentCondition
           reagent: Lenturi
           min: 20
-        satiationType: Thirst
         factor: -3 #Basically do the non-OD effect three extra times when ODing.
 
 - type: reagent
