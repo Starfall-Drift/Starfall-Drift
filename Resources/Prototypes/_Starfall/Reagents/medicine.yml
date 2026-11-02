@@ -13,15 +13,18 @@
       effects:
       - !type:HealthChange
         damage:
-          groups:
-            Brute: -1.2 #2 per type per unit. No evenheal
+          types:
+            Blunt: -0.4 #2 per type per unit. No evenheal
+            Slash: -0.4
+            Piercing: -0.4
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
           reagent: Libital
           min: 20
         damage:
-          Heat: 1 #5 per unit.
+          types:
+            Heat: 1 #5 per unit.
       - !type:Jitter
         conditions:
         - !type:ReagentCondition
@@ -46,8 +49,10 @@
           reagent: Probital
           max: 20 #Only heals when below 20u.
         damage:
-          groups:
-            Brute: -1.8 #3 per type per unit. No evenheal
+          types: #For some reason, the ability to use groups in !type:HealthChange was removed at some point so we need to write this out the long way if its nonevenheal.
+            Blunt: -0.6 #3 per type per unit. No evenheal
+            Slash: -0.6
+            Piercing: -0.6
       - !type:Vomit
         conditions:
         - !type:ReagentCondition
@@ -80,15 +85,15 @@
       - !type:EvenHealthChange
         conditions:
         - !type:DamageGroupCondition
-          group: Brute
           max: 30
+          damageGroup: Brute
         damage:
           Brute: -0.45 #0.15 per type
       - !type:EvenHealthChange
         conditions:
         - !type:DamageGroupCondition
-          group: Brute
           min: 30
+          damageGroup: 30
         damage:
           Brute: -2.25 #0.75 per type
       - !type:HealthChange
@@ -97,8 +102,11 @@
           reagent: SalicylicAcid
           min: 15.5
         damage:
-          groups:
-            Burn: 2 #0.5 to heat, shock, cold, and caustic
+          types:
+            Heat: 0.5 #0.5 to heat, shock, cold, and caustic
+            Cold: 0.5
+            Shock: 0.5
+            Caustic: 0.5
       - !type:EvenHealthChange
         conditions:
         - !type:ReagentCondition
@@ -195,7 +203,7 @@
         conditions:
         - !type:DamageGroupCondition
           max: 30
-          group: Burn
+          damageGroup: Burn
         damage:
           types:
             Heat: -0.2
@@ -205,7 +213,7 @@
         conditions:
         - !type:DamageGroupCondition
           min: 30
-          group: Burn
+          damageGroup: Burn
         damage:
           types:
             Heat: -0.8
@@ -246,14 +254,14 @@
         conditions:
         - !type:DamageGroupCondition
           min: 30
-          group: Airloss
+          damageGroup: Airloss
         damage:
           Airloss: -6
       - !type:EvenHealthChange
         conditions:
         - !type:DamageGroupCondition
           max: 30
-          group: Airloss
+          damageGroup: Airloss
         damage:
           Airloss: -1
       - !type:EvenHealthChange
@@ -294,7 +302,7 @@
   flavor: medicine
   color: "#36274f"
   metabolisms:
-    Medicine:
+    Bloodstream:
       metabolismRate: 0.2
       effects:
       - !type:HealthChange
@@ -377,13 +385,14 @@
       effects:
       - !type:HealthChange
         damage:
-          groups:
-            Brute: -0.3
           types:
-            Poison: -0.1
+            Blunt: -0.1
+            Slash: -0.1
+            Piercing: -0.1
             Heat: -0.1
             Shock: -0.1
             Cold: -0.1
+            Poison: -0.1
 
 - type: reagent
   id: Hypothium
