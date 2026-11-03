@@ -805,7 +805,7 @@
       - !type:HealthChange
         damage:
           types:
-            Caustic: -2
+            Caustic: -2 #10 per u.
 
 - type: reagent
   id: Stellibinin
@@ -956,10 +956,10 @@
       effects:
       - !type:EvenHealthChange
         damage: #Starfall - adjust all the damage so its .75 per type in the groups
+          Brute: -2.25
           Burn: -3
           Toxin: -1.5
           Airloss: -1.5
-          Brute: -2.25
 
 - type: reagent
   id: Ultravasculine
@@ -1445,11 +1445,11 @@
         - !type:TemperatureCondition
           max: 213.0
         damage:
-#          Burn: -4.5
-        types:
-          Heat: -5
-          Shock: -3
-          Caustic: -1
+#          Burn: -4.5 Cant heal cold.
+          types:
+            Heat: -5
+            Shock: -3
+            Caustic: -1
 
 - type: reagent
   id : Mannitol # currently this is just a way to create psicodine

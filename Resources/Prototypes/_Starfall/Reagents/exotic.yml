@@ -1,0 +1,137 @@
+- type: reagent
+  id: ExoticReagent
+  name: reagent-name-exotic
+  desc: reagent-desc-exotic
+  group: Exotic
+  physicalDesc: reagent-physical-desc-exotic-smelling
+  flavor: nothing
+  color: "#d111fc"
+
+- type: reagent
+  id: Hypothium
+  name: reagent-name-hypothium
+  group: Exotic
+  desc: reagent-desc-hypothium
+  physicalDesc: reagent-physical-desc-tart
+  flavor: medicine
+  color: "#c8317a"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:EvenHealthChange
+        damage: #Due to how complicated getting this is (need botany, atmos, and chem on their A game) this should be like 2-3 times better than omni. Currently 2x stronger. can be made better
+          Brute: -4.5
+          Burn: -6
+          Toxin: -3
+          Airloss: -3
+      - !type:ModifyBleed
+        amount: -0.5
+
+- type: reagent
+  id: Stasicillin
+  name: reagent-name-stasicillin
+  desc: reagent-desc-stasicillin
+  group: Exotic
+  physicalDesc: reagent-physical-desc-crystalline
+  flavor: medicine
+  color: "#5c11fc"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:EvenHealthChange
+        conditions:
+        - !type:ReagentCondition #Minimum dose.
+          reagent: Stasicillin
+          min: 11
+        damage:
+          groups:
+            Airloss: -6
+            Toxin: -4
+            Brute: -4.5
+            Burn: -6
+      - !type:ModifyStatusEffect
+        conditions:
+        - !type:ReagentCondition
+          reagent: Stasicillin
+          min: 11
+        effectProto: StatusEffectForcedSleeping
+        time: 10
+
+- type: reagent
+  id: Negacordrazine
+  name: reagent-name-negacordrazine
+  desc: reagent-desc-negacordrazine
+  group: Exotic
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: medicine
+  color: "#d34b26"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:EvenHealthChange
+        conditions:
+        - !type:TotalDamageCondition
+          min: 40
+        damage:
+          Airloss: -2
+          Brute: -3
+          Burn: -4
+          Toxin: -2
+
+- type: reagent
+  id: StabilisedStimulants
+  name: reagent-name-stabilisedstimulants
+  desc: reagent-desc-stabilisedstimulants
+  group: Exotic
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: medicine
+  color: "#e1e1e1"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:MovementSpeedModifier
+        walkSpeedModifier: 1.35
+        sprintSpeedModifier: 1.35
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectStunned
+        time: 3
+        type: Remove
+      - !type:ModifyKnockdown
+        time: 3
+        type: remove
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectAdrenaline
+        time: 5
+      - !type:ModifyStatusEffect
+        conditions:
+        - !type:ReagentCondition
+          reagent: Haloperidol
+          max: 0.01
+        effectProto: StatusEffectDrowsiness
+        time: 10
+        type: Remove
+
+- type: reagent
+  id: Revivopine
+  name: reagent-name-revivopine
+  desc: reagent-desc-revivopine
+  group: Exotic
+  physicalDesc: reagent-physical-desc-exhilerating
+  flavor: medicine
+  color: "#04ea9a"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 2
+      effects:
+      - !type:EvenHealthChange
+        conditions:
+        - !type:MobStateCondition #Must be in crit. I'd make it a totaldamage but not thing crits at 100.
+          mobstate: Critical
+        damage: #5 per type. Toxin excluded.
+          Airloss: -10
+          Brute: -15
+          Burn: -20

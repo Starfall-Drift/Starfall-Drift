@@ -432,27 +432,6 @@
             Cold: -0.1
             Poison: -0.1
 
-- type: reagent
-  id: Hypothium
-  name: reagent-name-hypothium
-  group: Exotic
-  desc: reagent-desc-hypothium
-  physicalDesc: reagent-physical-desc-tart
-  flavor: medicine
-  color: "#c8317a"
-  metabolisms:
-    Bloodstream:
-      metabolismRate: 0.2
-      effects:
-      - !type:EvenHealthChange
-        damage: #Due to how complicated getting this is (need botany, atmos, and chem on their A game) this should be like 2-3 times better than omni
-          Brute: -4.5
-          Burn: -4.5
-          Toxin: -4.5
-          Airloss: -6
-      - !type:ModifyBleed
-        amount: -0.5
-
 #Pyrogenics
 - type: reagent
   id: Pyroxadone
