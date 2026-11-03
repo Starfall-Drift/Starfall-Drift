@@ -377,6 +377,39 @@
 
 #Other Healing chems
 - type: reagent
+  id: Necrosol #Welcome back old friend
+  name: reagent-name-necrosol
+  desc: reagent-desc-necrosol
+  group: Medicine
+  physicalDesc: reagent-physical-desc-necrotic
+  flavor: medicine
+  color: "#86a5bd"
+  worksOnTheDead: true
+  plantMetabolism:
+  - !type:PlantAdjustToxins
+    amount: -5
+  - !type:PlantAdjustHealth
+    amount: 5
+  - !type:PlantCryoxadone {}
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:Temperature
+          max: 213.0
+        damage:
+          types:
+            Blunt: -1.5
+            Slash: -1.5
+            Piercing: -1.5
+            Heat: -1.25
+            Shock: -1.25
+            Cold: -1.25
+            Caustic: -1.25
+            Poison: -2
+
+- type: reagent
   id: Granibitulari
   name: reagent-name-granibitulari
   desc: reagent-desc-granibitulari

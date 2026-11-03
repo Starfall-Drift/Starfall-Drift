@@ -43,6 +43,9 @@ reagent-desc-ardthyrnkole = A pyrogenics chemical used to treat severe frostbite
 reagent-name-natusixadone = natusixadone
 reagent-desc-natusixadone = A pyrogenics chemical that burns away cancerous cells, regardless of if they are alive or dead.
 
+reagent-name-necrosol = necrosol
+reagent-desc-necrosol = A necrotic substance that seems to be able to heal frozen corpses. It can treat and rejuvenate plants when applied in small doses.
+
 reagent-name-chepagepant = chepagepant
 reagent-desc-chepagepant = A CGRP signal blocker used to prevent migraines and reduce the duration of active episodes.
 chepagepant-guidebook-prevention = Delays the next migraine for at least 15 minutes.
