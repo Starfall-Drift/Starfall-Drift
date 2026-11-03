@@ -3,25 +3,34 @@
   id: SalyBruizine
   impact: Medium
   reactants:
-    Bruizine: 1
-    SalicylicAcid: 1
-  products: 1
+    Bruizine:
+      amount: 1
+    SalicylicAcid:
+      amount: 1
+  products:
+    Razorium: 1
 
 - type: reaction
   id: SalyPuncturase
   impact: Medium
   reactants:
-    Puncturase: 1
-    SalicylicAcid: 1
-  products: 1
+    Puncturase:
+      amount: 1
+    SalicylicAcid:
+      amount: 1
+  products:
+    Razorium: 1
 
 - type: reaction
   id: SalyLacerinol
   impact: Medium
   reactants:
-    Lacerinol: 1
-    SalicylicAcid: 1
-  products: 1
+    Lacerinol:
+      amount: 1
+    SalicylicAcid:
+      amount: 1
+  products:
+    Razorium: 1
 
 #Licoxide now made from mixing advanced burns.
 - type: reaction

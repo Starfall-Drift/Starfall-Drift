@@ -46,11 +46,10 @@
           reagent: Stasicillin
           min: 11
         damage:
-          groups:
-            Airloss: -6
-            Toxin: -4
-            Brute: -4.5
-            Burn: -6
+          Airloss: -6
+          Toxin: -4
+          Brute: -4.5
+          Burn: -6
       - !type:ModifyStatusEffect
         conditions:
         - !type:ReagentCondition
@@ -103,8 +102,9 @@
       - !type:ModifyKnockdown
         time: 3
         type: remove
-      - !type:ModifyStatusEffect
-        effectProto: StatusEffectAdrenaline
+      - !type:GenericStatusEffect
+        key: Adrenaline
+        component: IgnoreSlowOnDamage
         time: 5
       - !type:ModifyStatusEffect
         conditions:

@@ -631,6 +631,7 @@
     - !type:PlantPhalanximine
       minScale: 4
   metabolisms:
+    Bloodstream:
       metabolismRate: 0.2 #Starfallchem 0.1 -> 0.2
       effects:
       - !type:HealthChange
@@ -653,7 +654,7 @@
         conditions:
         - !type:ReagentCondition
           reagent: Arithrazine
-          min: 0.1
+          min: 1
         damage:
           types:
             Caustic: 0.5 #Starfall 0.3 -> 0.5 because i dont want phal mixed
@@ -661,14 +662,14 @@
         conditions:
         - !type:ReagentCondition
           reagent: Arithrazine
-          min: 0.1
+          min: 1
         emote: Scream
         probability: 0.2
       - !type:Jitter
         conditions:
           !type:ReagentCondition
           reagent: Arithrazine
-          min: 0.1
+          min: 1
 
 - type: reagent
   id: PolypyryliumOligomers
