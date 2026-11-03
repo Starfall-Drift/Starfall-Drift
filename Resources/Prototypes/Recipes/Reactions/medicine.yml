@@ -662,17 +662,17 @@
   products:
     Haloperidol: 5
 
-- type: reaction
-  id: Heparin
-  reactants:
-    SulfuricAcid:
-      amount: 1
-    Nitrogen:
-      amount: 1
-    Sodium:
-      amount: 1
-  products:
-    Heparin: 2
+#- type: reaction Starfall - Removed recipe in favor of new one.
+#  id: Heparin
+#  reactants:
+#    SulfuricAcid:
+#      amount: 1
+#    Nitrogen:
+#      amount: 1
+#    Sodium:
+#      amount: 1
+#  products:
+#    Heparin: 2
 
 - type: reaction
   id: Hemorrhinol
