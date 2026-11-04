@@ -50,11 +50,6 @@
   - type: Storage
     grid:
     - 0,0,4,1
-    whitelist:
-      tags:
-       - Cigarette
-       - Matchstick
-       - PlasticLighter
   - type: EntityTableContainerFill
     containers:
       storagebase:
