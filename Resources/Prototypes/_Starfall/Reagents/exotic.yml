@@ -23,8 +23,8 @@
         damage: #Due to how complicated getting this is (need botany, atmos, and chem on their A game) this should be like 2-3 times better than omni. Currently 2x stronger. can be made better
           Brute: -4.5
           Burn: -6
-          Toxin: -3
-          Airloss: -3
+          Toxin: -4
+          Airloss: -6
       - !type:ModifyBleed
         amount: -0.5
 
@@ -45,11 +45,11 @@
         - !type:ReagentCondition #Minimum dose.
           reagent: Stasicillin
           min: 11
-        damage:
-          Airloss: -6
-          Toxin: -4
+        damage: #Identical to hypothium with the sleep drawback.
           Brute: -4.5
           Burn: -6
+          Toxin: -4
+          Airloss: -6
       - !type:ModifyStatusEffect
         conditions:
         - !type:ReagentCondition
@@ -59,7 +59,7 @@
         time: 10
 
 - type: reagent
-  id: Negacordrazine
+  id: Negacordrazine #Anti-Tricordrazine
   name: reagent-name-negacordrazine
   desc: reagent-desc-negacordrazine
   group: Exotic
@@ -70,11 +70,11 @@
     Bloodstream:
       metabolismRate: 0.2
       effects:
-      - !type:EvenHealthChange
+      - !type:EvenHealthChange #Evenheal cause it's the opposite of trico.
         conditions:
         - !type:TotalDamageCondition
           min: 40
-        damage:
+        damage: #1 damage per types in the group.
           Airloss: -2
           Brute: -3
           Burn: -4

@@ -654,22 +654,23 @@
         conditions:
         - !type:ReagentCondition
           reagent: Arithrazine
-          min: 1
+          min: 0.1
         damage:
           types:
             Caustic: 0.5 #Starfall 0.3 -> 0.5 because i dont want phal mixed
-      - !type:Emote #Added all this stuff to make mixing with arith discouraged
+      - !type:Jitter #Added all this stuff to make mixing with arith discouraged
         conditions:
         - !type:ReagentCondition
           reagent: Arithrazine
-          min: 1
+          min: 0.1
+      - !type:Emote
+        conditions:
+        - !type:ReagentCondition
+          reagent: Arithrazine
+          min: 0.1
         emote: Scream
         probability: 0.2
-      - !type:Jitter
-        conditions:
-          !type:ReagentCondition
-          reagent: Arithrazine
-          min: 1
+
 
 - type: reagent
   id: PolypyryliumOligomers

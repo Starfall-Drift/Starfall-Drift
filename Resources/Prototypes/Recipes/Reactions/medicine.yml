@@ -668,7 +668,7 @@
   products:
     Haloperidol: 5
 
-#- type: reaction Starfall - Removed recipe in favor of new one.
+#- type: reaction Starfall - Removed recipe in favor of new one. See starfall reactions folder.
 #  id: Heparin
 #  reactants:
 #    SulfuricAcid:
