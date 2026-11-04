@@ -259,7 +259,7 @@
     - SolutionStomach
   - type: Stomach
   - type: Metabolizer
-    maxReagents: 6
+    maxReagents: 8 #StarfallChem
     metabolizerTypes: [ Slime ]
     stages: [ Digestion, Bloodstream, Metabolites ]
 

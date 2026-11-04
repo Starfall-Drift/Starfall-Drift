@@ -395,7 +395,7 @@
     layers:
     - state: heart-on
   - type: Metabolizer
-    maxReagents: 2
+    maxReagents: 3 #Starfallchem
     stages: [ Bloodstream ]
 
 - type: entity
