@@ -938,6 +938,7 @@
     - FoamingAgent
     - BuzzochloricBees
     - RobustHarvest
+    - Rhigoxane #Starfallchem
     usefulChemicals:
     - Cryptobiolin
     #- Dylovene - Starfallchem
@@ -976,6 +977,7 @@
     - Carpetium
     - JuiceThatMakesYouWeh
     - LiquidExotium #Starfallchem
+    - Laughter #Starfallchem
   - type: Edible
     edible: Drink
     solution: anomaly
