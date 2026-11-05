@@ -1,5 +1,5 @@
 - type: reaction
-  id: ExoticReagent
+  id: LiquidExotium
   reactants:
     Razorium:
       amount: 1
@@ -10,12 +10,12 @@
     UnstableMutagen:
       amount: 1
   products:
-    ExoticReagent: 1
+    LiquidExotium: 1
 
 - type: reaction
   id: Stasicillin
   reactants:
-    ExoticReagent:
+    LiquidExotium:
       amount: 1
     ChloralHydrate:
       amount: 1
@@ -29,7 +29,7 @@
 - type: reaction
   id: Negacordrazine
   reactants:
-    ExoticReagent:
+    LiquidExotium:
       amount: 1
     Tricordrazine:
       amount: 1
@@ -41,7 +41,7 @@
 - type: reaction
   id: StabilisedStimulants
   reactants:
-    ExoticReagent:
+    LiquidExotium:
       amount: 1
     Desoxyephedrine:
       amount: 1
@@ -55,7 +55,7 @@
 - type: reaction
   id: Revivopine
   reactants:
-    ExoticReagent:
+    LiquidExotium:
       amount: 1
     Salbutamol:
       amount: 1
@@ -69,7 +69,7 @@
 - type: reaction
   id: ExoticBarozine
   reactants:
-    ExoticReagent:
+    LiquidExotium:
       amount: 1
     Revivopine:
       amount: 1
@@ -93,7 +93,7 @@
 - type: reaction
   id: Ichor
   reactants:
-    ExoticReagent:
+    LiquidExotium:
       amount: 1
     Omnizine:
       amount: 1

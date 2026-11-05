@@ -14,9 +14,11 @@ reagent-name-lenturi = lenturi
 reagent-desc-lenturi = A common chemical that is effective at treating burn damage by using the water inside your body.
 
 reagent-name-oxandrolone = oxandrolone
+reagent-name-oxandrolone-lenturi = oxandrolone & lenturi
 reagent-desc-oxandrolone = A heavy-duty chemical that stabilizes the severely burned, but is barely effective on people with less wounds. However, overdosing will reverse the effect.
 
 reagent-name-salbutamol = salbutamol
+reagent-name-salbutamol-dexalin = salbutamol & dexalin
 reagent-desc-salbutamol = A heavy-duty chemical that stabilizes the suffocated and reverses the effect of bloodloss, but is ineffective on people with less wounds. However, overdosing will reverse the effect.
 
 reagent-name-convermol = convermol
@@ -42,6 +44,9 @@ reagent-desc-ardthyrnkole = A pyrogenics chemical used to treat severe frostbite
 
 reagent-name-natusixadone = natusixadone
 reagent-desc-natusixadone = A pyrogenics chemical that burns away cancerous cells, regardless of if they are alive or dead.
+
+reagent-name-sievertadone = sievertadone
+reagent-desc-sievertadone = A pyrogenics chemical that repairs the damage done to cells by ionizing radiation, effective on patients alive or dead.
 
 reagent-name-necrosol = necrosol
 reagent-desc-necrosol = A necrotic substance that seems to be able to heal frozen corpses. It can treat and rejuvenate plants when applied in small doses.

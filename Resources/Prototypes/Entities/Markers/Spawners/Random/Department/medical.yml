@@ -35,13 +35,14 @@
           state: firstaid
     - type: RandomSpawner
       rarePrototypes:
-        - PillCanisterDermaline
-        - PillCanisterDylovene
-        - PillCanisterBicaridine
-        - PillCanisterKelotane
+        - PillCanisterLenturi #Starfallchem - Dermaline -> Lenturi
+        - PillCanisterMultiver #Starfallchem - Dylovene -> Multiver
+        - PillCanisterProbital #Starfallchem - Bicaridine -> Probital
+        - PillCanisterAiuri #Starfallchem - Kelotane -> Aiuri
         - PillCanisterDexalin
         - HandheldHealthAnalyzer
         - ClothingHandsGlovesLatex
+        - PillCanisterLibital #Starfallchem - Add libital entry
       rareChance: 0.1
       prototypes:
         - Syringe

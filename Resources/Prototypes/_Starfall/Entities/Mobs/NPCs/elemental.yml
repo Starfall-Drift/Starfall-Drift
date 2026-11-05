@@ -1,0 +1,199 @@
+- type: entity
+  id: ReagentSlimeSpewium
+  parent: ReagentSlime
+  suffix: Spewium
+  components:
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Spewium
+        Quantity: 100
+  - type: PointLight
+    color: "#2e4404"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+      color: "#2e4404"
+
+- type: entity
+  id: ReagentSlimePestiline
+  parent: ReagentSlime
+  suffix: Pestiline
+  components:
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Pestiline
+        Quantity: 100
+  - type: PointLight
+    color: "#cf3600"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+      color: "#cf3600"
+
+- type: entity
+  id: ReagentSlimeRhigoxane
+  parent: ReagentSlime
+  suffix: Rhigoxane
+  components:
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Rhigoxane
+        Quantity: 100
+  - type: PointLight
+    color: "#34b3c9"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+      color: "#34b3c9"
+
+- type: entity
+  id: ReagentSlimeSalicylicAcid
+  parent: ReagentSlime
+  suffix: Salicylic Acid
+  components:
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: SalicylicAcid
+        Quantity: 100
+  - type: PointLight
+    color: "#f9e0e9"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+      color: "#f9e0e9"
+
+- type: entity
+  id: ReagentSlimeOxandrolone
+  parent: ReagentSlime
+  suffix: Oxandrolone
+  components:
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Oxandrolone
+        Quantity: 100
+  - type: PointLight
+    color: "#e6e600"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+      color: "#e6e600"
+
+- type: entity
+  id: ReagentSlimeLaughter
+  parent: ReagentSlime
+  suffix: Laughter
+  components:
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Laughter
+        Quantity: 100
+  - type: PointLight
+    color: "#ff4dd2"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+      color: "#ff4dd2"
+
+- type: entity
+  id: ReagentSlimeCoffee
+  parent: ReagentSlime
+  suffix: Coffee
+  components:
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Coffee
+        Quantity: 100
+  - type: PointLight
+    color: "#664300"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+      color: "#664300"
+
+- type: entity
+  id: ReagentSlimePhlogiston
+  parent: ReagentSlime
+  suffix: Phlogiston
+  components:
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Phlogiston
+        Quantity: 100
+  - type: PointLight
+    color: "#d4872a"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+      color: "#d4872a"
+
+- type: entity
+  id: ReagentSlimeStasicillin
+  parent: ReagentSlime
+  suffix: Stasicillin
+  components:
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Stasicillin
+        Quantity: 100
+  - type: PointLight
+    color: "#5c11fc"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+      color: "#5c11fc"
+
+- type: entity
+  id: ReagentSlimeHemorrhinol #If this ends up too strong we can replace this with Heparin
+  parent: ReagentSlime
+  suffix: Hemorrhinol
+  components:
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Hemorrhinol
+        Quantity: 100
+  - type: PointLight
+    color: "#96424f"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+      color: "#96424f"

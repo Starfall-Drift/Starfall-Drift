@@ -1,0 +1,29 @@
+- type: entity
+  parent: Jug
+  id: JugSalbudex
+  suffix: Salbutamol & Dexalin
+  components:
+  - type: Label
+    currentLabel: reagent-name-salbutamol-dexalin
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Salbutamol
+        Quantity: 100 #Starfall - 200u Jugs
+      - ReagentId: Dexalin
+        Quantity: 100 #Starfall - 200u Jugs
+
+- type: entity
+  parent: Jug
+  id: JugOxaLent
+  suffix: Oxandrolone & Lenturi
+  components:
+  - type: Label
+    currentLabel: reagent-name-oxandrolone-lenturi
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Oxandrolone
+        Quantity: 100 #Starfall - 200u Jugs
+      - ReagentId: Lenturi
+        Quantity: 100 #Starfall - 200u Jugs

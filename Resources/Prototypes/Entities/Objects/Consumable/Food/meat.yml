@@ -311,7 +311,8 @@
       reagents:
       - ReagentId: Nutriment
         Quantity: 10
-      - ReagentId: Bicaridine
+      #- ReagentId: Bicaridine Starfallchem
+      - ReagentId: Probital
         Quantity: 20
   - type: StaticPrice
     price: 750

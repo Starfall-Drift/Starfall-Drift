@@ -1,5 +1,5 @@
-reagent-name-exotic = liquid exotium
-reagent-desc-exotic = A precursor to many different rare chemicals. Use wisely.
+reagent-name-exotium = liquid exotium
+reagent-desc-exotium = A precursor to many different rare chemicals. Use wisely.
 
 reagent-name-stasicillin = stasicillin
 reagent-desc-stasicillin = A very rare chemical used by both top-level medbays and Nanotrasen secret agents.

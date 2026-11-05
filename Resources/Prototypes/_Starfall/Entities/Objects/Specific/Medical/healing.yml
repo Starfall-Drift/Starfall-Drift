@@ -1,3 +1,228 @@
+#Pills here
+- type: entity
+  name: pill
+  suffix: Multiver 15u
+  parent: Pill
+  id: PillMultiver
+  components:
+  - type: Pill
+    pillType: 9
+  - type: Sprite
+    state: pill10
+  - type: Label
+    currentLabel: multiver 15u
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Multiver
+        Quantity: 15
+
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterMultiver
+  suffix: Multiver 15u, 8
+  components:
+  - type: Label
+    currentLabel: multiver 15u
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillMultiver
+        amount: 8
+
+- type: entity
+  name: pill
+  suffix: Aiuri 15u
+  parent: Pill
+  id: PillAiuri
+  components:
+  - type: Pill
+    pillType: 7
+  - type: Sprite
+    state: pill8
+  - type: Label
+    currentLabel: aiuri 15u
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Aiuri
+        Quantity: 15
+
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterAiuri
+  suffix: Aiuri 15u, 8
+  components:
+  - type: Label
+    currentLabel: aiuri 15u
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillAiuri
+        amount: 8
+
+- type: entity
+  name: pill
+  suffix: Lenturi 15u
+  parent: Pill
+  id: PillLenturi
+  components:
+  - type: Pill
+    pillType: 7
+  - type: Sprite
+    state: pill8
+  - type: Label
+    currentLabel: lenturi 15u
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Lenturi
+        Quantity: 15
+
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterLenturi
+  suffix: Lenturi 15u, 8
+  components:
+  - type: Label
+    currentLabel: lenturi 15u
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillLenturi
+        amount: 8
+
+- type: entity
+  name: pill
+  suffix: Granibitulari 20u
+  parent: Pill
+  id: PillGranibitulari
+  components:
+  - type: Pill
+    pillType: 2
+  - type: Sprite
+    state: pill3
+  - type: Label
+    currentLabel: granibitulari 20u
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Granibitulari
+        Quantity: 20
+
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterGranibitulari
+  suffix: Granibitulari 20u, 8
+  components:
+  - type: Label
+    currentLabel: granibitulari 20u
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillGranibitulari
+        amount: 8
+
+- type: entity
+  name: pill
+  suffix: Libital 15u
+  parent: Pill
+  id: PillLibital
+  components:
+  - type: Pill
+    pillType: 4
+  - type: Sprite
+    state: pill5
+  - type: Label
+    currentLabel: libital 15u
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Libital
+        Quantity: 15
+
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterLibital
+  suffix: Libital 15u, 8
+  components:
+  - type: Label
+    currentLabel: libital 15u
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillLibital
+        amount: 8
+
+- type: entity
+  name: pill
+  suffix: Probital 15u
+  parent: Pill
+  id: PillProbital
+  components:
+  - type: Pill
+    pillType: 4
+  - type: Sprite
+    state: pill5
+  - type: Label
+    currentLabel: probital 15u
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Probital
+        Quantity: 15
+
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterProbital
+  suffix: Probital 15u, 8
+  components:
+  - type: Label
+    currentLabel: probital 15u
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillProbital
+        amount: 8
+
+- type: entity
+  name: pill
+  suffix: Salicylic Acid 15u
+  parent: Pill
+  id: PillSalicylicAcid
+  components:
+  - type: Pill
+    pillType: 4
+  - type: Sprite
+    state: pill5
+  - type: Label
+    currentLabel: salicylic acid 15u
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: SalicylicAcid
+        Quantity: 15
+
+- type: entity #This guy only shows up in the syndie medic reinforcement.
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterSalicylicAcid
+  suffix: Saliclyic Acid 15u, 8
+  components:
+  - type: Label
+    currentLabel: salicylic acid 15u
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillSalicylicAcid
+        amount: 8
+
 - type: entity
   name: pill
   parent: Pill
@@ -29,3 +254,82 @@
       storagebase:
         id: PillChepagepant
         amount: 5
+
+#Syringes here
+- type: entity
+  suffix: libital
+  parent: PrefilledSyringe
+  id: SyringeLibital
+  components:
+  - type: Label
+    currentLabel: reagent-name-libital
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Libital
+        Quantity: 15
+
+- type: entity
+  suffix: probital
+  parent: PrefilledSyringe
+  id: SyringeProbital
+  components:
+  - type: Label
+    currentLabel: reagent-name-probital
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Probital
+        Quantity: 15
+
+- type: entity
+  suffix: aiuri
+  parent: PrefilledSyringe
+  id: SyringeAiuri
+  components:
+  - type: Label
+    currentLabel: reagent-name-aiuri
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Aiuri
+        Quantity: 15
+
+- type: entity
+  suffix: lenturi
+  parent: PrefilledSyringe
+  id: SyringeLenturi
+  components:
+  - type: Label
+    currentLabel: reagent-name-lenturi
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Lenturi
+        Quantity: 15
+
+- type: entity
+  suffix: convermol
+  parent: PrefilledSyringe
+  id: SyringeConvermol
+  components:
+  - type: Label
+    currentLabel: reagent-name-convermol
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Convermol
+        Quantity: 15
+
+- type: entity
+  suffix: revivopine
+  parent: PrefilledSyringe
+  id: SyringeRevivopine
+  components:
+  - type: Label
+    currentLabel: reagent-name-revivopine
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Revivopine
+        Quantity: 15

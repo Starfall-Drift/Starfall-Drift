@@ -3,15 +3,15 @@
 # Core Medications
 
 These medications are almost always useful to medbay in one way or another.
-
-<GuideReagentEmbed Reagent="Bicaridine"/>
-<GuideReagentEmbed Reagent="Kelotane"/>
-<GuideReagentEmbed Reagent="Dermaline"/>
-<GuideReagentEmbed Reagent="Dylovene"/>
+<!--Starfallchem - Remove references to chems that are no longer in game-->
+<GuideReagentEmbed Reagent="Libital"/>
+<GuideReagentEmbed Reagent="Aiuri"/>
+<GuideReagentEmbed Reagent="Probital"/>
+<GuideReagentEmbed Reagent="Lenturi"/>
+<GuideReagentEmbed Reagent="Multiver"/>
 <GuideReagentEmbed Reagent="Inaprovaline"/>
 <GuideReagentEmbed Reagent="Dexalin"/>
-<GuideReagentEmbed Reagent="DexalinPlus"/>
-<GuideReagentEmbed Reagent="Iron"/>
+<GuideReagentEmbed Reagent="Saline"/>
 
 # Specialty Medications
 

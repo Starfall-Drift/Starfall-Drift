@@ -216,18 +216,18 @@
       - ReagentId: Barozine
         Quantity: 30
 
-- type: entity
-  id: ChemistryBottleBicaridine
-  suffix: bicaridine
-  parent: BaseChemistryBottleFilled
-  components:
-  - type: Label
-    currentLabel: reagent-name-bicaridine
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Bicaridine
-        Quantity: 30
+#- type: entity Starfallchem
+#  id: ChemistryBottleBicaridine
+#  suffix: bicaridine
+#  parent: BaseChemistryBottleFilled
+#  components:
+#  - type: Label
+#    currentLabel: reagent-name-bicaridine
+#  - type: Solution
+#    solution:
+#      reagents:
+#      - ReagentId: Bicaridine
+#        Quantity: 30
 
 - type: entity
   id: ChemistryBottleBruizine
@@ -281,18 +281,18 @@
       - ReagentId: Cryptobiolin
         Quantity: 30
 
-- type: entity
-  id: ChemistryBottleDermaline
-  suffix: dermaline
-  parent: BaseChemistryBottleFilled
-  components:
-  - type: Label
-    currentLabel: reagent-name-dermaline
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Dermaline
-        Quantity: 30
+#- type: entity Starfallchem
+#  id: ChemistryBottleDermaline
+#  suffix: dermaline
+#  parent: BaseChemistryBottleFilled
+#  components:
+#  - type: Label
+#    currentLabel: reagent-name-dermaline
+#  - type: Solution
+#    solution:
+#      reagents:
+#      - ReagentId: Dermaline
+#        Quantity: 30
 
 - type: entity
   id: ChemistryBottleDexalin
@@ -307,18 +307,18 @@
       - ReagentId: Dexalin
         Quantity: 30
 
-- type: entity
-  id: ChemistryBottleDexalinPlus
-  suffix: dex+
-  parent: BaseChemistryBottleFilled
-  components:
-  - type: Label
-    currentLabel: reagent-name-dexalin-plus
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: DexalinPlus
-        Quantity: 30
+#- type: entity Starfallchem
+#  id: ChemistryBottleDexalinPlus
+#  suffix: dex+
+#  parent: BaseChemistryBottleFilled
+#  components:
+#  - type: Label
+#    currentLabel: reagent-name-dexalin-plus
+#  - type: Solution
+#    solution:
+#      reagents:
+#      - ReagentId: DexalinPlus
+#        Quantity: 30
 
 - type: entity
   id: ChemistryBottleDiphenhydramine
@@ -359,18 +359,18 @@
       - ReagentId: Doxarubixadone
         Quantity: 30
 
-- type: entity
-  id: ChemistryBottleDylovene
-  suffix: dylovene
-  parent: BaseChemistryBottleFilled
-  components:
-  - type: Label
-    currentLabel: reagent-name-dylovene
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Dylovene
-        Quantity: 30
+#- type: entity Starfallchem
+#  id: ChemistryBottleDylovene
+#  suffix: dylovene
+#  parent: BaseChemistryBottleFilled
+#  components:
+#  - type: Label
+#    currentLabel: reagent-name-dylovene
+#  - type: Solution
+#    solution:
+#      reagents:
+#      - ReagentId: Dylovene
+#        Quantity: 30
 
 - type: entity
   id: ChemistryBottleEpinephrine
@@ -489,18 +489,18 @@
       - ReagentId: Ipecac
         Quantity: 30
 
-- type: entity
-  id: ChemistryBottleKelotane
-  suffix: kelotane
-  parent: BaseChemistryBottleFilled
-  components:
-  - type: Label
-    currentLabel: reagent-name-kelotane
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Kelotane
-        Quantity: 30
+#- type: entity Starfallchem
+#  id: ChemistryBottleKelotane
+#  suffix: kelotane
+#  parent: BaseChemistryBottleFilled
+#  components:
+#  - type: Label
+#    currentLabel: reagent-name-kelotane
+#  - type: Solution
+#    solution:
+#      reagents:
+#      - ReagentId: Kelotane
+#        Quantity: 30
 
 - type: entity
   id: ChemistryBottleLacerinol
@@ -1237,14 +1237,17 @@
   id: CoreMedicineReagentBottleTable
   table: !type:GroupSelector
     children:
-    - id: ChemistryBottleBicaridine
-    - id: ChemistryBottleKelotane
-    - id: ChemistryBottleDylovene
+    #- id: ChemistryBottleBicaridine - Starfallchem
+    #- id: ChemistryBottleKelotane - Starfallchem
+    #- id: ChemistryBottleDylovene - Starfallchem
     - id: ChemistryBottleInaprovaline
     - id: ChemistryBottleDexalin
     - id: ChemistryBottleSaline
     - id: ChemistryBottleTricordrazine
     - id: ChemistryBottleHyronalin
+    - id: ChemistryBottleLibital #Starfallchem
+    - id: ChemistryBottleAiuri #Starfallchem
+    - id: ChemistryBottleMultiver #Starfallchem
 
 - type: entityTable
   id: SpecialtyMedicineReagentBottleTable
@@ -1270,18 +1273,18 @@
     - id: ChemistryBottleAmbuzolPlus
     - id: ChemistryBottleArithrazine
     - id: ChemistryBottleBarozine
-    - id: ChemistryBottleBicaridine
+    #- id: ChemistryBottleBicaridine - Starfallchem
     - id: ChemistryBottleBruizine
     - id: ChemistryBottleCognizine
     - id: ChemistryBottleCryoxadone
     - id: ChemistryBottleCryptobiolin
-    - id: ChemistryBottleDermaline
+    #- id: ChemistryBottleDermaline - Starfallchem
     - id: ChemistryBottleDexalin
-    - id: ChemistryBottleDexalinPlus
+    #- id: ChemistryBottleDexalinPlus - Starfallchem
     - id: ChemistryBottleDiphenhydramine
     - id: ChemistryBottleDiphenylmethylamine
     - id: ChemistryBottleDoxarubixadone
-    - id: ChemistryBottleDylovene
+    #- id: ChemistryBottleDylovene - Starfallchem
     - id: ChemistryBottleEpinephrine
     - id: ChemistryBottleEthyloxyephedrine
     - id: ChemistryBottleEthylredoxrazine
@@ -1291,7 +1294,7 @@
     - id: ChemistryBottleInaprovaline
     - id: ChemistryBottleInsuzine
     - id: ChemistryBottleIpecac
-    - id: ChemistryBottleKelotane
+    #- id: ChemistryBottleKelotane - Starfallchem
     - id: ChemistryBottleLacerinol
     - id: ChemistryBottleLeporazine
     - id: ChemistryBottleLipozine
@@ -1316,3 +1319,21 @@
     - id: ChemistryBottleUltravasculine
     - id: ChemistryBottleCharcoal
     - id: ChemistryBottleLaughter
+    - id: ChemistryBottleAiuri #Starfallchem
+    - id: ChemistryBottleArdthyrnkole #Starfallchem
+    - id: ChemistryBottleConvermol #Starfallchem
+    - id: ChemistryBottleGranibitulari #Starfallchem
+    - id: ChemistryBottleHypothium #Starfallchem
+    - id: ChemistryBottleLenturi #Starfallchem
+    - id: ChemistryBottleLibital #Starfallchem
+    - id: ChemistryBottleMultiver #Starfallchem
+    - id: ChemistryBottleNatusixadone #Starfallchem
+    - id: ChemistryBottleNegacordrazine #Starfallchem
+    - id: ChemistryBottleOxandrolone #Starfallchem
+    - id: ChemistryBottlePenteticAcid #Starfallchem
+    - id: ChemistryBottleProbital #Starfallchem
+    - id: ChemistryBottlePyroxadone #Starfallchem
+    - id: ChemistryBottleRevivopine #Starfallchem
+    - id: ChemistryBottleSalicylicAcid #Starfallchem
+    - id: ChemistryBottleSievertadone #Starfallchem
+    - id: ChemistryBottleStasicillin #Starfallchem

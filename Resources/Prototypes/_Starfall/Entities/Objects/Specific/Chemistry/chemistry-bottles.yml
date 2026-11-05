@@ -1,0 +1,301 @@
+#medicine bottles
+- type: entity
+  id: ChemistryBottleAiuri
+  suffix: aiuri
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-aiuri
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Aiuri
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleArdthyrnkole
+  suffix: Ardthyrnkole
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-ardthyrnkole
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Ardthyrnkole
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleConvermol
+  suffix: convermol
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-convermol
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Convermol
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleGranibitulari
+  suffix: granibitulari
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-granibitulari
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Granibitulari
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleHypothium
+  suffix: hypothium
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-hypothium
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Hypothium
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleLenturi
+  suffix: lenturi
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-lenturi
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Lenturi
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleLibital
+  suffix: libital
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-libital
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Libital
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleMultiver
+  suffix: multiver
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-multiver
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Multiver
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleNatusixadone
+  suffix: natusixadone
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-natusixadone
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Natusixadone
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleNegacordrazine
+  suffix: negacordrazine
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-negacordrazine
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Negacordrazine
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleOxandrolone
+  suffix: oxandrolone
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-oxandrolone
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Oxandrolone
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottlePenteticAcid
+  suffix: pentetic acid
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-penteticacid
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: PenteticAcid
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleProbital
+  suffix: probital
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-probital
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Probital
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottlePyroxadone
+  suffix: pyroxadone
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-pyroxadone
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Pyroxadone
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleRevivopine
+  suffix: revivopine
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-revivopine
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Revivopine
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleSalbutamol
+  suffix: salbutamol
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-salbutamol
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Salbutamol
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleSalicylicAcid
+  suffix: salicylic acid
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-salicylicacid
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: SalicylicAcid
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleSievertadone
+  suffix: sievertadone
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-sievertadone
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Sievertadone
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleStasicillin
+  suffix: stasicillin
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-stasicillin
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Stasicillin
+        Quantity: 30
+
+#Other bottles (mainly poisons)
+
+- type: entity
+  id: ChemistryBottleLiquidExotium
+  suffix: liquid exotium
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-exotium
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: LiquidExotium
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottlePestiline
+  suffix: pestiline
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-pestiline
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Pestiline
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleRhigoxane
+  suffix: rhigoxane
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-rhigoxane
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Rhigoxane
+        Quantity: 30
+
+- type: entity
+  id: ChemistryBottleSpewium
+  suffix: spewium
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-spewium
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Spewium
+        Quantity: 30

@@ -1,7 +1,7 @@
 - type: reagent
-  id: ExoticReagent
-  name: reagent-name-exotic
-  desc: reagent-desc-exotic
+  id: LiquidExotium
+  name: reagent-name-exotium
+  desc: reagent-desc-exotium
   group: Exotic
   physicalDesc: reagent-physical-desc-exotic-smelling
   flavor: nothing
@@ -120,7 +120,7 @@
   name: reagent-name-revivopine
   desc: reagent-desc-revivopine
   group: Exotic
-  physicalDesc: reagent-physical-desc-exhilerating
+  physicalDesc: reagent-physical-desc-exhilarating #Why is it spelled "Exhilarating" and not "Exhilerating?"
   flavor: medicine
   color: "#04ea9a"
   metabolisms:

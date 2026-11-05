@@ -240,13 +240,13 @@
       weight: 4
     - id: CigaretteIron
       weight: 4
-    - id: CigaretteDylovene
+    - id: CigaretteMultiver #Starfall - Dylovene -> Multiver
       weight: 4
-    - id: CigaretteDermaline
+    - id: CigaretteAiuri #Starfall - Dermaline -> Aiuri
       weight: 4
     - id: CigaretteArithrazine
       weight: 4
-    - id: CigaretteBicaridine
+    - id: CigaretteSalicylicAcid #Starfall - Bicaridine -> Salicylic
       weight: 4
     - id: CigaretteDexalin
       weight: 4

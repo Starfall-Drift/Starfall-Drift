@@ -1178,7 +1178,7 @@
       Min: 1
       Max: 2
       PotencyDivisor: 50
-    Bicaridine:
+    Probital: #Starfallchem - Bicaridine -> Probital
       Min: 1
       Max: 20
       PotencyDivisor: 5
@@ -1204,7 +1204,7 @@
       Min: 1
       Max: 10
       PotencyDivisor: 10
-    Dermaline:
+    Aiuri: #Starfallchem - Dermaline -> Aiuri
       Min: 1
       Max: 10
       PotencyDivisor: 10
@@ -1232,7 +1232,7 @@
       Min: 1
       Max: 2
       PotencyDivisor: 50
-    Bicaridine:
+    SalicylicAcid: #Starfall - Bicaridine -> Salicylic Acid
       Min: 1
       Max: 20
       PotencyDivisor: 5
@@ -1286,11 +1286,11 @@
       Min: 1
       Max: 2
       PotencyDivisor: 10
-    Bicaridine:
+    Libital:  #Starfall - Bicaridine -> Libital
       Min: 1
       Max: 5
       PotencyDivisor: 20
-    Kelotane:
+    Aiuri:    #Starfall - Kelotane -> Aiuri
       Min: 1
       Max: 5
       PotencyDivisor: 20
@@ -1298,6 +1298,10 @@
       Min: 1
       Max: 2
       PotencyDivisor: 50
+    Desoxyephedrine:  #Starfall - Bringing this back
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
 
 - type: seed
   id: ambrosiaDeus
@@ -1328,6 +1332,10 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
+    Desoxyephedrine:  #Starfall - Bringing this back
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
 
 - type: seed
   id: galaxythistle
@@ -2009,7 +2017,7 @@
   growthStages: 4
   waterConsumption: 0.60
   nutrientConsumption: 0.50
-  chemicals:
+  chemicals: #Starfall comment - The chems in this cause an instant smoke reaction.
     Potassium:
       Min: 1
       Max: 5

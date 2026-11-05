@@ -451,16 +451,21 @@
           - !type:TemperatureCondition
             min: 337.3
           damage:
-            groups: #Identical to cryox*
-              Airloss: -6
-              Brute: -4
-              Burn: -6
-              Toxin: -4
             types: #*Heat healing is separate to counteract heat damage from temp. Ideally we could just make cryopods not deal heat when inside
-              Heat: -3
+              Asphyxiation: -3
+              Bloodloss: -3
+              Blunt: -1.5
+              Slash: -1.5
+              Piercing: -1.5
+              Heat: -4.5
+              Cold: -1.5
+              Shock: -1.5
+              Caustic: -1.5
+              Poison: -2
+              Radiation: -2
 
 - type: reagent
-  id: Arthyrnkole
+  id: Ardthyrnkole
   name: reagent-name-ardthyrnkole
   desc: reagent-desc-ardthyrnkole
   group: Medicine

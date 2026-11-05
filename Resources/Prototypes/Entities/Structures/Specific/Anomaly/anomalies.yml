@@ -940,19 +940,23 @@
     - RobustHarvest
     usefulChemicals:
     - Cryptobiolin
-    - Dylovene
+    #- Dylovene - Starfallchem
     - Arithrazine
-    - Bicaridine
+    #- Bicaridine - Starfallchem
     - Cryoxadone
-    - Dermaline
+    #- Dermaline - Starfallchem
     - Dexalin
-    - DexalinPlus
+    #- DexalinPlus - Starfallchem
     - Epinephrine
     - Leporazine
     - Ambuzol
     - Tricordrazine
     - Artifexium
     - Ethylredoxrazine
+    - SalicylicAcid #Starfallchem
+    - Oxandrolone #Starfallchem
+    - Salbutamol #Starfallchem
+    - PenteticAcid #Starfallchem
     funChemicals:
     - Desoxyephedrine
     - Ephedrine
@@ -971,6 +975,7 @@
     - Honk
     - Carpetium
     - JuiceThatMakesYouWeh
+    - LiquidExotium #Starfallchem
   - type: Edible
     edible: Drink
     solution: anomaly

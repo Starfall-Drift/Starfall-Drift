@@ -34,24 +34,24 @@
         - id: ClothingHandsGlovesNitrile
         - id: EmergencyRollerBedSpawnFolded
 
-- type: entity
-  parent: ClothingBackpackDuffelSyndicateMedicalBundle
-  id: ClothingBackpackDuffelSyndicateFilledMedicine
-  name: syndicate medicine duffel bag
-  description: A large duffel bag containing essential medicinal reagents.
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:AllSelector
-        children: #Starfall change, Revert mixed jugs and undo chem container standardization
-        - id: JugBicaridine
-        - id: JugPuncturase
-        - id: JugDermaline
-        - id: JugDylovene
-        - id: JugHyronalin
-        - id: JugSaline
-        - id: JugDexalinPlus
-        - id: JugTranexamicAcid
+#- type: entity - Starfallchem - Remove the syndie medical bundle out of spite
+#  parent: ClothingBackpackDuffelSyndicateMedicalBundle
+#  id: ClothingBackpackDuffelSyndicateFilledMedicine
+#  name: syndicate medicine duffel bag
+#  description: A large duffel bag containing essential medicinal reagents.
+#  components:
+#  - type: EntityTableContainerFill
+#    containers:
+#      storagebase: !type:AllSelector
+#        children: #Starfall change, Revert mixed jugs and undo chem container standardization
+#        - id: JugBicaridine
+#        - id: JugPuncturase
+#        - id: JugDermaline
+#        - id: JugDylovene
+#        - id: JugHyronalin
+#        - id: JugSaline
+#        - id: JugDexalinPlus
+#        - id: JugTranexamicAcid
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle

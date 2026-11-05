@@ -10,6 +10,7 @@
     - HeartbreakerToxin
     - Honk
     - BuzzochloricBees
+    - LiquidExotium
   - quantity: 5
     weight: 1
     reagents:
@@ -44,7 +45,7 @@
     - Pax
     - Cryoxadone
     - Ethylredoxrazine
-    - Dylovene
+    - Multiver #Starfallchem - Dylovene -> Multiver
     - Histamine
     - Blood
     - WeldingFuel
@@ -65,8 +66,8 @@
   - quantity: 10
     weight: 3
     reagents:
-    - Bicaridine
-    - Dermaline
+    - Probital  #Starfallchem - Bicaridine -> Probital
+    - Lenturi   #Starfallchem - Dermaline -> Lenturi
     - Ephedrine
     - NorepinephricAcid
     - Tricordrazine
@@ -103,7 +104,7 @@
     weight: 3.5
     reagents:
     - Vitamin
-    - Kelotane
+    - Aiuri    #Starfallchem - Kelotane -> Aiuri
     - Inaprovaline
     - Oil
     - Slime
@@ -120,6 +121,7 @@
     - TableSalt
     - Chlorine
     - Mercury
+    - Libital  #Starfallchem - Add libital as counterpart to aiuri
 
 - type: weightedRandomFillSolution
   id: EvilRandomFillSolution

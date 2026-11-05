@@ -15,8 +15,7 @@
   reactants:
     Oxygen:
       amount: 1
-    #Dylovene: Starfall - Dylovene to Multiver
-    Multiver:
+    Multiver: #Starfall - Dylovene -> Multiver
       amount: 1
     Carbon:
       amount: 1
@@ -91,17 +90,17 @@
   products:
     Epinephrine: 4
 
-- type: reaction
-  id: Dermaline
-  reactants:
-    Kelotane:
-      amount: 1
-    Oxygen:
-      amount: 1
-    Phosphorus:
-      amount: 1
-  products:
-    Dermaline: 3
+#- type: reaction
+#  id: Dermaline
+#  reactants:
+#    Kelotane:
+#      amount: 1
+#    Oxygen:
+#      amount: 1
+#    Phosphorus:
+#      amount: 1
+#  products:
+#    Dermaline: 3
 
 - type: reaction
   id: Dexalin
@@ -114,24 +113,24 @@
   products:
     Dexalin: 3
 
-- type: reaction
-  id: DexalinPlus
-  reactants:
-    Dexalin:
-      amount: 1
-    Carbon:
-      amount: 1
-    Iron:
-      amount: 1
-  products:
-    DexalinPlus: 3
+#- type: reaction
+#  id: DexalinPlus
+#  reactants:
+#    Dexalin:
+#      amount: 1
+#    Carbon:
+#      amount: 1
+#    Iron:
+#      amount: 1
+#  products:
+#    DexalinPlus: 3
 
 - type: reaction
   id: Hyronalin
   reactants:
     Radium:
       amount: 1
-    Dylovene:
+    PotassiumIodide: #Starfall - Dylovene -> PotassiumIodide
       amount: 1
   products:
     Hyronalin: 2
@@ -172,15 +171,15 @@
   products:
     TranexamicAcid: 3
 
-- type: reaction
-  id: Kelotane
-  reactants:
-    Silicon:
-      amount: 1
-    Carbon:
-      amount: 1
-  products:
-    Kelotane: 2
+#- type: reaction
+#  id: Kelotane
+#  reactants:
+#    Silicon:
+#      amount: 1
+#    Carbon:
+#      amount: 1
+#  products:
+#    Kelotane: 2
 
 - type: reaction
   id: Leporazine
@@ -210,8 +209,7 @@
 - type: reaction
   id: Ambuzol
   reactants:
-    #Dylovene: Starfall - Dylovene to Multiver
-    Multiver:
+    Multiver: #Starfall - Dylovene to Multiver
       amount: 1
     Ammonia:
       amount: 1
@@ -247,8 +245,7 @@
   reactants:
     Inaprovaline:
       amount: 1
-    #Dylovene: Starfall - Dylo to Multiver
-    Multiver:
+    Multiver: #Starfall - Dylovene to Multiver
       amount: 1
   products:
     Tricordrazine: 2
@@ -256,7 +253,7 @@
 - type: reaction
   id: HeartbreakerToxin
   reactants:
-    DexalinPlus:
+    Salbutamol: #Starfall - Dexalin Plus -> Salbutamol
       amount: 1
     MindbreakerToxin:
       amount: 1
@@ -321,7 +318,7 @@
       amount: 1
     Hydrogen:
       amount: 1
-    Dylovene:
+    Multiver: #Starfall - Dylovene to Multiver
       amount: 1
   products:
     MindbreakerToxin: 3
@@ -392,7 +389,7 @@
       amount: 1
     SodiumHydroxide:
       amount: 1
-    Kelotane:
+    Lenturi: #Starfall - Kelotane -> Lenturi
       amount: 1
     Water:
       amount: 1
@@ -416,8 +413,7 @@
   impact: Medium
   minTemp: 335
   reactants:
-    #Bicaridine: Starfall - Remove Bicaridine
-    Libital:
+    Libital: #Starfall - Bicaridine -> Libital
       amount: 1
     Benzene:
       amount: 1
@@ -429,8 +425,7 @@
   impact: Medium
   minTemp: 325
   reactants:
-    #Bicaridine: Starfall - Remove bicaridine.
-    Libital:
+    Libital: #Starfall - Bicaridine -> Libital
       amount: 1
     Hydroxide:
       amount: 1
@@ -441,8 +436,7 @@
   id: Bruizine
   impact: Medium
   reactants:
-    #Bicaridine: Starfall - Remove bicaridine.
-    Libital:
+    Libital: #Starfall - Bicaridine -> Libital
       amount: 1
     Lithium:
       amount: 0.9
@@ -542,7 +536,7 @@
   reactants:
     Leporazine:
       amount: 1
-    Dermaline:
+    Aiuri: #Starfall - Dermaline -> Aiuri
       amount: 1
     Carbon:
       amount: 1
@@ -556,7 +550,7 @@
   reactants:
     Leporazine:
       amount: 1
-    Kelotane:
+    Aiuri: #Starfall - Kelotane -> Aiuri
       amount: 1
     Silicon:
       amount: 1
@@ -576,18 +570,18 @@
   products:
     Opporozidone: 3
 
-- type: reaction
-  id: Arcryox
-  minTemp: 370
-  reactants:
-    Lithium:
-      amount: 1
-    Tricordrazine:
-      amount: 1
-    Cryoxadone:
-      amount: 1
-  products:
-    Arcryox: 3
+#- type: reaction
+#  id: Arcryox
+#  minTemp: 370
+#  reactants:
+#    Lithium:
+#      amount: 1
+#    Tricordrazine:
+#      amount: 1
+#    Cryoxadone:
+#      amount: 1
+#  products:
+#    Arcryox: 3
 
 - type: reaction
   id: Aloxadone

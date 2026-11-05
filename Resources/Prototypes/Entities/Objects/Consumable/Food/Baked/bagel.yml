@@ -27,7 +27,7 @@
   parent: FoodBagelBase
   id: FoodBagelPoppy
   name: poppy seed bagel
-  description: A delicious bagel topped with bicaridine-infused poppy seeds.
+  description: A delicious bagel topped with probital-infused poppy seeds. #Starfallchem - Bicaridine to Probital
   components:
   - type: FlavorProfile
     flavors:
@@ -38,7 +38,7 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: Bicaridine
+      - ReagentId: Probital
         Quantity: 5
       - ReagentId: Nutriment
         Quantity: 10

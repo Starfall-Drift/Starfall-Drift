@@ -406,14 +406,25 @@
       - id: ReagentSlimePax
       - id: ReagentSlimeNocturine
       - id: ReagentSlimeTHC
-      - id: ReagentSlimeBicaridine
+      #- id: ReagentSlimeBicaridine - Starfallchem
       - id: ReagentSlimeToxin
       - id: ReagentSlimeNapalm
       - id: ReagentSlimeOmnizine
       - id: ReagentSlimeMuteToxin
       - id: ReagentSlimeNorepinephricAcid
       - id: ReagentSlimeEphedrine
-      - id: ReagentSlimeRobustHarvest
+        #Starfallchem - Reagent slime expansion
+      - id: ReagentSlimeSpewium
+      - id: ReagentSlimePestiline
+      - id: ReagentSlimeRhigoxane
+      - id: ReagentSlimeSalicylicAcid
+      - id: ReagentSlimeOxandrolone
+      - id: ReagentSlimeLaughter
+      - id: ReagentSlimeNapalm
+      - id: ReagentSlimeCoffee
+      - id: ReagentSlimePhlogiston
+      - id: ReagentSlimeStasicillin
+      - id: ReagentSlimeHemorrhinol
 
 - type: entity
   id: ReagentSlimeBeer
@@ -501,25 +512,25 @@
         state: alive
         color: "#808080"
 
-- type: entity
-  id: ReagentSlimeBicaridine
-  parent: ReagentSlime
-  suffix: Bicaridine
-  components:
-  - type: Bloodstream
-    bloodReferenceSolution:
-      reagents:
-      - ReagentId: Bicaridine
-        Quantity: 100
-  - type: PointLight
-    color: "#ffaa00"
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: Mobs/Aliens/elemental.rsi
-    layers:
-      - map: [ "enum.DamageStateVisualLayers.Base" ]
-        state: alive
-        color: "#ffaa00"
+#- type: entity   StarfallCHEM
+#  id: ReagentSlimeBicaridine
+#  parent: ReagentSlime
+#  suffix: Bicaridine
+#  components:
+#  - type: Bloodstream
+#    bloodReferenceSolution:
+#      reagents:
+#      - ReagentId: Bicaridine
+#        Quantity: 100
+#  - type: PointLight
+#    color: "#ffaa00"
+#  - type: Sprite
+#    drawdepth: Mobs
+#    sprite: Mobs/Aliens/elemental.rsi
+#    layers:
+#      - map: [ "enum.DamageStateVisualLayers.Base" ]
+#        state: alive
+#        color: "#ffaa00"
 
 - type: entity
   id: ReagentSlimeToxin
