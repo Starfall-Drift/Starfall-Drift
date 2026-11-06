@@ -371,6 +371,19 @@
         Quantity: 15
 
 - type: entity
+  suffix: multiver
+  parent: PrefilledSyringe
+  id: SyringeMultiver
+  components:
+  - type: Label
+    currentLabel: reagent-name-multiver
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Multiver
+        Quantity: 15
+
+- type: entity
   suffix: revivopine
   parent: PrefilledSyringe
   id: SyringeRevivopine
