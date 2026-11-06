@@ -81199,7 +81199,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 60.5424,-10.480035
       parent: 2
-- proto: CigaretteDylovene
+- proto: CigaretteMultiver #Starfallchem
   entities:
   - uid: 23645
     components:

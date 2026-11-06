@@ -109363,14 +109363,14 @@ entities:
     - type: Transform
       pos: -31.76365,-0.4914775
       parent: 30
-- proto: PillCanisterBicaridine
+- proto: PillCanisterProbital #Starfallchem
   entities:
   - uid: 9854
     components:
     - type: Transform
       pos: -37.141556,-14.263344
       parent: 30
-- proto: PillCanisterDermaline
+- proto: PillCanisterLenturi #Starfallchem
   entities:
   - uid: 9852
     components:
