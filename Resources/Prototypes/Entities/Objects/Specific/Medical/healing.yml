@@ -538,7 +538,7 @@
     solution:
       reagents:
       - ReagentId: Iron
-        Quantity: 10u #Starfall - 20 -> 10
+        Quantity: 10 #Starfall - 20 -> 10
 
 - type: entity
   name: pill
