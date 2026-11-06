@@ -488,7 +488,7 @@
     containers:
       storagebase:
         id: PillHyronalin
-        amount: 8 #Starfallchem - 5 -> 8
+        amount: 8 #Starfallchem - 5 -> 8.
 
 - type: entity
   name: pill
