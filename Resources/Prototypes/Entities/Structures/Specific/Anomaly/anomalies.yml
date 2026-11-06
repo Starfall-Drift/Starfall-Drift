@@ -938,26 +938,26 @@
     - FoamingAgent
     - BuzzochloricBees
     - RobustHarvest
-    - Rhigoxane #Starfallchem
+    - Rhigoxane #Starfall - Chem expansion
     usefulChemicals:
     - Cryptobiolin
-    #- Dylovene - Starfallchem
+    #- Dylovene - Starfall - Removal
     - Arithrazine
-    #- Bicaridine - Starfallchem
+    #- Bicaridine - Starfall - Removal
     - Cryoxadone
-    #- Dermaline - Starfallchem
+    #- Dermaline - Starfall - Removal
     - Dexalin
-    #- DexalinPlus - Starfallchem
+    #- DexalinPlus - Starfall - Removal
     - Epinephrine
     - Leporazine
     - Ambuzol
     - Tricordrazine
     - Artifexium
     - Ethylredoxrazine
-    - SalicylicAcid #Starfallchem
-    - Oxandrolone #Starfallchem
-    - Salbutamol #Starfallchem
-    - PenteticAcid #Starfallchem
+    - SalicylicAcid #Starfall - Chem expansion
+    - Oxandrolone #Starfall - Chem expansion
+    - Salbutamol #Starfall - Chem expansion
+    - PenteticAcid #Starfall - Chem expansion
     funChemicals:
     - Desoxyephedrine
     - Ephedrine
@@ -976,8 +976,8 @@
     - Honk
     - Carpetium
     - JuiceThatMakesYouWeh
-    - LiquidExotium #Starfallchem
-    - Laughter #Starfallchem
+    - LiquidExotium #Starfall - Chem expansion
+    - Laughter #Starfall - Chem expansion
   - type: Edible
     edible: Drink
     solution: anomaly

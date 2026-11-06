@@ -3,7 +3,7 @@
 # Core Medications
 
 These medications are almost always useful to medbay in one way or another.
-<!--Starfallchem - Remove references to chems that are no longer in game-->
+<!--Starfall - Remove references to chems that are no longer in game-->
 <GuideReagentEmbed Reagent="Libital"/>
 <GuideReagentEmbed Reagent="Aiuri"/>
 <GuideReagentEmbed Reagent="Probital"/>

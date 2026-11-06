@@ -325,8 +325,7 @@
     solution:
       maxVol: 30
       reagents:
-      #- ReagentId: Bicaridine Starfallchem
-      - ReagentId: SalicylicAcid
+      - ReagentId: SalicylicAcid #Starfall Bicaridine -> Salicylic Acid
         Quantity: 10
       - ReagentId: Libital
         Quantity: 15
@@ -337,7 +336,7 @@
   parent: ChemicalMedipen
   id: BurnAutoInjector
   name: burn auto-injector
-  description: A single-dose, non-refillable medipen containing aiuri, lenturi, and oxandrolone, used to quickly and easily treat non-chemical burns. Commonly used as a combat medicine. #Starfallchem - Dermaline and Leporazine -> Aiuri, Lenturi, and Oxandrolone
+  description: A single-dose, non-refillable medipen containing aiuri, lenturi, and oxandrolone, used to quickly and easily treat non-chemical burns. Commonly used as a combat medicine. #Starfall - Dermaline and Leporazine -> Aiuri, Lenturi, and Oxandrolone
   components:
   - type: Item
     inhandVisuals:
@@ -363,11 +362,11 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: Aiuri #Starfallchem - Dermaline -> Aiuri
+      - ReagentId: Aiuri #Starfall - Dermaline -> Aiuri
         Quantity: 10
-      - ReagentId: Lenturi #Starfallchem - Leporazine -> Lenturi
+      - ReagentId: Lenturi #Starfall - Leporazine -> Lenturi
         Quantity: 10
-      - ReagentId: Oxandrolone #Starfallchem - Add Oxan
+      - ReagentId: Oxandrolone #Starfall - Add Oxandrolone
         Quantity: 10
 
 - type: entity
@@ -402,7 +401,7 @@
       reagents:
       - ReagentId: Arithrazine
         Quantity: 24
-      - ReagentId: Granibitulari #Starfallchem - Bicaridine -> Granibitulari
+      - ReagentId: Granibitulari #Starfall - Bicaridine -> Granibitulari
         Quantity: 6
 
 - type: entity
@@ -484,7 +483,7 @@
   parent: ChemicalMedipen
   id: AirlossAutoInjector
   name: airloss auto-injector
-  #description: A single-dose, non-refillable medipen containing saline and dexalin plus, used to quickly and easily treat blood loss and asphyxiation. - Starfallchem
+  #Starfall - description: A single-dose, non-refillable medipen containing saline and dexalin plus, used to quickly and easily treat blood loss and asphyxiation.
   description: A single-dose, non-refillable medipen containing saline and salbutamol, used to quickly and easily treat blood loss and asphyxiation.
   components:
   - type: Item
@@ -513,12 +512,11 @@
       maxVol: 30
       reagents:
       - ReagentId: Saline
-        #Quantity: 10 - Starfallchem
-        Quantity: 15
-      #- ReagentId: DexalinPlus - Starfallchem
-      - ReagentId: Salbutamol
-        #Quantity: 10 - Starfallchem
-        Quantity: 15
+        Quantity: 10
+      - ReagentId: Salbutamol #Starfall - DexalinPlus -> Salbutamol
+        Quantity: 10
+      - ReagentId: Dexalin
+        Quantity: 10
 
 - type: entity
   parent: ChemicalMedipen
@@ -554,8 +552,7 @@
       - ReagentId: Leporazine
         Quantity: 10
       - ReagentId: Barozine
-        #Quantity: 10 - Starfallchem
-        Quantity: 20
+        Quantity: 20 #Starfall - 10 -> 20
   - type: Tag
     tags:
     - SpaceMedipen

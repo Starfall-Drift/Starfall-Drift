@@ -37,12 +37,12 @@
       rarePrototypes:
         - PillCanisterDermaline
         - PillCanisterDylovene
-        - PillCanisterProbital #Starfallchem - Bicaridine -> Probital
+        - PillCanisterProbital #Starfall - Bicaridine -> Probital
         - PillCanisterKelotane
         - PillCanisterDexalin
         - HandheldHealthAnalyzer
         - ClothingHandsGlovesLatex
-        - PillCanisterLibital #Starfallchem - Add libital entry
+        - PillCanisterLibital #Starfall - Add libital entry
       rareChance: 0.1
       prototypes:
         - Syringe

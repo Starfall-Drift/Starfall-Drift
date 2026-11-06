@@ -888,11 +888,13 @@ ChemistryBottleDylovene: ChemistryBottleMultiver
 PillCanisterDylovene: PillCanisterMultiver
 SyringeDylovene: SyringeMultiver
 CigaretteDylovene: CigaretteMultiver
+PillDylovene: PillMultiver
 ChemistryBottleKelotane: ChemistryBottleAiuri
 PillCanisterKelotane: PillCanisterAiuri
 CigaretteDermaline: CigaretteAiuri
 ChemistryBottleDermaline: ChemistryBottleLenturi
 PillCanisterDermaline: PillCanisterLenturi
+PillDermaline: PillLenturi
 ChemistryBottleBicaridine: ChemistryBottleProbitalLibital
 PillCanisterBicaridine: PillCanisterProbitalLibital
 SyringeBicaridine: SyringeProbitalLibital

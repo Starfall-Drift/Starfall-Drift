@@ -512,7 +512,7 @@
         state: alive
         color: "#808080"
 
-#- type: entity   StarfallCHEM
+#Starfall - Removal of Bicaridine - type: entity
 #  id: ReagentSlimeBicaridine
 #  parent: ReagentSlime
 #  suffix: Bicaridine

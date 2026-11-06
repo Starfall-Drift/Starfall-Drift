@@ -1,3 +1,4 @@
+#Starfall - Many chems in this file are being commented out. This is Starchem.
 - type: reagent
   id: Cryptobiolin
   name: reagent-name-cryptobiolin
@@ -18,7 +19,7 @@
         effectProto: StatusEffectWoozy
         time: 20.0
 
-#- type: reagent #Starfall - Many chems in this file are being commented out. This is starfallchem.
+#- type: reagent
 #  id: Dylovene
 #  name: reagent-name-dylovene
 #  group: Medicine
@@ -137,7 +138,7 @@
   color: "#bd5902"
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #Starfallchem
+      metabolismRate: 0.2 #Starfall
       effects:
       - !type:HealthChange
         damage:
@@ -284,13 +285,13 @@
   color: "#0041a8"
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #Starfallchem
+      metabolismRate: 0.2 #Starfall
       effects:
       - !type:HealthChange
         damage:
           types:
             Asphyxiation: -1
-            Bloodloss: -1 #Starfallchem 0.5->1
+            Bloodloss: -1 #Starfall 0.5->1
       - !type:HealthChange
         conditions:
           - !type:ReagentCondition
@@ -298,10 +299,10 @@
             min: 20
         damage:
           types:
-            Asphyxiation: 2 #Starfallchem 3->2
+            Asphyxiation: 2 #Starfall 3->2
             Cold: 1
 
-#- type: reagent Starfallchem removal
+#- type: reagent Starfall removal
 #  id: DexalinPlus
 #  name: reagent-name-dexalin-plus
 #  group: Medicine
@@ -345,7 +346,7 @@
   color: "#d2fffa"
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #Starfallchem
+      metabolismRate: 0.2 #Starfall
       effects:
       - !type:AdjustReagent
         conditions:
@@ -362,7 +363,7 @@
         - !type:ReagentCondition
           reagent: Epinephrine
           max: 20
-        damage: #Starfallchem remove evenheal
+        damage: #Starfall remove evenheal
           types:
             Asphyxiation: -2
             Poison: -0.5
@@ -436,7 +437,7 @@
   color: "#4cb580"
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #StarfallChem
+      metabolismRate: 0.2 #Starfall
       effects:
       - !type:HealthChange
         damage:
@@ -546,7 +547,7 @@
   color: "#ff7db5"
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #StarfallChem
+      metabolismRate: 0.2 #Starfall
       effects:
       - !type:HealthChange
         damage:
@@ -632,7 +633,7 @@
       minScale: 4
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #Starfallchem 0.1 -> 0.2
+      metabolismRate: 0.2 #Starfall 0.1 -> 0.2
       effects:
       - !type:HealthChange
         damage:
@@ -682,7 +683,7 @@
   color: "#9423FF"
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #Starfallchem
+      metabolismRate: 0.2 #Starfall
       effects:
       - !type:EvenHealthChange
         damage:
@@ -802,7 +803,7 @@
   color: "#f4dab8"
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #Starfallchem
+      metabolismRate: 0.2 #Starfall
       effects:
       - !type:HealthChange
         damage:
@@ -819,7 +820,7 @@
   color: "#2b2f77"
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #Starfallchem
+      metabolismRate: 0.2 #Starfall
       effects:
       - !type:HealthChange
         damage:
@@ -894,7 +895,7 @@
   color: "#00e5ff"
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #Starfallchem
+      metabolismRate: 0.2 #Starfall
       effects:
 #      - !type:EvenHealthChange -Remove the evenheal cause its op on something this fucking cheap
 #        conditions:
@@ -1127,7 +1128,7 @@
   color: "#e0a5b9"
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #Starfallchem 0.25 -> 0.2
+      metabolismRate: 0.2 #Starfall 0.25 -> 0.2
       effects:
       - !type:HealthChange
         damage:
@@ -1187,12 +1188,12 @@
   color: "#283332"
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #Starfallchem 0.25 -> 0.2
+      metabolismRate: 0.2 #Starfall 0.25 -> 0.2
       effects:
       - !type:HealthChange
         damage:
           types:
-            Slash: -1 #Starfallchem 2 -> 1. 5 per u
+            Slash: -1 #Starfall 2 -> 1. 5 per u
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
@@ -1200,7 +1201,7 @@
           min: 12
         damage:
           types:
-            Cold: 3 #Starfallchem 6 -> 3 15 per u
+            Cold: 3 #Starfall 6 -> 3 15 per u
 
 - type: reagent
   id: Puncturase
@@ -1212,7 +1213,7 @@
   color: "#b9bf93"
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #Starfallchem 0.25 -> 0.2
+      metabolismRate: 0.2 #Starfall 0.25 -> 0.2
       effects:
       - !type:HealthChange
         damage:
@@ -1238,7 +1239,7 @@
   color: "#ff3636"
   metabolisms:
     Bloodstream:
-      metabolismRate: 0.2 #Starfallchem
+      metabolismRate: 0.2 #Starfall
       effects:
       - !type:HealthChange
         damage:

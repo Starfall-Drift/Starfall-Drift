@@ -216,7 +216,7 @@
       - ReagentId: Barozine
         Quantity: 30
 
-#- type: entity Starfallchem
+#Starfall - Removal - type: entity
 #  id: ChemistryBottleBicaridine
 #  suffix: bicaridine
 #  parent: BaseChemistryBottleFilled
@@ -281,7 +281,7 @@
       - ReagentId: Cryptobiolin
         Quantity: 30
 
-#- type: entity Starfallchem
+#Starfall - Removal - type: entity
 #  id: ChemistryBottleDermaline
 #  suffix: dermaline
 #  parent: BaseChemistryBottleFilled
@@ -307,7 +307,7 @@
       - ReagentId: Dexalin
         Quantity: 30
 
-#- type: entity Starfallchem
+#Starfall - Removal - type: entity
 #  id: ChemistryBottleDexalinPlus
 #  suffix: dex+
 #  parent: BaseChemistryBottleFilled
@@ -359,7 +359,7 @@
       - ReagentId: Doxarubixadone
         Quantity: 30
 
-#- type: entity Starfallchem
+#Starfall - Removal  type: entity
 #  id: ChemistryBottleDylovene
 #  suffix: dylovene
 #  parent: BaseChemistryBottleFilled
@@ -489,7 +489,7 @@
       - ReagentId: Ipecac
         Quantity: 30
 
-#- type: entity Starfallchem
+#Starfall - Removal - type: entity
 #  id: ChemistryBottleKelotane
 #  suffix: kelotane
 #  parent: BaseChemistryBottleFilled
@@ -1237,17 +1237,15 @@
   id: CoreMedicineReagentBottleTable
   table: !type:GroupSelector
     children:
-    #- id: ChemistryBottleBicaridine - Starfallchem
-    #- id: ChemistryBottleKelotane - Starfallchem
-    #- id: ChemistryBottleDylovene - Starfallchem
+    #Starfall - Removal - id: ChemistryBottleBicaridine
+    - id: ChemistryBottleKelotane
+    - id: ChemistryBottleDylovene
     - id: ChemistryBottleInaprovaline
     - id: ChemistryBottleDexalin
     - id: ChemistryBottleSaline
     - id: ChemistryBottleTricordrazine
     - id: ChemistryBottleHyronalin
-    - id: ChemistryBottleLibital #Starfallchem
-    - id: ChemistryBottleAiuri #Starfallchem
-    - id: ChemistryBottleMultiver #Starfallchem
+    - id: ChemistryBottleLibital #Starfall
 
 - type: entityTable
   id: SpecialtyMedicineReagentBottleTable
@@ -1273,18 +1271,18 @@
     - id: ChemistryBottleAmbuzolPlus
     - id: ChemistryBottleArithrazine
     - id: ChemistryBottleBarozine
-    #- id: ChemistryBottleBicaridine - Starfallchem
+    #Starfall - Removal - id: ChemistryBottleBicaridine
     - id: ChemistryBottleBruizine
     - id: ChemistryBottleCognizine
     - id: ChemistryBottleCryoxadone
     - id: ChemistryBottleCryptobiolin
-    #- id: ChemistryBottleDermaline - Starfallchem
+    - id: ChemistryBottleDermaline
     - id: ChemistryBottleDexalin
-    #- id: ChemistryBottleDexalinPlus - Starfallchem
+    #Starfall - Removal - id: ChemistryBottleDexalinPlus
     - id: ChemistryBottleDiphenhydramine
     - id: ChemistryBottleDiphenylmethylamine
     - id: ChemistryBottleDoxarubixadone
-    #- id: ChemistryBottleDylovene - Starfallchem
+    - id: ChemistryBottleDylovene
     - id: ChemistryBottleEpinephrine
     - id: ChemistryBottleEthyloxyephedrine
     - id: ChemistryBottleEthylredoxrazine
@@ -1294,7 +1292,7 @@
     - id: ChemistryBottleInaprovaline
     - id: ChemistryBottleInsuzine
     - id: ChemistryBottleIpecac
-    #- id: ChemistryBottleKelotane - Starfallchem
+    - id: ChemistryBottleKelotane
     - id: ChemistryBottleLacerinol
     - id: ChemistryBottleLeporazine
     - id: ChemistryBottleLipozine
@@ -1319,21 +1317,18 @@
     - id: ChemistryBottleUltravasculine
     - id: ChemistryBottleCharcoal
     - id: ChemistryBottleLaughter
-    - id: ChemistryBottleAiuri #Starfallchem
-    - id: ChemistryBottleArdthyrnkole #Starfallchem
-    - id: ChemistryBottleConvermol #Starfallchem
-    - id: ChemistryBottleGranibitulari #Starfallchem
-    - id: ChemistryBottleHypothium #Starfallchem
-    - id: ChemistryBottleLenturi #Starfallchem
-    - id: ChemistryBottleLibital #Starfallchem
-    - id: ChemistryBottleMultiver #Starfallchem
-    - id: ChemistryBottleNatusixadone #Starfallchem
-    - id: ChemistryBottleNegacordrazine #Starfallchem
-    - id: ChemistryBottleOxandrolone #Starfallchem
-    - id: ChemistryBottlePenteticAcid #Starfallchem
-    - id: ChemistryBottleProbital #Starfallchem
-    - id: ChemistryBottlePyroxadone #Starfallchem
-    - id: ChemistryBottleRevivopine #Starfallchem
-    - id: ChemistryBottleSalicylicAcid #Starfallchem
-    - id: ChemistryBottleSievertadone #Starfallchem
-    - id: ChemistryBottleStasicillin #Starfallchem
+    - id: ChemistryBottleArdthyrnkole #Starfall
+    - id: ChemistryBottleConvermol #Starfall
+    - id: ChemistryBottleGranibitulari #Starfall
+    - id: ChemistryBottleHypothium #Starfall
+    - id: ChemistryBottleLibital #Starfall
+    - id: ChemistryBottleNatusixadone #Starfall
+    - id: ChemistryBottleNegacordrazine #Starfall
+    - id: ChemistryBottleOxandrolone #Starfall
+    - id: ChemistryBottlePenteticAcid #Starfall
+    - id: ChemistryBottleProbital #Starfall
+    - id: ChemistryBottlePyroxadone #Starfall
+    - id: ChemistryBottleRevivopine #Starfall
+    - id: ChemistryBottleSalicylicAcid #Starfall
+    - id: ChemistryBottleSievertadone #Starfall
+    - id: ChemistryBottleStasicillin #Starfall
