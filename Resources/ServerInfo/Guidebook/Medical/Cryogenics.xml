@@ -43,12 +43,18 @@ Once things have been set up, you're going to require a specific medication, Cry
 
 The standard pressure for a gas pump is 100.325 kpa. Cryoxadone works at under 170K, but it is standard practice to set the freezer to 100K for faster freezing.
 
-<GuideReagentEmbed Reagent="Aloxadone"/>
-<GuideReagentEmbed Reagent="Arcryox"/>
-<GuideReagentEmbed Reagent="Cryoxadone"/>
+<GuideReagentEmbed Reagent="Cryoxadone"/> <!--Starfall - Cryox should honestly be the first thing in the list-->
+<GuideReagentEmbed Reagent="Aloxadone"/>  <!--Starfall - We killed arcryox-->
 <GuideReagentEmbed Reagent="Doxarubixadone"/>
 <GuideReagentEmbed Reagent="Dexalin"/>
 <GuideReagentEmbed Reagent="Leporazine"/>
+<GuideReagentEmbed Reagent="Necrosol"/> <!--Starfall - Add back necrosol-->
 <GuideReagentEmbed Reagent="Opporozidone"/>
+<!--Starfall - Add Pyrogenics to the guidebook page-->
+On the other hand, Pyrogenics utilize a similar method but require heating a body above a temperature. Pyrogenics is also slightly dangerous, as the heat will hurt the patient inside, so lengthy periods of being in the pod with no treatment is ill advised.
 
+<GuideReagentEmbed Reagent="Pyroxadone"/>
+<GuideReagentEmbed Reagent="Ardthyrnkole"/>
+<GuideReagentEmbed Reagent="Natusixadone"/>
+<GuideReagentEmbed Reagent="Sievertadone"/>
 </Document>
