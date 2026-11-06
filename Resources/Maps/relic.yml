@@ -51879,7 +51879,7 @@ entities:
     - type: Transform
       pos: 32.5,-65.5
       parent: 3564
-- proto: PillCanisterProbital
+- proto: PillCanisterBicaridine
   entities:
   - uid: 7453
     components:
@@ -51920,7 +51920,7 @@ entities:
     - type: Transform
       pos: 29.5,-16.5
       parent: 3564
-- proto: PillCanisterLenturi #Starfallchem
+- proto: PillCanisterDermaline
   entities:
   - uid: 7329
     components:

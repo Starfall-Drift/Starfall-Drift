@@ -406,24 +406,24 @@
       - id: ReagentSlimePax
       - id: ReagentSlimeNocturine
       - id: ReagentSlimeTHC
-      #- id: ReagentSlimeBicaridine - Starfallchem
+      #- id: ReagentSlimeBicaridine - Starfall
       - id: ReagentSlimeToxin
       - id: ReagentSlimeNapalm
       - id: ReagentSlimeOmnizine
       - id: ReagentSlimeMuteToxin
       - id: ReagentSlimeNorepinephricAcid
       - id: ReagentSlimeEphedrine
-        #Starfallchem - Reagent slime expansion
+        #Starfall - Reagent slime expansion
       - id: ReagentSlimeSpewium
       - id: ReagentSlimePestiline
       - id: ReagentSlimeRhigoxane
       - id: ReagentSlimeSalicylicAcid
       - id: ReagentSlimeOxandrolone
-      - id: ReagentSlimeLaughter
+      - id: ReagentSlimeLaughter #Haha i'm dying
       - id: ReagentSlimeNapalm
       - id: ReagentSlimeCoffee
       - id: ReagentSlimePhlogiston
-      - id: ReagentSlimeStasicillin
+      - id: ReagentSlimeStasicillin #Tested this and if you're alone and get slept, you will not die but it will bite you alot so you're asleep for a long time
       - id: ReagentSlimeHemorrhinol
 
 - type: entity

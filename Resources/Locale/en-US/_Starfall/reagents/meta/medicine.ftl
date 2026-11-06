@@ -4,6 +4,9 @@ reagent-desc-libital = A common but weak medicine used to heal brute trauma. Usu
 reagent-name-probital = probital
 reagent-desc-probital = A common analgesic that is effective at treating general brute trauma, at the cost of slowing you down.
 
+reagent-name-probital-libital = probital + libital
+reagent-desc-probital-libital = A combination drug of libital and probital, useful for treating brute trauma in a timely manner.
+
 reagent-name-salicylicacid = salicylic acid
 reagent-desc-salicylicacid = A heavy-duty analgesic that stabilizes the severely beaten, but is barely effective on people with less wounds. However, overdosing will reverse the effect.
 

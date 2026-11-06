@@ -34,7 +34,7 @@
         - id: ClothingHandsGlovesNitrile
         - id: EmergencyRollerBedSpawnFolded
 
-#- type: entity - Starfallchem - Remove the syndie medical bundle out of spite
+#Starfall - Remove the syndie medical bundle out of spite - type: entity -
 #  parent: ClothingBackpackDuffelSyndicateMedicalBundle
 #  id: ClothingBackpackDuffelSyndicateFilledMedicine
 #  name: syndicate medicine duffel bag

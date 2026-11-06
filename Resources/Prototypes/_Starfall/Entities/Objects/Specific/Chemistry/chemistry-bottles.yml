@@ -169,6 +169,21 @@
         Quantity: 30
 
 - type: entity
+  id: ChemistryBottleProbitalLibital
+  suffix: probital+libital, DO NOT MAP
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-probital-libital
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Libital
+        Quantity: 15
+      - ReagentId: Probital
+        Quantity: 15
+
+- type: entity
   id: ChemistryBottlePyroxadone
   suffix: pyroxadone
   parent: BaseChemistryBottleFilled

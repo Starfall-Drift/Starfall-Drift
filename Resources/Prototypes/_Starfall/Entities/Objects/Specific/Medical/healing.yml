@@ -191,6 +191,40 @@
         id: PillProbital
         amount: 8
 
+- type: entity #This bad boy only exists for migration
+  name: pill
+  suffix: Probital+Libital 15u, DO NOT MAP
+  parent: Pill
+  id: PillProbitalLibital
+  components:
+  - type: Pill
+    pillType: 4
+  - type: Sprite
+    state: pill5
+  - type: Label
+    currentLabel: probital & libital 15u
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Probital
+        Quantity: 7.5
+      - ReagentId: Libital
+        Quantity: 7.5
+
+- type: entity #This bad boy only exists for migration
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterProbitalLibital
+  suffix: Probital+Libital 15u, 8, DO NOT MAP
+  components:
+  - type: Label
+    currentLabel: probital & libital 15u
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillProbitalLibital
+        amount: 8
+
 - type: entity
   name: pill
   suffix: Salicylic Acid 15u
@@ -281,6 +315,21 @@
       reagents:
       - ReagentId: Probital
         Quantity: 15
+
+- type: entity #This bad boy only exists for migration
+  suffix: Probital+Libital, DO NOT MAP
+  parent: PrefilledSyringe
+  id: SyringeProbital
+  components:
+  - type: Label
+    currentLabel: reagent-name-probital-libital
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Probital
+        Quantity: 7.5
+      - ReagentId: Libital
+        Quantity: 7.5
 
 - type: entity
   suffix: aiuri

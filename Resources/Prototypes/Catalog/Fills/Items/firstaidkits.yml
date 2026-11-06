@@ -11,8 +11,8 @@
         - id: Ointment
         - id: Gauze
         - id: PillCanisterTricordrazine
-        - id: PillCanisterGranibitulari #Starfallchem
-        - id: HandheldHealthAnalyzer    #Starfallchem - Added to all medkits
+        - id: PillCanisterGranibitulari #Starfall
+        - id: HandheldHealthAnalyzer    #Starfall - Added to all medkits
       # see https://github.com/tgstation/blob/master/code/game/objects/items/storage/firstaid.dm for example contents
 
 - type: entity
@@ -26,9 +26,9 @@
         children:
         - id: Ointment
           amount: 2
-        - id: PillCanisterAiuri #Starfallchem - Kelotane -> Aiuri
-        - id: PillCanisterLenturi #Starfallchem - Dermaline -> Lenturi
-        - id: HandheldHealthAnalyzer #Starfallchem - added to all medkits
+        - id: PillCanisterAiuri #Starfall - Kelotane -> Aiuri
+        - id: PillCanisterLenturi #Starfall - Dermaline -> Lenturi
+        - id: HandheldHealthAnalyzer #Starfall - added to all medkits
 
 - type: entity
   id: MedkitBruteFilled
@@ -43,9 +43,9 @@
         - id: Gauze
         - id: SyringeSaline
           amount: 2
-        - id: PillCanisterLibital #Starfallchem - Iron -> Libital
-        - id: PillCanisterProbital #Starfallchem - Copper -> Probital
-        - id: HandheldHealthAnalyzer #Starfallchem - added to all medkits
+        - id: PillCanisterLibital #Starfall - Iron -> Libital
+        - id: PillCanisterProbital #Starfall - Copper -> Probital
+        - id: HandheldHealthAnalyzer #Starfall - added to all medkits
 
 - type: entity
   id: MedkitToxinFilled
@@ -59,10 +59,10 @@
         - id: SyringeIpecac
         - id: SyringeEthylredoxrazine
         - id: AntiPoisonMedipen
-          amount: 2 #Starfallchem - add another
-        - id: PillCanisterMultiver #Starfallchem - Dylovene -> Multiver
+          amount: 2 #Starfall - add another
+        - id: PillCanisterMultiver #Starfall - Dylovene -> Multiver
         - id: PillCanisterCharcoal
-        - id: HandheldHealthAnalyzer #Starfallchem - added to all medkits
+        - id: HandheldHealthAnalyzer #Starfall - added to all medkits
 
 - type: entity
   id: MedkitOxygenFilled
@@ -76,11 +76,11 @@
         - id: ClothingMaskBreathMedical
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
-          amount: 2 #Starfallchem - add another
-        - id: SyringeConvermol #Starfallchem - Inaprovaline -> Convermol
-          amount: 2 #Starfallchem - add another
+          amount: 2 #Starfall - add another
+        - id: SyringeConvermol #Starfall - Inaprovaline -> Convermol
+          amount: 2 #Starfall - add another
         - id: PillCanisterDexalin
-        - id: HandheldHealthAnalyzer #Starfallchem - added to all medkits
+        - id: HandheldHealthAnalyzer #Starfall - added to all medkits
 
 - type: entity
   id: MedkitRadiationFilled
@@ -94,10 +94,10 @@
         - id: SyringePhalanximine
         - id: RadAutoInjector
         - id: PillCanisterPotassiumIodide
-          amount: 2 #Starfallchem - add another
+          amount: 2 #Starfall - add another
         - id: PillCanisterHyronalin
-          amount: 2 #Starfallchem - add another
-        - id: HandheldHealthAnalyzer #Starfallchem - added to all medkits
+          amount: 2 #Starfall - add another
+        - id: HandheldHealthAnalyzer #Starfall - added to all medkits
 
 - type: entity
   id: MedkitAdvancedFilled
@@ -111,10 +111,10 @@
         - id: MedicatedSuture
         - id: RegenerativeMesh
         - id: Bloodpack
-          amount: 1 #Starfallchem - 2 -> 1
-        - id: SyringeSaline #Starfallchem - Add this
+          amount: 1 #Starfall - 2 -> 1
+        - id: SyringeSaline #Starfall - Add this
           amount: 2
-        - id: HandheldHealthAnalyzer #Starfallchem - added to all medkits
+        - id: HandheldHealthAnalyzer #Starfall - added to all medkits
 
 - type: entity
   id: MedkitCombatFilled
@@ -127,11 +127,11 @@
         children:
         - id: MedicatedSuture
         - id: RegenerativeMesh
-        - id: SyringeRevivopine #Starfallchem - Ephedrine -> Revivopine
+        - id: SyringeRevivopine #Starfall - Ephedrine -> Revivopine
         - id: SyringeSaline
         - id: BruteAutoInjector
         - id: BurnAutoInjector
-        - id: HandheldHealthAnalyzer #Starfallchem - added to all medkits
+        - id: HandheldHealthAnalyzer #Starfall - added to all medkits
 
 - type: entity
   id: StimkitFilled

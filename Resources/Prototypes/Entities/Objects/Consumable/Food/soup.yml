@@ -142,9 +142,9 @@
         Quantity: 19
       - ReagentId: Vitamin
         Quantity: 11
-      - ReagentId: Libital #Starfallchem - Bicaridine -> Libital
+      - ReagentId: Libital #Starfall - Bicaridine -> Libital
         Quantity: 15
-      - ReagentId: Aiuri #Starfallchem - Kelotane -> Aiuri
+      - ReagentId: Aiuri #Starfall - Kelotane -> Aiuri
         Quantity: 15
   - type: Tag
     tags:
@@ -174,9 +174,9 @@
         Quantity: 26
       - ReagentId: Vitamin
         Quantity: 9
-      - ReagentId: Libital #Starfallchem - Bicaridine -> Libital
+      - ReagentId: Libital #Starfall - Bicaridine -> Libital
         Quantity: 10
-      - ReagentId: Aiuri #Starfallchem - Kelotane -> Aiuri
+      - ReagentId: Aiuri #Starfall - Kelotane -> Aiuri
         Quantity: 10
       - ReagentId: Protein
         Quantity: 5

@@ -277,7 +277,7 @@
   id: OrganDionaStomach
   components:
   - type: Metabolizer
-    maxReagents: 8 #Starfallchem
+    maxReagents: 8 #Starfall
     stages: [ Digestion, Bloodstream, Metabolites ]
 
 - type: entity

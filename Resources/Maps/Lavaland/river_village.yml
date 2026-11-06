@@ -6265,7 +6265,7 @@ entities:
     - type: Transform
       pos: 44.5,14.5
       parent: 1
-- proto: PillCanisterAiuri #Starfallchem
+- proto: PillCanisterKelotane
   entities:
   - uid: 1407
     components:

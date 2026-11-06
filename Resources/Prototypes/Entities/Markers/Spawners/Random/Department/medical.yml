@@ -35,10 +35,10 @@
           state: firstaid
     - type: RandomSpawner
       rarePrototypes:
-        - PillCanisterLenturi #Starfallchem - Dermaline -> Lenturi
-        - PillCanisterMultiver #Starfallchem - Dylovene -> Multiver
+        - PillCanisterDermaline
+        - PillCanisterDylovene
         - PillCanisterProbital #Starfallchem - Bicaridine -> Probital
-        - PillCanisterAiuri #Starfallchem - Kelotane -> Aiuri
+        - PillCanisterKelotane
         - PillCanisterDexalin
         - HandheldHealthAnalyzer
         - ClothingHandsGlovesLatex

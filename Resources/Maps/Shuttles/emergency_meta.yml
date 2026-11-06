@@ -5075,7 +5075,7 @@ entities:
           - 550
     - type: Physics
       canCollide: False
-- proto: PillCanisterMultiver #Starfallchem
+- proto: PillCanisterDylovene
   entities:
   - uid: 92
     components:
@@ -5348,7 +5348,7 @@ entities:
       parent: 543
     - type: Physics
       canCollide: False
-- proto: PillMultiver #Starfallchem
+- proto: PillCanisterDylovene
   entities:
   - uid: 93
     components:

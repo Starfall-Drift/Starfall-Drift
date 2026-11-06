@@ -1544,7 +1544,7 @@
       reagents:
       - ReagentId: Nutriment
         Quantity: 5
-      - ReagentId: Probital #Starfallchem - Bicaridine -> Probital
+      - ReagentId: Probital #Starfall - Bicaridine -> Probital
         Quantity: 10
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/poppy.rsi

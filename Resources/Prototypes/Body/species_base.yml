@@ -179,7 +179,7 @@
   - type: PassiveDamage
     allowedStates:
     - Alive
-    damageCap: 20
+    damageCap: 20 #Starfall - Damage cap for passive healing
     damage:
       types:
         Heat: -0.07

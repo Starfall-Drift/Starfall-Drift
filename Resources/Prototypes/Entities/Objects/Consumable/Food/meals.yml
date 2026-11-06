@@ -560,9 +560,9 @@
         Quantity: 60
       - ReagentId: Water
         Quantity: 5
-      - ReagentId: Libital #Starfallchem - Bicaridine -> Libital
+      - ReagentId: Libital #Starfall - Bicaridine -> Libital
         Quantity: 5
-      - ReagentId: Aiuri #Starfallchem - Kelotane -> Aiuri
+      - ReagentId: Aiuri #Starfall - Kelotane -> Aiuri
         Quantity: 5
   - type: Tag
     tags:

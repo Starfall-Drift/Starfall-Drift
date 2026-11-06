@@ -5193,14 +5193,14 @@ entities:
     - type: Transform
       pos: -10.5,12.5
       parent: 1
-- proto: SyringeProbital #Starfallchem
+- proto: SyringeBicaridine
   entities:
   - uid: 840
     components:
     - type: Transform
       pos: 2.3548565,-5.3039494
       parent: 1
-- proto: SyringeLenturi #Starfallchem
+- proto: SyringeDermaline
   entities:
   - uid: 841
     components:

@@ -159121,7 +159121,7 @@ entities:
     - type: Transform
       pos: -22.818846,-59.380455
       parent: 2
-- proto: SyringeProbital #Starfallchem
+- proto: SyringeBicaridine
   entities:
   - uid: 24235
     components:

@@ -35,7 +35,7 @@
       - ReagentId: TranexamicAcid
         Quantity: 40 #Starfall - 200u Jugs
 
-#- type: entity Starfallchem removal
+#Starfall - Removal - type: entity
 #  parent: Jug
 #  id: JugPyraDerma
 #  suffix: pyra & derma
@@ -50,7 +50,7 @@
 #      - ReagentId: Dermaline
 #        Quantity: 150 #Starfall - 200u Jugs
 
-#- type: entity Starfallchem removal
+#Starfall - Removal- type: entity Starfall removal
 #  parent: Jug
 #  id: JugDexPlusSaline
 #  suffix: dex+ & saline
@@ -440,7 +440,7 @@
       - ReagentId: WeldingFuel
         Quantity: 200 #Starfall - 200u Jugs
 
-#- type: entity Starfallchem - Nukie chem delivery removal
+#Starfall - Nukie Chem Delivery Removal- type: entity
 #  parent: Jug
 #  suffix: bicaridine
 #  id: JugBicaridine
@@ -468,7 +468,7 @@
       - ReagentId: Puncturase
         Quantity: 200 #Starfall - 200u Jugs
 
-#- type: entity Starfallchem - Nukie chem delivery removal
+#Starfall - Nukie chem delivery removal - type: entity
 #  parent: Jug
 #  suffix: dermaline
 #  id: JugDermaline
@@ -482,7 +482,7 @@
 #      - ReagentId: Dermaline
 #        Quantity: 200 #Starfall - 200u Jugs
 
-#- type: entity Starfallchem - Nukie chem delivery removal
+#Starfall - Nukie chem delivery removal - type: entity
 #  parent: Jug
 #  suffix: dylovene
 #  id: JugDylovene
@@ -538,7 +538,7 @@
       - ReagentId: Saline
         Quantity: 200 #Starfall - 200u Jugs
 
-#- type: entity Starfallchem - Nukie chem delivery removal
+#Starfall - Nukie chem delivery removal - type: entity
 #  parent: Jug
 #  suffix: dexalin plus
 #  id: JugDexalinPlus

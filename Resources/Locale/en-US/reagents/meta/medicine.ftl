@@ -23,6 +23,7 @@ reagent-name-dermaline = dermaline
 reagent-desc-dermaline = An advanced chemical that is more effective at treating burn damage than kelotane.
 
 reagent-name-dexalin = dexalin
+#Starfall - Description change
 reagent-desc-dexalin = Used for treating minor oxygen deprivation and bloodloss. Myths of a "Dexalin Plus" are false.
 
 reagent-name-dexalin-plus = dexalin plus
