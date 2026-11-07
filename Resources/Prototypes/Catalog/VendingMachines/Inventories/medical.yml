@@ -39,7 +39,7 @@
     Bloodpack: 5
     Tourniquet: 2
     ChemistryBottleEpinephrine: 3
-    ChemistryBottleBicaridine: 1
+    #Starfall - Remove this - ChemistryBottleBicaridine: 1
     Syringe: 5
     JetInjector: 2
     BoxBottle: 3
