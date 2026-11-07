@@ -188,7 +188,7 @@
     solution:
       reagents:
       - ReagentId: Cryoxadone
-        Quantity: 60
+        Quantity: 50 #Starfall - Reagent standardization removal
 
 - type: entity
   parent: Beaker
@@ -201,7 +201,7 @@
     solution:
       reagents:
       - ReagentId: Arithrazine
-        Quantity: 60
+        Quantity: 50 #Starfall - Reagent standardization removal
 
 - type: entity
   parent: Beaker
@@ -214,7 +214,7 @@
     solution:
       reagents:
       - ReagentId: Sigynate
-        Quantity: 60
+        Quantity: 50 #Starfall - Reagent standardization removal
 
 - type: entity
   parent: Beaker
@@ -227,7 +227,7 @@
     solution:
       reagents:
       - ReagentId: Phalanximine
-        Quantity: 60
+        Quantity: 50 #Starfall - Reagent standardization removal
 
 - type: entity
   parent: Beaker
@@ -240,7 +240,7 @@
     solution:
       reagents:
       - ReagentId: Diphenhydramine
-        Quantity: 60
+        Quantity: 50 #Starfall - Reagent standardization removal
 
 - type: entity
   parent: Beaker
@@ -253,7 +253,7 @@
     solution:
       reagents:
       - ReagentId: Bruizine
-        Quantity: 60
+        Quantity: 50 #Starfall - Reagent standardization removal
 
 - type: entity
   parent: Beaker
@@ -266,7 +266,7 @@
     solution:
       reagents:
       - ReagentId: Lacerinol
-        Quantity: 60
+        Quantity: 50 #Starfall - Reagent standardization removal
 
 - type: entity
   name: large beaker
@@ -327,6 +327,8 @@
       - state: beakerbluespace
   - type: SolutionContainerVisuals
     maxFillLevels: 0
+  - type: Solution #Starfall
+    maxVol: 1000
 
 - type: entity
   name: dropper

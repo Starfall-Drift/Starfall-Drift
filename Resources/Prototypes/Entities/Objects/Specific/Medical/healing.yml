@@ -426,37 +426,37 @@
         id: PillDexalin
         amount: 8 #Starfall - 7 -> 8
 
-#- type: entity   Replaced with Multiver in _Starfall
-#  name: pill
-#  suffix: Dylovene 20u
-#  parent: Pill
-#  id: PillDylovene
-#  components:
-#  - type: Pill
-#    pillType: 9
-#  - type: Sprite
-#    state: pill10
-#  - type: Label
-#    currentLabel: dylovene 20u
-#  - type: Solution
-#    solution:
-#      reagents:
-#      - ReagentId: Dylovene
-#        Quantity: 20
+- type: entity
+  name: pill
+  suffix: Dylovene 20u
+  parent: Pill
+  id: PillDylovene
+  components:
+  - type: Pill
+    pillType: 9
+  - type: Sprite
+    state: pill10
+  - type: Label
+    currentLabel: dylovene 20u
+  #- type: Solution
+  #  solution:
+  #    reagents:
+  #    - ReagentId: Dylovene
+  #      Quantity: 20
 
-#- type: entity   Replaced with Multiver in _Starfall
-#  name: pill canister
-#  parent: PillCanister
-#  id: PillCanisterDylovene
-#  suffix: Dylovene 20u, 5
-#  components:
-#  - type: Label
-#    currentLabel: dylovene 20u
-#  - type: EntityTableContainerFill
-#    containers:
-#      storagebase:
-#        id: PillDylovene
-#        amount: 5
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterDylovene
+  suffix: Dylovene 20u, 5
+  components:
+  - type: Label
+    currentLabel: dylovene 20u
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillDylovene
+        amount: 5
 
 - type: entity
   name: pill
@@ -586,69 +586,69 @@
         id: PillCopper
         amount: 8 #Starfall - 5 -> 8
 
-#Starfall - Removal - type: entity
-#  name: pill
-#  suffix: Kelotane 20u
-#  parent: Pill
-#  id: PillKelotane
-#  components:
-#  - type: Pill
-#    pillType: 3
-#  - type: Sprite
-#    state: pill4
-#  - type: Label
-#    currentLabel: kelotane 20u
-#  - type: Solution
-#    solution:
-#      reagents:
-#      - ReagentId: Kelotane
-#        Quantity: 20
+- type: entity
+  name: pill
+  suffix: Kelotane 20u
+  parent: Pill
+  id: PillKelotane
+  components:
+  - type: Pill
+    pillType: 3
+  - type: Sprite
+    state: pill4
+  - type: Label
+    currentLabel: kelotane 20u
+  #- type: Solution
+  #  solution:
+  #    reagents:
+  #    - ReagentId: Kelotane
+  #      Quantity: 20
 
-#Starfall - Removal - type: entity
-#  name: pill canister
-#  parent: PillCanister
-#  id: PillCanisterKelotane
-#  suffix: Kelotane 20u, 5
-#  components:
-#  - type: Label
-#    currentLabel: kelotane 20u
-#  - type: EntityTableContainerFill
-#    containers:
-#      storagebase:
-#        id: PillKelotane
-#        amount: 5
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterKelotane
+  suffix: Kelotane 20u, 5
+  components:
+  - type: Label
+    currentLabel: kelotane 20u
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillKelotane
+        amount: 5
 
-#Starfall - Removal - type: entity
-#  name: pill
-#  suffix: Dermaline 20u
-#  parent: Pill
-#  id: PillDermaline
-#  components:
-#  - type: Pill
-#    pillType: 7
-#  - type: Sprite
-#    state: pill8
-#  - type: Label
-#    currentLabel: dermaline 20u
-#  - type: Solution
-#    solution:
-#      reagents:
-#      - ReagentId: Dermaline
-#        Quantity: 20
+- type: entity
+  name: pill
+  suffix: Dermaline 20u
+  parent: Pill
+  id: PillDermaline
+  components:
+  - type: Pill
+    pillType: 7
+  - type: Sprite
+    state: pill8
+  - type: Label
+    currentLabel: dermaline 20u
+  #- type: Solution
+  #  solution:
+  #    reagents:
+  #    - ReagentId: Dermaline
+  #      Quantity: 20
 
-#Starfall - Removal - type: entity
-#  name: pill canister
-#  parent: PillCanister
-#  id: PillCanisterDermaline
-#  suffix: Dermaline 20u, 5
-#  components:
-#  - type: Label
-#    currentLabel: dermaline 20u
-#  - type: EntityTableContainerFill
-#    containers:
-#      storagebase:
-#        id: PillDermaline
-#        amount: 5
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterDermaline
+  suffix: Dermaline 20u, 5
+  components:
+  - type: Label
+    currentLabel: dermaline 20u
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillDermaline
+        amount: 5
 
 - type: entity
   name: space mirage
@@ -693,37 +693,37 @@
         id: PillTricordrazine
         amount: 8 #Starfall - 5 -> 8
 
-#- type: entity
-#  name: pill
-#  suffix: Bicaridine 20u
-#  parent: Pill
-#  id: PillBicaridine
-#  components:
-#  - type: Pill
-#    pillType: 4
-#  - type: Sprite
-#    state: pill5
-#  - type: Label
-#    currentLabel: bicaridine 20u
-#  - type: Solution
-#    solution:
-#      reagents:
-#      - ReagentId: Bicaridine
-#        Quantity: 20
+- type: entity
+  name: pill
+  suffix: Bicaridine 20u
+  parent: Pill
+  id: PillBicaridine
+  components:
+  - type: Pill
+    pillType: 4
+  - type: Sprite
+    state: pill5
+  - type: Label
+    currentLabel: bicaridine 20u
+  #- type: Solution
+  #  solution:
+  #    reagents:
+  #    - ReagentId: Bicaridine
+  #      Quantity: 20
 
-#- type: entity
-#  name: pill canister
-#  parent: PillCanister
-#  id: PillCanisterBicaridine
-#  suffix: Bicaridine 20u, 5
-#  components:
-#  - type: Label
-#    currentLabel: bicaridine 20u
-#  - type: EntityTableContainerFill
-#    containers:
-#      storagebase:
-#        id: PillBicaridine
-#        amount: 5
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterBicaridine
+  suffix: Bicaridine 20u, 5
+  components:
+  - type: Label
+    currentLabel: bicaridine 20u
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillBicaridine
+        amount: 5
 
 - type: entity
   name: pill
@@ -874,31 +874,31 @@
       - ReagentId: TranexamicAcid
         Quantity: 15
 
-#Starfall - Removal - type: entity
-#  suffix: bicaridine
-#  parent: PrefilledSyringe
-#  id: SyringeBicaridine
-#  components:
-#  - type: Label
-#    currentLabel: reagent-name-bicaridine
-#  - type: Solution
-#    solution:
-#      reagents:
-#      - ReagentId: Bicaridine
-#        Quantity: 15
+- type: entity
+  suffix: bicaridine
+  parent: PrefilledSyringe
+  id: SyringeBicaridine
+  components:
+  - type: Label
+    currentLabel: reagent-name-bicaridine
+  #- type: Solution
+  #  solution:
+  #    reagents:
+  #    - ReagentId: Bicaridine
+  #      Quantity: 15
 
-#Starfall - Removal - type: entity
-#  suffix: dermaline
-#  parent: PrefilledSyringe
-#  id: SyringeDermaline
-#  components:
-#  - type: Label
-#    currentLabel: reagent-name-dermaline
-#  - type: Solution
-#    solution:
-#      reagents:
-#      - ReagentId: Dermaline
-#        Quantity: 15
+- type: entity
+  suffix: dermaline
+  parent: PrefilledSyringe
+  id: SyringeDermaline
+  components:
+  - type: Label
+    currentLabel: reagent-name-dermaline
+  #- type: Solution
+  #  solution:
+  #    reagents:
+  #    - ReagentId: Dermaline
+  #      Quantity: 15
 
 - type: entity
   suffix: hyronalin

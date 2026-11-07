@@ -359,7 +359,7 @@
       - ReagentId: Doxarubixadone
         Quantity: 30
 
-#Starfall - Removal  type: entity
+#Starfall - Removal - type: entity
 #  id: ChemistryBottleDylovene
 #  suffix: dylovene
 #  parent: BaseChemistryBottleFilled
@@ -1237,15 +1237,15 @@
   id: CoreMedicineReagentBottleTable
   table: !type:GroupSelector
     children:
-    #Starfall - Removal - id: ChemistryBottleBicaridine
-    - id: ChemistryBottleKelotane
-    - id: ChemistryBottleDylovene
+    - id: ChemistryBottleLibital #Starfall - Bicaridine -> Libital
+    - id: ChemistryBottleAiuri #Starfall - Kelotane -> Aiuri
+    - id: ChemistryBottleMultiver #Starfall - Dylovene -> Multiver
     - id: ChemistryBottleInaprovaline
     - id: ChemistryBottleDexalin
     - id: ChemistryBottleSaline
     - id: ChemistryBottleTricordrazine
     - id: ChemistryBottleHyronalin
-    - id: ChemistryBottleLibital #Starfall
+
 
 - type: entityTable
   id: SpecialtyMedicineReagentBottleTable
@@ -1276,13 +1276,13 @@
     - id: ChemistryBottleCognizine
     - id: ChemistryBottleCryoxadone
     - id: ChemistryBottleCryptobiolin
-    - id: ChemistryBottleDermaline
+    #Starfall - Removal - id: ChemistryBottleDermaline
     - id: ChemistryBottleDexalin
     #Starfall - Removal - id: ChemistryBottleDexalinPlus
     - id: ChemistryBottleDiphenhydramine
     - id: ChemistryBottleDiphenylmethylamine
     - id: ChemistryBottleDoxarubixadone
-    - id: ChemistryBottleDylovene
+    #Starfall - Removal - id: ChemistryBottleDylovene
     - id: ChemistryBottleEpinephrine
     - id: ChemistryBottleEthyloxyephedrine
     - id: ChemistryBottleEthylredoxrazine
@@ -1292,7 +1292,7 @@
     - id: ChemistryBottleInaprovaline
     - id: ChemistryBottleInsuzine
     - id: ChemistryBottleIpecac
-    - id: ChemistryBottleKelotane
+    #Starfall - Removal - id: ChemistryBottleKelotane
     - id: ChemistryBottleLacerinol
     - id: ChemistryBottleLeporazine
     - id: ChemistryBottleLipozine

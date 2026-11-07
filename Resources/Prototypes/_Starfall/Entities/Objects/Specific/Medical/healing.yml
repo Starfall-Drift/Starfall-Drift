@@ -319,7 +319,7 @@
 - type: entity #This bad boy only exists for migration
   suffix: Probital+Libital, DO NOT MAP
   parent: PrefilledSyringe
-  id: SyringeProbital
+  id: SyringeProbitalLibital
   components:
   - type: Label
     currentLabel: reagent-name-probital-libital
