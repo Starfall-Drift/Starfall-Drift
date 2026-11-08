@@ -352,8 +352,8 @@
         - !type:NestedSelector
           tableId: RandomFoamGunTable
           rolls: 4
-        - id: GrenadeFoamDart
-          amount: 4
+        - tableId: RandomFoamGrenadeTable
+          rolls: 4
 
 - type: entity
   parent: CrateGenericSteel
