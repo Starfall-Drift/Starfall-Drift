@@ -352,7 +352,7 @@
         - !type:NestedSelector
           tableId: RandomFoamGunTable
           rolls: 4
-        - !type:NestedSelector #Starfall - 1% chance for a shrapnel grenade
+        - !type:NestedSelector #Starfall - 1% chance for a shrapnel grenade.
           tableId: RandomFoamGrenadeTable
           rolls: 4
 
