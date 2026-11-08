@@ -4,7 +4,7 @@
   description: uplink-foamfarce-shotgun-desc
   productEntity: WeaponShotgunFoamFarceShells
   discountCategory: usualDiscounts
-  discountDownto:
+  discountDownTo:
     Telecrystal: 8 #Should probably be something like 8.3 but we lack economic inflation.
   cost:
     Telecrystal: 10 #This is before any kind of price hike we do for telecrystals. This is still using base 20 so this is 50% of your budget
@@ -12,7 +12,6 @@
   - UplinkJob
   conditions:
   - !type:BuyerJobCondition
-    makeHidden: true
     whitelist:
     - Clown
 
@@ -22,7 +21,7 @@
   description: uplink-foamface-grenade-desc
   productEntity: GrenadeFoamFarceDart
   discountCategory: usualDiscounts
-  discountDownto:
+  discountDownTo:
     Telecrystal: 3
   cost:
     Telecrystal: 5 #Shrapnel grenade +1 cause it's basically easier to use cause people wont run from it.
@@ -30,6 +29,5 @@
   - UplinkJob
   conditions:
   - !type:BuyerJobCondition
-    makeHidden: true
     whitelist:
     - Clown
