@@ -1,6 +1,6 @@
 - type: entity
   parent: [FragileGrenadeBase, ProjectileGrenadeBase]
-  id: GrenadeFoamDartFarce
+  id: GrenadeFoamFarceDart
   name: foam dart grenade
   description: Releases a bothersome spray of foam darts that cause severe welching.
   suffix: Foam Farce
