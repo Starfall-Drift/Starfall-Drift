@@ -322,7 +322,7 @@
   components:
   - type: Solution
     solution:
-      maxVol: 1500 #Starfall Change - I hate standardization
+      maxVol: 1000 #Starfall Change - I hate standardization
 
 - type: entity
   parent: Solution

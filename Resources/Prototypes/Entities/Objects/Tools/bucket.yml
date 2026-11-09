@@ -11,10 +11,10 @@
   - type: Item
     size: Large
     shape:
-    - 0,0,2,3
+    - 0,0,1,1 #Starfall - Turn it back into a 2x2
   - type: Solution
     solution:
-      maxVol: 360 # 3 litres
+      maxVol: 250 #Starfall - I hate standardization
   - type: Clothing
     sprite: Objects/Tools/bucket.rsi
     slots:
