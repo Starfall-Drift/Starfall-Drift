@@ -58,6 +58,9 @@
   - type: ReagentTank
   - type: Transform
     noRot: true
+  - type: Solution
+    solution:
+      maxVol: 1500
 
 # For highcap tanks
 - type: entity
