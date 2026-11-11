@@ -92,7 +92,7 @@
             Blunt: -0.2
             Slash: -0.2
             Piercing: -0.2
-      - !type:EvenHealthChange
+      - !type:HealthChange
         conditions:
         - !type:DamageGroupCondition
           min: 30
