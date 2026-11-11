@@ -82,20 +82,26 @@
     Bloodstream:
       metabolismRate: 0.2
       effects:
-      - !type:EvenHealthChange
+      - !type:HealthChange
         conditions:
         - !type:DamageGroupCondition
           max: 30
           damageGroup: Brute
         damage:
-          Brute: -0.45 #0.15 per type
+          types:
+            Blunt: -0.2
+            Slash: -0.2
+            Piercing: -0.2
       - !type:EvenHealthChange
         conditions:
         - !type:DamageGroupCondition
           min: 30
           damageGroup: Brute
         damage:
-          Brute: -2.25 #0.75 per type
+          types:
+            Blunt: -0.8
+            Slash: -0.8
+            Piercing: -0.8
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
@@ -103,17 +109,13 @@
           min: 15.5
         damage:
           types:
+            Blunt: -0.8 #heals an extra time during OD
+            Slash: -0.8
+            Piercing: -0.8
             Heat: 0.5 #0.5 to heat, shock, cold, and caustic
             Cold: 0.5
             Shock: 0.5
             Caustic: 0.5
-      - !type:EvenHealthChange
-        conditions:
-        - !type:ReagentCondition
-          reagent: SalicylicAcid
-          min: 15.5
-        damage:
-          Brute: -2.25 #heals an extra time during OD
       - !type:Jitter
         conditions:
         - !type:ReagentCondition
@@ -197,7 +199,7 @@
     Bloodstream:
       metabolismRate: 0.2
       effects:
-      - !type:HealthChange #We use normal healthchange cause I don't want this healing caustic which evenheal will do
+      - !type:HealthChange
         conditions:
         - !type:DamageGroupCondition
           max: 30
