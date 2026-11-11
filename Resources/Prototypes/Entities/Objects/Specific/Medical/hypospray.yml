@@ -409,7 +409,7 @@
   parent: ChemicalMedipen
   id: PunctAutoInjector
   name: puncturase auto-injector
-  description: A single-dose, non-refillable medipen containing puncturase and tranexamic acid, used to quickly and easily treat puncture wounds. Commonly used as a combat medicine.
+  description: A single-dose, non-refillable medipen containing puncturase. libital, and tranexamic acid, used to quickly and easily treat puncture wounds. Commonly used as a combat medicine.
   components:
   - type: Item
     inhandVisuals:
@@ -434,13 +434,14 @@
     emptySpriteName: punctpen_empty
   - type: Solution
     solution:
+      maxVol: 30
       reagents:
       - ReagentId: Puncturase
-        Quantity: 11 #Starfall - 12 -> 11 cause overdoses
+        Quantity: 10 #Starfall - 12 -> 11 cause overdoses
       - ReagentId: TranexamicAcid
         Quantity: 5
-      - ReagentId: Nothing # Needed for visuals to work, idk what else to put here :P
-        Quantity: 4 #Starfall - 3 -> 4
+      - ReagentId: Libital # Needed for visuals to work, idk what else to put here :P
+        Quantity: 15 #Starfall - 3 -> 4
 
 - type: entity
   parent: ChemicalMedipen
@@ -471,10 +472,10 @@
     emptySpriteName: pyrapen_empty
   - type: Solution
     solution:
-      maxVol: 25
+      maxVol: 30
       reagents:
       - ReagentId: Pyrazine
-        Quantity: 10
+        Quantity: 15
       #- ReagentId: Dermaline
       #  Quantity: 10
       - ReagentId: Aiuri
