@@ -361,6 +361,7 @@
     emptySpriteName: dermpen_empty
   - type: Solution
     solution:
+      maxVol: 30
       reagents:
       - ReagentId: Aiuri #Starfall - Dermaline -> Aiuri
         Quantity: 10
