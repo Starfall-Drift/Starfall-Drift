@@ -297,8 +297,7 @@
   parent: ChemicalMedipen
   id: BruteAutoInjector
   name: brute auto-injector
-  #description: A single-dose, non-refillable medipen containing bicaridine and tranexamic acid, used to quickly and easily treat simple physical injuries. Commonly used as a combat medicine.
-  description: A single-dose, non-refillable medipen containing libital, salicylic acid and tranexamic acid, used to quickly and easily treat simple physical injuries. Commonly used as a combat medicine.
+  description: A single-dose, non-refillable medipen containing libital, salicylic acid and tranexamic acid, used to quickly and easily treat simple physical injuries. Commonly used as a combat medicine. #Starfall - #description: A single-dose, non-refillable medipen containing bicaridine and tranexamic acid, used to quickly and easily treat simple physical injuries. Commonly used as a combat medicine.
   components:
   - type: Item
     inhandVisuals:
@@ -336,7 +335,7 @@
   parent: ChemicalMedipen
   id: BurnAutoInjector
   name: burn auto-injector
-  description: A single-dose, non-refillable medipen containing aiuri, lenturi, and oxandrolone, used to quickly and easily treat non-chemical burns. Commonly used as a combat medicine. #Starfall - Dermaline and Leporazine -> Aiuri, Lenturi, and Oxandrolone
+  description: A single-dose, non-refillable medipen containing aiuri, lenturi, and oxandrolone, used to quickly and easily treat non-chemical burns. Commonly used as a combat medicine. #Starfall - description: A single-dose, non-refillable medipen containing dermaline and leporazine, used to quickly and easily treat non-chemical burns. Commonly used as a combat medicine.
   components:
   - type: Item
     inhandVisuals:
@@ -374,7 +373,7 @@
   parent: ChemicalMedipen
   id: RadAutoInjector
   name: rad auto-injector
-  description: A single-dose, non-refillable medipen containing arithrazine and granibitulari, used to quickly and easily treat radiation poisoning.
+  description: A single-dose, non-refillable medipen containing arithrazine and granibitulari, used to quickly and easily treat radiation poisoning. #Starfall - description: A single-dose, non-refillable medipen containing arithrazine and bicaridine, used to quickly and easily treat radiation poisoning.
   components:
   - type: Item
     inhandVisuals:
@@ -409,7 +408,7 @@
   parent: ChemicalMedipen
   id: PunctAutoInjector
   name: puncturase auto-injector
-  description: A single-dose, non-refillable medipen containing puncturase. libital, and tranexamic acid, used to quickly and easily treat puncture wounds. Commonly used as a combat medicine.
+  description: A single-dose, non-refillable medipen containing puncturase. libital, and tranexamic acid, used to quickly and easily treat puncture wounds. Commonly used as a combat medicine. #Starfall - description: A single-dose, non-refillable medipen containing puncturase and tranexamic acid, used to quickly and easily treat puncture wounds. Commonly used as a combat medicine.
   components:
   - type: Item
     inhandVisuals:
@@ -485,8 +484,7 @@
   parent: ChemicalMedipen
   id: AirlossAutoInjector
   name: airloss auto-injector
-  #Starfall - description: A single-dose, non-refillable medipen containing saline and dexalin plus, used to quickly and easily treat blood loss and asphyxiation.
-  description: A single-dose, non-refillable medipen containing saline and salbutamol, used to quickly and easily treat blood loss and asphyxiation.
+  description: A single-dose, non-refillable medipen containing salbutamol, dexalin, and saline, used to quickly and easily treat blood loss and asphyxiation.  #Starfall - description: A single-dose, non-refillable medipen containing saline and dexalin plus, used to quickly and easily treat blood loss and asphyxiation.
   components:
   - type: Item
     inhandVisuals:
