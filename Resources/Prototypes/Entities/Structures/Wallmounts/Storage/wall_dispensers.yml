@@ -58,7 +58,7 @@
     solution:
       reagents:
       - ReagentId: SpaceCleaner
-        Quantity: 960
+        Quantity: 1500 #Starfall - I hate standardization
 
 - type: entity
   parent: BaseDispenser
@@ -79,7 +79,7 @@
     solution:
       reagents:
       - ReagentId: WeldingFuel
-        Quantity: 960
+        Quantity: 1500 #Starfall - I hate standardization
   - type: ReagentTank
     tankType: Fuel
   - type: DamageOnToolInteract
