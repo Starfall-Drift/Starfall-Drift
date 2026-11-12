@@ -539,7 +539,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_high_capacity_mag.rsi, state: base-icon }
   productEntity: MagazinePistolHighCapacity
   cost:
-    Telecrystal: 1
+    Telecrystal: 5 #Starfall - 1 -> 5
   categories:
   - UplinkAmmo
 
@@ -551,7 +551,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red-icon }
   productEntity: MagazinePistolSubMachineGun
   cost:
-    Telecrystal: 2
+    Telecrystal: 7 #Starfall - 2 -> 5
   categories:
   - UplinkAmmo
 
@@ -563,7 +563,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Shotgun/m12.rsi, state: pellets }
   productEntity: MagazineShotgun
   cost:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   categories:
   - UplinkAmmo
 
@@ -574,7 +574,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Shotgun/m12.rsi, state: slug }
   productEntity: MagazineShotgunSlug
   cost:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   categories:
   - UplinkAmmo
 
@@ -586,7 +586,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi, state: red-icon }
   productEntity: MagazinePistolCaselessRifle
   cost:
-    Telecrystal: 1
+    Telecrystal: 6 #Starfall - 1 -> 6
   categories:
   - UplinkAmmo
 
@@ -597,7 +597,7 @@
   description: uplink-mosin-ammo-desc
   productEntity: MagazineBoxLightRifle
   cost:
-    Telecrystal: 1
+    Telecrystal: 2 #Starfall - 1 -> 2
   categories:
   - UplinkAmmo
 
@@ -608,7 +608,7 @@
   description: uplink-estoc-ammo-desc
   productEntity: MagazineRifle
   cost:
-    Telecrystal: 2
+    Telecrystal: 12 #Starfall - 2 -> 12
   categories:
   - UplinkAmmo
 
@@ -619,7 +619,7 @@
   description: uplink-sniper-ammo-desc
   productEntity: MagazineBoxAntiMateriel
   cost:
-    Telecrystal: 2
+    Telecrystal: 8 #Starfall - 2 -> 8
   categories:
   - UplinkAmmo
 
@@ -629,7 +629,7 @@
   description: uplink-ammo-bundle-desc
   productEntity: ClothingBackpackDuffelSyndicateAmmoFilled
   cost:
-    Telecrystal: 15
+    Telecrystal: 60 #Starfall - 15 -> 60
   categories:
   - UplinkAmmo
   conditions:
