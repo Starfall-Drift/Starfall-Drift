@@ -1,3 +1,17 @@
+
+- type: listing
+  id: UplinkRevolverPython #Starfall - Welcome back old friend
+  name: uplink-revolver-python-name
+  description: uplink-revolver-python-desc
+  productEntity: WeaponRevolverPythonAP
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 11 #Starfall - 2 -> 11
+  cost:
+    Telecrystal: 20 #Starfall - 4 -> 20
+  categories:
+  - UplinkWeaponry
+
 - type: listing
   id: uplinkShotgunFoamFarce
   name: uplink-foamfarce-shotgun-name
@@ -5,9 +19,9 @@
   productEntity: WeaponShotgunFoamFarceShells
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 8 #Should probably be something like 8.3 but we lack economic inflation.
+    Telecrystal: 35
   cost:
-    Telecrystal: 10 #This is before any kind of price hike we do for telecrystals. This is still using base 20 so this is 50% of your budget
+    Telecrystal: 50 #Starfall - we got economic inflation so this is 50% of your total budget
   categories:
   - UplinkJob
   conditions:
@@ -18,13 +32,13 @@
 - type: listing
   id: uplinkGrenadeFoamFarce
   name: uplink-foamfarce-grenade-name
-  description: uplink-foamface-grenade-desc
+  description: uplink-foamfarce-grenade-desc
   productEntity: GrenadeFoamFarceDart
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 5 #Same min discount as shrapnel nade cause i wanted to
   cost:
-    Telecrystal: 5 #Shrapnel grenade +1 cause it's basically easier to use cause people wont run from it.
+    Telecrystal: 20 #Shrapnel grenade +5 cause it's basically easier to use cause people wont run from it.
   categories:
   - UplinkJob
   conditions:

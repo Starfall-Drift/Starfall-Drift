@@ -1,3 +1,4 @@
+#Starfall - Inflation has hit the telecrystal economy, google "syndicate inflation" for more info
 - type: listing
   id: UplinkPistolViper
   name: uplink-pistol-viper-name
@@ -5,9 +6,9 @@
   productEntity: WeaponPistolViper
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 9 #Stafall - 2 -> 9
   cost:
-    Telecrystal: 3
+    Telecrystal: 14 #Starfall - 3 -> 14
   categories:
   - UplinkWeaponry
 
@@ -19,9 +20,9 @@
   productEntity: WeaponPistolCobra
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   cost:
-    Telecrystal: 4
+    Telecrystal: 18 #Starfall - 4 -> 18
   categories:
   - UplinkWeaponry
 
@@ -32,7 +33,7 @@
   description: uplink-rifle-mosin-desc
   productEntity: WeaponSniperMosin
   cost:
-    Telecrystal: 1
+    Telecrystal: 4 #Starfall - 1 -> 4
   categories:
   - UplinkWeaponry
 
@@ -43,10 +44,10 @@
   icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword.rsi, state: icon }
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 20 #Starfall - 4 -> 20
   productEntity: EnergySword
   cost:
-    Telecrystal: 8
+    Telecrystal: 40 #Starfall - 8 -> 40
   categories:
   - UplinkWeaponry
 
@@ -58,9 +59,9 @@
   productEntity: EnergyDaggerBox
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 4 #Starfall - 1 -> 4
   cost:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall -> 2 -> 10
   categories:
   - UplinkWeaponry
 
@@ -70,10 +71,10 @@
   description: uplink-energycrossbow-desc
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 16 #Starfall - 3 -> 16
   productEntity: WeaponEnergyCrossbow
   cost:
-    Telecrystal: 5
+    Telecrystal: 25 #Starfall - 5 -> 25
   categories:
   - UplinkWeaponry
   conditions:
@@ -88,9 +89,9 @@
   productEntity: ThrowingKnivesKit
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 9 #Starfall - 3 -> 9
   cost:
-    Telecrystal: 6
+    Telecrystal: 18 #Starfall - 6 -> 18
   categories:
     - UplinkWeaponry
 
@@ -101,9 +102,9 @@
   productEntity: ClothingHandsGlovesNorthStar
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 25 #Starfall - 4 -> 25
   cost:
-    Telecrystal: 8
+    Telecrystal: 40 #Starfall - 8 -> 40
   categories:
   - UplinkWeaponry
 
@@ -115,9 +116,9 @@
   productEntity: ClothingHandsKnuckleDustersSyndicate
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 5 #Starfall - 2 -> 5
   cost:
-    Telecrystal: 4
+    Telecrystal: 15 #Starfall - 4 -> 15
   categories:
   - UplinkWeaponry
 
@@ -129,9 +130,9 @@
   productEntity: EnergyShield
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 25 #Starfall - 4 -> 25
   cost:
-    Telecrystal: 8
+    Telecrystal: 40 #Starfall - 8 -> 40
   categories:
   - UplinkWeaponry
   conditions:
@@ -148,9 +149,9 @@
   productEntity: ClothingHandsGlovesBoxingRiggedBlue # TODO Replace this with the random spawner when it's not bugged
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 8
+    Telecrystal: 20 #Starfall - 8 -> 20
   cost:
-    Telecrystal: 10
+    Telecrystal: 35 #Starfall - 10 -> 35
   categories:
   - UplinkWeaponry
 
@@ -162,9 +163,9 @@
   productEntity: BriefcaseSyndieSniperBundleFilled
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 6
+    Telecrystal: 30 #Starfall - 6 -> 30
   cost:
-    Telecrystal: 10
+    Telecrystal: 50 #Starfall - 10 -> 50
   categories:
   - UplinkWeaponry
 
@@ -176,9 +177,9 @@
   productEntity: BriefcaseWeaponHushpupFilled
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 8
+    Telecrystal: 30 #Starfall - 6 -> 30
   cost:
-    Telecrystal: 10
+    Telecrystal: 50 #Starfall - 10 -> 50
   categories:
   - UplinkWeaponry
 
@@ -190,9 +191,9 @@
   productEntity: BriefcaseWeaponC20Filled
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 10
+    Telecrystal: 55 #Starfall - 10 -> 55
   cost:
-    Telecrystal: 14
+    Telecrystal: 75 #Starfall - 14 -> 75
   categories:
   - UplinkWeaponry
   conditions:
@@ -209,9 +210,9 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledSMG
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 10
+    Telecrystal: 60 #Starfall - 10 -> 60
   cost:
-    Telecrystal: 17
+    Telecrystal: 85 #Starfall - 17 -> 85
   categories:
   - UplinkWeaponry
   conditions:
@@ -228,9 +229,9 @@
   productEntity: BriefcaseWeaponBulldogFilled
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 10
+    Telecrystal: 50 #Starfall - 10 -> 50
   cost:
-    Telecrystal: 14
+    Telecrystal: 80 #Starfall - 14 -> 80
   categories:
   - UplinkWeaponry
   conditions:
@@ -247,9 +248,9 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledShotgun
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 12
+    Telecrystal: 65 #Starfall - 12 -> 65
   cost:
-    Telecrystal: 20
+    Telecrystal: 90 #Starfall - 20 -> 90
   categories:
   - UplinkWeaponry
   conditions:
@@ -266,9 +267,9 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledRifle
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 11
+    Telecrystal: 55 #Starfall - 11 -> 55
   cost:
-    Telecrystal: 18
+    Telecrystal: 90 #Starfall - 18 -> 90
   categories:
   - UplinkWeaponry
   conditions:
@@ -284,7 +285,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Launchers/china_lake.rsi, state: icon }
   productEntity: BriefcaseWeaponChinaLakeFilled
   cost:
-    Telecrystal: 20
+    Telecrystal: 100 #Starfall - 20 -> 100
   categories:
   - UplinkWeaponry
   conditions:
@@ -301,9 +302,9 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledGrenadeLauncher
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 20
+    Telecrystal: 100 #Starfall - 20 -> 100
   cost:
-    Telecrystal: 25
+    Telecrystal: 125 #Starfall - 25 -> 125
   categories:
   - UplinkWeaponry
   conditions:
@@ -320,9 +321,9 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledLMG
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 24
+    Telecrystal: 125 #Starfall - 24 -> 125
   cost:
-    Telecrystal: 30
+    Telecrystal: 145 #Starfall - 30 -> 145
   categories:
   - UplinkWeaponry
 
