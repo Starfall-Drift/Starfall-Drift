@@ -272,11 +272,11 @@
     Telecrystal: 90 #Starfall - 18 -> 90
   categories:
   - UplinkWeaponry
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
+  #Starfall - Let everyone buy it conditions:
+  #- !type:StoreWhitelistCondition
+    #whitelist:
+      #tags:
+      #- NukeOpsUplink
 
 - type: listing
   id: UplinkGrenadeLauncher
@@ -652,9 +652,9 @@
   productEntity: HypopenBox
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 20 #Starfall - 4 -> 20
   cost:
-    Telecrystal: 6
+    Telecrystal: 30 #Starfall - 6 -> 30
   categories:
   - UplinkChemicals
 
@@ -666,9 +666,9 @@
   productEntity: HypoDartBox
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 5 #Starfall - 1 -> 5
   cost:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   categories:
   - UplinkChemicals
 
@@ -680,9 +680,9 @@
   productEntity: ChemicalSynthesisKit
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 15 #Starfall - 2 -> 15
   cost:
-    Telecrystal: 3
+    Telecrystal: 25 #Starfall - 3 -> 25
   categories:
   - UplinkChemicals
 
@@ -693,7 +693,7 @@
   icon: { sprite: /Textures/Structures/Wallmounts/signs.rsi, state: bio }
   productEntity: ClothingBackpackDuffelZombieBundle
   cost:
-    Telecrystal: 40
+    Telecrystal: 200 #Starfall - 40 -> 200
   categories:
   - UplinkChemicals
   conditions:
@@ -713,9 +713,9 @@
   productEntity: ChemistryBottleNocturine
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 25 #Starfall - 2 -> 25
   cost:
-    Telecrystal: 4
+    Telecrystal: 30 #Starfall - 4 -> 30
   categories:
   - UplinkChemicals
 
@@ -726,9 +726,9 @@
   productEntity: MedkitCombatFilled
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 5 #Starfall - 2 -> 5
   cost:
-    Telecrystal: 3
+    Telecrystal: 15 #Starfall - 3 -> 15
   categories:
   - UplinkChemicals
 
@@ -739,9 +739,9 @@
   productEntity: CombatMedipen
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall 2 -> 10
   cost:
-    Telecrystal: 3
+    Telecrystal: 20 #Starfall 3 -> 20
   categories:
   - UplinkChemicals
 
@@ -752,9 +752,9 @@
   productEntity: Stimpack
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 5 #Starfall - 1 -> 5
   cost:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   categories:
   - UplinkChemicals
 
@@ -765,9 +765,9 @@
   productEntity: StimkitFilled
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 10 #Starfall - 3 -> 10
   cost:
-    Telecrystal: 5
+    Telecrystal: 25 #Starfall - 5 -> 25
   categories:
   - UplinkChemicals
 
@@ -777,7 +777,7 @@
   description: uplink-cigarettes-desc
   productEntity: CigPackSyndicate
   cost:
-    Telecrystal: 1
+    Telecrystal: 10 #Starfall - 1 -> 10
   categories:
   - UplinkChemicals
 
@@ -788,9 +788,9 @@
   productEntity: ClothingBackpackDuffelSyndicateMedicalBundleFilled
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 16
+    Telecrystal: 90 #Starfall - 16 -> 90
   cost:
-    Telecrystal: 24
+    Telecrystal: 125 #Starfall - 24 -> 125
   categories:
   - UplinkChemicals
   conditions:
