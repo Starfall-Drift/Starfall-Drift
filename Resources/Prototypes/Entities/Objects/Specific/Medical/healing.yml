@@ -393,10 +393,10 @@
         volume: 1.0
         variation: 0.125
 
-# Pills
+# Pills Starfall - Several pill adjustments. Removed pills have replacements in _Starfall/Entities/Objects/Specific/Medical/healing.yml
 - type: entity
   name: pill
-  suffix: Dexalin 20u
+  suffix: Dexalin 15u #Starfall - 20 -> 15
   parent: Pill
   id: PillDexalin
   components:
@@ -405,26 +405,26 @@
   - type: Sprite
     state: pill16
   - type: Label
-    currentLabel: dexalin 20u
+    currentLabel: dexalin 15u #Starfall - 20 -> 15
   - type: Solution
     solution:
       reagents:
       - ReagentId: Dexalin
-        Quantity: 20
+        Quantity: 15 #Starfall - 20 -> 15
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterDexalin
-  suffix: Dexalin 20u, 7
+  suffix: Dexalin 15u, 8 #Starfall - 20 -> 15, 7 -> 8
   components:
   - type: Label
-    currentLabel: dexalin 20u
+    currentLabel: dexalin 15u #Starfall - 20 -> 15
   - type: EntityTableContainerFill
     containers:
       storagebase:
         id: PillDexalin
-        amount: 7
+        amount: 8 #Starfall - 7 -> 8
 
 - type: entity
   name: pill
@@ -438,11 +438,11 @@
     state: pill10
   - type: Label
     currentLabel: dylovene 20u
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Dylovene
-        Quantity: 20
+  #- type: Solution
+  #  solution:
+  #    reagents:
+  #    - ReagentId: Dylovene
+  #      Quantity: 20
 
 - type: entity
   name: pill canister
@@ -460,7 +460,7 @@
 
 - type: entity
   name: pill
-  suffix: Hyronalin 20u
+  suffix: Hyronalin 15u #Starfall - 20 -> 15
   parent: Pill
   id: PillHyronalin
   components:
@@ -469,30 +469,30 @@
   - type: Sprite
     state: pill17
   - type: Label
-    currentLabel: hyronalin 20u
+    currentLabel: hyronalin 15u #Starfall - 20 -> 15
   - type: Solution
     solution:
       reagents:
       - ReagentId: Hyronalin
-        Quantity: 20
+        Quantity: 15 #Starfall - 20 -> 15
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterHyronalin
-  suffix: Hyronalin 20u, 5
+  suffix: Hyronalin 15u, 8 #Starfall - 20 -> 15, 5 -> 8
   components:
   - type: Label
-    currentLabel: hyronalin 20u
+    currentLabel: hyronalin 15u #Starfall - 20 -> 15
   - type: EntityTableContainerFill
     containers:
       storagebase:
         id: PillHyronalin
-        amount: 5
+        amount: 8 #Starfall - 5 -> 8.
 
 - type: entity
   name: pill
-  suffix: Potassium iodide 20u
+  suffix: Potassium iodide 12u #Starfall - 20 -> 12 - Lasts one minute
   parent: Pill
   id: PillPotassiumIodide
   components:
@@ -501,30 +501,30 @@
   - type: Sprite
     state: pill9
   - type: Label
-    currentLabel: potassium iodide 20u
+    currentLabel: potassium iodide 12u #Starfall - 20 -> 12
   - type: Solution
     solution:
       reagents:
       - ReagentId: PotassiumIodide
-        Quantity: 20
+        Quantity: 12 #Starfall - 20 -> 12
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterPotassiumIodide
-  suffix: Potassium iodide 20u, 5
+  suffix: Potassium iodide 12u, 8 #Starfall - 20 -> 12, 5 -> 8
   components:
   - type: Label
-    currentLabel: potassium iodide 20u
+    currentLabel: potassium iodide 12u #Starfall - 20 -> 12
   - type: EntityTableContainerFill
     containers:
       storagebase:
         id: PillPotassiumIodide
-        amount: 5
+        amount: 8 #Starfall - 5 -> 8
 
 - type: entity
   name: pill
-  suffix: Iron 20u
+  suffix: Iron 10u #Starfall - 20 -> 10
   parent: Pill
   id: PillIron
   components:
@@ -533,16 +533,16 @@
   - type: Sprite
     state: pill14
   - type: Label
-    currentLabel: iron 20u
+    currentLabel: iron 10u #Starfall - 20 -> 10
   - type: Solution
     solution:
       reagents:
       - ReagentId: Iron
-        Quantity: 20
+        Quantity: 10 #Starfall - 20 -> 10
 
 - type: entity
   name: pill
-  suffix: Copper 20u
+  suffix: Copper 10u #Starfall - 20 -> 10
   parent: Pill
   id: PillCopper
   components:
@@ -551,40 +551,40 @@
   - type: Sprite
     state: pill13
   - type: Label
-    currentLabel: copper 20u
+    currentLabel: copper 10u #Starfall - 20 -> 10
   - type: Solution
     solution:
       reagents:
       - ReagentId: Copper
-        Quantity: 20
+        Quantity: 10 #Starfall - 20 -> 10
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterIron
-  suffix: Iron 20u, 5
+  suffix: Iron 10u, 8 #Starfall - 20 -> 10, 5 -> 8
   components:
   - type: Label
-    currentLabel: iron 20u
+    currentLabel: iron 10u #Starfall - 20 -> 10
   - type: EntityTableContainerFill
     containers:
       storagebase:
         id: PillIron
-        amount: 5
+        amount: 8 #Starfall - 5 -> 8
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterCopper
-  suffix: Copper 20u, 5
+  suffix: Copper 10u, 8 #Starfall - 20 -> 10, 5 -> 8
   components:
   - type: Label
-    currentLabel: copper 20u
+    currentLabel: copper 10u #Starfall - 20 -> 10
   - type: EntityTableContainerFill
     containers:
       storagebase:
         id: PillCopper
-        amount: 5
+        amount: 8 #Starfall - 5 -> 8
 
 - type: entity
   name: pill
@@ -598,11 +598,11 @@
     state: pill4
   - type: Label
     currentLabel: kelotane 20u
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Kelotane
-        Quantity: 20
+  #- type: Solution
+  #  solution:
+  #    reagents:
+  #    - ReagentId: Kelotane
+  #      Quantity: 20
 
 - type: entity
   name: pill canister
@@ -630,11 +630,11 @@
     state: pill8
   - type: Label
     currentLabel: dermaline 20u
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Dermaline
-        Quantity: 20
+  #- type: Solution
+  #  solution:
+  #    reagents:
+  #    - ReagentId: Dermaline
+  #      Quantity: 20
 
 - type: entity
   name: pill canister
@@ -663,7 +663,7 @@
 
 - type: entity
   name: pill
-  suffix: Tricordrazine 20u
+  suffix: Tricordrazine 15u #Starfall - 20 -> 15
   parent: Pill
   id: PillTricordrazine
   components:
@@ -672,26 +672,26 @@
   - type: Sprite
     state: pill3
   - type: Label
-    currentLabel: tricordrazine 20u
+    currentLabel: tricordrazine 15u #Starfall - 20 -> 15
   - type: Solution
     solution:
       reagents:
       - ReagentId: Tricordrazine
-        Quantity: 20
+        Quantity: 15 #Starfall - 20 -> 15
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterTricordrazine
-  suffix: Tricordrazine 20u, 5
+  suffix: Tricordrazine 15u, 8 #Starfall - 20 -> 15
   components:
   - type: Label
-    currentLabel: tricordrazine 20u
+    currentLabel: tricordrazine 15u #Starfall - 20 -> 15
   - type: EntityTableContainerFill
     containers:
       storagebase:
         id: PillTricordrazine
-        amount: 5
+        amount: 8 #Starfall - 5 -> 8
 
 - type: entity
   name: pill
@@ -705,11 +705,11 @@
     state: pill5
   - type: Label
     currentLabel: bicaridine 20u
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Bicaridine
-        Quantity: 20
+  #- type: Solution
+  #  solution:
+  #    reagents:
+  #    - ReagentId: Bicaridine
+  #      Quantity: 20
 
 - type: entity
   name: pill canister
@@ -727,7 +727,7 @@
 
 - type: entity
   name: pill
-  suffix: Charcoal 20u
+  suffix: Charcoal 10u #Starfall - 20 -> 10
   parent: Pill
   id: PillCharcoal
   components:
@@ -736,26 +736,26 @@
   - type: Sprite
     state: pill21
   - type: Label
-    currentLabel: charcoal 20u
+    currentLabel: charcoal 10u #Starfall - 20 -> 10
   - type: Solution
     solution:
       reagents:
       - ReagentId: Charcoal
-        Quantity: 20
+        Quantity: 10 #Starfall - 20 -> 10
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterCharcoal
-  suffix: Charcoal 20u, 3
+  suffix: Charcoal 10u, 3 #Starfall - 20 -> 10, 3 -> 8
   components:
   - type: Label
-    currentLabel: charcoal 20u
+    currentLabel: charcoal 10u #Starfall - 20 -> 10
   - type: EntityTableContainerFill
     containers:
       storagebase:
         id: PillCharcoal
-        amount: 3
+        amount: 8 #Starfall - 3 -> 8
 
 - type: entity
   name: romerol pill
@@ -805,7 +805,7 @@
         children:
         - id: PillDexalin
           amount: 1, 6
-        - id: PillDylovene
+        - id: PillMultiver #Starfall - Dylovene -> Multiver
           amount: 1, 6
         - id: PillHyronalin
           amount: 1, 6
@@ -815,13 +815,13 @@
           amount: 1, 6
         - id: PillCopper
           amount: 1, 6
-        - id: PillKelotane
+        - id: PillAiuri #Starfall - Kelotane -> Aiuri
           amount: 1, 6
-        - id: PillDermaline
+        - id: PillLenturi #Starfall - Dermaline -> Lenturi
           amount: 1, 6
         - id: PillTricordrazine
           amount: 1, 6
-        - id: PillBicaridine
+        - id: PillLibital #Starfall - Bicaridine -> Libital
           amount: 1, 6
         - id: PillCharcoal
           amount: 1, 6
@@ -830,6 +830,8 @@
           amount: 1, 6
         - id: StrangePill
           weight: 0.75
+          amount: 1, 6
+        - id: PillProbital #Starfall - Add Probital pills
           amount: 1, 6
 
 # Syringes
@@ -879,11 +881,11 @@
   components:
   - type: Label
     currentLabel: reagent-name-bicaridine
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Bicaridine
-        Quantity: 15
+  #- type: Solution
+  #  solution:
+  #    reagents:
+  #    - ReagentId: Bicaridine
+  #      Quantity: 15
 
 - type: entity
   suffix: dermaline
@@ -892,11 +894,11 @@
   components:
   - type: Label
     currentLabel: reagent-name-dermaline
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Dermaline
-        Quantity: 15
+  #- type: Solution
+  #  solution:
+  #    reagents:
+  #    - ReagentId: Dermaline
+  #      Quantity: 15
 
 - type: entity
   suffix: hyronalin
@@ -1021,7 +1023,7 @@
   id: RandomSafePillTable
   table: !type:GroupSelector
     children:
-    - id: PillBicaridine
+    #Starfall - Removal - id: PillBicaridine
     - id: PillCharcoal
     - id: PillCopper
     - id: PillDermaline
@@ -1032,13 +1034,15 @@
     - id: PillKelotane
     - id: PillPotassiumIodide
     - id: PillTricordrazine
+    - id: PillLibital #Starfall - Add Libital
+    - id: PillProbital #Starfall - Add Probital
     - id: StrangePill
 
 - type: entityTable
   id: RandomSafeSyringeTable
   table: !type:GroupSelector
     children:
-    - id: SyringeBicaridine
+    #Starfall - Removal - id: SyringeBicaridine
     - id: SyringeDermaline
     - id: SyringeEphedrine
     - id: SyringeEthylredoxrazine
@@ -1049,3 +1053,7 @@
     - id: SyringeSaline
     - id: SyringeSigynate
     - id: SyringeTranexamicAcid
+    - id: SyringeLibital #Starfall - add Libital
+    - id: SyringeProbital #Starfall - add Probital
+    - id: SyringeAiuri #Starfall - add Aiuri
+    - id: SyringeRevivopine #Starfall - add Revivopine for the hell of it

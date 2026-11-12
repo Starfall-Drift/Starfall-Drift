@@ -5348,7 +5348,7 @@ entities:
       parent: 543
     - type: Physics
       canCollide: False
-- proto: PillDylovene
+- proto: PillCanisterDylovene
   entities:
   - uid: 93
     components:

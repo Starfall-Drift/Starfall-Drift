@@ -1022,13 +1022,14 @@
   - type: XAEFoam
     replaceDescription: true
     reagents:
-    - Dermaline
+    - Lenturi #Starfall - Dermaline -> Lenturi
     - Arithrazine
-    - Bicaridine
+    - Probital #Starfall - Bicaridine -> Probital
     - Inaprovaline
-    - Kelotane
+    - Aiuri #Starfall - Kelotane -> Aiuri
     - Dexalin
     - Omnizine
+    - Libital #Starfall - Add libital
 
 - type: entity
   id: XenoArtifactFoamDangerous
@@ -1051,6 +1052,8 @@
     - ChloralHydrate
     - Mold
     - Amatoxin
+    - Pestiline
+    - Rhigoxane
 
 - type: entity
   id: XenoArtifactPuddleRare
@@ -1066,11 +1069,11 @@
       maxVol: 500
       canReact: false
     possibleChemicals:
-    - Dermaline
+    - Lenturi #Starfall - Dermaline -> Lenturi
     - Arithrazine
-    - Bicaridine
+    - Probital #Starfall - Bicaridine -> Probital
     - Inaprovaline
-    - Kelotane
+    - Aiuri #Starfall - Kelotane -> Aiuri
     - Dexalin
     - Omnizine
     - Napalm
@@ -1081,6 +1084,11 @@
     - Desoxyephedrine
     - Pax
     - Siderlac
+    - Libital #Starfall - Add Libital
+    - Stasicillin #Starfall - Add Stasicillin
+    - Mercury #Starfall - Add Mercury
+    - Ethanol #Starfall - Add Ethanol
+    - SpaceLube #Starfall - Add Lube
 
 - type: entity
   id: XenoArtifactAnomalySpawn

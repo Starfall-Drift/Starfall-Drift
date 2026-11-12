@@ -1,0 +1,48 @@
+- type: reagent
+  id: Rhigoxane
+  name: reagent-name-rhigoxane
+  desc: reagent-desc-rhigoxane
+  group: Toxins
+  flavor: antifreeze
+  color: "#34b3c9"
+  physicalDesc: reagent-physical-desc-refreshing
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Cold: 1
+      - !type:AdjustTemperature
+        amount: -25000 #Around one temp level down every 2 seconds
+
+- type: reagent
+  id: Spewium #Ipecac 2
+  name: reagent-name-spewium
+  desc: reagent-desc-spewium
+  group: Toxins
+  flavor: horrible
+  color: "#2e4404"
+  physicalDesc: reagent-physical-desc-overpowering
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:Vomit
+        probability: 0.5
+
+- type: reagent
+  id: Pestiline
+  name: reagent-name-pestiline
+  desc: reagent-desc-pestiline
+  group: Toxins
+  flavor: punishment
+  color: "#cf3600"
+  physicalDesc: reagent-physical-desc-sickly
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.02 #Fifty ticks per unit
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Cellular: 0.4 #20 damage after 50 ticks.

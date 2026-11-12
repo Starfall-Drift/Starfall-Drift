@@ -35,35 +35,35 @@
       - ReagentId: TranexamicAcid
         Quantity: 40 #Starfall - 200u Jugs
 
-- type: entity
-  parent: Jug
-  id: JugPyraDerma
-  suffix: pyra & derma
-  components:
-  - type: Label
-    currentLabel: reagent-name-pyrazine-dermaline
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Pyrazine
-        Quantity: 50 #Starfall - 200u Jugs
-      - ReagentId: Dermaline
-        Quantity: 150 #Starfall - 200u Jugs
+#Starfall - Removal - type: entity
+#  parent: Jug
+#  id: JugPyraDerma
+#  suffix: pyra & derma
+#  components:
+#  - type: Label
+#    currentLabel: reagent-name-pyrazine-dermaline
+#  - type: Solution
+#    solution:
+#      reagents:
+#      - ReagentId: Pyrazine
+#        Quantity: 50 #Starfall - 200u Jugs
+#      - ReagentId: Dermaline
+#        Quantity: 150 #Starfall - 200u Jugs
 
-- type: entity
-  parent: Jug
-  id: JugDexPlusSaline
-  suffix: dex+ & saline
-  components:
-  - type: Label
-    currentLabel: reagent-name-dexalin-plus-saline
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: DexalinPlus
-        Quantity: 100 #Starfall - 200u Jugs
-      - ReagentId: Saline
-        Quantity: 100 #Starfall - 200u Jugs
+#Starfall - Removal- type: entity Starfall removal
+#  parent: Jug
+#  id: JugDexPlusSaline
+#  suffix: dex+ & saline
+#  components:
+#  - type: Label
+#    currentLabel: reagent-name-dexalin-plus-saline
+#  - type: Solution
+#    solution:
+#      reagents:
+#      - ReagentId: DexalinPlus
+#        Quantity: 100 #Starfall - 200u Jugs
+#      - ReagentId: Saline
+#        Quantity: 100 #Starfall - 200u Jugs
 
 - type: entity
   parent: Jug
@@ -440,19 +440,19 @@
       - ReagentId: WeldingFuel
         Quantity: 200 #Starfall - 200u Jugs
 
-- type: entity
-  parent: Jug
-  suffix: bicaridine
-  id: JugBicaridine
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Label
-    currentLabel: reagent-name-bicaridine
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Bicaridine
-        Quantity: 200 #Starfall - 200u Jugs
+#Starfall - Nukie Chem Delivery Removal- type: entity
+#  parent: Jug
+#  suffix: bicaridine
+#  id: JugBicaridine
+#  categories: [ HideSpawnMenu ]
+#  components:
+#  - type: Label
+#    currentLabel: reagent-name-bicaridine
+#  - type: Solution
+#    solution:
+#      reagents:
+#      - ReagentId: Bicaridine
+#        Quantity: 200 #Starfall - 200u Jugs
 
 - type: entity
   parent: Jug
@@ -468,33 +468,33 @@
       - ReagentId: Puncturase
         Quantity: 200 #Starfall - 200u Jugs
 
-- type: entity
-  parent: Jug
-  suffix: dermaline
-  id: JugDermaline
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Label
-    currentLabel: reagent-name-dermaline
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Dermaline
-        Quantity: 200 #Starfall - 200u Jugs
+#Starfall - Nukie chem delivery removal - type: entity
+#  parent: Jug
+#  suffix: dermaline
+#  id: JugDermaline
+#  categories: [ HideSpawnMenu ]
+#  components:
+#  - type: Label
+#    currentLabel: reagent-name-dermaline
+#  - type: Solution
+#    solution:
+#      reagents:
+#      - ReagentId: Dermaline
+#        Quantity: 200 #Starfall - 200u Jugs
 
-- type: entity
-  parent: Jug
-  suffix: dylovene
-  id: JugDylovene
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Label
-    currentLabel: reagent-name-dylovene
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Dylovene
-        Quantity: 200 #Starfall - 200u Jugs
+#Starfall - Nukie chem delivery removal - type: entity
+#  parent: Jug
+#  suffix: dylovene
+#  id: JugDylovene
+#  categories: [ HideSpawnMenu ]
+#  components:
+#  - type: Label
+#    currentLabel: reagent-name-dylovene
+#  - type: Solution
+#    solution:
+#      reagents:
+#      - ReagentId: Dylovene
+#        Quantity: 200 #Starfall - 200u Jugs
 
 - type: entity
   parent: Jug
@@ -538,16 +538,16 @@
       - ReagentId: Saline
         Quantity: 200 #Starfall - 200u Jugs
 
-- type: entity
-  parent: Jug
-  suffix: dexalin plus
-  id: JugDexalinPlus
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Label
-    currentLabel: reagent-name-dexalin-plus
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: DexalinPlus
-        Quantity: 200 #Starfall - 200u Jugs
+#Starfall - Nukie chem delivery removal - type: entity
+#  parent: Jug
+#  suffix: dexalin plus
+#  id: JugDexalinPlus
+#  categories: [ HideSpawnMenu ]
+#  components:
+#  - type: Label
+#    currentLabel: reagent-name-dexalin-plus
+#  - type: Solution
+#    solution:
+#      reagents:
+#      - ReagentId: DexalinPlus
+#        Quantity: 200 #Starfall - 200u Jugs

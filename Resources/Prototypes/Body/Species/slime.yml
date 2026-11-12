@@ -117,6 +117,7 @@
   - type: PassiveDamage # Around 8 damage a minute healed
     allowedStates:
     - Alive
+    damageCap: 65 #Starfall - Damage cap for passive healing
     damage:
       types:
         Heat: -0.14
@@ -259,7 +260,7 @@
     - SolutionStomach
   - type: Stomach
   - type: Metabolizer
-    maxReagents: 6
+    maxReagents: 8 #Starfall
     metabolizerTypes: [ Slime ]
     stages: [ Digestion, Bloodstream, Metabolites ]
 

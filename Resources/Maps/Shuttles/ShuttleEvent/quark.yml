@@ -1506,7 +1506,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -4.29701,0.32934618
       parent: 1
-- proto: PillCanisterHyronalin
+- proto: PillHyronalin #Starfall - Changed this from canister to individual pill cause this was throwing errors if i didnt
   entities:
   - uid: 264
     components:

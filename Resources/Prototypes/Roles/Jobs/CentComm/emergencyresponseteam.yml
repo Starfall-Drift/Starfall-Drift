@@ -491,8 +491,8 @@
     - BeakerSmallBruiz
     - BeakerSmallLace
     - JugPunctTranex
-    - JugPyraDerma
-    - JugDexPlusSaline # End of first line
+    - JugOxaLent #Starfall - Pyraderm -> Oxandrolone Lenturi
+    - JugSalbudex #Starfall - DexPlusSaline -> SalbuDex
     - JugTrico
     - BeakerSmallArith
     - BeakerSmallDiph
@@ -516,8 +516,8 @@
     back:
     - Hypospray
     - JugPunctTranex
-    - JugPyraDerma
-    - JugDexPlusSaline
+    - JugOxaLent #Starfall - Pyraderm -> Oxandrolone Lenturi
+    - JugSalbudex #Starfall - DexPlusSaline -> SalbuDex
     - JugTrico # End of first line
     - BeakerSmallArith
     - DefibrillatorCompact

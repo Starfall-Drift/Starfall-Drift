@@ -15,12 +15,12 @@ entity-condition-guidebook-type-damage =
                     *[other] it has between {NATURALFIXED($min, 2)} and {NATURALFIXED($max, 2)} of {$type} damage
                  }
     }
-
+#Starfall - Removed a single period to fix grammar
 entity-condition-guidebook-group-damage =
     { $max ->
-        [2147483648] it has at least {NATURALFIXED($min, 2)} of {$type} damage.
+        [2147483648] it has at least {NATURALFIXED($min, 2)} of {$type} damage
         *[other] { $min ->
-                    [0] it has at most {NATURALFIXED($max, 2)} of {$type} damage.
+                    [0] it has at most {NATURALFIXED($max, 2)} of {$type} damage
                     *[other] it has between {NATURALFIXED($min, 2)} and {NATURALFIXED($max, 2)} of {$type} damage
                  }
     }

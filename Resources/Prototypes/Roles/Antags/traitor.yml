@@ -102,7 +102,7 @@
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
     pocket1: HandheldHealthAnalyzer
-    pocket2: PillCanisterBicaridine
+    pocket2: PillCanisterSalicylicAcid #Starfall - Bicaridine -> Salicylic Acid
   inhand:
     - MedkitCombatFilled
   storage:
