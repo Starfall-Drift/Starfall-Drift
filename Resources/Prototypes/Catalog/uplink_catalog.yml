@@ -336,16 +336,17 @@
   productEntity: ExGrenade
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   cost:
-    Telecrystal: 4
+    Telecrystal: 20 #Starfall - 4 -> 20
   categories:
   - UplinkExplosives
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
+  #Starfall - Frankly this is fine to be given to just normal syndies i think
+  #- conditions:
+  #- !type:StoreWhitelistCondition
+    #whitelist:
+      #tags:
+      #- NukeOpsUplink
 
 - type: listing
   id: UplinkSmokeGrenade
@@ -353,7 +354,7 @@
   description: uplink-smoke-grenade-desc
   productEntity: SmokeGrenade
   cost:
-    Telecrystal: 1
+    Telecrystal: 3 #Starfall - 1 -> 3
   categories:
   - UplinkExplosives
 
@@ -364,9 +365,9 @@
   productEntity: SyndieMiniBomb
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 20 #Starfall - 3 -> 20
   cost:
-    Telecrystal: 6
+    Telecrystal: 30 #Starfall - 6 -> 30
   categories:
     - UplinkExplosives
 
@@ -377,9 +378,9 @@
   productEntity: SingularityGrenade
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 3 #Starfall - 1 -> 3
   cost:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   categories:
     - UplinkDisruption
 
@@ -390,9 +391,9 @@
   productEntity: MobGrenadePenguin
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 12 #Starfall - 3 -> 12
   cost:
-    Telecrystal: 4
+    Telecrystal: 20 #Starfall - 4 -> 20
   categories:
     - UplinkExplosives
   conditions:
@@ -408,9 +409,9 @@
   productEntity: C4
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 15 #Starfall - 1 -> 15
   cost:
-    Telecrystal: 2
+    Telecrystal: 25 #Starfall - 2 -> 25
   categories:
   - UplinkExplosives
 
@@ -439,9 +440,9 @@
   productEntity: ClothingBackpackDuffelSyndicateC4tBundle
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 8
+    Telecrystal: 35 #Starfall - 8 -> 35
   cost:
-    Telecrystal: 12 #you're buying bulk so its a 25% discount, so no additional random discount over it
+    Telecrystal: 60 #Starfall - 12 -> 60 You get a ton of value from this. Looking into replacing this with a thermite spray bottle.
   categories:
   - UplinkExplosives
 
@@ -452,9 +453,9 @@
   productEntity: EmpGrenade
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 5 #Starfall - 1 -> 5
   cost:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   categories:
   - UplinkExplosives
 
@@ -466,9 +467,9 @@
   productEntity: PenExplodingBox
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 7 #Starfall - 2 -> 7
   cost:
-    Telecrystal: 4
+    Telecrystal: 13 #Starfall - 4 -> 13
   categories:
   - UplinkExplosives
 
@@ -478,7 +479,7 @@
   description: uplink-exploding-syndicate-bomb-desc
   productEntity: SyndicateBomb
   cost:
-    Telecrystal: 11
+    Telecrystal: 50 #Starfall - 11 -> 50
   categories:
     - UplinkExplosives
   restockTime: 1800
@@ -494,7 +495,7 @@
   description: uplink-exploding-syndicate-bomb-desc
   productEntity: SyndicateBomb
   cost:
-    Telecrystal: 11
+    Telecrystal: 55 #Starfall - 11 -> 55
   categories:
     - UplinkExplosives
   conditions:
@@ -510,9 +511,9 @@
   productEntity: GrenadeShrapnel
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 5 #Starfall - 2 -> 5
   cost:
-    Telecrystal: 4
+    Telecrystal: 15 #Starfall - 4 -> 15
   categories:
   - UplinkExplosives
 
@@ -523,9 +524,9 @@
   productEntity: GrenadeIncendiary
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 5 #Starfall - 2 -> 5
   cost:
-    Telecrystal: 4
+    Telecrystal: 15 #Starfall - 4 -> 15
   categories:
   - UplinkExplosives
 
