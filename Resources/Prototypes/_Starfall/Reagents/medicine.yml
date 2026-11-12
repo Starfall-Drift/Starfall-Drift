@@ -250,27 +250,24 @@
     Bloodstream:
       metabolismRate: 0.2
       effects:
-      - !type:EvenHealthChange
-        conditions:
-        - !type:DamageGroupCondition
-          min: 30
-          damageGroup: Airloss
-        damage:
-          Airloss: -6
-      - !type:EvenHealthChange
+      - !type:HealthChange
         conditions:
         - !type:DamageGroupCondition
           max: 30
           damageGroup: Airloss
         damage:
-          Airloss: -1
-      - !type:EvenHealthChange
+          types:
+            Asphyxiation: -0.5
+            Bloodloss: -0.5
+      - !type:HealthChange
         conditions:
-        - !type:ReagentCondition
-          min: 15.5
-          reagent: Salbutamol
+        - !type:DamageGroupCondition
+          min: 30
+          damageGroup: Airloss
         damage:
-          Airloss: -6
+          types:
+            Asphyxiation: -3
+            Bloodloss: -3
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
@@ -278,6 +275,8 @@
           reagent: Salbutamol
         damage:
           types:
+            Asphyxiation: -3
+            Bloodloss: -3
             Cellular: 0.2
 
 - type: reagent
