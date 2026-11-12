@@ -1,0 +1,23 @@
+- type: listing
+  id: UplinkSurplusBundle #Starfall - Welcome back old friend
+  name: uplink-surplus-bundle-name
+  description: uplink-surplus-bundle-desc
+  productEntity: CrateSyndicateSurplusBundle
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 80
+  cost:
+    Telecrystal: 200
+  categories:
+  - UplinkDisruption
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - NukeOpsUplink
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
+  - !type:ListingLimitedStockCondition
+    stock: 1

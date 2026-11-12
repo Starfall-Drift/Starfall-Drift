@@ -810,7 +810,7 @@
   description: uplink-syndicate-id-card-desc
   productEntity: SyndicateIDCard
   cost:
-    Telecrystal: 1
+    Telecrystal: 2 #Starfall - 1 -> 2
   categories:
   - UplinkDeception
 
@@ -821,9 +821,9 @@
   productEntity: AgentIDCard
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 3 #Starfall - 1 -> 3
   cost:
-    Telecrystal: 3
+    Telecrystal: 15 #Starfall - 3 -> 15
   categories:
   - UplinkDeception
 
@@ -834,9 +834,9 @@
   productEntity: StealthBox
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   cost:
-    Telecrystal: 5
+    Telecrystal: 20 #Starfall - 5 -> 20
   categories:
   - UplinkDeception
 
@@ -847,9 +847,9 @@
   productEntity: ChameleonProjector
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 15 #Starfall - 2 -> 15
   cost:
-    Telecrystal: 3
+    Telecrystal: 20 #Starfall - 3 -> 20
   categories:
   - UplinkDeception
 
@@ -861,9 +861,9 @@
   productEntity: BoxEncryptionKeySyndie # Two for the price of one
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 2 #Starfall - 1 -> 3
   cost:
-    Telecrystal: 2
+    Telecrystal: 5 #Starfall - 2 -> 5
   categories:
   - UplinkDeception
 
@@ -874,7 +874,7 @@
   icon: { sprite: /Textures/Objects/Devices/encryption_keys.rsi, state: ai_label }
   productEntity: EncryptionKeyBinarySyndicate
   cost:
-    Telecrystal: 1
+    Telecrystal: 5 #Starfall - 1 -> 5
   categories:
   - UplinkDeception
 
@@ -884,7 +884,7 @@
   description: uplink-cyberpen-desc
   productEntity: CyberPen
   cost:
-    Telecrystal: 1
+    Telecrystal: 10 #Starfall - 1 -> 10
   categories:
   - UplinkDeception
 
@@ -907,11 +907,11 @@
   discountDownTo:
     Telecrystal: 2
   cost:
-    Telecrystal: 4
+    Telecrystal: 10 #Starfall - 4 -> 10
   categories:
     - UplinkDeception
 
-# - type: listing
+#Starfall comment - This item doesnt even exist in game - type: listing
 #   id: UplinkGigacancerScanner
 #   name: Ultragigacancer Health Analyzer
 #   description: Works like a normal health analyzer, other than giving everyone it scans ultragigacancer.
@@ -928,9 +928,9 @@
   productEntity: SyndicateBombFake
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 4 #Starfall - 1 -> 4
   cost:
-    Telecrystal: 4
+    Telecrystal: 10 #Starfall - 4 -> 10
   categories:
   - UplinkDeception
   restockTime: 1800
@@ -947,9 +947,9 @@
   productEntity: SyndicateBombFake
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 4 #Starfall - 1 -> 4
   cost:
-    Telecrystal: 4
+    Telecrystal: 10 #Starfall - 4 -> 10
   categories:
   - UplinkDeception
   conditions:
@@ -967,9 +967,9 @@
   productEntity: AccessBreaker
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   cost:
-    Telecrystal: 4
+    Telecrystal: 30 #Starfall - 4 -> 30
   categories:
   - UplinkDisruption
 
@@ -980,9 +980,9 @@
   productEntity: Emag
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 10 #Starfall - 3 -> 10
   cost:
-    Telecrystal: 5
+    Telecrystal: 30 #Starfall - 5 -> 30
   categories:
   - UplinkDisruption
 
@@ -993,9 +993,9 @@
   productEntity: RadioJammer
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 8 #Starfall - 2 -> 8
   cost:
-    Telecrystal: 3
+    Telecrystal: 20 #Starfall - 3 -> 20
   categories:
   - UplinkDisruption
 
@@ -1006,9 +1006,9 @@
   productEntity: BorgModuleSyndicateWeapon
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 15 #Starfall - 3 -> 15
   cost:
-    Telecrystal: 5
+    Telecrystal: 25 #Starfall - 5 -> 25
   categories:
   - UplinkDisruption
 
@@ -1019,9 +1019,9 @@
   productEntity: ToolboxElectricalTurretFilled
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   cost:
-    Telecrystal: 4
+    Telecrystal: 30 #Starfall - 4 -> 30
   categories:
   - UplinkDisruption
   conditions:
@@ -1038,9 +1038,9 @@
   icon: { sprite: /Textures/Objects/Specific/Robotics/borgmodule.rsi, state: syndicateborgbomb }
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 15 #Starfall - 2 -> 15
   cost:
-    Telecrystal: 4
+    Telecrystal: 20 #Starfall - 4 -> 20
   categories:
     - UplinkDisruption
 
@@ -1049,8 +1049,11 @@
   name: uplink-soap-name
   description: uplink-soap-desc
   productEntity: SoapSyndie
-  cost:
+  discountCategory: usualDiscounts #Starfall - Add a discount and let it go down to 1
+  discountDownTo:
     Telecrystal: 1
+  cost:
+    Telecrystal: 1 #Starfall - 1 -> 5
   categories:
   - UplinkDisruption
 
@@ -1059,9 +1062,11 @@
   name: uplink-slipocalypse-clustersoap-name
   description: uplink-slipocalypse-clustersoap-desc
   productEntity: SlipocalypseClusterSoap
-  discountCategory: rareDiscounts
-  cost:
-    Telecrystal: 1
+  discountCategory: rareDiscounts #Starfall - Add a discount and let it go down to 1
+  discountDownTo:
+    Telecrystal: 5
+  cost: #This is basically a weak lube bomb.
+    Telecrystal: 15 #Starfall - 1 -> 15
   categories:
   - UplinkDisruption
 
@@ -1072,9 +1077,9 @@
   productEntity: ToolboxSyndicateFilled
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 2 #Starfall - 1 -> 2
   cost:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   categories:
   - UplinkDisruption
 
@@ -1085,9 +1090,9 @@
   productEntity: SyndicateJawsOfLife
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 2 #Starfall - 1 -> 2
   cost:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   categories:
   - UplinkDisruption
 
@@ -1122,9 +1127,9 @@
   productEntity: PowerSink
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 20 #Starfall - 4 -> 20
   cost:
-    Telecrystal: 8
+    Telecrystal: 32 #Starfall - 8 -> 32
   categories:
   - UplinkExplosives
 
@@ -1133,12 +1138,12 @@
   name: uplink-syndimov-law-name
   description: uplink-syndimov-law-desc
   icon: { sprite: /Textures/Objects/Storage/boxicons.rsi, state: syndicate_circuit }
-  productEntity: SyndimovCircuitKit
+  productEntity: SyndimovCircuitKit #Need to replace with the freeform law board.
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 6
+    Telecrystal: 20 #Starfall - 6 -> 20
   cost:
-    Telecrystal: 8
+    Telecrystal: 30 #Starfall - 8 -> 30
   categories:
   - UplinkDisruption
   conditions:
@@ -1151,12 +1156,12 @@
   id: UplinkAntimovCircuitBoard
   name: uplink-antimov-law-name
   description: uplink-antimov-law-desc
-  productEntity: AntimovCircuitBoard
+  productEntity: AntimovCircuitBoard #Need to replace with the freeform law board.
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 20
+    Telecrystal: 65 #Starfall - 20 -> 65
   cost:
-    Telecrystal: 24
+    Telecrystal: 80 #Starfall - 24 -> 80
   categories:
   - UplinkDisruption
   conditions:
@@ -1170,8 +1175,11 @@
   name: uplink-surplus-bundle-name
   description: uplink-surplus-bundle-desc
   productEntity: CrateSyndicateSurplusBundle
+  discountCategory: veryRareDiscounts #Starfall - Allow this to have a discount
+  discountDownTo:
+    Telecrystal: 50
   cost:
-    Telecrystal: 20
+    Telecrystal: 100 #Starfall - 20 -> 100
   categories:
   - UplinkDisruption
   conditions:
@@ -1183,25 +1191,27 @@
     blacklist:
       components:
       - SurplusBundle
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
-- type: listing
-  id: UplinkStarterKit
-  name: uplink-starter-kit-name
-  description: uplink-starter-kit-desc
-  productEntity: ClothingBackpackDuffelSyndicateFilledStarterKit
-  cost:
-    Telecrystal: 40
-  categories:
-  - UplinkDisruption
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-        - NukeOpsUplink
-    - !type:BuyerWhitelistCondition
-      blacklist:
-        components:
-        - SurplusBundle
+#- type: listing
+#  id: UplinkStarterKit
+#  name: uplink-starter-kit-name
+#  description: uplink-starter-kit-desc
+#  productEntity: ClothingBackpackDuffelSyndicateFilledStarterKit
+#  cost:
+#    Telecrystal: 40
+#  categories:
+#  - UplinkDisruption
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#        - NukeOpsUplink
+#    - !type:BuyerWhitelistCondition
+#      blacklist:
+#        components:
+#        - SurplusBundle
 
 - type: listing
   id: UplinkSingarityBeacon
@@ -1210,9 +1220,9 @@
   productEntity: SingularityBeacon
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 20 #Starfall - 4 -> 20
   cost:
-    Telecrystal: 12
+    Telecrystal: 60 #Starfall - 12 -> 60
   categories:
     - UplinkDisruption
   conditions:
@@ -1230,11 +1240,11 @@
   name: uplink-cameraBug-name
   description: uplink-cameraBug-desc
   productEntity: CameraBug
-  discountCategory: usualDiscounts
-  discountDownTo:
-    Telecrystal: 1
+  #Starfall - Remove sales - discountCategory: usualDiscounts
+  #discountDownTo:
+    #Telecrystal: 1
   cost:
-    Telecrystal: 2
+    Telecrystal: 4 #Starfall - 2 -> 4
   categories:
   - UplinkDisruption
 
