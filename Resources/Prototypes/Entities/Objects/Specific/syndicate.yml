@@ -1,3 +1,4 @@
+#Starfall - Alot of these are now unused. We are keeping this file in case someone needs this in the future or wants to see what we did. Telecrystal and uplink related items are now in Resources/Prototypes/_Starfall/Entities/Objects/Specific/syndicate.yml
 - type: entity
   name: telecrystal
   parent: [BaseItem, BaseSyndicateContraband]

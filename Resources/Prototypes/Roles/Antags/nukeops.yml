@@ -146,7 +146,7 @@
   id: SyndicateOperativeGearFull
   parent: SyndicateOperativeGearFullNoUplink
   equipment:
-    pocket2: BaseUplinkRadio40TC
+    pocket2: BaseUplinkRadio225TC #Starfall - BaseUplinkRadio40TC -> BaseUplinkRadio225TC
 
 - type: chameleonOutfit
   id: NukeopsOutfit
@@ -213,4 +213,4 @@
   id: SyndicateLoneOperativeGearFull
   parent: SyndicateOperativeGearFull
   equipment:
-    pocket2: BaseUplinkRadio60TC
+    pocket2: BaseUplinkRadio350TC #Starfall BaseUplinkRadio60TC -> BaseUplinkRadio350TC
