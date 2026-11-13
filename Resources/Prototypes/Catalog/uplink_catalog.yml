@@ -1258,9 +1258,9 @@
   productEntity: BoxHoloparasite
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 8
+    Telecrystal: 30 #Starfall - 8 -> 30
   cost:
-    Telecrystal: 12
+    Telecrystal: 60 #Starfall - 12 -> 60
   categories:
   - UplinkAllies
   conditions:
@@ -1277,9 +1277,9 @@
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-urist }
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 7
+    Telecrystal: 7 #Starfall - 7 -> 30
   cost:
-    Telecrystal: 11
+    Telecrystal: 50 #Starfall - 11 -> 50
   categories:
   - UplinkAllies
   conditions:
@@ -1295,7 +1295,7 @@
   productEntity: ReinforcementRadioSyndicateNukeops
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-nukeop }
   cost:
-    Telecrystal: 30
+    Telecrystal: 125 #Starfall - 30 -> 125
   categories:
   - UplinkAllies
   conditions:
@@ -1311,7 +1311,7 @@
   productEntity: ReinforcementRadioSyndicateCyborgAssault
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-borg-assault }
   cost:
-    Telecrystal: 65
+    Telecrystal: 250 #Starfall - 65 -> 250
   categories:
     - UplinkAllies
   conditions:
@@ -1328,9 +1328,9 @@
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-ancestor }
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 20 #Starfall - 4 -> 20
   cost:
-    Telecrystal: 6
+    Telecrystal: 30 #Starfall - 6 -> 30
   categories:
   - UplinkAllies
   conditions:
@@ -1347,9 +1347,9 @@
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-ancestor }
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 20 #Starfall - 4 -> 20
   cost:
-    Telecrystal: 6
+    Telecrystal: 30 #Starfall - 6 -> 30
   categories:
   - UplinkAllies
   conditions:
@@ -1364,7 +1364,7 @@
   description: uplink-carp-dehydrated-desc
   productEntity: DehydratedSpaceCarp
   cost:
-    Telecrystal: 1
+    Telecrystal: 6 #Starfall - 1 -> 6
   categories:
   - UplinkAllies
   conditions:
@@ -1381,9 +1381,9 @@
   productEntity: ReinforcementRadioSyndicateSyndiCat
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 15 #Starfall - 3 -> 15
   cost:
-    Telecrystal: 6
+    Telecrystal: 30 #Starfall - 6 -> 30
   categories:
     - UplinkAllies
 
