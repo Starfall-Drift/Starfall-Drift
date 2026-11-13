@@ -1598,10 +1598,11 @@
   description: uplink-fake-mindshield-desc
   icon: { sprite: Interface/Actions/actions_fakemindshield.rsi, state: icon-on }
   productEntity: FakeMindShieldImplanter
+  discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 10 #Starfall - 2 -> 10
   cost:
-    Telecrystal: 4
+    Telecrystal: 15 #Starfall - 4 -> 15
   categories:
   - UplinkImplants
 
@@ -1613,9 +1614,9 @@
   productEntity: VoiceMaskImplanter
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 10 #Starfall - 2 -> 10
   cost:
-    Telecrystal: 2
+    Telecrystal: 15 #Starfall - 4 -> 15
   categories:
   - UplinkImplants
 
