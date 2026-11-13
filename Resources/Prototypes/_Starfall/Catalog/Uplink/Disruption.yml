@@ -1,8 +1,8 @@
 - type: listing
-  id: UplinkSurplusBundle #Starfall - Welcome back old friend
-  name: uplink-surplus-bundle-name
-  description: uplink-surplus-bundle-desc
-  productEntity: CrateSyndicateSurplusBundle
+  id: UplinkSuperSurplusBundle #Starfall - Welcome back old friend
+  name: uplink-super-surplus-bundle-name
+  description: uplink-super-surplus-bundle-desc
+  productEntity: CrateSyndicateSuperSurplusBundle
   discountCategory: veryRareDiscounts
   discountDownTo:
     Telecrystal: 80
