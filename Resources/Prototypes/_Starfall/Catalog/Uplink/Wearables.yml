@@ -1,0 +1,9 @@
+- type: listing
+  id: UplinkHolster
+  name: uplink-holster-name
+  description: uplink-holster-desc
+  productEntity: ClothingBeltSyndieHolster
+  cost:
+    Telecrystal: 10 #Starfall - Bringing it back for aura
+  categories:
+  - UplinkWearables
