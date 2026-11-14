@@ -409,9 +409,9 @@
   productEntity: C4
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 15 #Starfall - 1 -> 15
+    Telecrystal: 5 #Starfall - 1 -> 5
   cost:
-    Telecrystal: 25 #Starfall - 2 -> 25
+    Telecrystal: 10 #Starfall - 2 -> 10
   categories:
   - UplinkExplosives
 
@@ -1885,6 +1885,8 @@
   name: uplink-syndicate-stamp-name
   description: uplink-syndicate-stamp-desc
   productEntity: RubberStampSyndicate
+  cost:
+    Telecrystal: 1 #Starfall - Bring a price back
   categories:
   - UplinkPointless
   conditions:
@@ -1911,6 +1913,8 @@
   name: uplink-outlaw-hat-name
   description: uplink-outlaw-hat-desc
   productEntity: ClothingHeadHatOutlawHat
+  cost:
+    Telecrystal: 1 #Starfall - Bring a price back
   categories:
   - UplinkPointless
   conditions:
@@ -1992,11 +1996,11 @@
     Telecrystal: 100 #Starfall - 20 -> 100
   categories:
   - UplinkPointless
-  #Starfall - Sometimes you're unlucky conditions:
-  #- !type:BuyerWhitelistCondition
-    #blacklist:
-      #components:
-      #- SurplusBundle
+  conditions:
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
 
 - type: listing
   id: UplinkScarfSyndieRed
