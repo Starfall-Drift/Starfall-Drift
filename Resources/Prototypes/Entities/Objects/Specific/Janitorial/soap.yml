@@ -81,6 +81,7 @@
     residueColor: residue-green
   - type: Solution
     solution:
+      maxVol: 50 #Starfall Change - I hate standardization
       reagents:
       - ReagentId: SoapReagent
         Quantity: 50 #Starfall Change - I hate standardization
@@ -100,6 +101,7 @@
     heldPrefix: nt
   - type: Solution
     solution:
+      maxVol: 100 #Starfall Change - I hate standardization
       reagents:
       - ReagentId: SoapReagent
         Quantity: 90 #Starfall Change - I hate standardization - Made it hold 100 total, with 90 plas-phoron
@@ -248,6 +250,7 @@
   - type: Solution
     id: soap
     solution:
+      maxVol: 240
       reagents:
       - ReagentId: SoapReagent
         Quantity: 240 #In the Greek alphabet, Omega is the 24th letter
