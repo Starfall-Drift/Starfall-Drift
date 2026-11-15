@@ -48,6 +48,9 @@
   - type: Construction
     graph: smokeableCigarette
     node: cigarette
+  - type: Solution  #Starfall, increase soaked cigarette capacity
+    solution:
+      maxVol: 40
 
 - type: entity
   id: CigaretteSpent
@@ -76,7 +79,7 @@
         - ReagentId: Nicotine
           Quantity: 10
         - ReagentId: Omnizine
-          Quantity: 20
+          Quantity: 30 #Starfall - 20 -> 30
 
 - type: entity
   id: CigaretteOmnizine
@@ -117,31 +120,31 @@
       - ReagentId: Tricordrazine
         Quantity: 10
 
-- type: entity
-  id: CigaretteDylovene
-  parent: SoakedCigarette
-  name: Urinal Cake Dissolver
-  components:
-  - type: Solution
-    solution:
-      reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Dylovene
-          Quantity: 10
+#- type: entity
+#  id: CigaretteDylovene
+#  parent: SoakedCigarette
+#  name: Urinal Cake Dissolver
+#  components:
+#  - type: Solution
+#    solution:
+#      reagents:
+#        - ReagentId: Nicotine
+#          Quantity: 10
+#        - ReagentId: Dylovene
+#          Quantity: 10
 
-- type: entity
-  id: CigaretteDermaline
-  parent: SoakedCigarette
-  name: Aloe Peanut Butter Medley
-  components:
-  - type: Solution
-    solution:
-      reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Dermaline
-          Quantity: 10
+#- type: entity
+#  id: CigaretteDermaline
+#  parent: SoakedCigarette
+#  name: Aloe Peanut Butter Medley
+#  components:
+#  - type: Solution
+#    solution:
+#      reagents:
+#        - ReagentId: Nicotine
+#          Quantity: 10
+#        - ReagentId: Dermaline
+#          Quantity: 10
 
 - type: entity
   id: CigaretteArithrazine
@@ -169,18 +172,18 @@
         - ReagentId: Nutriment
           Quantity: 10
 
-- type: entity
-  id: CigaretteBicaridine
-  parent: SoakedCigarette
-  name: Wet Dog Enhanced Cigarette
-  components:
-  - type: Solution
-    solution:
-      reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Bicaridine
-          Quantity: 10
+#- type: entity
+#  id: CigaretteBicaridine
+#  parent: SoakedCigarette
+#  name: Wet Dog Enhanced Cigarette
+#  components:
+#  - type: Solution
+#    solution:
+#      reagents:
+#        - ReagentId: Nicotine
+#          Quantity: 10
+#        - ReagentId: Bicaridine
+#          Quantity: 10
 
 - type: entity
   id: CigaretteDexalin
@@ -190,10 +193,10 @@
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Dexalin
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Dexalin
+        Quantity: 10
 
 - type: entity
   id: CigaretteSaline
@@ -203,10 +206,10 @@
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Saline
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Saline
+        Quantity: 10
 
 - type: entity
   id: CigaretteBbqSauce

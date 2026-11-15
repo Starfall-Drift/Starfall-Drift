@@ -467,7 +467,7 @@
       reagents:
       - ReagentId: Nutriment
         Quantity: 20
-      - ReagentId: Bicaridine #keeping it somewhat consistent with the meat itself
+      - ReagentId: Probital #Starfall - Bicaridine -> Probital
         Quantity: 20
       - ReagentId: Vitamin
         Quantity: 10

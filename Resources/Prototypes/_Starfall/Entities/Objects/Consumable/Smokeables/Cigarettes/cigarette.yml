@@ -1,0 +1,38 @@
+- type: entity
+  id: CigaretteMultiver
+  parent: SoakedCigarette
+  name: Lacking Liver Damage #MVer deals liver damage in some 13 forks
+  components:
+  - type: Solution
+    solution:
+      reagents:
+        - ReagentId: Nicotine
+          Quantity: 10
+        - ReagentId: Multiver
+          Quantity: 10
+
+- type: entity
+  id: CigaretteAiuri
+  parent: SoakedCigarette
+  name: Does Not Meet Expectations #The bic cigarette became advanced, but the derm replacement didn't
+  components:
+  - type: Solution
+    solution:
+      reagents:
+        - ReagentId: Nicotine
+          Quantity: 10
+        - ReagentId: Aiuri
+          Quantity: 10
+
+- type: entity
+  id: CigaretteSalicylicAcid
+  parent: SoakedCigarette
+  name: Wet Dog Enhanced Cigarette
+  components:
+  - type: Solution
+    solution:
+      reagents:
+        - ReagentId: Nicotine
+          Quantity: 10
+        - ReagentId: SalicylicAcid
+          Quantity: 10

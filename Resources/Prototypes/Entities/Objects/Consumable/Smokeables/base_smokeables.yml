@@ -35,6 +35,7 @@
     - Trash
   - type: Solution
     solution:
+      maxVol: 40 #Starfall - Make your own custom soaked cigarettes and cigars!
       reagents:
       - ReagentId: Nicotine
         Quantity: 10

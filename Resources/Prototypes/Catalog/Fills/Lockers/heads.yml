@@ -215,7 +215,11 @@
     - id: HandheldCrewMonitor
     - id: Hypospray
     - id: MedTekCartridge
-    # Standard command gear
+    - id: ClothingBackpackDuffelSurgeryFilled #Starfall - Add this back even if surgery isn't in game cause it's technically a weapon spawn with scalpel
+    - id: ClothingHandsGlovesNitrile #Starfall - Added back
+    - id: ClothingMaskSterile #Starfall - Added back
+    - id: MedkitFilled #Starfall - Added back
+      # Standard command gear
     - id: RubberStampCMO
     - id: ClothingHeadsetAltMedical
     - id: DoorRemoteMedical

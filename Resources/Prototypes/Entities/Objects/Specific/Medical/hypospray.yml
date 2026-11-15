@@ -297,7 +297,7 @@
   parent: ChemicalMedipen
   id: BruteAutoInjector
   name: brute auto-injector
-  description: A single-dose, non-refillable medipen containing bicaridine and tranexamic acid, used to quickly and easily treat simple physical injuries. Commonly used as a combat medicine.
+  description: A single-dose, non-refillable medipen containing libital, salicylic acid and tranexamic acid, used to quickly and easily treat simple physical injuries. Commonly used as a combat medicine. #Starfall - #description: A single-dose, non-refillable medipen containing bicaridine and tranexamic acid, used to quickly and easily treat simple physical injuries. Commonly used as a combat medicine.
   components:
   - type: Item
     inhandVisuals:
@@ -311,7 +311,7 @@
       - state: base-colorA-inhand-right
         color: "#c73333"
       - state: base-colorB-inhand-right
-  - type: Sprite
+  - type: Sprite #Starfall - Despite changing this out to be diff chems, too lazy to make new pen sprites. Guess it's a thing to do later
     sprite: Objects/Specific/Medical/medipen.rsi
     layers:
     - state: bicpen
@@ -322,8 +322,11 @@
     emptySpriteName: bicpen_empty
   - type: Solution
     solution:
+      maxVol: 30
       reagents:
-      - ReagentId: Bicaridine
+      - ReagentId: SalicylicAcid #Starfall Bicaridine -> Salicylic Acid
+        Quantity: 10
+      - ReagentId: Libital
         Quantity: 15
       - ReagentId: TranexamicAcid
         Quantity: 5
@@ -332,7 +335,7 @@
   parent: ChemicalMedipen
   id: BurnAutoInjector
   name: burn auto-injector
-  description: A single-dose, non-refillable medipen containing dermaline and leporazine, used to quickly and easily treat non-chemical burns. Commonly used as a combat medicine.
+  description: A single-dose, non-refillable medipen containing aiuri, lenturi, and oxandrolone, used to quickly and easily treat non-chemical burns. Commonly used as a combat medicine. #Starfall - description: A single-dose, non-refillable medipen containing dermaline and leporazine, used to quickly and easily treat non-chemical burns. Commonly used as a combat medicine.
   components:
   - type: Item
     inhandVisuals:
@@ -357,17 +360,20 @@
     emptySpriteName: dermpen_empty
   - type: Solution
     solution:
+      maxVol: 30
       reagents:
-      - ReagentId: Dermaline
+      - ReagentId: Aiuri #Starfall - Dermaline -> Aiuri
         Quantity: 10
-      - ReagentId: Leporazine
+      - ReagentId: Lenturi #Starfall - Leporazine -> Lenturi
+        Quantity: 10
+      - ReagentId: Oxandrolone #Starfall - Add Oxandrolone
         Quantity: 10
 
 - type: entity
   parent: ChemicalMedipen
   id: RadAutoInjector
   name: rad auto-injector
-  description: A single-dose, non-refillable medipen containing arithrazine and bicaridine, used to quickly and easily treat radiation poisoning.
+  description: A single-dose, non-refillable medipen containing arithrazine and granibitulari, used to quickly and easily treat radiation poisoning. #Starfall - description: A single-dose, non-refillable medipen containing arithrazine and bicaridine, used to quickly and easily treat radiation poisoning.
   components:
   - type: Item
     inhandVisuals:
@@ -394,15 +400,15 @@
     solution:
       reagents:
       - ReagentId: Arithrazine
-        Quantity: 10
-      - ReagentId: Bicaridine
-        Quantity: 10
+        Quantity: 24
+      - ReagentId: Granibitulari #Starfall - Bicaridine -> Granibitulari
+        Quantity: 6
 
 - type: entity
   parent: ChemicalMedipen
   id: PunctAutoInjector
   name: puncturase auto-injector
-  description: A single-dose, non-refillable medipen containing puncturase and tranexamic acid, used to quickly and easily treat puncture wounds. Commonly used as a combat medicine.
+  description: A single-dose, non-refillable medipen containing puncturase. libital, and tranexamic acid, used to quickly and easily treat puncture wounds. Commonly used as a combat medicine. #Starfall - description: A single-dose, non-refillable medipen containing puncturase and tranexamic acid, used to quickly and easily treat puncture wounds. Commonly used as a combat medicine.
   components:
   - type: Item
     inhandVisuals:
@@ -427,13 +433,14 @@
     emptySpriteName: punctpen_empty
   - type: Solution
     solution:
+      maxVol: 30
       reagents:
       - ReagentId: Puncturase
-        Quantity: 12
+        Quantity: 10 #Starfall - 12 -> 11 cause overdoses
       - ReagentId: TranexamicAcid
         Quantity: 5
-      - ReagentId: Nothing # Needed for visuals to work, idk what else to put here :P
-        Quantity: 3
+      - ReagentId: Libital # Needed for visuals to work, idk what else to put here :P
+        Quantity: 15 #Starfall - 3 -> 4
 
 - type: entity
   parent: ChemicalMedipen
@@ -464,17 +471,20 @@
     emptySpriteName: pyrapen_empty
   - type: Solution
     solution:
+      maxVol: 30
       reagents:
       - ReagentId: Pyrazine
-        Quantity: 10
-      - ReagentId: Dermaline
-        Quantity: 10
+        Quantity: 15
+      #- ReagentId: Dermaline
+      #  Quantity: 10
+      - ReagentId: Aiuri
+        Quantity: 15
 
 - type: entity
   parent: ChemicalMedipen
   id: AirlossAutoInjector
   name: airloss auto-injector
-  description: A single-dose, non-refillable medipen containing saline and dexalin plus, used to quickly and easily treat blood loss and asphyxiation.
+  description: A single-dose, non-refillable medipen containing salbutamol, dexalin, and saline, used to quickly and easily treat blood loss and asphyxiation.  #Starfall - description: A single-dose, non-refillable medipen containing saline and dexalin plus, used to quickly and easily treat blood loss and asphyxiation.
   components:
   - type: Item
     inhandVisuals:
@@ -499,10 +509,13 @@
     emptySpriteName: dexpen_empty
   - type: Solution
     solution:
+      maxVol: 30
       reagents:
       - ReagentId: Saline
         Quantity: 10
-      - ReagentId: DexalinPlus
+      - ReagentId: Salbutamol #Starfall - DexalinPlus -> Salbutamol
+        Quantity: 10
+      - ReagentId: Dexalin
         Quantity: 10
 
 - type: entity
@@ -534,11 +547,12 @@
     emptySpriteName: hypovolemic_empty
   - type: Solution
     solution:
+      maxVol: 30
       reagents:
       - ReagentId: Leporazine
         Quantity: 10
       - ReagentId: Barozine
-        Quantity: 10
+        Quantity: 20 #Starfall - 10 -> 20
   - type: Tag
     tags:
     - SpaceMedipen

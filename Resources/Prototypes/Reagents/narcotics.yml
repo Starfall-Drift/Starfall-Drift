@@ -328,7 +328,7 @@
           min: 8
         effectProto: StatusEffectForcedSleeping
         time: 9
-        delay: 5
+        #delay: 5 Starfall - remove the delay
 
 - type: reagent
   id: MuteToxin
