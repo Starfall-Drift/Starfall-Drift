@@ -310,9 +310,9 @@
         variation: 0.250
     activatedDamage:
         types:
-            Slash: 12
-            Heat: 12
-            Structural: 15
+            Slash: 15 #Starfall - 12 -> 15
+            Heat: 15 #Starfall - 12 -> 15
+            Structural: 20 #Starfall - 15 -> 20
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg

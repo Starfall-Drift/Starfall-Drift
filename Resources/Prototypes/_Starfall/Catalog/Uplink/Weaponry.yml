@@ -44,3 +44,17 @@
   - !type:BuyerJobCondition
     whitelist:
     - Clown
+
+- type: listing
+  id: UplinkEswordDouble
+  name: uplink-esword-double-name
+  description: uplink-esword-double-desc
+  icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword_double.rsi, state: icon }
+  productEntity: EnergySwordDouble
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 30
+  cost:
+    Telecrystal: 70
+  categories:
+  - UplinkWeaponry
