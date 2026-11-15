@@ -130,7 +130,7 @@
     eyes: ClothingEyesHudSyndicate
     ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitSyndie
+    #Starfall - You have to buy your own suit now - outerClothing: ClothingOuterHardsuitSyndie
     shoes: ClothingShoesBootsCombatFilled
     id: SyndiOperativePDA
     pocket2: PlushieCarp
@@ -156,6 +156,7 @@
   equipment:
     head: ClothingHeadHelmetHardsuitSyndie
     neck: ClothingNeckScarfStripedSyndieRed
+    outerClothing: ClothingOuterHardsuitSyndie #Starfall - added for cham implant controllers to work
 
 #Nuclear Operative Commander Gear
 - type: startingGear
@@ -164,7 +165,7 @@
   equipment:
     id: SyndiCommanderPDA
     neck: SyndicateWhistle
-    outerClothing: ClothingOuterHardsuitSyndieCommander
+    #Starfall - You have to buy your own suit now - outerClothing: ClothingOuterHardsuitSyndieCommander
   inhand:
   - NukeOpsDeclarationOfWar
 
@@ -176,6 +177,7 @@
   equipment:
     head: ClothingHeadHelmetHardsuitSyndieCommander
     neck: ClothingNeckScarfStripedSyndieGreen
+    outerClothing: ClothingOuterHardsuitSyndieCommander #Starfall - added for cham implant controllers to work
 
 #Nuclear Operative Medic Gear
 - type: startingGear
@@ -183,7 +185,7 @@
   parent: SyndicateOperativeGearFull
   equipment:
     eyes: ClothingEyesHudSyndicateAgent
-    outerClothing: ClothingOuterHardsuitSyndieMedic
+    #Starfall - You have to buy your own suit now - outerClothing: ClothingOuterHardsuitSyndieMedic
     shoes: ClothingShoesBootsMagSyndie
     id: SyndiCorpsmanPDA
     belt: ClothingBeltMilitaryWebbingMedFilled
