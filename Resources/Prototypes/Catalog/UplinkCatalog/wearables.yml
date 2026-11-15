@@ -17,7 +17,7 @@
   name: uplink-chest-rig-name
   description: uplink-chest-rig-desc
   productEntity: ClothingBeltMilitaryWebbing
-  discountCategory: RareDiscounts
+  discountCategory: rareDiscounts
   discountDownTo:
     Telecrystal: 2 #Starfall - Reimplement discounts
   cost:
