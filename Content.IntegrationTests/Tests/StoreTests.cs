@@ -77,7 +77,7 @@ public sealed class StoreTests : GameTest
             var mind = mindSystem.CreateMind(null);
             mindSystem.TransferTo(mind, human, mind: mind);
 
-            FixedPoint2 originalBalance = 2000; //Starfall - 20 -> 2000 because we let super surpluses go on discount which have a max price of 100 I hate this fucking test. test wasnt designed for items above base budget to get discounted ig
+            FixedPoint2 originalBalance = 200; //Starfall - 20 -> 200 because we let super surpluses go on discount which have a max price of 100 I hate this fucking test
             uplinkSystem.AddUplink(human, originalBalance, out var notes, pda, true);
 
             Assert.That(notes != null);
