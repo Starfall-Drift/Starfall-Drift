@@ -77,7 +77,7 @@ public sealed class StoreTests : GameTest
             var mind = mindSystem.CreateMind(null);
             mindSystem.TransferTo(mind, human, mind: mind);
 
-            FixedPoint2 originalBalance = 20;
+            FixedPoint2 originalBalance = 100; //Starfall - 20 -> 100 because base syndie budget is 100 tc. anyways, i hate this
             uplinkSystem.AddUplink(human, originalBalance, out var notes, pda, true);
 
             Assert.That(notes != null);
