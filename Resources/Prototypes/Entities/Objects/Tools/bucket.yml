@@ -21,9 +21,9 @@
     - HEAD
     quickEquip: false
   - type: SolutionTransfer
-    transferAmount: 120
-    maxTransferAmount: 360
-    minTransferAmount: 60
+    transferAmount: 50
+    maxTransferAmount: 250
+    minTransferAmount: 10
   - type: SpillWhenWorn
     solution: drink
   - type: SolutionContainerVisuals
@@ -43,5 +43,5 @@
   description: The internal reservoir of a custodial cyborg, capable of holding a entire mop bucket worth of water.
   components:
   - type: SolutionTransfer
-    transferAmount: 240
-    maxTransferAmount: 480
+    transferAmount: 250
+    maxTransferAmount: 500
