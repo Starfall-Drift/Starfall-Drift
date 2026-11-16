@@ -431,7 +431,7 @@
       behaviors:
       - !type:GibBehavior
         recursive: false
-  - type: NonSpreaderZombie
+  #Starfall - Zombie roaches are dangerous - type: NonSpreaderZombie
   - type: StepTrigger
     requiredTriggeredSpeed: 1
   - type: TriggerOnStepTrigger
@@ -647,6 +647,14 @@
           32:
             sprite: Mobs/Animals/mothroach/displacement.rsi
             state: neck
+  - type: MeleeWeapon #Starfall - Mothroaches can do damage again
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    angle: 0
+    animation: WeaponArcBite
+    damage:
+      types:
+        Piercing: 2
 
 
 # Note that the mallard duck is actually a male drake mallard, with the brown duck being the female variant of the same species, however ss14 lacks sex specific textures
@@ -2074,7 +2082,7 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 0
+        Piercing: 2 #Starfall - Mice can do damage again
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
@@ -2084,7 +2092,7 @@
   - type: MobPrice
     price: 50
   - type: BadFood
-  - type: NonSpreaderZombie
+  #Starfall - Zombie Mice are dangerous - type: NonSpreaderZombie
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
@@ -3768,7 +3776,7 @@
     baseResistTime: 3
   - type: MobPrice
     price: 60
-  - type: NonSpreaderZombie
+  #Starfall - Zombie hampters are dangerous - type: NonSpreaderZombie
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
