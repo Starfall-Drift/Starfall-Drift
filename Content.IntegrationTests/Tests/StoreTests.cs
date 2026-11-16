@@ -77,7 +77,7 @@ public sealed class StoreTests : GameTest
             var mind = mindSystem.CreateMind(null);
             mindSystem.TransferTo(mind, human, mind: mind);
 
-            FixedPoint2 originalBalance = 20;
+            FixedPoint2 originalBalance = 200; //Starfall - 20 -> 200 because we are base 100 but the super surplus costs 200. I hate this fucking test
             uplinkSystem.AddUplink(human, originalBalance, out var notes, pda, true);
 
             Assert.That(notes != null);

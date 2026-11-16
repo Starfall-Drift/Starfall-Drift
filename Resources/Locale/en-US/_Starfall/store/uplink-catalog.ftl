@@ -3,3 +3,11 @@ uplink-foamfarce-shotgun-desc = A powerful shotgun produced thanks to a joint bu
 
 uplink-foamfarce-grenade-name = Foam Farce Shrapnel Grenade
 uplink-foamfarce-grenade-desc = A shrapnel grenade hidden inside an inconspicuous orange shell. Produced thanks to a joint business venture between Honk Co. and the Foam Force brand.
+
+uplink-cat-ears-surplus-name = Cat Ears (YOU SHOULD NOT SEE THIS)
+uplink-cat-ears-surplus-desc = This listing exists PURELY for syndicate surplus crates. If you see this, report it as a bug.
+
+uplink-balloon-surplus-name = Syndicate Balloon (YOU SHOULD NOT SEE THIS)
+uplink-balloon-surplus-desc = This listing exists PURELY for syndicate surplus crates. If you see this, report it as a bug.
+
+uplink-speedloader-magnum-desc = Revolver speedloader with 6 armor-piercing catridges, capable of ignoring armor entirely. Compatible with the Python.

@@ -593,7 +593,7 @@
     refineResult:
     - id: FoodMeat
       amount: 3
-    - id: Telecrystal5
+    - id: Telecrystal25 #Starfall - 5 -> 25
       amount: 1
   - type: Grammar
     attributes:

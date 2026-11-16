@@ -1,0 +1,30 @@
+#The purpose of this file is for making items that can ONLY appear in methods that spawn uplink items such as the super surplus. Items in this file should always have BuyerWhitelistCondition set to whitelist and surplusbundle ONLY.
+- type: listing
+  id: UplinkCatEarsSurplus
+  name: uplink-cat-ears-surplus-name #We fill these out anyways for if this shows up in an uplink SOMEHOW
+  description: uplink-cat-ears-surplus-desc
+  productEntity: ClothingHeadHatCatEars
+  cost:
+    Telecrystal: 25 #Base price /4. This is intended to be surplus crate bloat. Basically to make the surplus less powerful.
+  categories:
+  - UplinkDisruption
+  conditions:
+  - !type:BuyerWhitelistCondition
+    whitelist:
+      components:
+      - SurplusBundle
+
+- type: listing
+  id: UplinkBalloonSurplus
+  name: uplink-balloon-surplus-name
+  description: uplink-balloon-surplus-desc
+  productEntity: BalloonSyn
+  cost:
+    Telecrystal: 25 #Base price /4. This is intended to be surplus crate bloat. Basically to make the surplus less powerful.
+  categories:
+  - UplinkPointless
+  conditions:
+  - !type:BuyerWhitelistCondition
+    whitelist:
+      components:
+      - SurplusBundle
