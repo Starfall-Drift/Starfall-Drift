@@ -21,7 +21,7 @@
     - HEAD
     quickEquip: false
   - type: SolutionTransfer
-    transferAmount: 50
+    transferAmount: 100
     maxTransferAmount: 250
     minTransferAmount: 10
   - type: SpillWhenWorn
