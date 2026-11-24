@@ -129,7 +129,7 @@
       effects:
       - !type:EvenHealthChange
         conditions:
-        - !type:MobStateCondition #Must be in crit. I'd make it a totaldamage but not thing crits at 100.
+        - !type:MobStateCondition #Must be in crit. I'd make it a totaldamage but not everything crits at 100.
           mobstate: Critical
         damage: #5 per type. Toxin excluded.
           Airloss: -10
