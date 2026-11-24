@@ -16,7 +16,7 @@ public sealed class SolutionPurgeRegenerationTests : GameTest
 {
     private static readonly EntProtoId AdvancedMop = "AdvMopItem";
     private static readonly ProtoId<ReagentPrototype> Water = "Water";
-    private static readonly ProtoId<ReagentPrototype> NotWater = "Dexalin"; //Starfall - This was hardset to DexalinPlus (so when we removed  instead of any random reagent that is not water or a chem as trivial as spacecola.
+    private static readonly ProtoId<ReagentPrototype> NotWater = "Dexalin"; //Starfall - This was hardset to DexalinPlus which made this test start throwing errors so we had to change NoWater to something else
 
     [SidedDependency(Side.Server)] private readonly SharedSolutionContainerSystem _solutionContainer = default!;
 
