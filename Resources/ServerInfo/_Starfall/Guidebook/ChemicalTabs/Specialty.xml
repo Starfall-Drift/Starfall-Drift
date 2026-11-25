@@ -1,9 +1,9 @@
 <Document>
 
-  # Exotic
+  # Specialty
 
   The chemicals in this list are hard to obtain, unique chemicals that the average medbay may not see often.
 
-  <GuideReagentGroupEmbed Group="Exotic"/>
+  <GuideReagentGroupEmbed Group="Specialty"/>
 
 </Document>

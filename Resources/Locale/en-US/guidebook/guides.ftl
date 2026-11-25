@@ -114,10 +114,11 @@ guide-entry-toxins = Toxins
 guide-entry-foods = Foods
 guide-entry-biological = Biological
 guide-entry-botanical = Botanical
-guide-entry-special = Special
+#Starfall - We rename special to fun cause the chems in "special" aren't exactly useful.
+guide-entry-special = Fun
 guide-entry-others = Others
 #Starfall
-guide-entry-exotic = Exotic
+guide-entry-specialty = Specialty
 
 guide-entry-pizza-recipes = Pizzas
 guide-entry-savory-recipes = Savory Foods
