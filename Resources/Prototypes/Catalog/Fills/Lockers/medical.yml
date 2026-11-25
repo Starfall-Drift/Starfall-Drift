@@ -15,6 +15,8 @@
       - id: Bloodpack
       - id: Gauze
         weight: 0.5
+      - id: BoxSyringe #Starfall - Added back
+      - id: ChemistryBottleEpinephrine #Starfall - Added back
 
 - type: entity
   parent: LockerMedicine
@@ -44,7 +46,7 @@
   table: !type:AllSelector
     children:
     - id: ClothingEyesHudMedical
-    - id: ClothingBeltMedicalFilled
+    #Starfall - Removed - id: ClothingBeltMedicalFilled
     - id: JetInjector
     - id: HandheldHealthAnalyzer
     - id: ChemistryBottleLaughter # Widely recognized as the best medicine :o)
@@ -55,6 +57,28 @@
       prob: 0.02
     - id: PlushieLizardJobPsychologist
       prob: 0.02
+    #Starfall - Add removed items back to this locker
+    - id: ClothingHeadMirror
+      prob: 0.1
+    - id: ClothingHandsGlovesLatex
+    - id: ClothingHeadsetMedical
+    - !type:GroupSelector
+      children:
+      - id: ClothingHeadHatSurgcapGreen
+        weight: 0.1
+      - id: ClothingHeadHatSurgcapPurple
+        weight: 0.05
+      - id: ClothingHeadHatSurgcapBlue
+        weight: 0.90
+    - !type:GroupSelector
+      children:
+      - id: UniformScrubsColorBlue
+        weight: 0.5
+      - id: UniformScrubsColorGreen
+        weight: 0.1
+      - id: UniformScrubsColorPurple
+        weight: 0.05
+    - id: ClothingMaskSterile
 
 - type: entity
   parent: LockerMedical
@@ -130,6 +154,18 @@
       - id: EmergencyRollerBedSpawnFolded
     - id: PlushieLizardJobParamedic
       prob: 0.02
+    #Starfall - Add back removed items
+    - id: ClothingOuterCoatParamedicWB
+    - id: ClothingHeadHatParamedicsoft
+    - id: ClothingOuterWinterPara
+    - id: ClothingUniformJumpsuitParamedic
+    - id: ClothingUniformJumpskirtParamedic
+    - id: ClothingHandsGlovesLatex
+    - id: ClothingHeadsetMedical
+    - id: ClothingMaskSterile
+    - id: HandheldGPSBasic
+    - id: MedkitFilled
+      prob: 0.3
 
 - type: entity
   parent: LockerParamedic

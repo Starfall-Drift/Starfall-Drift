@@ -1,5 +1,5 @@
 <Document>
-  
+
   # Specialized Brute Chemicals
 
   Nanotrasen's greatest scientists have synthesized three more specific brute chemicals! Each one heals a specific damage subtype.
@@ -7,6 +7,7 @@
   <GuideReagentEmbed Reagent="Bruizine"/>
   <GuideReagentEmbed Reagent="Puncturase"/>
   <GuideReagentEmbed Reagent="Lacerinol"/>
+  <GuideReagentEmbed Reagent="SalicylicAcid"/><!--Starfall - Add in salicylic-->
 
   # Razorium
 
@@ -16,13 +17,13 @@
 
   [bold]Some examples of mixtures that create Razorium are as follows:[/bold]
 
-  Bicaridine and Puncturase
+  Salicylic Acid and Puncturase
 
   Puncturase and Lacerinol
 
-  Bruizine and Bicaridine
+  Bruizine and Salicylic Acid
 
   Lacerinol and Bruizine
 
-  Please note that [bold]any[/bold] combination of these 4 chemicals will likely mix and create Razorium! Be careful when creating these chemicals, as they contain Bicaridine. Any leftover Bicaridine will likely mix to create Razorium!
+  Please note that [bold]any[/bold] combination of these 4 chemicals will likely mix and create Razorium! Be careful when using these chemicals!
 </Document>

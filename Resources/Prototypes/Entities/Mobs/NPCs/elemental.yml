@@ -406,14 +406,25 @@
       - id: ReagentSlimePax
       - id: ReagentSlimeNocturine
       - id: ReagentSlimeTHC
-      - id: ReagentSlimeBicaridine
+      #- id: ReagentSlimeBicaridine - Starfall
       - id: ReagentSlimeToxin
       - id: ReagentSlimeNapalm
       - id: ReagentSlimeOmnizine
       - id: ReagentSlimeMuteToxin
       - id: ReagentSlimeNorepinephricAcid
       - id: ReagentSlimeEphedrine
-      - id: ReagentSlimeRobustHarvest
+        #Starfall - Reagent slime expansion
+      - id: ReagentSlimeSpewium
+      - id: ReagentSlimePestiline
+      - id: ReagentSlimeRhigoxane
+      - id: ReagentSlimeSalicylicAcid
+      - id: ReagentSlimeOxandrolone
+      - id: ReagentSlimeLaughter #Haha i'm dying
+      - id: ReagentSlimeNapalm
+      - id: ReagentSlimeCoffee
+      - id: ReagentSlimePhlogiston
+      - id: ReagentSlimeStasicillin #Tested this and if you're alone and get slept, you will not die but it will bite you alot so you're asleep for a long time
+      - id: ReagentSlimeHemorrhinol
 
 - type: entity
   id: ReagentSlimeBeer
@@ -501,25 +512,25 @@
         state: alive
         color: "#808080"
 
-- type: entity
-  id: ReagentSlimeBicaridine
-  parent: ReagentSlime
-  suffix: Bicaridine
-  components:
-  - type: Bloodstream
-    bloodReferenceSolution:
-      reagents:
-      - ReagentId: Bicaridine
-        Quantity: 100
-  - type: PointLight
-    color: "#ffaa00"
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: Mobs/Aliens/elemental.rsi
-    layers:
-      - map: [ "enum.DamageStateVisualLayers.Base" ]
-        state: alive
-        color: "#ffaa00"
+#Starfall - Removal of Bicaridine - type: entity
+#  id: ReagentSlimeBicaridine
+#  parent: ReagentSlime
+#  suffix: Bicaridine
+#  components:
+#  - type: Bloodstream
+#    bloodReferenceSolution:
+#      reagents:
+#      - ReagentId: Bicaridine
+#        Quantity: 100
+#  - type: PointLight
+#    color: "#ffaa00"
+#  - type: Sprite
+#    drawdepth: Mobs
+#    sprite: Mobs/Aliens/elemental.rsi
+#    layers:
+#      - map: [ "enum.DamageStateVisualLayers.Base" ]
+#        state: alive
+#        color: "#ffaa00"
 
 - type: entity
   id: ReagentSlimeToxin

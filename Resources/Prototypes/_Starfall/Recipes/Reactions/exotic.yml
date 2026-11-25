@@ -1,0 +1,119 @@
+- type: reaction
+  id: Hypothium
+  reactants:
+    Healium:
+      amount: 1
+    Omnizine:
+      amount: 1
+    Ethyloxyephedrine:
+      amount: 1
+  products:
+    Hypothium: 3
+
+- type: reaction
+  id: LiquidExotium
+  reactants:
+    Razorium:
+      amount: 1
+    Licoxide:
+      amount: 1
+    Pestiline:
+      amount: 1
+    UnstableMutagen:
+      amount: 1
+  products:
+    LiquidExotium: 1
+
+- type: reaction
+  id: Stasicillin
+  reactants:
+    LiquidExotium:
+      amount: 1
+    ChloralHydrate:
+      amount: 1
+    Cryoxadone:
+      amount: 1
+    Saline:
+      amount: 1
+  products:
+    Stasicillin: 1
+
+- type: reaction
+  id: Negacordrazine
+  reactants:
+    LiquidExotium:
+      amount: 1
+    Tricordrazine:
+      amount: 1
+    Granibitulari:
+      amount: 1
+  products:
+    Negacordrazine: 1
+
+- type: reaction
+  id: StabilisedStimulants
+  reactants:
+    LiquidExotium:
+      amount: 1
+    Desoxyephedrine:
+      amount: 1
+    Nicotine:
+      amount: 1
+    Coffee:
+      amount: 1
+  products:
+    StabilisedStimulants: 1
+
+- type: reaction
+  id: Revivopine
+  reactants:
+    LiquidExotium:
+      amount: 1
+    Salbutamol:
+      amount: 1
+    Convermol:
+      amount: 1
+    Epinephrine:
+      amount: 1
+  products:
+    Revivopine: 1
+
+- type: reaction
+  id: ExoticBarozine
+  reactants:
+    LiquidExotium:
+      amount: 1
+    Revivopine:
+      amount: 1
+    Leporazine:
+      amount: 1
+    SalicylicAcid:
+      amount: 1
+  products:
+    Barozine: 1
+
+- type: reaction
+  id: VestineOmnizine
+  reactants:
+    Negacordrazine:
+      amount: 1
+    Vestine:
+      amount: 1
+  products:
+    Omnizine: 1
+
+- type: reaction
+  id: Ichor
+  reactants:
+    LiquidExotium:
+      amount: 1
+    Omnizine:
+      amount: 1
+    StabilisedStimulants:
+      amount: 1
+    Stasicillin:
+      amount: 1
+    Cognizine:
+      amount: 1
+  products:
+    Ichor: 1

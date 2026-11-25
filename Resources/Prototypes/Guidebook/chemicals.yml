@@ -11,6 +11,7 @@
   - Foods
   - Botanical
   - Biological
+  - Specialty #Starfall
   - Special
   - Others
   filterEnabled: True
@@ -57,9 +58,16 @@
   text: "/ServerInfo/Guidebook/ChemicalTabs/Biological.xml"
   filterEnabled: True
 
+#Starfall - Add Specialty Category
+- type: guideEntry
+  id: Specialty
+  name: guide-entry-specialty
+  text: "/ServerInfo/_Starfall/Guidebook/ChemicalTabs/Specialty.xml"
+  filterEnabled: True
+
 - type: guideEntry
   id: Special
-  name: guide-entry-special
+  name: guide-entry-special #Starfall - THIS IS SET TO BE "Fun" IN GUIDES.FTL. WE ARE RETAINING THE NAME HERE SO THAT MERGES ARE EASIER
   text: "/ServerInfo/Guidebook/ChemicalTabs/Special.xml"
   filterEnabled: True
 

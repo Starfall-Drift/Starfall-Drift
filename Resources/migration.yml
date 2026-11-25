@@ -850,7 +850,7 @@ ClothingUniformJumpskirtHydroponics: FuClothingUniformJumperskirtHydroponics
 ClothingUniformOveralls: FuClothingUniformShirtPantstHydroponicsOveralls
 
 # 2026-02-27
-Stunbaton: Nightstick
+Stunbaton: ChemistryBottleSalbutamol
 WeaponDisabler: null
 WeaponTaser: null
 
@@ -883,6 +883,26 @@ BoxSurvivalMedicalAquatic: BoxSurvivalSlotsAquaticMedical
 BoxSurvivalSecurityAquatic: BoxSurvivalSlotsAquaticSecurity
 BoxSurvivalSyndicateAquatic: BoxSurvivalSlotsAquaticSyndicate
 
+#2026-11-06 Starfall - various medicine migrations
+ChemistryBottleDylovene: ChemistryBottleMultiver
+PillDylovene: PillMultiver
+PillCanisterDylovene: PillCanisterMultiver
+SyringeDylovene: SyringeMultiver
+CigaretteDylovene: CigaretteMultiver
+ChemistryBottleKelotane: ChemistryBottleAiuri
+PillKelotane: PillAiuri
+PillCanisterKelotane: PillCanisterAiuri
+CigaretteDermaline: CigaretteAiuri
+ChemistryBottleDermaline: ChemistryBottleLenturi
+PillCanisterDermaline: PillCanisterLenturi
+PillDermaline: PillLenturi
+ChemistryBottleBicaridine: ChemistryBottleProbitalLibital
+PillBicaridine: PillProbitalLibital
+PillCanisterBicaridine: PillCanisterProbitalLibital
+SyringeBicaridine: SyringeProbitalLibital
+CigaretteBicaridine: CigaretteSalicylicAcid
+ReagentSlimeBicaridine: ReagentSlimeSalicylicAcid
+ChemistryBottleDexalinPlus: ChemistryBottleSalbutamol
 
 
 # 2026-11-08 Starfall - i forgot to do something earlier oops

@@ -8,6 +8,7 @@ namespace Content.Shared._Starfall.EntityConditions.Conditions;
 
 /// <summary>
 /// Returns true if this entity can take damage and if its total damage is within a specified minimum and maximum.
+/// Use fields are "min" and "max" case sensitive.
 /// </summary>
 /// <inheritdoc cref="EntityConditionSystem{T,TCon}"/>
 public sealed partial class TotalDamageEntityConditionSystem : EntityConditionSystem<DamageableComponent, TotalDamageCondition>
