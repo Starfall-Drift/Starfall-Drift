@@ -91,7 +91,7 @@
     zapHeal:
       types:
         Asphyxiation: -40
-    doAfterDuration: 6
+    doAfterDuration: 3 #Starfall - 6 -> 3 cause this is supposed to be an upgrade.
   - type: DoAfter
   - type: UseDelay
 

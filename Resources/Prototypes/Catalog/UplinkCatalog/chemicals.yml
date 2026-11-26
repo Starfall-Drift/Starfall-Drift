@@ -1,0 +1,159 @@
+#Starfall - Prices adjusted to base 100
+- type: listing
+  id: UplinkHypopen
+  name: uplink-hypopen-name
+  description: uplink-hypopen-desc
+  icon: { sprite: /Textures/Objects/Misc/pens.rsi, state: pen }
+  productEntity: HypopenBox
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 20 #Starfall - 4 -> 20
+  cost:
+    Telecrystal: 30 #Starfall - 6 -> 30
+  categories:
+  - UplinkChemicals
+
+- type: listing
+  id: UplinkHypoDart
+  name: uplink-hypodart-name
+  description: uplink-hypodart-desc
+  icon: { sprite: /Textures/Objects/Fun/Darts/dart_red.rsi, state: icon }
+  productEntity: HypoDartBox
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 5 #Starfall - 1 -> 5
+  cost:
+    Telecrystal: 10 #Starfall - 2 -> 10
+  categories:
+  - UplinkChemicals
+
+- type: listing
+  id: UplinkChemistryKitBundle
+  name: uplink-chemistry-kit-name
+  description: uplink-chemistry-kit-desc
+  icon: { sprite: /Textures/Objects/Storage/boxicons.rsi, state: vials }
+  productEntity: ChemicalSynthesisKit
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 15 #Starfall - 2 -> 15
+  cost:
+    Telecrystal: 25 #Starfall - 3 -> 25
+  categories:
+  - UplinkChemicals
+
+- type: listing
+  id: UplinkZombieBundle
+  name: uplink-zombie-bundle-name
+  description: uplink-zombie-bundle-desc
+  icon: { sprite: /Textures/Structures/Wallmounts/signs.rsi, state: bio }
+  productEntity: ClothingBackpackDuffelZombieBundle
+  cost:
+    Telecrystal: 200 #Starfall - 40 -> 200
+  categories:
+  - UplinkChemicals
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
+
+- type: listing
+  id: UplinkNocturineChemistryBottle
+  name: uplink-nocturine-chemistry-bottle-name
+  description: uplink-nocturine-chemistry-bottle-desc
+  productEntity: ChemistryBottleNocturine
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 25 #Starfall - 2 -> 25
+  cost:
+    Telecrystal: 30 #Starfall - 4 -> 30
+  categories:
+  - UplinkChemicals
+
+- type: listing
+  id: UplinkCombatMedkit
+  name: uplink-combat-medkit-name
+  description: uplink-combat-medkit-desc
+  productEntity: MedkitCombatFilled
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 5 #Starfall - 2 -> 5
+  cost:
+    Telecrystal: 15 #Starfall - 3 -> 15
+  categories:
+  - UplinkChemicals
+
+- type: listing
+  id: UplinkCombatMedipen
+  name: uplink-combat-medipen-name
+  description: uplink-combat-medipen-desc
+  productEntity: CombatMedipen
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 10 #Starfall 2 -> 10
+  cost:
+    Telecrystal: 20 #Starfall 3 -> 20
+  categories:
+  - UplinkChemicals
+
+- type: listing
+  id: UplinkStimpack
+  name: uplink-stimpack-name
+  description: uplink-stimpack-desc
+  productEntity: Stimpack
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 5 #Starfall - 1 -> 5
+  cost:
+    Telecrystal: 10 #Starfall - 2 -> 10
+  categories:
+  - UplinkChemicals
+
+- type: listing
+  id: UplinkStimkit
+  name: uplink-stimkit-name
+  description: uplink-stimkit-desc
+  productEntity: StimkitFilled
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 10 #Starfall - 3 -> 10
+  cost:
+    Telecrystal: 25 #Starfall - 5 -> 25
+  categories:
+  - UplinkChemicals
+
+- type: listing
+  id: UplinkCigarettes
+  name: uplink-cigarettes-name
+  description: uplink-cigarettes-desc
+  productEntity: CigPackSyndicate
+  cost:
+    Telecrystal: 10 #Starfall - 1 -> 10
+  categories:
+  - UplinkChemicals
+
+- type: listing
+  id: UplinkMedsBundle
+  name: uplink-meds-bundle-name
+  description: uplink-meds-bundle-desc
+  productEntity: ClothingBackpackDuffelSyndicateMedicalBundleFilled
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 90 #Starfall - 16 -> 90
+  cost:
+    Telecrystal: 125 #Starfall - 24 -> 125
+  categories:
+  - UplinkChemicals
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle

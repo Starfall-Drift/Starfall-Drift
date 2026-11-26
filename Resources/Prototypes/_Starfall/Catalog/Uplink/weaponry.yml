@@ -1,0 +1,26 @@
+- type: listing
+  id: UplinkRevolverPython #Starfall - Welcome back old friend
+  name: uplink-revolver-python-name
+  description: uplink-revolver-python-desc
+  productEntity: WeaponRevolverPythonAP
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 11 #Starfall - 2 -> 11
+  cost:
+    Telecrystal: 20 #Starfall - 4 -> 20
+  categories:
+  - UplinkWeaponry
+
+- type: listing
+  id: UplinkEswordDouble
+  name: uplink-esword-double-name
+  description: uplink-esword-double-desc
+  icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword_double.rsi, state: icon }
+  productEntity: EnergySwordDouble
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 30
+  cost:
+    Telecrystal: 70
+  categories:
+  - UplinkWeaponry

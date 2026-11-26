@@ -887,3 +887,9 @@ BoxSurvivalSyndicateAquatic: BoxSurvivalSlotsAquaticSyndicate
 
 # 2026-11-08 Starfall - i forgot to do something earlier oops
 Solution3840: Solution5000
+
+#2026-11-12 Starfall - TC reshift to 100 base
+BaseUplinkRadio20TC: BaseUplinkRadio100TC
+BaseUplinkRadio25TC: BaseUplinkRadio125TC
+BaseUplinkRadio40TC: BaseUplinkRadio225TC
+BaseUplinkRadio60TC: BaseUplinkRadio350TC
