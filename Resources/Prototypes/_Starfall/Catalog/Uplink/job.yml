@@ -1,0 +1,51 @@
+- type: listing
+  id: uplinkInterdyneDefibrillator
+  name: uplink-interdyne-defibrillator-name
+  description: uplink-interdyne-defibrillator-desc
+  productEntity: DefibrillatorSyndicate
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 10
+  cost:
+    Telecrystal: 35
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - MedicalDoctor
+    - Paramedic
+
+- type: listing
+  id: uplinkShotgunFoamFarce
+  name: uplink-foamfarce-shotgun-name
+  description: uplink-foamfarce-shotgun-desc
+  productEntity: WeaponShotgunFoamFarceShells
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 35
+  cost:
+    Telecrystal: 50 #Starfall - we got economic inflation so this is 50% of your total budget
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Clown
+
+- type: listing
+  id: uplinkGrenadeFoamFarce
+  name: uplink-foamfarce-grenade-name
+  description: uplink-foamfarce-grenade-desc
+  productEntity: GrenadeFoamFarceDart
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 5 #Same min discount as shrapnel nade cause i wanted to
+  cost:
+    Telecrystal: 20 #Shrapnel grenade +5 cause it's basically easier to use cause people wont run from it.
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Clown
